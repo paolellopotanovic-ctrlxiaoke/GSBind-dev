@@ -453,9 +453,9 @@ class PairGaussianResidueToSurfaceCorrection(pt.nn.Module):
         tangent2 = tangent2 / tangent2.norm(dim=-1, keepdim=True).clamp_min(1e-6)
         return tangent1, tangent2, normal
 
-    def _joint_scores(self, rel_i, rel_j, surface_normal, rho_input, legacy_score, sigma_i=None, sigma_j=None):
+    def _joint_scores(self, rel_i, rel_j, surface_normal, rho_input, independent_score, sigma_i=None, sigma_j=None):
         if self.joint_mode == "independent" or self.rho_proj is None:
-            return legacy_score, None, None, None
+            return independent_score, None, None, None
         t1, t2, normal = self._surface_frame(surface_normal)
         basis = [t1.unsqueeze(1), t2.unsqueeze(1), normal.unsqueeze(1)]
         xi = pt.stack([(rel_i * b).sum(dim=-1) for b in basis], dim=-1)

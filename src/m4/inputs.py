@@ -4,13 +4,9 @@ import argparse
 import csv
 from pathlib import Path
 
-from ._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from apex_dataset import raw_residue_ids_and_sequence, residue_uid  # noqa: E402
-from src.structure import clean_structure, res3to1  # noqa: E402
-from src.structure_io import read_pdb  # noqa: E402
+from .data.manifest import raw_residue_ids_and_sequence, residue_uid
+from .data.structure import clean_structure, res3to1
+from .data.structure_io import read_pdb
 
 
 MANIFEST_FIELDS = (

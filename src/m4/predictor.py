@@ -9,15 +9,11 @@ from types import SimpleNamespace
 
 import torch
 
-from ._bootstrap import activate_validated_implementation
+from .data.loader import build_loader
 from .inputs import residue_records_from_pdb
 from .models import build_m4_model, forward_m4_batch
-
-activate_validated_implementation()
-
-from apex_dataset import read_manifest, split_field  # noqa: E402
-from apex_s1_surface_field.eval_s1_surface_field import build_loader  # noqa: E402
-from train_apex_simple import move_batch_to_device  # noqa: E402
+from .data.manifest import read_manifest, split_field
+from .training.runtime import move_batch_to_device
 
 
 OUTPUT_FIELDS = (
@@ -124,7 +120,7 @@ def predict(args: argparse.Namespace) -> dict[str, object]:
     incompatible = model.load_state_dict(checkpoint["model_state_dict"], strict=True)
     if incompatible.missing_keys or incompatible.unexpected_keys:
         raise RuntimeError("Strict checkpoint loading returned incompatible keys")
-    loader = build_loader(rows, _loader_args(args, ckpt_args))
+    loader = build_loader(rows, _loader_args(args, ckpt_args), shuffle=False)
     model.eval()
     predictions: list[dict[str, object]] = []
     seen_cases: set[str] = set()

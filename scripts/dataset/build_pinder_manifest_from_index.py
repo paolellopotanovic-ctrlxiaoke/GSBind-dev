@@ -7,7 +7,7 @@ therefore uses only lightweight pieces:
 
 - `pyarrow.dataset` for selecting rows from `index.parquet`
 - direct HTTPS downloads from `https://storage.googleapis.com/pinder/2024-02`
-- PeSTo's `src.structure_io.read_pdb` for atom/residue parsing
+- M4's `m4.data.structure_io.read_pdb` for atom/residue parsing
 - Pinder mapping parquet files for residue -> UniProt transfer
 """
 
@@ -35,11 +35,7 @@ except ModuleNotFoundError:
 ROOT_DIR = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT_DIR / "src"))
 
-from m4._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from src.structure_io import read_pdb
+from m4.data.structure_io import read_pdb
 
 
 FIELD_SEP = ";"

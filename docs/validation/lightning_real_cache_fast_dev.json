@@ -27,10 +27,11 @@
     "scheduler": "warmup + cosine",
     "completed_optimizer_steps": 1,
     "stop_reason": "max_steps=1 reached",
-    "displayed_seconds_per_step": 2.27,
+    "displayed_seconds_per_step": 1.79,
     "displayed_train_loss": 1.11
   },
   "notes": [
+    "The run used the final single-source package after removal of the research tree.",
     "The run used configs/m4_holo20k.yaml with only local path and num_workers overrides.",
     "Checkpointing and logging are intentionally suppressed by Lightning fast_dev_run."
   ]

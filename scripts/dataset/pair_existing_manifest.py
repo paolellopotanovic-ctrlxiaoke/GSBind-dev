@@ -25,11 +25,7 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT_DIR / "src"))
 
-from m4._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from src.structure_io import read_pdb
+from m4.data.structure_io import read_pdb
 
 
 FIELD_SEP = ";"

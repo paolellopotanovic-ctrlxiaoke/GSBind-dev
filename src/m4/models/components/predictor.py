@@ -1,21 +1,13 @@
-"""Complete modular M4 predictor.
-
-This is the paper-facing implementation. The frozen legacy module remains only
-as a numerical oracle for equivalence tests.
-"""
+"""Complete paper-facing M4 predictor and architecture composition root."""
 
 import torch as pt
 
-from apex_multigraph_plus.model import (
+from .residue_backbone import (
     GlobalContextFeedback,
     InterfaceHead,
     StaticMultiViewGVPEncoder,
     StaticResidueMultiplexGVPEncoder,
 )
-from apex_generic_gvp_augfeat.model import AugFeatureBuilder
-from apex_s1_surface_field.semantic_patch import SemanticConnectedPatchHead
-from apex_teacher_prior.modules import TeacherHiddenAdapter
-
 from .execution import M4ExecutionMixin
 from .cross_scale import (
     AttentionResidueToSurfacePool,
@@ -27,6 +19,7 @@ from .cross_scale import (
 from .gaussian_projection import (
     build_gaussian_projector,
 )
+from .features import AugFeatureBuilder
 from .pair_gaussian import (
     build_pair_gaussian_modules,
 )
@@ -36,6 +29,7 @@ from .residue_encoder import (
     OAGNNResidueGraphRefiner,
     SerialK16K32MultiViewGVPEncoder,
 )
+from .semantic_patch import SemanticConnectedPatchHead
 from .surface_encoder import (
     DynamicSurfacePatchCluster,
     ResidueInternalLaplacianOperator,
@@ -44,6 +38,7 @@ from .surface_encoder import (
     SurfacePointGraphEncoder,
     SurfacePointGVPGraphEncoder,
 )
+from ...training import TeacherHiddenAdapter
 
 
 def _parse_positive_ints(value):

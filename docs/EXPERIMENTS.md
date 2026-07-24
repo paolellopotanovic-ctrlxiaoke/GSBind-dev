@@ -11,7 +11,9 @@ batch size 2, gradient accumulation 4, learning rate `5e-5`, weight decay
 Before launch, verify:
 
 ```bash
-python scripts/verify_sources.py
+python -m pytest -q
+python scripts/validate_checkpoint.py CHECKPOINT \
+  --registry-name m4_holo20k_v9_clean_epoch4
 python scripts/dataset/audit_distribution.py --manifest DATASET.csv \
   --output distribution.json --expected-rows 20000 \
   --max-cluster-cap 20 --require-unique-paths

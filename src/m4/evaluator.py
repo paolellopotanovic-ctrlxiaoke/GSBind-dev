@@ -1,9 +1,5 @@
-"""Evaluation entry point backed by the validated M4 implementation."""
+"""Stable public wrapper for the M4 evaluator."""
 
-from ._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from apex_s1_surface_field.eval_s1_surface_field import main  # noqa: E402
+from .evaluation.runner import main
 
 __all__ = ["main"]

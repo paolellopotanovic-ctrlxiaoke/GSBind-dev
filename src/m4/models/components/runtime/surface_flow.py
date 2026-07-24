@@ -2,7 +2,7 @@
 
 import torch as pt
 
-from apex_s1_surface_field.surface_cache import build_s1_surface_proxy_cache
+from ..surface_cache import build_s1_surface_proxy_cache
 
 
 class SurfaceFlowMixin:
@@ -292,4 +292,3 @@ class SurfaceFlowMixin:
             diagnostics[f"surface_graph_weight_k{graph_k}"] = weight.detach()
         self.last_surface_graph_diagnostics = diagnostics
         return fused
-

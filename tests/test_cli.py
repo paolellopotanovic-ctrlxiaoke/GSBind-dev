@@ -16,4 +16,4 @@ def test_false_flags_are_omitted() -> None:
 def test_public_cli_separates_prediction_and_evaluation() -> None:
     assert COMMAND_MODULES["prepare-input"] == "m4.inputs"
     assert COMMAND_MODULES["predict"] == "m4.predictor"
-    assert COMMAND_MODULES["eval"].endswith("eval_s1_surface_field")
+    assert COMMAND_MODULES["eval"] == "m4.evaluation.runner"

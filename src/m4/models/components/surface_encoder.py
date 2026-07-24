@@ -4,7 +4,7 @@ import math
 
 import torch as pt
 
-from apex_model import FullGVPMessageLayer
+from .gvp import FullGVPMessageLayer
 
 
 class SurfacePointGraphEncoder(pt.nn.Module):

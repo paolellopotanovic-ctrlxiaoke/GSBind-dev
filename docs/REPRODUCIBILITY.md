@@ -11,10 +11,10 @@ Holo20k v9 manifest is an external release asset registered in
 `assets/datasets.json`; a newly sampled dataset is not the same experiment even
 if its aggregate statistics match.
 
-## 2. Source and checkpoint integrity
+## 2. Package and checkpoint integrity
 
 ```bash
-python scripts/verify_sources.py
+python -m pytest -q
 python scripts/validate_checkpoint.py CHECKPOINT \
   --registry-name m4_holo20k_v9_clean_epoch4
 ```
@@ -25,22 +25,20 @@ tensor count.
 
 ## 3. Inference equivalence
 
-On the same CUDA GPU and cached mini-set, run
-`scripts/validate_server_equivalence.sh`. The labeled evaluator from the
-research tree and release package must produce the same load report, metrics,
-case metrics, and diagnostic records. Also compare raw logits and record maximum
-absolute and relative differences; exact equality is preferred in the pinned
-environment.
+The final release was compared against an external read-only research snapshot
+on the same CUDA GPU and real cached mini-set. Evaluation and training forward
+outputs were exactly equal. The machine-readable record is
+`docs/validation/final_external_oracle_equivalence.json`; the external source
+tree is deliberately not a runtime or release dependency.
 
 ## 4. Training equivalence
 
-Run one deterministic optimizer step from the same initialization and batch.
-Record input cache hashes, RNG state, CUDA/PyTorch versions, AMP scaler state,
-loss components, gradients, optimizer state, and updated weights. Then run the
-full configured experiment with seed 42 and the three registered evaluation
+The same external audit compared all loss components, gradients, and one AdamW
+update from identical initialization and batch. For reproduction, run the full
+configured experiment with seed 42 and the three registered evaluation
 tracks.
 
 GPU kernels and mixed precision can differ across hardware. Cross-machine
 claims must state GPU model, CUDA, PyTorch, precision, deterministic settings,
-seed, and numerical tolerance. Until layers 3 and 4 pass on CUDA, this repository
-must not claim complete numerical equivalence.
+seed, and numerical tolerance. Future scientific changes must repeat the CUDA
+forward/loss/gradient/update audit before a new release claims equivalence.

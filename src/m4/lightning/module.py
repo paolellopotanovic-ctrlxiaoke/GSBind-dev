@@ -11,6 +11,7 @@ import lightning as L
 import torch
 
 from ..losses import M4LossConfig, M4Objective
+from ..evaluation.metrics import binary_auc, binary_aupr
 from ..models import M4Model, forward_m4_batch
 
 
@@ -110,9 +111,9 @@ class M4LightningModule(L.LightningModule):
         return forward_m4_batch(self.model, batch)
 
     def on_train_epoch_start(self) -> None:
-        self.apply_legacy_epoch_state(self.current_epoch)
+        self.apply_epoch_state(self.current_epoch)
 
-    def apply_legacy_epoch_state(self, epoch_index: int) -> None:
+    def apply_epoch_state(self, epoch_index: int) -> None:
         """Match the validated trainer's epoch seed and semantic-stage switch."""
 
         epoch_seed = int(self.run_config.get("seed", 42)) + int(epoch_index)
@@ -152,8 +153,6 @@ class M4LightningModule(L.LightningModule):
     def on_validation_epoch_end(self) -> None:
         if not self.validation_outputs:
             return
-        from train_apex import binary_auc, binary_aupr
-
         scores = torch.cat([row["scores"] for row in self.validation_outputs])
         labels = torch.cat([row["labels"] for row in self.validation_outputs])
         self.log("val/aupr", binary_aupr(scores, labels), prog_bar=True, sync_dist=True)
@@ -189,7 +188,7 @@ class M4LightningModule(L.LightningModule):
         checkpoint["m4_release_metadata"] = {
             "format": "m4_lightning_v1",
             "validated_core": "S1SurfaceFieldPredictor",
-            "legacy_export_key": "model_state_dict",
+            "compatibility_export_key": "model_state_dict",
         }
         checkpoint["model_state_dict"] = {
             key: value.detach().cpu() for key, value in self.model.state_dict().items()

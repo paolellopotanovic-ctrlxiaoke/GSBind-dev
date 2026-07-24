@@ -9,7 +9,7 @@ import math
 
 import torch as pt
 
-from apex_multigraph_plus.model import StaticMultiViewGVPEncoder
+from .residue_backbone import StaticMultiViewGVPEncoder
 
 
 class SerialK16K32MultiViewGVPEncoder(StaticMultiViewGVPEncoder):

@@ -5,6 +5,7 @@ import math
 import torch as pt
 
 from .gaussian_projection import inverse_softplus
+from .residue_backbone import InterfaceHead
 
 
 class AttentionSurfaceToResiduePool(pt.nn.Module):

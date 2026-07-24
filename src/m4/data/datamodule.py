@@ -9,13 +9,9 @@ from typing import Any, Mapping
 
 import lightning as L
 
-from .._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from apex_dataset import read_manifest  # noqa: E402
-from apex_s1_surface_field.train_s1_surface_field import build_loader  # noqa: E402
-from train_apex import estimate_pos_weight, split_rows_grouped  # noqa: E402
+from .loader import build_loader
+from .manifest import read_manifest
+from .splits import estimate_pos_weight, split_rows_grouped
 
 
 @dataclass(frozen=True)

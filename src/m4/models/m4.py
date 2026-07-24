@@ -8,12 +8,8 @@ from typing import Any, Mapping
 import torch
 from torch import Tensor
 
-from .._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from .components import S1SurfaceFieldPredictor  # noqa: E402
-from .config import build_model_from_checkpoint_args  # noqa: E402
+from .components import S1SurfaceFieldPredictor
+from .config import build_model_from_checkpoint_args
 
 
 M4Model = S1SurfaceFieldPredictor
@@ -28,8 +24,8 @@ def build_m4_model(config: Mapping[str, Any]) -> M4Model:
 def forward_m4_batch(model: M4Model, batch: Mapping[str, Any]) -> dict[str, Tensor | Any]:
     """Run M4 on one collated batch.
 
-    Training uses the original dense atom-to-residue assignment because the
-    validated implementation's autograd path was trained that way. Evaluation
+    Training uses the dense atom-to-residue assignment from the published
+    training recipe. Evaluation
     and prediction use the memory-efficient index representation plus static
     geometry caches. Keeping this switch here prevents silent differences
     between the three entry points.

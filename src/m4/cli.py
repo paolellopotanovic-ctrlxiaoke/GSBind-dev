@@ -7,21 +7,17 @@ from typing import Any
 
 import yaml
 
-from ._bootstrap import activate_validated_implementation
-
-
 COMMAND_MODULES = {
     "prepare-input": "m4.inputs",
     "predict": "m4.predictor",
     "train": "m4.lightning.cli",
     "train-lightning": "m4.lightning.cli",
-    "train-legacy": "apex_s1_surface_field.train_s1_surface_field",
-    "eval": "apex_s1_surface_field.eval_s1_surface_field",
-    "build-tensor-cache": "processing.precompute_apex_tensor_cache",
-    "build-graph-cache": "processing.precompute_apex_residue_graph_cache",
-    "build-surface-cache": "apex_s1_surface_field.build_s1_surface_cache",
-    "build-static-cache": "apex_s1_surface_field.build_e89_static_geometry_cache",
-    "audit-manifest": "processing.audit_apex_manifest_ordinal_alignment",
+    "eval": "m4.evaluation.runner",
+    "build-tensor-cache": "m4.preprocessing.tensor_cache",
+    "build-graph-cache": "m4.preprocessing.graph_cache",
+    "build-surface-cache": "m4.preprocessing.surface_cache",
+    "build-static-cache": "m4.preprocessing.static_cache",
+    "audit-manifest": "m4.preprocessing.audit",
 }
 
 
@@ -52,7 +48,6 @@ def _load_config(path: str) -> tuple[str | None, list[str]]:
 
 
 def _dispatch(module_name: str, forwarded: list[str]) -> None:
-    activate_validated_implementation()
     module = __import__(module_name, fromlist=["main"])
     original = sys.argv
     try:

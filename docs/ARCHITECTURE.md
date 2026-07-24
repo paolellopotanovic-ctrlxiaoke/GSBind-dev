@@ -1,8 +1,8 @@
 # Architecture and source-reading guide
 
 M4 is organized by scientific responsibility rather than by experiment history.
-The public implementation is under `src/m4`; `legacy_repo` is a frozen
-numerical oracle and is not the default model or training path.
+The complete implementation is under `src/m4`; every public command uses this
+single code path.
 
 ## Start here
 
@@ -41,6 +41,16 @@ src/m4/models/
         `-- gaussian_flow.py       chunked pair-Gaussian runtime
 ```
 
+The supporting packages are equally explicit:
+
+```text
+src/m4/data/          manifest schema, PDB encoding, datasets, loaders, splits
+src/m4/training/      runtime helpers, teacher adapters, auxiliary objectives
+src/m4/evaluation/    residue/case metrics and strict evaluation runner
+src/m4/preprocessing/ tensor, graph, surface, static-cache builders and audits
+src/m4/lightning/     training module and configuration-driven CLI
+```
+
 The high-level path is:
 
 ```text
@@ -71,26 +81,19 @@ python main.py train --config configs/m4_holo20k.yaml
 - Lightning checkpoints also export the original `model_state_dict` and
   `args` fields so released inference remains compatible.
 
-The original trainer is intentionally available only as an oracle:
-
-```bash
-python main.py train-legacy --config configs/m4_holo20k.yaml
-```
-
-It must not receive new model logic. Changes belong in the modular path and must
-pass the equivalence audit.
-
 ## Equivalence contract
 
-`tests/test_modular_training.py` verifies identical constructor state, parameter
-keys, tensor shapes, strict cross-loading, loss behavior, and epoch-state logic.
-For publication validation, run `scripts/validate_modular_equivalence.py` on a
-CUDA machine with one real cache-backed batch. It compares:
+`tests/test_modular_training.py` verifies deterministic constructor state,
+parameter count and keys, loss behavior, scheduler behavior, and epoch-state
+logic. The final migration was additionally checked against an external,
+read-only copy of the research implementation on a real cache-backed CUDA batch.
+That audit compared:
 
 - eval and train outputs;
 - every objective component;
 - every parameter gradient; and
 - one AdamW update.
 
-The frozen files in `src/m4/legacy_repo` remain SHA-256 pinned so the oracle
-cannot drift while the public architecture evolves.
+The immutable result is stored in
+`docs/validation/final_external_oracle_equivalence.json`; the external source
+copy is not part of the release package or runtime dependency graph.

@@ -9,19 +9,15 @@ from typing import Any, Mapping
 import torch
 from torch import Tensor, nn
 
-from ._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from apex_s1_surface_field.soft_labels import masked_soft_bce  # noqa: E402
-from apex_s1_surface_field.train_s1_surface_field import (  # noqa: E402
+from .data.soft_labels import masked_soft_bce
+from .training.objectives import (
     motif_patch_aux_bce_from_batch,
     pocket_mass_loss_from_batch,
     semantic_patch_losses,
     surface_soft_bce_from_batch,
 )
-from apex_teacher_prior.modules import teacher_logit_distillation_loss  # noqa: E402
-from train_apex_simple import masked_bce  # noqa: E402
+from .training import teacher_logit_distillation_loss
+from .training.runtime import masked_bce
 
 
 @dataclass(frozen=True)

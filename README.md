@@ -51,10 +51,9 @@ The main forward algorithm stays in one file so its operation order is
 auditable. Parameter-free helpers are separated by responsibility under
 [`src/m4/models/components/runtime/`](src/m4/models/components/runtime):
 feature/stochastic transforms, surface flow, and chunked pair-Gaussian flow.
-`src/m4/legacy_repo` contains the frozen numerical oracle and the dependency
-closure for low-level historical operators/cache formats. It is not a public
-training entry: architecture assembly, forward orchestration, losses, data,
-Lightning training, and inference all enter through `src/m4`.
+All model operators, data parsing, cache formats, objectives, evaluation, and
+training logic are implemented directly under `src/m4`; there is no vendored
+research tree or hidden alternate execution path.
 
 For a deeper method-to-code map, continue with
 [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) after reading the three primary
@@ -85,9 +84,8 @@ tests/                      unit and publication-contract tests
 - At least 130 GB of free disk for the complete Holo20k structure and cache
   build. The validated cache occupied approximately 105 GB.
 
-The CPU-only path can inspect source hashes and strictly validate the
-checkpoint, but the complete surface/static-cache/forward example requires
-CUDA.
+The CPU-only path can inspect configs and strictly validate checkpoint loading,
+but the complete surface/static-cache/forward example requires CUDA.
 
 ## Quick start: one real forward pass
 
@@ -98,7 +96,6 @@ git clone https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS.git
 cd Guassion-PPBS
 conda env create -f environment.yml
 conda activate m4
-python scripts/verify_sources.py
 ```
 
 ### 2. Run the bundled 1CRN example
@@ -196,8 +193,8 @@ checkpoint loading.
 
 `prediction_metadata.json` records the checkpoint SHA-256, epoch, device,
 number of cases/residues, and output schema. Technical zero labels created by
-`prepare-input` only preserve deterministic legacy cache keys; prediction never
-treats them as observed negatives.
+`prepare-input` only preserve deterministic manifest-derived cache keys;
+prediction never treats them as observed negatives.
 
 ## Training and evaluation
 
@@ -215,9 +212,8 @@ python main.py build-static-cache --help
 Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the source-reading
 order. The complete model is assembled in
 `src/m4/models/components/predictor.py`; its runtime graph is in
-`src/m4/models/components/execution.py`. The frozen historical trainer remains
-available as `python main.py train-legacy --config ...` solely for numerical
-equivalence audits.
+`src/m4/models/components/execution.py`. Training, evaluation, prediction, and
+all four cache builders call this same implementation.
 
 For the Holo20k experiment:
 
@@ -261,16 +257,16 @@ assets registered in [`assets/datasets.json`](assets/datasets.json).
 
 ```bash
 python -m pytest -q
-python scripts/verify_sources.py
 ```
 
-Five frozen oracle files are pinned by SHA-256 and checked in CI. Local tests,
-tracked-only installation, source hashes, strict checkpoint loading, and exact
-dataset artifact identity pass. A real two-case RTX 4080 audit with the Holo20k
-E4 checkpoint produced identical eval outputs, train outputs, and all 14 loss
-components; the worst gradient difference was `5.22e-8` and the worst
-post-AdamW parameter difference was below `2e-6`. The machine-readable audit is
-registered in [`docs/VALIDATION.md`](docs/VALIDATION.md).
+Local tests, tracked-only installation, strict checkpoint loading, and exact
+dataset artifact identity pass. Before deleting the research implementation,
+the final package was compared against an external read-only copy on two real
+Holo20k cases and an RTX 4080. Evaluation outputs, training outputs, and all 14
+loss components were identical; the worst gradient difference was `5.96e-8`
+and the worst post-AdamW parameter difference was `2.97e-6`. The
+machine-readable audit is registered in
+[`docs/VALIDATION.md`](docs/VALIDATION.md).
 
 See [`docs/VALIDATION.md`](docs/VALIDATION.md),
 [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md), and

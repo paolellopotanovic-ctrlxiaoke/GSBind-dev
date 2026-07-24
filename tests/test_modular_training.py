@@ -95,26 +95,22 @@ def test_objective_matches_explicit_active_terms_without_optional_heads() -> Non
     assert output["logits"].grad is not None
 
 
-def test_modular_model_is_parameter_identical_to_frozen_oracle() -> None:
-    from apex_s1_surface_field.eval_s1_surface_field import build_model_from_ckpt_args
-
+def test_model_parameter_contract_is_deterministic() -> None:
     values = yaml.safe_load((ROOT / "configs" / "m4_holo20k.yaml").read_text(encoding="utf-8"))["args"]
     torch.manual_seed(20260724)
-    oracle = build_model_from_ckpt_args(values)
+    reference = build_m4_model(values)
     torch.manual_seed(20260724)
-    modular = build_m4_model(values)
+    candidate = build_m4_model(values)
 
-    oracle_state = oracle.state_dict()
-    modular_state = modular.state_dict()
-    assert type(modular).__module__ == "m4.models.components.predictor"
-    assert list(modular_state) == list(oracle_state)
-    assert len(modular_state) == 791
-    for key in oracle_state:
-        assert modular_state[key].shape == oracle_state[key].shape
-        assert torch.equal(modular_state[key], oracle_state[key]), key
-
-    modular.load_state_dict(oracle_state, strict=True)
-    oracle.load_state_dict(modular_state, strict=True)
+    reference_state = reference.state_dict()
+    candidate_state = candidate.state_dict()
+    assert type(candidate).__module__ == "m4.models.components.predictor"
+    assert list(candidate_state) == list(reference_state)
+    assert len(candidate_state) == 791
+    assert sum(parameter.numel() for parameter in candidate.parameters()) == 4_360_516
+    for key in reference_state:
+        assert candidate_state[key].shape == reference_state[key].shape
+        assert torch.equal(candidate_state[key], reference_state[key]), key
 
 
 def test_forward_runtime_is_split_by_scientific_responsibility() -> None:
@@ -157,12 +153,12 @@ def test_lightning_epoch_state_matches_semantic_boundary_schedule() -> None:
         pos_weight=1.0,
         run_config={"seed": 42, "semantic_patch_boundary_start_epoch": 3},
     )
-    module.apply_legacy_epoch_state(0)
+    module.apply_epoch_state(0)
     assert model.semantic_patch_head.scale == 0.0
     first = torch.rand(3)
-    module.apply_legacy_epoch_state(0)
+    module.apply_epoch_state(0)
     assert torch.equal(first, torch.rand(3))
-    module.apply_legacy_epoch_state(2)
+    module.apply_epoch_state(2)
     assert model.semantic_patch_head.scale == 1.0
 
 
@@ -202,11 +198,7 @@ def test_concise_holo20k_config_matches_frozen_full_snapshot() -> None:
     }
 
 
-def test_lightning_scheduler_matches_frozen_trainer() -> None:
-    from types import SimpleNamespace
-
-    from apex_s1_surface_field.train_s1_surface_field import build_scheduler
-
+def test_lightning_scheduler_matches_published_recipe() -> None:
     config = M4OptimizationConfig(
         learning_rate=5e-5,
         scheduler="cosine",
@@ -214,30 +206,24 @@ def test_lightning_scheduler_matches_frozen_trainer() -> None:
         warmup_ratio=0.05,
         min_learning_rate=1e-6,
     )
-    legacy_parameter = torch.nn.Parameter(torch.zeros(()))
-    modular_parameter = torch.nn.Parameter(torch.zeros(()))
-    legacy_optimizer = torch.optim.AdamW([legacy_parameter], lr=config.learning_rate)
-    modular_optimizer = torch.optim.AdamW([modular_parameter], lr=config.learning_rate)
-    legacy_scheduler, legacy_info = build_scheduler(
-        SimpleNamespace(
-            scheduler=config.scheduler,
-            scheduler_total_epochs=config.scheduler_total_epochs,
-            epochs=20,
-            max_steps=0,
-            warmup_steps=config.warmup_steps,
-            warmup_ratio=config.warmup_ratio,
-            min_learning_rate=config.min_learning_rate,
-            learning_rate=config.learning_rate,
-        ),
-        legacy_optimizer,
-        2500,
-    )
-    modular_scheduler, modular_info = build_m4_scheduler(config, modular_optimizer, 2500, 20)
-    assert legacy_info == modular_info
-    assert modular_scheduler is not None
-    for _ in range(50001):
-        assert legacy_scheduler.get_last_lr() == modular_scheduler.get_last_lr()
-        legacy_optimizer.step()
-        modular_optimizer.step()
-        legacy_scheduler.step()
-        modular_scheduler.step()
+    parameter = torch.nn.Parameter(torch.zeros(()))
+    optimizer = torch.optim.AdamW([parameter], lr=config.learning_rate)
+    scheduler, info = build_m4_scheduler(config, optimizer, 2500, 20)
+    assert info == {
+        "scheduler": "cosine",
+        "total_steps": 50000,
+        "warmup_steps": 2500,
+        "min_learning_rate": 1e-6,
+    }
+    assert scheduler is not None
+    observed = []
+    for step in range(50001):
+        if step in {0, 2499, 2500, 26250, 50000}:
+            observed.append((step, scheduler.get_last_lr()[0]))
+        optimizer.step()
+        scheduler.step()
+    assert observed[0][1] == config.learning_rate / 2500
+    assert observed[1][1] == config.learning_rate
+    assert observed[2][1] == config.learning_rate
+    assert abs(observed[3][1] - 2.55e-5) < 1e-12
+    assert abs(observed[4][1] - config.min_learning_rate) < 1e-12

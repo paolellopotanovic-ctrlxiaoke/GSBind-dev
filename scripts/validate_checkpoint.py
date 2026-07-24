@@ -11,11 +11,7 @@ import torch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from m4._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from apex_s1_surface_field.eval_s1_surface_field import build_model_from_ckpt_args  # noqa: E402
+from m4.models import build_m4_model
 
 
 def sha256(path: Path) -> str:
@@ -40,7 +36,7 @@ def main() -> None:
         if isinstance(checkpoint, dict) and "model_state_dict" in checkpoint
         else checkpoint
     )
-    model = build_model_from_ckpt_args(checkpoint_args)
+    model = build_m4_model(checkpoint_args)
     incompatible = model.load_state_dict(state, strict=True)
     checkpoint_path = Path(args.checkpoint).resolve()
     checkpoint_hash = sha256(checkpoint_path)

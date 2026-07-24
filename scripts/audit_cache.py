@@ -10,19 +10,15 @@ import torch
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
-from m4._bootstrap import activate_validated_implementation
-
-activate_validated_implementation()
-
-from apex_dataset import (  # noqa: E402
-    ApexPairedManifestDataset,
+from m4.data.manifest import (
+    M4ManifestDataset,
     cache_path_for_row,
     graph_cache_path_for_row,
     read_manifest,
     split_field,
 )
-from apex_s1_surface_field.dataset import s1_static_geometry_cache_path_for_row  # noqa: E402
-from apex_s1_surface_field.surface_cache import s1_surface_cache_path_for_row  # noqa: E402
+from m4.data.dataset import s1_static_geometry_cache_path_for_row
+from m4.models.components.surface_cache import s1_surface_cache_path_for_row
 
 
 def main() -> None:
@@ -54,7 +50,7 @@ def main() -> None:
         "bad_static": 0,
         "zero_valid_rows": 0,
     }
-    dataset = ApexPairedManifestDataset(
+    dataset = M4ManifestDataset(
         rows,
         tensor_cache_dir=tensor,
         require_tensor_cache=True,
