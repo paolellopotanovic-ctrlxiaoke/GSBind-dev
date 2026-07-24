@@ -1,9 +1,13 @@
-"""Stable public import for the exact M4 model implementation."""
+"""Backward-compatible public imports for the exact M4 model."""
 
-from ._bootstrap import activate_validated_implementation
+from .models import M4Model, build_m4_model, forward_m4_batch, load_m4_checkpoint
 
-activate_validated_implementation()
+S1SurfaceFieldPredictor = M4Model
 
-from apex_s1_surface_field.model import S1SurfaceFieldPredictor  # noqa: E402
-
-__all__ = ["S1SurfaceFieldPredictor"]
+__all__ = [
+    "M4Model",
+    "S1SurfaceFieldPredictor",
+    "build_m4_model",
+    "forward_m4_batch",
+    "load_m4_checkpoint",
+]

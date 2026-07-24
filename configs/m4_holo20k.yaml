@@ -20,6 +20,11 @@ args:
   scheduler_total_epochs: 20
   batch_size: 2
   grad_accum_steps: 4
+  num_workers: 2
+  pin_memory: false
+  persistent_workers: false
+  prefetch_factor: 1
+  matmul_precision: high
   learning_rate: 5.0e-5
   weight_decay: 1.0e-4
   scheduler: cosine
@@ -71,6 +76,7 @@ args:
   surface_soft_loss_weight: 0.05
   surface_soft_sigma_tangent: 6.0
   surface_soft_sigma_normal: 3.0
+  surface_soft_max_value: 1.0
   surface_soft_cutoff: 24.0
   surface_soft_label_mode: global_max
   surface_soft_label_topk: 16

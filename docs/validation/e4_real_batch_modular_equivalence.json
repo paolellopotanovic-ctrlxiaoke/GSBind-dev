@@ -1,0 +1,85 @@
+{
+  "pass": true,
+  "date": "2026-07-25",
+  "checkpoint_registry_name": "m4_holo20k_v9_clean_epoch4",
+  "manifest_registry_name": "holo20k_v9_mmseqclean",
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 4080",
+  "case_ids": [
+    "pinder_holo100k::6xb1__A1_P0DTD1-R.pdb",
+    "pinder_holo100k::7aqe__A2_P0DTD1-L.pdb"
+  ],
+  "state_tensors": 791,
+  "parameters": 4360516,
+  "pos_weight": 2.9342911959351174,
+  "label_stats": {
+    "valid": 4174326,
+    "positive": 607742,
+    "positive_rate": 0.14559044981153843
+  },
+  "eval": {
+    "tensor_count": 107,
+    "worst": {
+      "name": "eval.logits",
+      "shape": [
+        612
+      ],
+      "max_abs": 0,
+      "mean_abs": 0
+    },
+    "atol": 1e-7,
+    "pass": true
+  },
+  "train": {
+    "tensor_count": 104,
+    "worst": {
+      "name": "train.logits",
+      "shape": [
+        612
+      ],
+      "max_abs": 0,
+      "mean_abs": 0
+    },
+    "atol": 1e-7,
+    "pass": true
+  },
+  "loss": {
+    "tensor_count": 14,
+    "worst": {
+      "name": "loss.loss",
+      "shape": [],
+      "max_abs": 0,
+      "mean_abs": 0
+    },
+    "atol": 1e-7,
+    "pass": true
+  },
+  "gradient": {
+    "tensor_count": 634,
+    "worst": {
+      "name": "grad.encoder.feature_builder.node_scalar_proj.1.weight",
+      "shape": [
+        128,
+        129
+      ],
+      "max_abs": 5.960464477539063e-8,
+      "mean_abs": 9.321098337622402e-10
+    },
+    "atol": 0.000001,
+    "pass": true
+  },
+  "optimizer_step": {
+    "tensor_count": 790,
+    "worst": {
+      "name": "data.encoder.views.seq_chain.layers.0.msg_gvp2.ws.weight",
+      "shape": [
+        128,
+        144
+      ],
+      "max_abs": 0.0000010654330253601074,
+      "mean_abs": 7.944588736874536e-11
+    },
+    "atol": 0.000003,
+    "pass": true
+  }
+}

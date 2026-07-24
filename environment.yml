@@ -21,3 +21,4 @@ dependencies:
   - pip
   - pip:
       - -e .
+      - lightning>=2.2,<3

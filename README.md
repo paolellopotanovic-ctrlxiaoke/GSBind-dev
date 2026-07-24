@@ -12,9 +12,9 @@ labels are not required at inference time.
 M4 combines residue geometry, multi-scale residue graphs, a 1,024-point
 solvent-accessible surface representation, and a learned Gaussian surface field.
 This repository preserves the exact model tensors and checkpoint keys used by
-the validated research implementation while exposing a small command-line API
-for dataset construction, caching, training, evaluation, and label-free
-inference.
+the validated research implementation while exposing a modular PyTorch
+Lightning codebase for dataset construction, caching, training, evaluation,
+and label-free inference.
 
 > **Scope.** M4 predicts protein-protein interface residues. It is a
 > prioritization model, not a docking engine, affinity predictor, or causal
@@ -25,7 +25,7 @@ inference.
 ```text
 main.py                     unified train/eval/cache/data-entry CLI
 inference.py                label-free per-residue prediction CLI
-src/m4/                     public API and exact validated M4 implementation
+src/m4/                     modular model, data, loss, Lightning, and inference code
 configs/                    paper training and fine-tuning configurations
 scripts/run_1crn_example.py one-command checkpoint-to-forward example
 scripts/dataset/            Pinder construction, union, selection, and audits
@@ -34,6 +34,27 @@ examples/inference/         included 1CRN receptor-only example
 docs/                       architecture, data, experiment, and validation docs
 tests/                      unit and publication-contract tests
 ```
+
+## Read the model code
+
+An external reader can understand the method without opening the historical
+experiment snapshot:
+
+1. [`src/m4/models/components/predictor.py`](src/m4/models/components/predictor.py)
+   assembles the complete architecture.
+2. [`src/m4/models/components/execution.py`](src/m4/models/components/execution.py)
+   shows the full forward dataflow.
+3. [`src/m4/models/components/gaussian_projection.py`](src/m4/models/components/gaussian_projection.py)
+   and [`pair_gaussian.py`](src/m4/models/components/pair_gaussian.py) implement
+   the Gaussian surface field.
+4. [`src/m4/losses.py`](src/m4/losses.py) defines every supervised objective.
+5. [`src/m4/data/datamodule.py`](src/m4/data/datamodule.py) and
+   [`src/m4/lightning/module.py`](src/m4/lightning/module.py) define the
+   reproducible training system.
+
+The detailed method-to-file map is in
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). `src/m4/legacy_repo` is a frozen,
+SHA-pinned numerical oracle; it is not the default model or training entry.
 
 ## Requirements
 
@@ -161,7 +182,7 @@ treats them as observed negatives.
 
 ## Training and evaluation
 
-The unified CLI forwards to the exact validated implementation:
+The unified CLI trains the modular implementation through PyTorch Lightning:
 
 ```bash
 python main.py train --config configs/m4_holo20k.yaml
@@ -171,6 +192,13 @@ python main.py build-graph-cache --help
 python main.py build-surface-cache --help
 python main.py build-static-cache --help
 ```
+
+Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the source-reading
+order. The complete model is assembled in
+`src/m4/models/components/predictor.py`; its runtime graph is in
+`src/m4/models/components/execution.py`. The frozen historical trainer remains
+available as `python main.py train-legacy --config ...` solely for numerical
+equivalence audits.
 
 For the Holo20k experiment:
 
@@ -217,12 +245,13 @@ python -m pytest -q
 python scripts/verify_sources.py
 ```
 
-Five critical implementation files are pinned by SHA-256 and checked in CI.
-Local tests, tracked-only installation, source hashes, strict checkpoint
-loading, and exact dataset artifact identity pass. The v0.1.0 bundle remains a
-prerelease for inference and external validation. Same-GPU old/release logit
-equivalence and deterministic one-step training equivalence remain required
-before claiming exact numerical end-to-end reproduction.
+Five frozen oracle files are pinned by SHA-256 and checked in CI. Local tests,
+tracked-only installation, source hashes, strict checkpoint loading, and exact
+dataset artifact identity pass. A real two-case RTX 4080 audit with the Holo20k
+E4 checkpoint produced identical eval outputs, train outputs, and all 14 loss
+components; the worst gradient difference was `5.22e-8` and the worst
+post-AdamW parameter difference was below `2e-6`. The machine-readable audit is
+registered in [`docs/VALIDATION.md`](docs/VALIDATION.md).
 
 See [`docs/VALIDATION.md`](docs/VALIDATION.md),
 [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md), and

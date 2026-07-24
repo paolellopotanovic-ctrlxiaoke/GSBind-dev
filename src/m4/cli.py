@@ -13,7 +13,9 @@ from ._bootstrap import activate_validated_implementation
 COMMAND_MODULES = {
     "prepare-input": "m4.inputs",
     "predict": "m4.predictor",
-    "train": "apex_s1_surface_field.train_s1_surface_field",
+    "train": "m4.lightning.cli",
+    "train-lightning": "m4.lightning.cli",
+    "train-legacy": "apex_s1_surface_field.train_s1_surface_field",
     "eval": "apex_s1_surface_field.eval_s1_surface_field",
     "build-tensor-cache": "processing.precompute_apex_tensor_cache",
     "build-graph-cache": "processing.precompute_apex_residue_graph_cache",
@@ -74,6 +76,9 @@ def main(argv: list[str] | None = None) -> None:
     known, forwarded = parser.parse_known_args(raw)
     command = known.command
     if known.config:
+        if command in {"train", "train-lightning"}:
+            _dispatch(COMMAND_MODULES[command], ["--config", known.config, *forwarded])
+            return
         config_command, config_args = _load_config(known.config)
         if config_command and config_command != command:
             parser.error(f"config command '{config_command}' does not match '{command}'")

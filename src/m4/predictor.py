@@ -11,15 +11,12 @@ import torch
 
 from ._bootstrap import activate_validated_implementation
 from .inputs import residue_records_from_pdb
+from .models import build_m4_model, forward_m4_batch
 
 activate_validated_implementation()
 
 from apex_dataset import read_manifest, split_field  # noqa: E402
-from apex_s1_surface_field.eval_s1_surface_field import (  # noqa: E402
-    build_loader,
-    build_model_from_ckpt_args,
-    model_forward,
-)
+from apex_s1_surface_field.eval_s1_surface_field import build_loader  # noqa: E402
 from train_apex_simple import move_batch_to_device  # noqa: E402
 
 
@@ -123,7 +120,7 @@ def predict(args: argparse.Namespace) -> dict[str, object]:
     device = _resolve_device(args.device)
     if args.matmul_precision:
         torch.set_float32_matmul_precision(args.matmul_precision)
-    model = build_model_from_ckpt_args(ckpt_args).to(device)
+    model = build_m4_model(ckpt_args).to(device)
     incompatible = model.load_state_dict(checkpoint["model_state_dict"], strict=True)
     if incompatible.missing_keys or incompatible.unexpected_keys:
         raise RuntimeError("Strict checkpoint loading returned incompatible keys")
@@ -139,7 +136,7 @@ def predict(args: argparse.Namespace) -> dict[str, object]:
                     + "; ".join(str(reason) for reason in batch.get("skip_reasons", []))
                 )
             batch = move_batch_to_device(batch, device)
-            output = model_forward(model, batch)
+            output = forward_m4_batch(model, batch)
             offset = 0
             counts = batch["residue_counts"].detach().cpu().tolist()
             for sample_index, raw_count in enumerate(counts):

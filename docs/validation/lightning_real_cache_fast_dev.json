@@ -1,0 +1,37 @@
+{
+  "pass": true,
+  "date": "2026-07-25",
+  "environment": {
+    "python": "3.10.8",
+    "torch": "2.1.2+cu121",
+    "lightning": "2.6.5",
+    "cuda_runtime": "12.1",
+    "gpu": "NVIDIA GeForce RTX 4080"
+  },
+  "data": {
+    "manifest_registry_name": "holo20k_v9_mmseqclean",
+    "cache_families": [
+      "tensor",
+      "residue_graph",
+      "surface",
+      "static_geometry"
+    ],
+    "batch_size": 2,
+    "gradient_accumulation": 4
+  },
+  "trainer": {
+    "engine": "PyTorch Lightning",
+    "precision": "16-mixed",
+    "fast_dev_run_batches": 1,
+    "optimizer": "AdamW",
+    "scheduler": "warmup + cosine",
+    "completed_optimizer_steps": 1,
+    "stop_reason": "max_steps=1 reached",
+    "displayed_seconds_per_step": 2.27,
+    "displayed_train_loss": 1.11
+  },
+  "notes": [
+    "The run used configs/m4_holo20k.yaml with only local path and num_workers overrides.",
+    "Checkpointing and logging are intentionally suppressed by Lightning fast_dev_run."
+  ]
+}

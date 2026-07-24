@@ -24,6 +24,9 @@ dependencies = [
   "tqdm",
 ]
 
+[project.optional-dependencies]
+train = ["lightning>=2.2,<3"]
+
 [project.scripts]
 m4 = "m4.cli:main"
 m4-inference = "m4.cli:inference_main"
