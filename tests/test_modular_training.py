@@ -117,6 +117,29 @@ def test_modular_model_is_parameter_identical_to_frozen_oracle() -> None:
     oracle.load_state_dict(modular_state, strict=True)
 
 
+def test_forward_runtime_is_split_by_scientific_responsibility() -> None:
+    from m4.models.components.execution import M4ExecutionMixin
+    from m4.models.components.runtime import (
+        GaussianFlowMixin,
+        StochasticRuntimeMixin,
+        SurfaceFlowMixin,
+    )
+
+    assert M4ExecutionMixin.__bases__ == (
+        StochasticRuntimeMixin,
+        SurfaceFlowMixin,
+        GaussianFlowMixin,
+    )
+    assert {name for name in M4ExecutionMixin.__dict__ if name.startswith("_")} == {
+        "__module__",
+        "__doc__",
+    }
+    assert M4ExecutionMixin.forward.__module__ == "m4.models.components.execution"
+    assert StochasticRuntimeMixin.__module__.endswith("runtime.stochastic")
+    assert SurfaceFlowMixin.__module__.endswith("runtime.surface_flow")
+    assert GaussianFlowMixin.__module__.endswith("runtime.gaussian_flow")
+
+
 def test_lightning_epoch_state_matches_semantic_boundary_schedule() -> None:
     class SemanticHead:
         def __init__(self):

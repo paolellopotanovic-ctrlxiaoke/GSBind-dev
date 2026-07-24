@@ -5,6 +5,132 @@ import math
 import torch as pt
 
 
+def build_gaussian_projector(
+    *,
+    projection_mode,
+    dim,
+    surface_residue_topk,
+    sigma_tangent,
+    sigma_normal,
+    multiscale_sigmas,
+    residue_amplitude_mode,
+    residue_amplitude_min,
+    residue_amplitude_max,
+    phys_feature_dim,
+    true_feature_dim,
+    atom_feature_dim,
+    surface_patch_count,
+    dropout,
+):
+    """Construct the configured residue-to-surface Gaussian field."""
+
+    if projection_mode == "multiscale":
+        return MultiScaleGaussianResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs=multiscale_sigmas,
+            dropout=dropout,
+        )
+    if projection_mode == "single":
+        return GaussianResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=surface_residue_topk,
+            sigma_t=sigma_tangent,
+            sigma_n=sigma_normal,
+            dropout=dropout,
+        )
+    if projection_mode == "multiscale_global":
+        return GlobalWeightedMultiScaleGaussianResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs=multiscale_sigmas,
+            dropout=dropout,
+        )
+    if projection_mode in {"multiscale_learned", "anisotropic_sigma"}:
+        return LearnableScaleGaussianResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs=multiscale_sigmas,
+            dropout=dropout,
+        )
+    if projection_mode == "per_residue_sigma":
+        return PerResidueAdaptiveGaussianResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs=multiscale_sigmas,
+            learn_amplitude=residue_amplitude_mode == "bounded",
+            amplitude_min=residue_amplitude_min,
+            amplitude_max=residue_amplitude_max,
+            dropout=dropout,
+        )
+    if projection_mode == "full_learnable_covariance":
+        return FullLearnableCovarianceGaussianResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs=multiscale_sigmas,
+            amplitude_min=residue_amplitude_min,
+            amplitude_max=residue_amplitude_max,
+            dropout=dropout,
+        )
+    if projection_mode == "phys_gaussian_field":
+        return PhysChemGaussianFieldResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs=multiscale_sigmas,
+            dropout=dropout,
+            phys_feature_dim=max(phys_feature_dim, true_feature_dim, 1),
+        )
+    if projection_mode == "mixture_ball_k4":
+        return MixtureBallGaussianResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs="3:1.5,5:2.5,8:4,14:7",
+            dropout=dropout,
+        )
+    if projection_mode == "local3d_frame":
+        return Local3DFrameResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            dropout=dropout,
+        )
+    if projection_mode == "local3d_atom_pointcloud":
+        return Local3DAtomPointCloudResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs=multiscale_sigmas,
+            dropout=dropout,
+            atom_feature_dim=atom_feature_dim,
+            atom_topk=32,
+        )
+    if projection_mode == "local3d_patch_pointcloud":
+        return Local3DPatchPointCloudResidueToSurfaceProjector(
+            dim=dim,
+            geom_dim=6,
+            residue_topk=max(surface_residue_topk, 16),
+            sigma_pairs=multiscale_sigmas,
+            dropout=dropout,
+            atom_feature_dim=atom_feature_dim,
+            atom_topk=32,
+            patch_count=surface_patch_count,
+        )
+    raise ValueError(
+        "projection_mode must be one of: single, multiscale, multiscale_global, "
+        "multiscale_learned, anisotropic_sigma, per_residue_sigma, "
+        "phys_gaussian_field, mixture_ball_k4, local3d_frame, "
+        "local3d_atom_pointcloud, local3d_patch_pointcloud"
+    )
+
+
 class GaussianResidueToSurfaceProjector(pt.nn.Module):
     def __init__(self, dim=128, geom_dim=6, residue_topk=8, sigma_t=6.0, sigma_n=3.0, dropout=0.1):
         super().__init__()

@@ -27,11 +27,14 @@ and frozen oracle were loaded independently.
 | Evaluation forward | 107 | 0 |
 | Training forward | 104 | 0 |
 | Loss components | 14 | 0 |
-| Parameter gradients | 634 | 5.96e-8 |
-| Parameters after one AdamW step | 790 | 1.07e-6 |
+| Parameter gradients | 634 | 6.33e-8 |
+| Parameters after one AdamW step | 790 | 4.86e-7 |
 
-The full report is
+The original modularization report is
 [`docs/validation/e4_real_batch_modular_equivalence.json`](validation/e4_real_batch_modular_equivalence.json).
+The runtime/factory refactor was independently rerun on the same two-case
+RTX 4080 audit and is recorded in
+[`docs/validation/e4_runtime_refactor_equivalence.json`](validation/e4_runtime_refactor_equivalence.json).
 The reusable command is `scripts/validate_modular_equivalence.py`; it fails on
 state-key drift, skipped cache cases, output/loss differences, gradient drift,
 or optimizer-step drift.

@@ -4,10 +4,7 @@ This is the paper-facing implementation. The frozen legacy module remains only
 as a numerical oracle for equivalence tests.
 """
 
-import math
-
 import torch as pt
-from torch.utils.checkpoint import checkpoint as torch_checkpoint
 
 from apex_multigraph_plus.model import (
     GlobalContextFeedback,
@@ -16,7 +13,6 @@ from apex_multigraph_plus.model import (
     StaticResidueMultiplexGVPEncoder,
 )
 from apex_generic_gvp_augfeat.model import AugFeatureBuilder
-from apex_s1_surface_field.surface_cache import build_s1_surface_proxy_cache
 from apex_s1_surface_field.semantic_patch import SemanticConnectedPatchHead
 from apex_teacher_prior.modules import TeacherHiddenAdapter
 
@@ -29,21 +25,10 @@ from .cross_scale import (
     SurfaceBusFromViews,
 )
 from .gaussian_projection import (
-    FullLearnableCovarianceGaussianResidueToSurfaceProjector,
-    GaussianResidueToSurfaceProjector,
-    GlobalWeightedMultiScaleGaussianResidueToSurfaceProjector,
-    LearnableScaleGaussianResidueToSurfaceProjector,
-    Local3DAtomPointCloudResidueToSurfaceProjector,
-    Local3DFrameResidueToSurfaceProjector,
-    Local3DPatchPointCloudResidueToSurfaceProjector,
-    MixtureBallGaussianResidueToSurfaceProjector,
-    MultiScaleGaussianResidueToSurfaceProjector,
-    PerResidueAdaptiveGaussianResidueToSurfaceProjector,
-    PhysChemGaussianFieldResidueToSurfaceProjector,
+    build_gaussian_projector,
 )
 from .pair_gaussian import (
-    PairGaussianResidueToSurfaceCorrection,
-    TripletGaussianResidueToSurfaceCorrection,
+    build_pair_gaussian_modules,
 )
 from .residue_encoder import (
     AtomPreResidueEncoder,
@@ -80,11 +65,11 @@ def _parse_positive_ints(value):
 
 
 class S1SurfaceFieldPredictor(M4ExecutionMixin, pt.nn.Module):
-    """A4-conditioned Surface Interface Field.
+    """M4 receptor-only protein-interface predictor.
 
-    Default loss is intentionally simple: final residue BCE plus a small base
-    A4 auxiliary BCE. The surface branch is supervised through residue labels
-    unless the training script explicitly adds pseudo-label losses later.
+    This composition root registers the residue, Gaussian surface-field,
+    surface-graph, cross-scale fusion, semantic-patch, and output modules.
+    Runtime operation order is implemented by :class:`M4ExecutionMixin`.
     """
 
     def __init__(
@@ -260,6 +245,7 @@ class S1SurfaceFieldPredictor(M4ExecutionMixin, pt.nn.Module):
         semantic_patch_boundary_temperature=0.7,
     ):
         super().__init__()
+        # Stage 1: atom features and multi-view residue graph backbone.
         self.use_augmented_features = bool(use_augmented_features)
         self.residue_feature_dim = int(residue_feature_dim)
         self.use_true_features = bool(use_true_features)
@@ -460,6 +446,8 @@ class S1SurfaceFieldPredictor(M4ExecutionMixin, pt.nn.Module):
                 pt.nn.Sigmoid(),
             )
             self.surface_bus_view_norm = pt.nn.LayerNorm(dim)
+
+        # Stage 2: surface geometry and residue/surface interaction contract.
         self.aug_feature_builder = None
         if self.use_augmented_features:
             self.aug_feature_builder = AugFeatureBuilder(atom_feature_dim=atom_feature_dim, residue_feature_dim=self.residue_feature_dim)
@@ -660,113 +648,25 @@ class S1SurfaceFieldPredictor(M4ExecutionMixin, pt.nn.Module):
         self.residue_amplitude_mode = str(residue_amplitude_mode)
         if self.residue_amplitude_mode not in {"none", "bounded"}:
             raise ValueError("residue_amplitude_mode must be one of: none, bounded")
+
+        # Stage 3: residue-conditioned Gaussian surface field.
         self.projection_mode = str(projection_mode)
-        if self.projection_mode == "multiscale":
-            self.res_to_surface = MultiScaleGaussianResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs=multiscale_sigmas,
-                dropout=dropout,
-            )
-        elif self.projection_mode == "single":
-            self.res_to_surface = GaussianResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=surface_residue_topk,
-                sigma_t=sigma_tangent,
-                sigma_n=sigma_normal,
-                dropout=dropout,
-            )
-        elif self.projection_mode == "multiscale_global":
-            self.res_to_surface = GlobalWeightedMultiScaleGaussianResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs=multiscale_sigmas,
-                dropout=dropout,
-            )
-        elif self.projection_mode in {"multiscale_learned", "anisotropic_sigma"}:
-            self.res_to_surface = LearnableScaleGaussianResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs=multiscale_sigmas,
-                dropout=dropout,
-            )
-        elif self.projection_mode == "per_residue_sigma":
-            self.res_to_surface = PerResidueAdaptiveGaussianResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs=multiscale_sigmas,
-                learn_amplitude=self.residue_amplitude_mode == "bounded",
-                amplitude_min=residue_amplitude_min,
-                amplitude_max=residue_amplitude_max,
-                dropout=dropout,
-            )
-        elif self.projection_mode == "full_learnable_covariance":
-            self.res_to_surface = FullLearnableCovarianceGaussianResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs=multiscale_sigmas,
-                amplitude_min=residue_amplitude_min,
-                amplitude_max=residue_amplitude_max,
-                dropout=dropout,
-            )
-        elif self.projection_mode == "phys_gaussian_field":
-            self.res_to_surface = PhysChemGaussianFieldResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs=multiscale_sigmas,
-                dropout=dropout,
-                phys_feature_dim=max(phys_feature_dim, true_feature_dim, 1),
-            )
-        elif self.projection_mode == "mixture_ball_k4":
-            self.res_to_surface = MixtureBallGaussianResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs="3:1.5,5:2.5,8:4,14:7",
-                dropout=dropout,
-            )
-        elif self.projection_mode == "local3d_frame":
-            self.res_to_surface = Local3DFrameResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                dropout=dropout,
-            )
-        elif self.projection_mode == "local3d_atom_pointcloud":
-            self.res_to_surface = Local3DAtomPointCloudResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs=multiscale_sigmas,
-                dropout=dropout,
-                atom_feature_dim=atom_feature_dim,
-                atom_topk=32,
-            )
-        elif self.projection_mode == "local3d_patch_pointcloud":
-            self.res_to_surface = Local3DPatchPointCloudResidueToSurfaceProjector(
-                dim=dim,
-                geom_dim=6,
-                residue_topk=max(surface_residue_topk, 16),
-                sigma_pairs=multiscale_sigmas,
-                dropout=dropout,
-                atom_feature_dim=atom_feature_dim,
-                atom_topk=32,
-                patch_count=surface_patch_count,
-            )
-        else:
-            raise ValueError(
-                "projection_mode must be one of: single, multiscale, multiscale_global, "
-                "multiscale_learned, anisotropic_sigma, per_residue_sigma, "
-                "phys_gaussian_field, mixture_ball_k4, local3d_frame, "
-                "local3d_atom_pointcloud, local3d_patch_pointcloud"
-            )
+        self.res_to_surface = build_gaussian_projector(
+            projection_mode=self.projection_mode,
+            dim=dim,
+            surface_residue_topk=surface_residue_topk,
+            sigma_tangent=sigma_tangent,
+            sigma_normal=sigma_normal,
+            multiscale_sigmas=multiscale_sigmas,
+            residue_amplitude_mode=self.residue_amplitude_mode,
+            residue_amplitude_min=residue_amplitude_min,
+            residue_amplitude_max=residue_amplitude_max,
+            phys_feature_dim=phys_feature_dim,
+            true_feature_dim=true_feature_dim,
+            atom_feature_dim=atom_feature_dim,
+            surface_patch_count=surface_patch_count,
+            dropout=dropout,
+        )
         if self.surface_encoder_mode == "gvp":
             self.surface_encoder = SurfacePointGVPGraphEncoder(
                 dim=dim,
@@ -880,109 +780,68 @@ class S1SurfaceFieldPredictor(M4ExecutionMixin, pt.nn.Module):
                 dropout=dropout,
                 attention_heads=surface_patch_attention_heads,
             )
+
+        # Stage 4: pair/triplet field corrections in registration order.
         self.pair_gaussian = None
         self.pair_gaussian_multiview = None
         self.pair_gaussian_multiview_mix = None
         self.pair_gaussian_multiview_gate = None
         self.pair_gaussian_multiview_norm = None
         self.triplet_gaussian = None
-        if self.pair_gaussian_mode != "none" and float(pair_gaussian_beta) != 0.0:
-            self.pair_gaussian = PairGaussianResidueToSurfaceCorrection(
-                dim=dim,
-                geom_dim=6,
-                pair_topk=pair_gaussian_topk,
-                sigma_t=pair_gaussian_sigma_tangent,
-                sigma_n=pair_gaussian_sigma_normal,
-                sigma_mode=pair_gaussian_sigma_mode,
-                sigma_min=pair_gaussian_sigma_min,
-                beta=pair_gaussian_beta,
-                mode=self.pair_gaussian_mode,
-                joint_mode=self.pair_gaussian_joint_mode,
-                fusion_mode="coattn" if self.pair_gaussian_fusion_mode == "coattn" else "residual",
-                content_mode=self.pair_gaussian_content_mode,
-                content_weight=self.pair_gaussian_content_weight,
-                rho_condition_mode=self.pair_gaussian_rho_condition_mode,
-                vector_condition_mode=pair_gaussian_vector_condition_mode,
-                single_compete_mode=self.pair_gaussian_single_compete_mode,
-                single_rescue_beta=self.pair_gaussian_single_rescue_beta,
-                vector_dim=vector_dim,
-                dropout=dropout,
-            )
-            if self.pair_gaussian_beta_mode == "learned_deep":
-                beta_init = min(max(self.pair_gaussian_beta_init, self.pair_gaussian_beta_min + 1e-6), self.pair_gaussian_beta_max - 1e-6)
-                beta_ratio = (beta_init - self.pair_gaussian_beta_min) / (self.pair_gaussian_beta_max - self.pair_gaussian_beta_min)
-                beta_logit = math.log(beta_ratio / max(1.0 - beta_ratio, 1e-12))
-                deep_rounds = max(1, self.surface_co_update_layers - 1 if self.surface_co_update_mode != "none" else self.core_cycles - 1)
-                self.pair_gaussian_deep_beta_logits = pt.nn.Parameter(pt.full((deep_rounds,), float(beta_logit)))
-            if self.pair_gaussian_multiview_mode != "none" and self.pair_gaussian_multiview_beta != 0.0:
-                view_count = len(tuple(graph_views))
-                self.pair_gaussian_multiview = pt.nn.ModuleList(
-                    [
-                        PairGaussianResidueToSurfaceCorrection(
-                            dim=dim,
-                            geom_dim=6,
-                            pair_topk=pair_gaussian_topk,
-                            sigma_t=pair_gaussian_sigma_tangent,
-                            sigma_n=pair_gaussian_sigma_normal,
-                            sigma_mode=pair_gaussian_sigma_mode,
-                            sigma_min=pair_gaussian_sigma_min,
-                            beta=pair_gaussian_beta,
-                            mode=self.pair_gaussian_mode,
-                            joint_mode=self.pair_gaussian_joint_mode,
-                            fusion_mode="residual",
-                            content_mode=self.pair_gaussian_content_mode,
-                            content_weight=self.pair_gaussian_content_weight,
-                            rho_condition_mode=self.pair_gaussian_rho_condition_mode,
-                            vector_condition_mode=pair_gaussian_vector_condition_mode,
-                            single_compete_mode=self.pair_gaussian_single_compete_mode,
-                            single_rescue_beta=self.pair_gaussian_single_rescue_beta,
-                            vector_dim=vector_dim,
-                            dropout=dropout,
-                        )
-                        for _ in range(view_count)
-                    ]
-                )
-                self.pair_gaussian_multiview_mix = pt.nn.Sequential(
-                    pt.nn.LayerNorm(dim * view_count),
-                    pt.nn.Linear(dim * view_count, dim),
-                    pt.nn.GELU(),
-                    pt.nn.Dropout(dropout),
-                    pt.nn.Linear(dim, dim),
-                )
-                self.pair_gaussian_multiview_gate = pt.nn.Sequential(
-                    pt.nn.LayerNorm(dim * 2 + 6),
-                    pt.nn.Linear(dim * 2 + 6, dim),
-                    pt.nn.GELU(),
-                    pt.nn.Dropout(dropout),
-                    pt.nn.Linear(dim, dim),
-                    pt.nn.Sigmoid(),
-                )
-                self.pair_gaussian_multiview_norm = pt.nn.LayerNorm(dim)
-        if self.triplet_gaussian_mode != "none" and float(triplet_gaussian_beta) != 0.0:
-            self.triplet_gaussian = TripletGaussianResidueToSurfaceCorrection(
-                dim=dim,
-                geom_dim=6,
-                triplet_topk=triplet_gaussian_topk,
-                sigma_t=triplet_gaussian_sigma_tangent,
-                sigma_n=triplet_gaussian_sigma_normal,
-                beta=triplet_gaussian_beta,
-                mode=self.triplet_gaussian_mode,
-                dropout=dropout,
-                score_temperature=triplet_gaussian_score_temperature,
-                score_clamp=triplet_gaussian_score_clamp,
-                preselect_topm=triplet_gaussian_preselect_topm,
-            )
-            if self.triplet_gaussian_beta_mode == "learned_deep":
-                beta_init = min(
-                    max(self.triplet_gaussian_beta_init, self.triplet_gaussian_beta_min + 1e-6),
-                    self.triplet_gaussian_beta_max - 1e-6,
-                )
-                beta_ratio = (beta_init - self.triplet_gaussian_beta_min) / (
-                    self.triplet_gaussian_beta_max - self.triplet_gaussian_beta_min
-                )
-                beta_logit = math.log(beta_ratio / max(1.0 - beta_ratio, 1e-6))
-                deep_rounds = max(1, self.core_cycles * (self.global_feedback_rounds + self.surface_global_feedback_rounds))
-                self.triplet_gaussian_deep_beta_logits = pt.nn.Parameter(pt.full((deep_rounds,), float(beta_logit)))
+        gaussian_modules = build_pair_gaussian_modules(
+            dim=dim,
+            vector_dim=vector_dim,
+            graph_views=graph_views,
+            dropout=dropout,
+            pair_mode=self.pair_gaussian_mode,
+            pair_topk=pair_gaussian_topk,
+            pair_beta=pair_gaussian_beta,
+            pair_sigma_tangent=pair_gaussian_sigma_tangent,
+            pair_sigma_normal=pair_gaussian_sigma_normal,
+            pair_sigma_mode=pair_gaussian_sigma_mode,
+            pair_sigma_min=pair_gaussian_sigma_min,
+            pair_joint_mode=self.pair_gaussian_joint_mode,
+            pair_fusion_mode=self.pair_gaussian_fusion_mode,
+            pair_content_mode=self.pair_gaussian_content_mode,
+            pair_content_weight=self.pair_gaussian_content_weight,
+            pair_rho_condition_mode=self.pair_gaussian_rho_condition_mode,
+            pair_vector_condition_mode=pair_gaussian_vector_condition_mode,
+            pair_single_compete_mode=self.pair_gaussian_single_compete_mode,
+            pair_single_rescue_beta=self.pair_gaussian_single_rescue_beta,
+            pair_beta_mode=self.pair_gaussian_beta_mode,
+            pair_beta_min=self.pair_gaussian_beta_min,
+            pair_beta_max=self.pair_gaussian_beta_max,
+            pair_beta_init=self.pair_gaussian_beta_init,
+            pair_multiview_mode=self.pair_gaussian_multiview_mode,
+            pair_multiview_beta=self.pair_gaussian_multiview_beta,
+            surface_co_update_mode=self.surface_co_update_mode,
+            surface_co_update_layers=self.surface_co_update_layers,
+            core_cycles=self.core_cycles,
+            triplet_mode=self.triplet_gaussian_mode,
+            triplet_topk=triplet_gaussian_topk,
+            triplet_beta=triplet_gaussian_beta,
+            triplet_sigma_tangent=triplet_gaussian_sigma_tangent,
+            triplet_sigma_normal=triplet_gaussian_sigma_normal,
+            triplet_score_temperature=triplet_gaussian_score_temperature,
+            triplet_score_clamp=triplet_gaussian_score_clamp,
+            triplet_preselect_topm=triplet_gaussian_preselect_topm,
+            triplet_beta_mode=self.triplet_gaussian_beta_mode,
+            triplet_beta_min=self.triplet_gaussian_beta_min,
+            triplet_beta_max=self.triplet_gaussian_beta_max,
+            triplet_beta_init=self.triplet_gaussian_beta_init,
+            global_feedback_rounds=self.global_feedback_rounds,
+            surface_global_feedback_rounds=self.surface_global_feedback_rounds,
+        )
+        self.pair_gaussian = gaussian_modules["pair"]
+        self.pair_gaussian_deep_beta_logits = gaussian_modules["pair_deep_beta"]
+        self.pair_gaussian_multiview = gaussian_modules["pair_multiview"]
+        self.pair_gaussian_multiview_mix = gaussian_modules["pair_multiview_mix"]
+        self.pair_gaussian_multiview_gate = gaussian_modules["pair_multiview_gate"]
+        self.pair_gaussian_multiview_norm = gaussian_modules["pair_multiview_norm"]
+        self.triplet_gaussian = gaussian_modules["triplet"]
+        self.triplet_gaussian_deep_beta_logits = gaussian_modules["triplet_deep_beta"]
+
+        # Stage 5: cross-scale fusion and final residue-level prediction heads.
         self.surface_head = InterfaceHead(dim=dim, dropout=dropout)
         self.same_level_head = InterfaceHead(dim=dim, dropout=dropout)
         self.same_level_fusion = pt.nn.Sequential(

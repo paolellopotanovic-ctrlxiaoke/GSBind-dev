@@ -7,6 +7,172 @@ import torch as pt
 from .gaussian_projection import inverse_softplus
 
 
+def build_pair_gaussian_modules(
+    *,
+    dim,
+    vector_dim,
+    graph_views,
+    dropout,
+    pair_mode,
+    pair_topk,
+    pair_beta,
+    pair_sigma_tangent,
+    pair_sigma_normal,
+    pair_sigma_mode,
+    pair_sigma_min,
+    pair_joint_mode,
+    pair_fusion_mode,
+    pair_content_mode,
+    pair_content_weight,
+    pair_rho_condition_mode,
+    pair_vector_condition_mode,
+    pair_single_compete_mode,
+    pair_single_rescue_beta,
+    pair_beta_mode,
+    pair_beta_min,
+    pair_beta_max,
+    pair_beta_init,
+    pair_multiview_mode,
+    pair_multiview_beta,
+    surface_co_update_mode,
+    surface_co_update_layers,
+    core_cycles,
+    triplet_mode,
+    triplet_topk,
+    triplet_beta,
+    triplet_sigma_tangent,
+    triplet_sigma_normal,
+    triplet_score_temperature,
+    triplet_score_clamp,
+    triplet_preselect_topm,
+    triplet_beta_mode,
+    triplet_beta_min,
+    triplet_beta_max,
+    triplet_beta_init,
+    global_feedback_rounds,
+    surface_global_feedback_rounds,
+):
+    """Construct pair/triplet corrections in checkpoint registration order."""
+
+    modules = {
+        "pair": None,
+        "pair_deep_beta": None,
+        "pair_multiview": None,
+        "pair_multiview_mix": None,
+        "pair_multiview_gate": None,
+        "pair_multiview_norm": None,
+        "triplet": None,
+        "triplet_deep_beta": None,
+    }
+    if pair_mode != "none" and float(pair_beta) != 0.0:
+        modules["pair"] = PairGaussianResidueToSurfaceCorrection(
+            dim=dim,
+            geom_dim=6,
+            pair_topk=pair_topk,
+            sigma_t=pair_sigma_tangent,
+            sigma_n=pair_sigma_normal,
+            sigma_mode=pair_sigma_mode,
+            sigma_min=pair_sigma_min,
+            beta=pair_beta,
+            mode=pair_mode,
+            joint_mode=pair_joint_mode,
+            fusion_mode="coattn" if pair_fusion_mode == "coattn" else "residual",
+            content_mode=pair_content_mode,
+            content_weight=pair_content_weight,
+            rho_condition_mode=pair_rho_condition_mode,
+            vector_condition_mode=pair_vector_condition_mode,
+            single_compete_mode=pair_single_compete_mode,
+            single_rescue_beta=pair_single_rescue_beta,
+            vector_dim=vector_dim,
+            dropout=dropout,
+        )
+        if pair_beta_mode == "learned_deep":
+            beta_init = min(max(pair_beta_init, pair_beta_min + 1e-6), pair_beta_max - 1e-6)
+            beta_ratio = (beta_init - pair_beta_min) / (pair_beta_max - pair_beta_min)
+            beta_logit = math.log(beta_ratio / max(1.0 - beta_ratio, 1e-12))
+            deep_rounds = max(
+                1,
+                surface_co_update_layers - 1 if surface_co_update_mode != "none" else core_cycles - 1,
+            )
+            modules["pair_deep_beta"] = pt.nn.Parameter(
+                pt.full((deep_rounds,), float(beta_logit))
+            )
+        if pair_multiview_mode != "none" and pair_multiview_beta != 0.0:
+            view_count = len(tuple(graph_views))
+            modules["pair_multiview"] = pt.nn.ModuleList(
+                [
+                    PairGaussianResidueToSurfaceCorrection(
+                        dim=dim,
+                        geom_dim=6,
+                        pair_topk=pair_topk,
+                        sigma_t=pair_sigma_tangent,
+                        sigma_n=pair_sigma_normal,
+                        sigma_mode=pair_sigma_mode,
+                        sigma_min=pair_sigma_min,
+                        beta=pair_beta,
+                        mode=pair_mode,
+                        joint_mode=pair_joint_mode,
+                        fusion_mode="residual",
+                        content_mode=pair_content_mode,
+                        content_weight=pair_content_weight,
+                        rho_condition_mode=pair_rho_condition_mode,
+                        vector_condition_mode=pair_vector_condition_mode,
+                        single_compete_mode=pair_single_compete_mode,
+                        single_rescue_beta=pair_single_rescue_beta,
+                        vector_dim=vector_dim,
+                        dropout=dropout,
+                    )
+                    for _ in range(view_count)
+                ]
+            )
+            modules["pair_multiview_mix"] = pt.nn.Sequential(
+                pt.nn.LayerNorm(dim * view_count),
+                pt.nn.Linear(dim * view_count, dim),
+                pt.nn.GELU(),
+                pt.nn.Dropout(dropout),
+                pt.nn.Linear(dim, dim),
+            )
+            modules["pair_multiview_gate"] = pt.nn.Sequential(
+                pt.nn.LayerNorm(dim * 2 + 6),
+                pt.nn.Linear(dim * 2 + 6, dim),
+                pt.nn.GELU(),
+                pt.nn.Dropout(dropout),
+                pt.nn.Linear(dim, dim),
+                pt.nn.Sigmoid(),
+            )
+            modules["pair_multiview_norm"] = pt.nn.LayerNorm(dim)
+
+    if triplet_mode != "none" and float(triplet_beta) != 0.0:
+        modules["triplet"] = TripletGaussianResidueToSurfaceCorrection(
+            dim=dim,
+            geom_dim=6,
+            triplet_topk=triplet_topk,
+            sigma_t=triplet_sigma_tangent,
+            sigma_n=triplet_sigma_normal,
+            beta=triplet_beta,
+            mode=triplet_mode,
+            dropout=dropout,
+            score_temperature=triplet_score_temperature,
+            score_clamp=triplet_score_clamp,
+            preselect_topm=triplet_preselect_topm,
+        )
+        if triplet_beta_mode == "learned_deep":
+            beta_init = min(
+                max(triplet_beta_init, triplet_beta_min + 1e-6),
+                triplet_beta_max - 1e-6,
+            )
+            beta_ratio = (beta_init - triplet_beta_min) / (triplet_beta_max - triplet_beta_min)
+            beta_logit = math.log(beta_ratio / max(1.0 - beta_ratio, 1e-6))
+            deep_rounds = max(
+                1,
+                core_cycles * (global_feedback_rounds + surface_global_feedback_rounds),
+            )
+            modules["triplet_deep_beta"] = pt.nn.Parameter(
+                pt.full((deep_rounds,), float(beta_logit))
+            )
+    return modules
+
+
 class PairGaussianResidueToSurfaceCorrection(pt.nn.Module):
     """Cooperative residue-pair Gaussian correction to a single-residue surface field."""
 

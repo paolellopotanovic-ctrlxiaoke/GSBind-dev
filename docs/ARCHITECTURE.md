@@ -8,17 +8,17 @@ numerical oracle and is not the default model or training path.
 
 Read these files in order:
 
-1. `src/m4/models/components/predictor.py` assembles the complete M4 network.
-   Its constructor shows which residue, surface, Gaussian, and fusion modules
-   are active for a configuration.
-2. `src/m4/models/components/execution.py` contains the complete forward data
-   flow, separated from layer construction.
-3. `src/m4/losses.py` defines the weighted multi-objective training target.
-4. `src/m4/data/datamodule.py` owns manifests, grouped splits, class weighting,
+1. `src/m4/models/m4.py` defines the public build/load/batch-forward contract.
+2. `src/m4/models/components/predictor.py` assembles the complete M4 network.
+   Its constructor is the architecture composition root.
+3. `src/m4/models/components/execution.py` contains the complete forward data
+   flow. Parameter-free helper stages live in `components/runtime/`.
+4. `src/m4/losses.py` defines the weighted multi-objective training target.
+5. `src/m4/data/datamodule.py` owns manifests, grouped splits, class weighting,
    and strict four-cache loaders.
-5. `src/m4/lightning/module.py` owns optimization, scheduling, epoch state,
+6. `src/m4/lightning/module.py` owns optimization, scheduling, epoch state,
    logging, and checkpoint export.
-6. `src/m4/predictor.py` is the label-free inference application that maps PDB
+7. `src/m4/predictor.py` is the label-free inference application that maps PDB
    residue identities to final, prior, and surface-conditioned probabilities.
 
 ## Model decomposition
@@ -34,7 +34,11 @@ src/m4/models/
     |-- pair_gaussian.py          pair/triplet-conditioned Gaussian corrections
     |-- cross_scale.py            residue<->surface attention and patch feedback
     |-- predictor.py              architecture assembly
-    `-- execution.py              runtime forward graph
+    |-- execution.py              end-to-end forward algorithm
+    `-- runtime/
+        |-- stochastic.py         feature/view/stochastic helpers
+        |-- surface_flow.py        residue/surface graph runtime
+        `-- gaussian_flow.py       chunked pair-Gaussian runtime
 ```
 
 The high-level path is:

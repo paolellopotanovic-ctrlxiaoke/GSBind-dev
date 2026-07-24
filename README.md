@@ -20,7 +20,47 @@ and label-free inference.
 > prioritization model, not a docking engine, affinity predictor, or causal
 > mechanism detector.
 
-## Repository contents
+## Start here: understand M4 in 15 minutes
+
+M4 has one public scientific path. Start with these files in this order:
+
+| Question | Open this file | What it contains |
+|---|---|---|
+| What enters and leaves the model? | [`src/m4/models/m4.py`](src/m4/models/m4.py) | Public build, strict checkpoint-load, and batch-forward contract |
+| Which scientific modules make up M4? | [`src/m4/models/components/predictor.py`](src/m4/models/components/predictor.py) | Architecture composition root: residue encoder, Gaussian field, surface encoder, fusion, and heads |
+| What happens in one forward pass? | [`src/m4/models/components/execution.py`](src/m4/models/components/execution.py) | Complete operation order from atoms to residue logits |
+| How is the Gaussian surface field computed? | [`gaussian_projection.py`](src/m4/models/components/gaussian_projection.py) and [`pair_gaussian.py`](src/m4/models/components/pair_gaussian.py) | Single-residue projection and pair-conditioned correction |
+| How are residue and surface states exchanged? | [`cross_scale.py`](src/m4/models/components/cross_scale.py) | Residue-to-surface, surface-to-residue, patch, and feedback operators |
+| What objective is optimized? | [`src/m4/losses.py`](src/m4/losses.py) | Complete weighted training objective |
+| Where is the training loop? | [`src/m4/lightning/module.py`](src/m4/lightning/module.py) | Lightning steps, optimizer, exact scheduler, metrics, and checkpoint export |
+| How are samples and caches loaded? | [`src/m4/data/datamodule.py`](src/m4/data/datamodule.py) | Manifest splits, class weighting, and strict four-cache loaders |
+| How is an unlabeled PDB predicted? | [`src/m4/predictor.py`](src/m4/predictor.py) | Label-free inference and residue-level CSV export |
+
+A single forward pass follows five scientific stages:
+
+```text
+PDB atoms
+   -> multi-view residue graph encoding
+   -> residue-conditioned Gaussian field on 1,024 surface points
+   -> surface graph and connected-patch reasoning
+   -> bidirectional residue/surface fusion
+   -> one protein-interface probability per residue
+```
+
+The main forward algorithm stays in one file so its operation order is
+auditable. Parameter-free helpers are separated by responsibility under
+[`src/m4/models/components/runtime/`](src/m4/models/components/runtime):
+feature/stochastic transforms, surface flow, and chunked pair-Gaussian flow.
+`src/m4/legacy_repo` contains the frozen numerical oracle and the dependency
+closure for low-level historical operators/cache formats. It is not a public
+training entry: architecture assembly, forward orchestration, losses, data,
+Lightning training, and inference all enter through `src/m4`.
+
+For a deeper method-to-code map, continue with
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) after reading the three primary
+files above.
+
+## Repository layout
 
 ```text
 main.py                     unified train/eval/cache/data-entry CLI
@@ -34,27 +74,6 @@ examples/inference/         included 1CRN receptor-only example
 docs/                       architecture, data, experiment, and validation docs
 tests/                      unit and publication-contract tests
 ```
-
-## Read the model code
-
-An external reader can understand the method without opening the historical
-experiment snapshot:
-
-1. [`src/m4/models/components/predictor.py`](src/m4/models/components/predictor.py)
-   assembles the complete architecture.
-2. [`src/m4/models/components/execution.py`](src/m4/models/components/execution.py)
-   shows the full forward dataflow.
-3. [`src/m4/models/components/gaussian_projection.py`](src/m4/models/components/gaussian_projection.py)
-   and [`pair_gaussian.py`](src/m4/models/components/pair_gaussian.py) implement
-   the Gaussian surface field.
-4. [`src/m4/losses.py`](src/m4/losses.py) defines every supervised objective.
-5. [`src/m4/data/datamodule.py`](src/m4/data/datamodule.py) and
-   [`src/m4/lightning/module.py`](src/m4/lightning/module.py) define the
-   reproducible training system.
-
-The detailed method-to-file map is in
-[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md). `src/m4/legacy_repo` is a frozen,
-SHA-pinned numerical oracle; it is not the default model or training entry.
 
 ## Requirements
 
