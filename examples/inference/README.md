@@ -8,8 +8,7 @@ Generate the internal cache manifest. No biological labels are supplied; the
 generated zero labels are technical placeholders used only to keep legacy cache
 keys deterministic.
 
-Download and verify the registered checkpoint after its public release URL is
-entered in `assets/checkpoints.json`:
+Download and verify the registered checkpoint:
 
 ```bash
 python scripts/download_checkpoint.py m4_holo20k_v9_clean_epoch4
@@ -60,3 +59,9 @@ checkpoint load. Columns include chain ID, PDB residue number, insertion code,
 amino acid, validity mask, final interface probability, prior probability, and
 surface-conditioned probability. `prediction_metadata.json` records checkpoint
 SHA-256, epoch, device, case count, residue count, and output schema.
+
+The complete chain can also be run from the repository root with:
+
+```bash
+python scripts/run_1crn_example.py
+```

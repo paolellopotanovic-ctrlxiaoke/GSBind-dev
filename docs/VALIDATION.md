@@ -17,7 +17,7 @@ Validation date: 2026-07-24.
   - unexpected keys: 0
 - Local unit tests pass: CLI/config, source hashes, label-free input and
   prediction contracts, registries, union/replacement/distribution logic, and
-  checksum-guarded ordinal repair (19 tests).
+  checksum-guarded ordinal repair and the one-command inference plan (22 tests).
 - Label-free `prepare-input` successfully encodes the included 46-residue 1CRN
   example in strict residue order.
 - The checkpoint registry pins the immutable v0.1.0 GitHub Release asset URL,

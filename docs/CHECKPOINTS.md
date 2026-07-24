@@ -13,7 +13,7 @@ history. Model weights belong in an immutable GitHub Release or Zenodo record.
 - Parameters/state tensors: 4,360,516/791
 - Required loading mode: strict, zero missing or unexpected keys
 - Immutable asset URL:
-  `https://github.com/paolellopotanovic-ctrlxiaoke/ckpt1/releases/download/v0.1.0/m4_holo20k_v9_clean_epoch4.pt`
+  `https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS/releases/download/v0.1.0/m4_holo20k_v9_clean_epoch4.pt`
 
 ## Publication verification
 

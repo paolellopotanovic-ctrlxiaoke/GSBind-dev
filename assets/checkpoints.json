@@ -3,7 +3,7 @@
   "checkpoints": {
     "m4_holo20k_v9_clean_epoch4": {
       "filename": "m4_holo20k_v9_clean_epoch4.pt",
-      "download_url": "https://github.com/paolellopotanovic-ctrlxiaoke/ckpt1/releases/download/v0.1.0/m4_holo20k_v9_clean_epoch4.pt",
+      "download_url": "https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS/releases/download/v0.1.0/m4_holo20k_v9_clean_epoch4.pt",
       "release_status": "published_github_release_v0.1.0",
       "sha256": "d6b418e21d8fc43f347f7c4438e2339877dd3afb240c6196aa7eff896caaee14",
       "bytes": 46437755,
