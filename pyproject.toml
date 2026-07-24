@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "m4-interface"
+version = "0.1.0"
+description = "M4 protein interface residue prediction"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "CC BY-NC-SA 4.0"}
+authors = [{name = "M4 authors"}]
+dependencies = [
+  "biopython",
+  "gemmi",
+  "h5py",
+  "numpy",
+  "pandas",
+  "pyarrow",
+  "pyyaml",
+  "scikit-learn",
+  "scipy",
+  "torch",
+  "tqdm",
+]
+
+[project.scripts]
+m4 = "m4.cli:main"
+m4-inference = "m4.cli:inference_main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src", "."]

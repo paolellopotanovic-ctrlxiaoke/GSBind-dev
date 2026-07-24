@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "datasets": {
+    "holo20k_v9_mmseqclean": {
+      "manifest_filename": "holo20k_gpsfun_clusterdiverse_v9_mmseqclean_train.csv",
+      "manifest_download_url": null,
+      "release_status": "awaiting_public_release_asset",
+      "manifest_sha256": "65b1df43dd4e00420dea8f59c8bbdc03d5a8fb6b33ed511fc469768ec0799d0d",
+      "rows": 20000,
+      "unique_case_ids": 20000,
+      "unique_structure_paths": 20000,
+      "clusters": 9812,
+      "cluster_cap": 20,
+      "length_min": 46,
+      "length_median": 167.0,
+      "length_mean": 209.02925,
+      "length_max": 871,
+      "positive_residues": 607742,
+      "total_residues": 4180585,
+      "global_positive_rate": 0.1453724777752396,
+      "source_split": "Pinder train",
+      "label_definition": "all-partner union of holo heavy-atom contacts within 5 A",
+      "leakage_rule": "MMseqs2 identity >= 0.30 and coverage >= 0.80, cov-mode 0",
+      "leakage_targets": {
+        "GPSFun": 375,
+        "Pinder-S apo_and_AF2": 602,
+        "Pinder-Large apo": 625
+      },
+      "leakage_hits": 0,
+      "construction": "v8 minus 36 leaking structures plus 36 distribution-matched, independently audited reserve structures",
+      "notes": "Publish the exact manifest, replacement log, distribution report and MMseqs2 audit together as a GitHub Release or Zenodo record."
+    }
+  }
+}
