@@ -4,6 +4,29 @@ This checklist separates a scientifically equivalent rebuild from the exact
 paper dataset. A rebuild follows the same rules; exact reproduction additionally
 requires the registered final manifest and audit bundle to match byte-for-byte.
 
+## Fast path: exact training manifest
+
+Use this route to reproduce the registered Holo20k v9 training set:
+
+```bash
+python scripts/download_dataset.py holo20k_v9_mmseqclean --include-audit
+python scripts/prepare_holo20k.py \
+  --manifest data/manifests/holo20k_gpsfun_clusterdiverse_v9_mmseqclean_train.csv \
+  --pdb-dir data/pinder/2024-02/pdbs \
+  --output-manifest data/manifests/holo20k_v9.local.csv \
+  --report data/manifests/holo20k_v9.prepare.json --workers 32
+```
+
+The downloaded CSV must retain SHA-256
+`65b1df43dd4e00420dea8f59c8bbdc03d5a8fb6b33ed511fc469768ec0799d0d`.
+The localized CSV intentionally has a different hash because its
+`receptor_pdb_path` values point to the user's machine. The preparation report
+binds both hashes. All biological labels and identifiers remain unchanged.
+
+Continue at step 7 to build caches. Steps 1-6 below reconstruct and audit the
+dataset from raw Pinder inputs; they are not required when using the immutable
+paper manifest.
+
 ## Inputs
 
 - Pinder 2024-02 `index.parquet`, receptor/partner holo PDBs, native dimers, and
@@ -120,25 +143,29 @@ Expected registered values include 20,000 rows and unique paths, 9,812 clusters,
 ## 7. Build and audit all caches
 
 ```bash
-python main.py build-tensor-cache --manifest work/holo20k_v9.csv \
+python main.py build-tensor-cache --manifest data/manifests/holo20k_v9.local.csv \
   --cache-dir cache/tensor --workers 32
-python main.py build-graph-cache --manifest work/holo20k_v9.csv \
+python main.py build-graph-cache --manifest data/manifests/holo20k_v9.local.csv \
   --tensor-cache-dir cache/tensor --graph-cache-dir cache/graph \
   --ks 16,24,32 --workers 32
-python main.py build-surface-cache --manifest work/holo20k_v9.csv \
+python main.py build-surface-cache --manifest data/manifests/holo20k_v9.local.csv \
   --tensor-cache-dir cache/tensor --residue-graph-cache-dir cache/graph \
   --output-dir cache/surface --states holo --surface-kind shrake \
   --surface-points 1024 --surface-graph-k 16 \
   --surface-cache-version s1_surface_shrake_v1
-python main.py build-static-cache --manifest work/holo20k_v9.csv \
+python main.py build-static-cache --manifest data/manifests/holo20k_v9.local.csv \
   --tensor-cache-dir cache/tensor --residue-graph-cache-dir cache/graph \
   --surface-cache-dir cache/surface --output-dir cache/static \
   --surface-cache-version s1_surface_shrake_v1 \
   --geometry-cache-version e89_dense_geometry_v1 --surface-graph-k 32
-python scripts/audit_cache.py --manifest work/holo20k_v9.csv \
+python scripts/audit_cache.py --manifest data/manifests/holo20k_v9.local.csv \
   --tensor-cache-dir cache/tensor --graph-cache-dir cache/graph \
   --surface-cache-dir cache/surface --static-cache-dir cache/static \
   --output work/cache_audit.json
 ```
 
 Only a zero-error cache report permits smoke inference or training.
+
+The validated cache audit requires 20,000 rows and unique paths with
+`missing_tensor`, `missing_graph`, `missing_surface`, `missing_static`,
+`overlay_mismatch`, `bad_static`, and `zero_valid_rows` all equal to zero.

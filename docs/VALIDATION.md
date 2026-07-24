@@ -17,12 +17,14 @@ Validation date: 2026-07-24.
   - unexpected keys: 0
 - Local unit tests pass: CLI/config, source hashes, label-free input and
   prediction contracts, registries, union/replacement/distribution logic, and
-  checksum-guarded ordinal repair and the one-command inference plan (22 tests).
+  checksum-guarded ordinal repair, one-command inference plan, immutable dataset
+  download, and path-only Holo20k localization contracts (25 tests).
 - Label-free `prepare-input` successfully encodes the included 46-residue 1CRN
   example in strict residue order.
-- The checkpoint registry pins the immutable v0.1.0 GitHub Release asset URL,
-  size, and SHA-256. The exact dataset URL remains intentionally unset until
-  that separate artifact is retrieved and published.
+- The checkpoint and dataset registries pin immutable v0.1.0 GitHub Release
+  asset URLs, sizes, and SHA-256 values. The exact 20,000-row manifest matches
+  its registered SHA-256, and the construction/MMseq2/cache audit bundle is
+  published alongside it.
 - Full Pinder holo construction, all-partner union, deterministic replacement,
   distribution audit, and fixed MMseq30/cov80 audit scripts are included.
 - A staged tracked-only archive builds and installs as `m4-interface-0.1.0` with
@@ -50,7 +52,6 @@ release, run `scripts/validate_server_equivalence.sh` on an available CUDA GPU
 and require byte-identical old/new evaluation artifacts, followed by one
 deterministic training step using the same GPU and software image.
 
-The v0.1.0 checkpoint/code bundle is published as a prerelease for inference
-and external validation. Exact end-to-end scientific reproduction must not be
-claimed until the CUDA equivalence gate passes and the immutable dataset asset
-is published.
+The v0.1.0 code/checkpoint/dataset bundle is published as a prerelease for
+inference and external validation. Exact numerical end-to-end reproduction
+must not be claimed until the CUDA equivalence gate passes.

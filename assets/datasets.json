@@ -3,8 +3,13 @@
   "datasets": {
     "holo20k_v9_mmseqclean": {
       "manifest_filename": "holo20k_gpsfun_clusterdiverse_v9_mmseqclean_train.csv",
-      "manifest_download_url": null,
-      "release_status": "awaiting_public_release_asset",
+      "manifest_download_url": "https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS/releases/download/v0.1.0/holo20k_gpsfun_clusterdiverse_v9_mmseqclean_train.csv",
+      "audit_bundle_url": "https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS/releases/download/v0.1.0/holo20k_v9_audit_bundle.tar.gz",
+      "audit_bundle_filename": "holo20k_v9_audit_bundle.tar.gz",
+      "audit_bundle_bytes": 2649357,
+      "audit_bundle_sha256": "03655ef2277cf595d272fd60d326f797739c7d0790ec9f69aa2fa86900f00be2",
+      "release_status": "published_github_release_v0.1.0",
+      "manifest_bytes": 46063708,
       "manifest_sha256": "65b1df43dd4e00420dea8f59c8bbdc03d5a8fb6b33ed511fc469768ec0799d0d",
       "rows": 20000,
       "unique_case_ids": 20000,
@@ -28,7 +33,7 @@
       },
       "leakage_hits": 0,
       "construction": "v8 minus 36 leaking structures plus 36 distribution-matched, independently audited reserve structures",
-      "notes": "Publish the exact manifest, replacement log, distribution report and MMseqs2 audit together as a GitHub Release or Zenodo record."
+      "notes": "The immutable manifest and audit bundle are GitHub Release assets. Use scripts/prepare_holo20k.py to download Pinder structures, apply the registered fixed-width PDB repair, and create a runnable local-path manifest."
     }
   }
 }

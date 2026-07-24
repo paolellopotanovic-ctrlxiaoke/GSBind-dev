@@ -42,6 +42,8 @@ tests/                      unit and publication-contract tests
 - CUDA 12.1 and PyTorch 2.1.2+cu121 in the validated environment
 - Approximately 1 GB of free disk for the example environment, checkpoint, and
   generated caches (the checkpoint itself is 46.4 MB)
+- At least 130 GB of free disk for the complete Holo20k structure and cache
+  build. The validated cache occupied approximately 105 GB.
 
 The CPU-only path can inspect source hashes and strictly validate the
 checkpoint, but the complete surface/static-cache/forward example requires
@@ -172,19 +174,41 @@ python main.py build-static-cache --help
 
 For the Holo20k experiment:
 
-1. follow [`docs/DATASET_BUILD_CHECKLIST.md`](docs/DATASET_BUILD_CHECKLIST.md);
-2. preserve all-partner residue-union events and deterministic case IDs;
-3. enforce the registered length/cluster/distribution constraints;
-4. require the GPSFun, Pinder-S apo, and complete Pinder-Large apo
-   MMseq30/cov80 leakage audit to pass;
-5. build all four cache families and run `scripts/audit_cache.py`;
-6. train with `configs/m4_holo20k.yaml`; and
-7. evaluate GPSFun, Pinder-S apo, and Pinder AF2 without changing test sets.
+Download the immutable paper manifest, hydrate its 20,000 public Pinder
+structures, and replace only the obsolete server path column:
+
+```bash
+python scripts/download_dataset.py holo20k_v9_mmseqclean --include-audit
+python scripts/prepare_holo20k.py \
+  --manifest data/manifests/holo20k_gpsfun_clusterdiverse_v9_mmseqclean_train.csv \
+  --pdb-dir data/pinder/2024-02/pdbs \
+  --output-manifest data/manifests/holo20k_v9.local.csv \
+  --workers 32
+```
+
+`prepare_holo20k.py` verifies the immutable manifest SHA-256, downloads each
+structure from the Pinder 2024-02 public bucket, applies the one registered
+fixed-width PDB B-factor repair only when the source hash matches, and records
+the source and localized manifest hashes. Labels, masks, residue ordinals,
+clusters, row order, and case IDs are unchanged.
+
+Then build the four cache families using the commands in
+[`docs/DATASET_BUILD_CHECKLIST.md`](docs/DATASET_BUILD_CHECKLIST.md), require a
+zero-error cache audit, update the four cache paths and manifest path in
+`configs/m4_holo20k.yaml`, and run:
+
+```bash
+python main.py train --config configs/m4_holo20k.yaml
+```
+
+The same checklist documents the longer raw-Pinder reconstruction route. That
+route is useful for auditing dataset logic; the immutable Release manifest is
+required for byte-identical sample selection.
 
 The registered v9 manifest has 20,000 unique structures, 9,812 clusters,
-cluster cap 20, and zero MMseq30/cov80 hits. Its exact public artifact URL
-remains unset until the validated manifest/audit bundle is published; see
-[`assets/datasets.json`](assets/datasets.json).
+cluster cap 20, and zero MMseq30/cov80 hits. The exact manifest and its
+construction/MMseq2/cache audit bundle are immutable v0.1.0 GitHub Release
+assets registered in [`assets/datasets.json`](assets/datasets.json).
 
 ## Reproducibility and validation
 
@@ -194,15 +218,18 @@ python scripts/verify_sources.py
 ```
 
 Five critical implementation files are pinned by SHA-256 and checked in CI.
-Local tests, tracked-only installation, source hashes, and strict checkpoint
-loading pass. The v0.1.0 code/checkpoint bundle is a prerelease for inference
-and external validation. Same-GPU old/release logit equivalence, deterministic
-one-step training equivalence, and publication of the exact dataset artifact
-remain required before claiming exact end-to-end scientific reproduction.
+Local tests, tracked-only installation, source hashes, strict checkpoint
+loading, and exact dataset artifact identity pass. The v0.1.0 bundle remains a
+prerelease for inference and external validation. Same-GPU old/release logit
+equivalence and deterministic one-step training equivalence remain required
+before claiming exact numerical end-to-end reproduction.
 
 See [`docs/VALIDATION.md`](docs/VALIDATION.md),
 [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md), and
-[`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) for the complete audit trail.
+[`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) for the complete audit trail. The
+exact data identity, registered PDB repair, cache sizes, and audit-bundle
+contents are documented in
+[`docs/DATASET_RELEASE.md`](docs/DATASET_RELEASE.md).
 
 ## License
 

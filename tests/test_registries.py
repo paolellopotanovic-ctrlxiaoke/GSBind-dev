@@ -24,6 +24,12 @@ def test_dataset_registry_pins_exact_holo20k_v9() -> None:
     assert dataset["clusters"] == 9812
     assert dataset["cluster_cap"] == 20
     assert dataset["leakage_hits"] == 0
+    assert dataset["manifest_bytes"] == 46063708
+    assert dataset["manifest_download_url"].endswith(dataset["manifest_filename"])
+    assert dataset["audit_bundle_url"].endswith(dataset["audit_bundle_filename"])
+    assert dataset["audit_bundle_bytes"] == 2649357
+    assert len(dataset["audit_bundle_sha256"]) == hashlib.sha256().digest_size * 2
+    assert dataset["release_status"] == "published_github_release_v0.1.0"
     assert len(dataset["manifest_sha256"]) == hashlib.sha256().digest_size * 2
 
 

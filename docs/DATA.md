@@ -54,3 +54,12 @@ entries, and zero rows without valid residues.
 
 The exact construction sequence is in `DATASET_BUILD_CHECKLIST.md`; registered
 paper statistics and hashes are in `assets/datasets.json`.
+
+## Exact Holo20k release
+
+The immutable v9 manifest is a GitHub Release asset rather than a Git blob.
+Download it with `scripts/download_dataset.py`, then run
+`scripts/prepare_holo20k.py` to retrieve the corresponding Pinder 2024-02 PDBs,
+apply the hash-guarded fixed-width repair required by the validated cache, and
+create a local-path manifest. This changes only `receptor_pdb_path`; the
+preparation report records both manifest hashes.
