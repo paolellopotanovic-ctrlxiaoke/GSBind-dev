@@ -1,0 +1,12 @@
+{
+  "archive": "GSbind_paper_20261020.tar.zst",
+  "bytes": 15323513322,
+  "sha256": "0bbbc666e9f5ad74ae9dc273642f788c4bf676b3673a2446d0a67c470cfa8c65",
+  "inventory_sha256": "cac50c6d2396bba4b893dd1c5a4ccbdf2677050fb908644c7b741eea5a44621c",
+  "status": "pending_public_url",
+  "url": null,
+  "extracted_directory": "GSbind",
+  "installation": "Overlay datasets/ from the extracted bundle into this checkout; retain current public code and docs.",
+  "external_files": 61313,
+  "external_bytes": 23820899373
+}

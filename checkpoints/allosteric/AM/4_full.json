@@ -1,0 +1,8 @@
+{
+  "fold": 4,
+  "design": "full",
+  "C": 0.1,
+  "threshold": 0.33331073164825753,
+  "inner_component_ap": 0.7114099141775189,
+  "features": 155
+}

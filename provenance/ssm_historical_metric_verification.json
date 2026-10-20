@@ -1,0 +1,26 @@
+[
+  {
+    "endpoint": "is_direct_interface",
+    "historical_ap": 0.8195125922684791,
+    "replay_ap": 0.8196071502726088,
+    "absolute_ap_difference": 9.455800412971893e-05,
+    "passed": true,
+    "note": "New canonical score from scipy expit of saved float32 logits; <=2e-7 score error, near-tie AP not bit-exact to original CUDA sigmoid. All intervention comparisons use same canonical conversion."
+  },
+  {
+    "endpoint": "sensitive_ge_1",
+    "historical_ap": 0.74450257842305,
+    "replay_ap": 0.7442245602588837,
+    "absolute_ap_difference": -0.00027801816416628267,
+    "passed": true,
+    "note": "New canonical score from scipy expit of saved float32 logits; <=2e-7 score error, near-tie AP not bit-exact to original CUDA sigmoid. All intervention comparisons use same canonical conversion."
+  },
+  {
+    "endpoint": "sensitive_ge_2",
+    "historical_ap": 0.6922419216825044,
+    "replay_ap": 0.6919974331482902,
+    "absolute_ap_difference": -0.00024448853421421557,
+    "passed": true,
+    "note": "New canonical score from scipy expit of saved float32 logits; <=2e-7 score error, near-tie AP not bit-exact to original CUDA sigmoid. All intervention comparisons use same canonical conversion."
+  }
+]

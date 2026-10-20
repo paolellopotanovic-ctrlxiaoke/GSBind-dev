@@ -1,0 +1,7 @@
+uniprot,component,baseline,budget,full_hits,baseline_hits,added,lost,added_positions_0,lost_positions_0
+P27338,P27338,geometry,10,5,0,5,0,170;198;315;325;342,
+P27338,P27338,amino,10,5,1,5,1,170;198;315;325;342,118
+P27338,P27338,hidden,10,5,5,1,1,315,166
+P45985,P45985,geometry,10,0,1,0,1,,96
+P45985,P45985,amino,10,0,2,0,2,,94;164
+P45985,P45985,hidden,10,0,0,0,0,,

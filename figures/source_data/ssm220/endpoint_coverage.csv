@@ -1,0 +1,6 @@
+endpoint,cases,positions,positives,mixed_cases
+is_direct_interface,220,13544,3353,220
+primary18_label,107,2707,1468,39
+relaxed1_label,124,2989,1551,40
+sensitive_ge_1,220,13544,9472,161
+sensitive_ge_2,220,13544,8722,173

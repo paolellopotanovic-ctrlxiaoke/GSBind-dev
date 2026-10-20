@@ -1,0 +1,384 @@
+{
+  "registered_proteins": 430,
+  "registered_records": 2257,
+  "mapped_proteins": 383,
+  "mapped_records": 1697,
+  "excluded_proteins": [
+    {
+      "uniprot": "A0A097J792",
+      "source_records": 1,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "A0A097PIE2",
+      "source_records": 1,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "A0A1L8F5J9",
+      "source_records": 2,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "H6WFU3",
+      "source_records": 2,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "O40922",
+      "source_records": 7,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "O92972",
+      "source_records": 12,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P00533",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P00720",
+      "source_records": 5,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P00775",
+      "source_records": 2,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P01116",
+      "source_records": 15,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P03366",
+      "source_records": 73,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P04483",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P04585",
+      "source_records": 3,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P06756",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P07071",
+      "source_records": 4,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P09237",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P0ABE7",
+      "source_records": 10,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P0C6F2",
+      "source_records": 1,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P11021",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P12497",
+      "source_records": 114,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P12499",
+      "source_records": 10,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P14780",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P15723",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P16154",
+      "source_records": 1,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P22498",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P26663",
+      "source_records": 78,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P35439",
+      "source_records": 4,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P36022",
+      "source_records": 1,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "P45985",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P50213",
+      "source_records": 4,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P51668",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P53779",
+      "source_records": 3,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P54645",
+      "source_records": 2,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P54646",
+      "source_records": 3,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P62330",
+      "source_records": 2,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "P88911",
+      "source_records": 1,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "Q07343",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "Q15758",
+      "source_records": 2,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "Q189K3",
+      "source_records": 2,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "Q6YMS4",
+      "source_records": 4,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "Q7X416",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "Q8TF76",
+      "source_records": 2,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "Q8XLZ0",
+      "source_records": 1,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "Q99AU2",
+      "source_records": 7,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "Q99XG5",
+      "source_records": 2,
+      "structure_available": true,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "source_label_mapping_failed"
+    },
+    {
+      "uniprot": "Q9KS12",
+      "source_records": 3,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    },
+    {
+      "uniprot": "Q9WMX2",
+      "source_records": 12,
+      "structure_available": false,
+      "mapped_records": 0,
+      "mapped_positive_positions": 0,
+      "status": "AFDB_structure_unavailable_or_sequence_mismatch"
+    }
+  ]
+}

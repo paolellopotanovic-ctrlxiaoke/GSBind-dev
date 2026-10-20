@@ -1,0 +1,57 @@
+{
+  "asd": {
+    "protein_or_pocket_groups": 207,
+    "pockets": 4412,
+    "positive_pockets": 207,
+    "feature_container": "list",
+    "feature_opcodes": {
+      "PROTO": 1,
+      "EMPTY_LIST": 4620,
+      "BINPUT": 256,
+      "MARK": 4620,
+      "BINFLOAT": 83828,
+      "APPENDS": 4620,
+      "LONG_BINPUT": 4364,
+      "STOP": 1
+    },
+    "label_opcodes": {
+      "PROTO": 1,
+      "EMPTY_LIST": 208,
+      "BINPUT": 208,
+      "MARK": 208,
+      "BININT1": 4412,
+      "APPENDS": 208,
+      "STOP": 1
+    },
+    "identity_mapping_present": false,
+    "GSbind_residue_evaluation_possible_from_these_files_alone": false
+  },
+  "casbench": {
+    "protein_or_pocket_groups": 1049,
+    "pockets": 22077,
+    "positive_pockets": 1049,
+    "feature_container": "list",
+    "feature_opcodes": {
+      "PROTO": 1,
+      "EMPTY_LIST": 23127,
+      "BINPUT": 256,
+      "MARK": 23128,
+      "BINFLOAT": 419463,
+      "APPENDS": 23128,
+      "LONG_BINPUT": 22871,
+      "STOP": 1
+    },
+    "label_opcodes": {
+      "PROTO": 1,
+      "EMPTY_LIST": 1050,
+      "BINPUT": 256,
+      "MARK": 1051,
+      "BININT1": 22077,
+      "APPENDS": 1051,
+      "LONG_BINPUT": 794,
+      "STOP": 1
+    },
+    "identity_mapping_present": false,
+    "GSbind_residue_evaluation_possible_from_these_files_alone": false
+  }
+}

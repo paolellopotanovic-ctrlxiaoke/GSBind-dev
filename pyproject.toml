@@ -3,41 +3,21 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "m4-interface"
-version = "0.1.0"
-description = "M4 protein interface residue prediction"
-readme = "README.md"
+name = "gsbind-paper"
+version = "1.1.0"
+description = "GSbind E11 model and final paper evidence"
 requires-python = ">=3.10"
-license = {text = "CC BY-NC-SA 4.0"}
-authors = [{name = "M4 authors"}]
-dependencies = [
-  "biopython",
-  "gemmi",
-  "h5py",
-  "numpy",
-  "pandas",
-  "pyarrow",
-  "pyyaml",
-  "scikit-learn",
-  "scipy",
-  "torch",
-  "tqdm",
-]
+dependencies = ["torch>=2.1,<2.6", "lightning>=2.4,<3", "numpy>=1.24,<3", "pandas>=2", "scipy>=1.10", "scikit-learn>=1.3", "gemmi>=0.7", "pyarrow", "joblib", "tqdm", "matplotlib", "requests", "biopython", "beautifulsoup4", "xlrd"]
 
 [project.optional-dependencies]
-train = ["lightning>=2.2,<3"]
+test = ["pytest>=7"]
 
 [project.scripts]
-m4 = "m4.cli:main"
-m4-inference = "m4.cli:inference_main"
-
-[tool.setuptools]
-package-dir = {"" = "src"}
+gsbind = "gsbind.cli:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
-addopts = "-q"
-pythonpath = ["src", "."]
+pythonpath = ["src"]

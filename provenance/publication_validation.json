@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "date": "2026-10-20",
+  "unit_tests": "10 passed",
+  "recomputed_csv_tables": 81,
+  "recomputed_csv_tolerance": 1e-10,
+  "allosteric_full_hidden_replay_experiments": 7,
+  "allosteric_full_hidden_replay_max_error": 0.0,
+  "allosteric_replay_data_scope": "complete server dataset; tensors are external to public Git",
+  "cpu_inference_and_evaluation": true,
+  "lightning_optimizer_steps": 1,
+  "surface_forward_smoke": true,
+  "standalone_directory_smoke": true,
+  "allosteric_label_reconstruction": "passed",
+  "functional_label_reconstruction": "passed",
+  "parquet_to_csv_export_rows_checked": 7000,
+  "compileall": "passed",
+  "credential_pattern_scan": "passed",
+  "full_main_training_reexecuted": false,
+  "bulk_data_public_download": "pending",
+  "legacy_commit": "9cc53e25043065c616597962ef71b973bf247d79"
+}

@@ -1,0 +1,18 @@
+{
+  "package": "GSbind public paper engineering",
+  "date": "2026-10-20",
+  "files": 485,
+  "bytes": 392004359,
+  "inventory_sha256": "60b10cc9bbc9532cf7a4d211b7bcfdceee08b79cd8bdd7f3784efb69915a5e97",
+  "excludes": [
+    ".git",
+    ".pytest_cache",
+    "__pycache__",
+    "runs"
+  ],
+  "inventory_self_excluded": true,
+  "hardlinks_are_archived_with_content": true,
+  "entrypoint": "python tools/check_publication.py; python main.py summarize --task all",
+  "bulk_data": "data_release/bundle.json; public URL pending",
+  "archive": null
+}

@@ -1,0 +1,4 @@
+case_id,source_homologs,source_heldout_folds,mode
+kras4b_af2_full,allobench_P01111;allobench_P01112;allobench_P20171,2.0,existing_source_heldout_fold
+src_fl_af2,,,no_source_component_overlap_ensemble
+src_kd_af2,,,no_source_component_overlap_ensemble

@@ -1,0 +1,29 @@
+{
+  "methods": [
+    "geometry",
+    "amino",
+    "hidden",
+    "full"
+  ],
+  "source_tasks": [
+    "AlloBench",
+    "AM"
+  ],
+  "transfer_targets": [
+    "AM",
+    "ASBench",
+    "PASSer_ASD_source",
+    "CASBench",
+    "ASD_AlloPPI"
+  ],
+  "dimensions": {
+    "geometry": 5,
+    "amino": 20,
+    "hidden": 128,
+    "full": 155
+  },
+  "full": "score + RSA/packing/DSSP + AA + pLDDT + hidden; no logit",
+  "model": "Gaussian-direct128 E11 frozen",
+  "version": "2026-10-20",
+  "input_proteins": 504
+}

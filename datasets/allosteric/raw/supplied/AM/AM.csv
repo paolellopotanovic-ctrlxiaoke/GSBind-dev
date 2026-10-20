@@ -1,0 +1,1313 @@
+gene_name	uniprot_id	mut_info	mut_site	phenotype	phenotype_name	pdb_id	pdb_residue_location	pdb_residue_chain
+BRAF	P15056	p.D594G	594	ACC	ACC (Adrenocortical carcinoma)	4JVG	594	A
+GNPDA1	P46926	p.F229L	229	ACC	ACC (Adrenocortical carcinoma)	1NE7	229	C
+CASP1	P29466	p.E241K	241	BLCA	BLCA (Bladder urothelial carcinoma)	2FQQ	241	A
+PIK3CA	P42336	p.E542K	542	BLCA	BLCA (Bladder urothelial carcinoma)	5SWP	542	A
+WNK1	Q9H4A3	p.R341G	341	BLCA	BLCA (Bladder urothelial carcinoma)	5WE8	341	A
+BRAF	P15056	p.V600E	600	BLCA	BLCA (Bladder urothelial carcinoma)	4JVG	600	A
+HRAS	P01112	p.Q61L	61	BLCA	BLCA (Bladder urothelial carcinoma)	4G0N	61	A
+KRAS	P01116	p.A59G	59	BLCA	BLCA (Bladder urothelial carcinoma)	5V9O	59	A
+HRAS	P01112	p.Q61K	61	BLCA	BLCA (Bladder urothelial carcinoma)	4G0N	61	A
+KRAS	P01116	p.G12D	12	BLCA	BLCA (Bladder urothelial carcinoma)	5V9O	12	A
+KRAS	P01116	p.G12V	12	BLCA	BLCA (Bladder urothelial carcinoma)	5V9O	12	A
+FDPS	P14324	p.P275A	275	BLCA	BLCA (Bladder urothelial carcinoma)	3N45	209	F
+IDH1	O75874	p.R132C	132	BLCA	BLCA (Bladder urothelial carcinoma)	5TQH	132	A
+KRAS	P01116	p.G12C	12	BLCA	BLCA (Bladder urothelial carcinoma)	5V9O	12	A
+PRKAB1	Q9Y478	p.R83P	83	BLCA	BLCA (Bladder urothelial carcinoma)	4CFE	83	B
+F7	P08709	p.G269S	269	BLCA	BLCA (Bladder urothelial carcinoma)	1DVA	69	H
+SAMHD1	Q9Y3Z3	p.R371H	371	BLCA	BLCA (Bladder urothelial carcinoma)	4BZB	371	A
+PPARG	P37231	p.F310S	310	BLCA	BLCA (Bladder urothelial carcinoma)	3K8S	282	B
+PAK1	Q13153	p.E315K	315	BLCA	BLCA (Bladder urothelial carcinoma)	4ZJI	315	A
+GRM5	P41594	p.G652C	652	BLCA	BLCA (Bladder urothelial carcinoma)	4OO9	652	A
+MAP2K7	O14733	p.T103M	103	BLCA	BLCA (Bladder urothelial carcinoma)	5Y90	119	A
+ITGAL	P20701	p.L259F	259	BLCA	BLCA (Bladder urothelial carcinoma)	2ICA	234	A
+PTPRZ1	P23471	p.E1979K	1979	BLCA	BLCA (Bladder urothelial carcinoma)	5H08	1979	A
+ESR2	Q92731	p.R329Q	329	BLCA	BLCA (Bladder urothelial carcinoma)	2FSZ	329	B
+LTA4H	P09960	p.E160Q	160	BLCA	BLCA (Bladder urothelial carcinoma)	3FUD	159	A
+ALB	P02768	p.R372S	372	BLCA	BLCA (Bladder urothelial carcinoma)	2BXG	348	A
+PDK2	Q15119	p.I169M	169	BLCA	BLCA (Bladder urothelial carcinoma)	2BU2	161	A
+ITGAL	P20701	p.G285R	285	BLCA	BLCA (Bladder urothelial carcinoma)	2ICA	260	A
+BRAF	P15056	p.G518D	518	BLCA	BLCA (Bladder urothelial carcinoma)	4JVG	518	A
+LIMK2	P53671	p.I392F	392	BLCA	BLCA (Bladder urothelial carcinoma)	4TPT	392	A
+SERPINC1	P01008	p.E145Q	145	BLCA	BLCA (Bladder urothelial carcinoma)	3KCG	113	I
+ANXA5	P08758	p.A159S	159	BLCA	BLCA (Bladder urothelial carcinoma)	1HAK	159	A
+CHRM2	P08172	p.F181L	181	BLCA	BLCA (Bladder urothelial carcinoma)	4MQT	181	A
+HBB	P68871	p.Q132H	132	BLCA	BLCA (Bladder urothelial carcinoma)	2D60	131	B
+IDH1	O75874	p.R132H	132	BLCA	BLCA (Bladder urothelial carcinoma)	5TQH	132	A
+MALT1	Q9UDY8	p.S382L	382	BLCA	BLCA (Bladder urothelial carcinoma)	4I1R	382	A
+BRAF	P15056	p.D594Y	594	BLCA	BLCA (Bladder urothelial carcinoma)	4JVG	594	A
+MSH2	P43246	p.D543N	543	BLCA	BLCA (Bladder urothelial carcinoma)	2O8B	543	A
+PIK3CA	P42336	p.R115L	115	BLCA	BLCA (Bladder urothelial carcinoma)	5SWP	115	A
+MAPK14	Q16539	p.E192Q	192	BLCA	BLCA (Bladder urothelial carcinoma)	4E6C	192	A
+AKT1	P31749	p.E17K	17	BLCA	BLCA (Bladder urothelial carcinoma)	3O96	17	A
+KRAS	P01116	p.G12R	12	BLCA	BLCA (Bladder urothelial carcinoma)	5V9O	12	A
+MAPK1	P28482	p.D321E	321	BLCA	BLCA (Bladder urothelial carcinoma)	5AX3	311	A
+KRAS	P01116	p.G13D	13	BLCA	BLCA (Bladder urothelial carcinoma)	5V9O	13	A
+SERPINC1	P01008	p.E145K	145	BLCA	BLCA (Bladder urothelial carcinoma)	3KCG	113	I
+CCR5	P51681	p.I198V	198	BLCA	BLCA (Bladder urothelial carcinoma)	4MBS	198	A
+BRAF	P15056	p.R575K	575	BLCA	BLCA (Bladder urothelial carcinoma)	4JVG	575	A
+RXRA	P19793	p.I345M	345	BLCA	BLCA (Bladder urothelial carcinoma)	3UVV	345	B
+RORC	P51449	p.F506L	506	BLCA	BLCA (Bladder urothelial carcinoma)	5C4T	506	A
+FBP1	Q2TU34	p.E21K	21	BLCA	BLCA (Bladder urothelial carcinoma)	5PZR	20	A
+CASP8	Q14790	p.I333M	333	BLCA	BLCA (Bladder urothelial carcinoma)	3KJQ	333	A
+SIRT1	Q96EB6	p.E230K	230	BLCA	BLCA (Bladder urothelial carcinoma)	5BTR	230	A
+PIK3CA	P42336	p.E365K	365	BLCA	BLCA (Bladder urothelial carcinoma)	5SWP	365	A
+CASP8	Q14790	p.S338C	338	BLCA	BLCA (Bladder urothelial carcinoma)	3KJQ	338	A
+USP7	Q93009	p.D349N	349	BLCA	BLCA (Bladder urothelial carcinoma)	5N9T	349	A
+SAMHD1	Q9Y3Z3	p.D353H	353	BLCA	BLCA (Bladder urothelial carcinoma)	4BZB	353	C
+IDH1	O75874	p.M291I	291	BLCA	BLCA (Bladder urothelial carcinoma)	5TQH	291	A
+CDK2	P24941	p.D68N	68	BLCA	BLCA (Bladder urothelial carcinoma)	3PXZ	68	A
+ALB	P02768	p.D279N	279	BLCA	BLCA (Bladder urothelial carcinoma)	2BXD	255	A
+KIF11	P52732	p.L172V	172	BLCA	BLCA (Bladder urothelial carcinoma)	3ZCW	172	A
+ANXA5	P08758	p.S243C	243	BLCA	BLCA (Bladder urothelial carcinoma)	1HAK	243	A
+GLS	O94925	p.L323F	323	BLCA	BLCA (Bladder urothelial carcinoma)	3UO9	323	A
+HRAS	P01112	p.E91K	91	BLCA	BLCA (Bladder urothelial carcinoma)	4G0N	91	A
+PKM	P14618	p.L465M	465	BLCA	BLCA (Bladder urothelial carcinoma)	4B2D	465	A
+PKM	P14618	p.D354N	354	BLCA	BLCA (Bladder urothelial carcinoma)	4G1N	354	A
+MSH6	P52701	p.E487K	487	BLCA	BLCA (Bladder urothelial carcinoma)	2O8B	487	B
+KRAS	P01116	p.Q61H	61	BLCA	BLCA (Bladder urothelial carcinoma)	5V9O	61	A
+PIK3CA	P42336	p.R93Q	93	BLCA	BLCA (Bladder urothelial carcinoma)	5SWP	93	A
+MAP2K2	P36507	p.Y134C	134	BLCA	BLCA (Bladder urothelial carcinoma)	1S9I	134	A
+PIK3CA	P42336	p.R88Q	88	BLCA	BLCA (Bladder urothelial carcinoma)	5SWP	88	A
+FCGR3A	P08637	p.I190M	190	BLCA	BLCA (Bladder urothelial carcinoma)	5MN2	172	A
+RXRA	P19793	p.G329R	329	BLCA	BLCA (Bladder urothelial carcinoma)	3UVV	329	B
+PRKAG1	P54619	p.G311R	311	BLCA	BLCA (Bladder urothelial carcinoma)	4CFE	311	E
+AURKA	O14965	p.K250N	250	BLCA	BLCA (Bladder urothelial carcinoma)	5ORL	250	A
+PIK3CA	P42336	p.E542K	542	BRCA	BRCA (Breast invasive carcinoma)	5SWP	542	A
+AKT1	P31749	p.E17K	17	BRCA	BRCA (Breast invasive carcinoma)	3O96	17	A
+CASP6	P55212	p.T199M	199	BRCA	BRCA (Breast invasive carcinoma)	4NBN	199	B
+PDE4D	Q08499	p.T635M	635	BRCA	BRCA (Breast invasive carcinoma)	3IAD	499	A
+KRAS	P01116	p.G12V	12	BRCA	BRCA (Breast invasive carcinoma)	5V9O	12	A
+ADORA2A	P29274	p.R293P	293	BRCA	BRCA (Breast invasive carcinoma)	3VG9	293	A
+IDH1	O75874	p.R132C	132	BRCA	BRCA (Breast invasive carcinoma)	5TQH	132	A
+MTOR	P42345	p.W2101L	2101	BRCA	BRCA (Breast invasive carcinoma)	1NSG	2101	B
+PIK3CA	P42336	p.F83S	83	BRCA	BRCA (Breast invasive carcinoma)	5SWP	83	A
+HSPA5	P11021	p.K296T	296	BRCA	BRCA (Breast invasive carcinoma)	5E84	296	A
+FDPS	P14324	p.E384K	384	BRCA	BRCA (Breast invasive carcinoma)	3N45	318	F
+MAP2K2	P36507	p.G83S	83	BRCA	BRCA (Breast invasive carcinoma)	1S9I	83	A
+MSH2	P43246	p.Q510H	510	BRCA	BRCA (Breast invasive carcinoma)	2O8B	510	A
+GRIN2A	Q12879	p.F524L	524	BRCA	BRCA (Breast invasive carcinoma)	5I2N	126	A
+GCGR	P47871	p.L357V	357	BRCA	BRCA (Breast invasive carcinoma)	5XEZ	357	A
+MMP9	P14780	p.R51C	51	BRCA	BRCA (Breast invasive carcinoma)	5UE4	51	B
+RRM1	P23921	p.S84C	84	BRCA	BRCA (Breast invasive carcinoma)	3HNE	84	B
+PDK2	Q15119	p.T51P	51	BRCA	BRCA (Breast invasive carcinoma)	2BU2	43	A
+GCK	P35557	p.Y215F	215	BRCA	BRCA (Breast invasive carcinoma)	3F9M	215	A
+MAT2A	P31153	p.L315V	315	BRCA	BRCA (Breast invasive carcinoma)	5UGH	315	A
+ITK	Q08881	p.S499F	499	BRCA	BRCA (Breast invasive carcinoma)	4M15	499	A
+CDK2	P24941	p.V230F	230	BRCA	BRCA (Breast invasive carcinoma)	5OSJ	230	A
+RXRA	P19793	p.G343C	343	BRCA	BRCA (Breast invasive carcinoma)	3UVV	343	B
+IDH1	O75874	p.R132H	132	BRCA	BRCA (Breast invasive carcinoma)	5TQH	132	A
+MAPK1	P28482	p.E81K	81	BRCA	BRCA (Breast invasive carcinoma)	5AX3	72	A
+RRM1	P23921	p.V3L	3	BRCA	BRCA (Breast invasive carcinoma)	3HNE	3	B
+GRIN2A	Q12879	p.V529L	529	BRCA	BRCA (Breast invasive carcinoma)	5I2N	131	A
+KDR	P35968	p.T384M	384	BRCA	BRCA (Breast invasive carcinoma)	5OYJ	384	D
+WNK1	Q9H4A3	p.L374Q	374	BRCA	BRCA (Breast invasive carcinoma)	5WE8	374	A
+PAH	P00439	p.P69S	69	BRCA	BRCA (Breast invasive carcinoma)	5FII	69	C
+KRAS	P01116	p.G12D	12	BRCA	BRCA (Breast invasive carcinoma)	5V9O	12	A
+PIK3CA	P42336	p.R88Q	88	BRCA	BRCA (Breast invasive carcinoma)	5SWP	88	A
+MSH6	P52701	p.G443R	443	BRCA	BRCA (Breast invasive carcinoma)	2O8B	443	B
+OPRD1	P41143	p.Y308C	308	BRCA	BRCA (Breast invasive carcinoma)	4N6H	308	A
+CASP7	P55210	p.S224F	224	BRCA	BRCA (Breast invasive carcinoma)	1SHJ	224	A
+PIK3CA	P42336	p.S629C	629	BRCA	BRCA (Breast invasive carcinoma)	5SWP	629	A
+CASP8	Q14790	p.S338F	338	BRCA	BRCA (Breast invasive carcinoma)	3KJQ	338	A
+GLRA3	O75311	p.T295M	295	BRCA	BRCA (Breast invasive carcinoma)	5VDH	262	B
+HBA2	P69906	p.D127Y	127	BRCA	BRCA (Breast invasive carcinoma)	1A01	127	A
+GBA	P04062	p.L280F	280	BRCA	BRCA (Breast invasive carcinoma)	5LVX	241	A
+LTA4H	P09960	p.E108K	108	BRCA	BRCA (Breast invasive carcinoma)	3FUD	107	A
+PIK3CA	P42336	p.D603H	603	BRCA	BRCA (Breast invasive carcinoma)	5SWP	603	A
+USP7	Q93009	p.R408K	408	BRCA	BRCA (Breast invasive carcinoma)	5N9T	408	A
+GRIN2A	Q12879	p.I775T	775	BRCA	BRCA (Breast invasive carcinoma)	5I2N	258	A
+PIK3CA	P42336	p.P539R	539	BRCA	BRCA (Breast invasive carcinoma)	5SWP	539	A
+KRAS	P01116	p.D92Y	92	BRCA	BRCA (Breast invasive carcinoma)	5V9O	92	A
+ESR2	Q92731	p.D326N	326	BRCA	BRCA (Breast invasive carcinoma)	2FSZ	326	B
+RNMT	O43148	p.E380K	380	BRCA	BRCA (Breast invasive carcinoma)	5E8J	380	A
+SERPINE1	P05121	p.P250A	250	BRCA	BRCA (Breast invasive carcinoma)	4G8O	227	D
+CASP1	P29466	p.A329T	329	BRCA	BRCA (Breast invasive carcinoma)	2FQQ	329	B
+PDE4D	Q08499	p.R632H	632	BRCA	BRCA (Breast invasive carcinoma)	3IAD	496	A
+MAP2K4	P45985	p.R170K	170	BRCA	BRCA (Breast invasive carcinoma)	3ALO	170	A
+KRAS	P01116	p.G12C	12	BRCA	BRCA (Breast invasive carcinoma)	5V9O	12	A
+PIK3CA	P42336	p.E365V	365	BRCA	BRCA (Breast invasive carcinoma)	5SWP	365	A
+PFKP	Q01813	p.R665M	665	BRCA	BRCA (Breast invasive carcinoma)	4XZ2	665	A
+PIK3CA	P42336	p.E542K	542	CESC	CESC (Cervical cancer)	5SWP	542	A
+RET	P07949	p.M759I	759	CESC	CESC (Cervical cancer)	5FM2	759	A
+PKM	P14618	p.R43P	43	CESC	CESC (Cervical cancer)	4B2D	43	A
+AKT1	P31749	p.E17K	17	CESC	CESC (Cervical cancer)	3O96	17	A
+PDE4D	Q08499	p.S666F	666	CESC	CESC (Cervical cancer)	3IAD	530	A
+CASP6	P55212	p.K99T	99	CESC	CESC (Cervical cancer)	4EJF	99	C
+KRAS	P01116	p.G12D	12	CESC	CESC (Cervical cancer)	5V9O	12	A
+MAPK1	P28482	p.R135K	135	CESC	CESC (Cervical cancer)	5AX3	126	A
+AR	P10275	p.Q734H	734	CESC	CESC (Cervical cancer)	2PIO	733	A
+PIK3CA	P42336	p.R93W	93	CESC	CESC (Cervical cancer)	5SWP	93	A
+KRAS	P01116	p.G12V	12	CESC	CESC (Cervical cancer)	5V9O	12	A
+EPAS1	Q99814	p.R275H	275	CESC	CESC (Cervical cancer)	3F1O	275	A
+KRAS	P01116	p.G12C	12	CESC	CESC (Cervical cancer)	5V9O	12	A
+KRAS	P01116	p.G13D	13	CESC	CESC (Cervical cancer)	5V9O	13	A
+F2	P00734	p.A551V	551	CESC	CESC (Cervical cancer)	3JZ1	183	B
+CCR5	P51681	p.T284N	284	CESC	CESC (Cervical cancer)	4MBS	284	A
+SIRT3	Q9NTG7	p.G319V	319	CESC	CESC (Cervical cancer)	4C7B	319	A
+PKM	P14618	p.T513I	513	CESC	CESC (Cervical cancer)	3GQY	513	A
+MALT1	Q9UDY8	p.R392H	392	CESC	CESC (Cervical cancer)	4I1R	392	A
+KRAS	P01116	p.V14I	14	CESC	CESC (Cervical cancer)	5V9O	14	A
+MAPK1	P28482	p.D321N	321	CESC	CESC (Cervical cancer)	5AX3	311	A
+CASP8	Q14790	p.F340C	340	CESC	CESC (Cervical cancer)	3KJQ	340	A
+PIK3CA	P42336	p.R115P	115	CESC	CESC (Cervical cancer)	5SWP	115	A
+CALM1	P0DP23	p.D134N	134	CESC	CESC (Cervical cancer)	3J41	133	E
+FDPS	P14324	p.F272L	272	CESC	CESC (Cervical cancer)	3N45	206	F
+EIF4E	P06730	p.R61Q	61	CESC	CESC (Cervical cancer)	4TPW	61	A
+HK1	P19367	p.G231S	231	CESC	CESC (Cervical cancer)	1CZA	231	N
+CASP7	P55210	p.R187Q	187	CESC	CESC (Cervical cancer)	1SHJ	187	A
+PANK3	Q9H999	p.G255E	255	CESC	CESC (Cervical cancer)	3MK6	255	C
+GCK	P35557	p.D160N	160	CESC	CESC (Cervical cancer)	3F9M	160	A
+PANK1	Q8TE04	p.R432T	432	CESC	CESC (Cervical cancer)	2I7N	432	A
+MAPK8	P45983	p.T178M	178	CESC	CESC (Cervical cancer)	3O2M	178	A
+MAP2K1	Q02750	p.G128R	128	CHOL	CHOL (Cholangio carcinoma)	1S9J	128	A
+KRAS	P01116	p.G12R	12	CHOL	CHOL (Cholangio carcinoma)	5V9O	12	A
+BRAF	P15056	p.V600E	600	CHOL	CHOL (Cholangio carcinoma)	4JVG	600	A
+IDH1	O75874	p.R132S	132	CHOL	CHOL (Cholangio carcinoma)	5TQH	132	A
+IDH1	O75874	p.G123E	123	CHOL	CHOL (Cholangio carcinoma)	5TQH	123	A
+PIK3CA	P42336	p.R93Q	93	CHOL	CHOL (Cholangio carcinoma)	5SWP	93	A
+IDH1	O75874	p.R132C	132	CHOL	CHOL (Cholangio carcinoma)	5TQH	132	A
+KRAS	P01116	p.Q61K	61	CHOL	CHOL (Cholangio carcinoma)	5V9O	61	A
+BRAF	P15056	p.V600E	600	COAD	COAD (Colon adenocarcinoma)	4JVG	600	A
+FBP2	O00757	p.R16C	16	COAD	COAD (Colon adenocarcinoma)	3IFC	15	A
+KRAS	P01116	p.G12A	12	COAD	COAD (Colon adenocarcinoma)	5V9O	12	A
+KRAS	P01116	p.G12D	12	COAD	COAD (Colon adenocarcinoma)	5V9O	12	A
+KRAS	P01116	p.Q61K	61	COAD	COAD (Colon adenocarcinoma)	5V9O	61	A
+PTPN11	Q06124	p.R498W	498	COAD	COAD (Colon adenocarcinoma)	6BMY	498	A
+KRAS	P01116	p.R68S	68	COAD	COAD (Colon adenocarcinoma)	5V9O	68	A
+SERPINE1	P05121	p.E353K	353	COAD	COAD (Colon adenocarcinoma)	4G8O	330	D
+PFKP	Q01813	p.A537T	537	COAD	COAD (Colon adenocarcinoma)	4XZ2	537	B
+KRAS	P01116	p.G12C	12	COAD	COAD (Colon adenocarcinoma)	5V9O	12	A
+KRAS	P01116	p.G12V	12	COAD	COAD (Colon adenocarcinoma)	5V9O	12	A
+PIK3CA	P42336	p.E365K	365	COAD	COAD (Colon adenocarcinoma)	5SWP	365	A
+FCGR3A	P08637	p.R115W	115	COAD	COAD (Colon adenocarcinoma)	5MN2	97	A
+AMY2A	P04746	p.V249G	249	COAD	COAD (Colon adenocarcinoma)	3BAY	234	A
+MSH2	P43246	p.K550T	550	COAD	COAD (Colon adenocarcinoma)	2O8B	550	A
+GRIA2	P42262	p.A770T	770	COAD	COAD (Colon adenocarcinoma)	2XHD	237	A
+MMP9	P14780	p.A406T	406	COAD	COAD (Colon adenocarcinoma)	5UE4	231	B
+PIK3CA	P42336	p.E542K	542	COAD	COAD (Colon adenocarcinoma)	5SWP	542	A
+KRAS	P01116	p.G13D	13	COAD	COAD (Colon adenocarcinoma)	5V9O	13	A
+BRAF	P15056	p.D594N	594	COAD	COAD (Colon adenocarcinoma)	4JVG	594	A
+PIK3CA	P42336	p.G364R	364	COAD	COAD (Colon adenocarcinoma)	5SWP	364	A
+AMY2A	P04746	p.R210K	210	COAD	COAD (Colon adenocarcinoma)	3BAY	195	A
+AKT1	P31749	p.E17K	17	COAD	COAD (Colon adenocarcinoma)	3O96	17	A
+AR	P10275	p.V731M	731	COAD	COAD (Colon adenocarcinoma)	2PIO	730	A
+FDPS	P14324	p.A411V	411	COAD	COAD (Colon adenocarcinoma)	3N45	345	F
+KIF11	P52732	p.A103S	103	COAD	COAD (Colon adenocarcinoma)	3ZCW	103	A
+GRIN2A	Q12879	p.T531M	531	COAD	COAD (Colon adenocarcinoma)	5I2N	133	A
+KRAS	P01116	p.Q61R	61	COAD	COAD (Colon adenocarcinoma)	5V9O	61	A
+MSH2	P43246	p.M83I	83	COAD	COAD (Colon adenocarcinoma)	2O8B	83	A
+PTPN11	Q06124	p.E69D	69	COAD	COAD (Colon adenocarcinoma)	6BMY	69	A
+CALM1	P0DP23	p.E68K	68	COAD	COAD (Colon adenocarcinoma)	3J41	67	E
+RXRA	P19793	p.V265I	265	COAD	COAD (Colon adenocarcinoma)	3UVV	265	B
+KRAS	P01116	p.G12R	12	COAD	COAD (Colon adenocarcinoma)	5V9O	12	A
+GRIN2A	Q12879	p.D776Y	776	COAD	COAD (Colon adenocarcinoma)	5I2N	259	A
+PANK3	Q9H999	p.L263F	263	COAD	COAD (Colon adenocarcinoma)	3MK6	263	C
+KRAS	P01116	p.G13C	13	COAD	COAD (Colon adenocarcinoma)	5V9O	13	A
+RXRA	P19793	p.A311T	311	COAD	COAD (Colon adenocarcinoma)	3UVV	311	B
+PIK3CA	P42336	p.R88Q	88	COAD	COAD (Colon adenocarcinoma)	5SWP	88	A
+SLC1A3	P43003	p.V494A	494	COAD	COAD (Colon adenocarcinoma)	5LLM	474	A
+PYGM	P11217	p.E573K	573	COAD	COAD (Colon adenocarcinoma)	1Z8D	572	A
+PTPRZ1	P23471	p.M1825I	1825	COAD	COAD (Colon adenocarcinoma)	5H08	1825	A
+KRAS	P01116	p.G12S	12	COAD	COAD (Colon adenocarcinoma)	5V9O	12	A
+PTPN11	Q06124	p.E76K	76	COAD	COAD (Colon adenocarcinoma)	6BMY	76	A
+MAPK8	P45983	p.P184L	184	COAD	COAD (Colon adenocarcinoma)	3O2M	184	A
+PRMT3	O60678	p.W383C	383	COAD	COAD (Colon adenocarcinoma)	4RYL	400	A
+PIK3CA	P42336	p.R93W	93	COAD	COAD (Colon adenocarcinoma)	5SWP	93	A
+SLC1A3	P43003	p.V393I	393	COAD	COAD (Colon adenocarcinoma)	5LLM	373	A
+RXRA	P19793	p.R316H	316	COAD	COAD (Colon adenocarcinoma)	3UVV	316	B
+MAPK10	P53779	p.L153V	153	COAD	COAD (Colon adenocarcinoma)	4H39	153	A
+MAP2K4	P45985	p.A99V	99	COAD	COAD (Colon adenocarcinoma)	3ALO	99	A
+PAK1	Q13153	p.I312S	312	COAD	COAD (Colon adenocarcinoma)	4ZJI	312	A
+PDK1	Q15118	p.Y114H	114	COAD	COAD (Colon adenocarcinoma)	2Q8G	114	A
+PANK1	Q8TE04	p.T521I	521	COAD	COAD (Colon adenocarcinoma)	2I7N	521	B
+MAPK8	P45983	p.I231V	231	COAD	COAD (Colon adenocarcinoma)	3O2M	231	A
+MALT1	Q9UDY8	p.I712V	712	COAD	COAD (Colon adenocarcinoma)	4I1R	712	A
+RRM1	P23921	p.N85D	85	COAD	COAD (Colon adenocarcinoma)	3HNE	85	B
+FKBP1A	P62942	p.F100L	100	COAD	COAD (Colon adenocarcinoma)	1NSG	99	A
+SAMHD1	Q9Y3Z3	p.R451P	451	COAD	COAD (Colon adenocarcinoma)	4BZB	451	A
+GC	P02774	p.R352K	352	COAD	COAD (Colon adenocarcinoma)	1KW2	352	A
+BRAF	P15056	p.L597V	597	COAD	COAD (Colon adenocarcinoma)	4JVG	597	A
+PTPN11	Q06124	p.E69K	69	COAD	COAD (Colon adenocarcinoma)	6BMY	69	A
+MAOB	P27338	p.N170K	170	COAD	COAD (Colon adenocarcinoma)	2XCG	170	A
+PIK3CA	P42336	p.E542G	542	COAD	COAD (Colon adenocarcinoma)	5SWP	542	A
+KRAS	P01116	p.Q61H	61	COAD	COAD (Colon adenocarcinoma)	5V9O	61	A
+EPAS1	Q99814	p.T324M	324	COAD	COAD (Colon adenocarcinoma)	3F1O	324	A
+MALT1	Q9UDY8	p.R392C	392	COAD	COAD (Colon adenocarcinoma)	4I1R	392	A
+FBP1	Q2TU34	p.E30K	30	COAD	COAD (Colon adenocarcinoma)	5PZR	29	A
+OPRD1	P41143	p.D128N	128	COAD	COAD (Colon adenocarcinoma)	4N6H	128	A
+GRIN2A	Q12879	p.A778T	778	COAD	COAD (Colon adenocarcinoma)	5I2N	261	A
+MAP2K4	P45985	p.D96V	96	COAD	COAD (Colon adenocarcinoma)	3ALO	96	A
+NTRK1	P04629	p.R673G	673	COAD	COAD (Colon adenocarcinoma)	6D1Z	673	A
+IDH1	O75874	p.K126R	126	COAD	COAD (Colon adenocarcinoma)	5TQH	126	A
+ALB	P02768	p.S226G	226	COAD	COAD (Colon adenocarcinoma)	2BXG	202	A
+PTPN1	P18031	p.M282T	282	COAD	COAD (Colon adenocarcinoma)	1T49	282	A
+MALT1	Q9UDY8	p.R576W	576	COAD	COAD (Colon adenocarcinoma)	4I1R	576	A
+HRAS	P01112	p.R135Q	135	COAD	COAD (Colon adenocarcinoma)	4G0N	135	A
+MAP2K7	O14733	p.T190M	190	COAD	COAD (Colon adenocarcinoma)	5Y90	206	A
+PRKAG1	P54619	p.R299Q	299	COAD	COAD (Colon adenocarcinoma)	4CFE	299	E
+RNMT	O43148	p.C356Y	356	COAD	COAD (Colon adenocarcinoma)	5E8J	356	A
+MMP9	P14780	p.H190Y	190	COAD	COAD (Colon adenocarcinoma)	5UE4	190	B
+SIRT1	Q96EB6	p.R199Q	199	COAD	COAD (Colon adenocarcinoma)	5BTR	199	A
+PDE4D	Q08499	p.M639I	639	COAD	COAD (Colon adenocarcinoma)	3IAD	503	A
+HRAS	P01112	p.G60S	60	COAD	COAD (Colon adenocarcinoma)	4G0N	60	A
+CPS1	P31327	p.R1453Q	1453	COAD	COAD (Colon adenocarcinoma)	5DOU	1453	A
+PYGL	P06737	p.H615Y	615	COAD	COAD (Colon adenocarcinoma)	3DDS	614	A
+FKBP1A	P62942	p.S39Y	39	COAD	COAD (Colon adenocarcinoma)	1NSG	38	A
+PIK3CA	P42336	p.S1015Y	1015	COAD	COAD (Colon adenocarcinoma)	5SWP	1015	A
+MAPK10	P53779	p.M159I	159	COAD	COAD (Colon adenocarcinoma)	4H39	159	A
+MAPK14	Q16539	p.N82H	82	COAD	COAD (Colon adenocarcinoma)	3IW8	82	A
+VCP	P55072	p.F503V	503	COAD	COAD (Colon adenocarcinoma)	5FTJ	503	A
+F7	P08709	p.L229M	229	COAD	COAD (Colon adenocarcinoma)	1DVA	32	H
+ME2	P23368	p.A39T	39	COAD	COAD (Colon adenocarcinoma)	1PJ3	39	A
+IDH1	O75874	p.R132G	132	COAD	COAD (Colon adenocarcinoma)	5TQH	132	A
+ANXA5	P08758	p.R245Q	245	COAD	COAD (Colon adenocarcinoma)	1HAK	245	A
+PAK1	Q13153	p.F410L	410	COAD	COAD (Colon adenocarcinoma)	4ZJI	410	A
+ME2	P23368	p.E93D	93	COAD	COAD (Colon adenocarcinoma)	1PJ3	93	A
+PIK3CA	P42336	p.E542A	542	COAD	COAD (Colon adenocarcinoma)	5SWP	542	A
+KRAS	P01116	p.P34L	34	COAD	COAD (Colon adenocarcinoma)	5V9O	34	A
+PKLR	P30613	p.D528Y	528	COAD	COAD (Colon adenocarcinoma)	2VGB	528	A
+MAP2K1	Q02750	p.G128D	128	COAD	COAD (Colon adenocarcinoma)	1S9J	128	A
+ITK	Q08881	p.M503V	503	COAD	COAD (Colon adenocarcinoma)	4M15	503	A
+AKT1	P31749	p.W80R	80	COAD	COAD (Colon adenocarcinoma)	3O96	80	A
+MIF	P14174	p.P34S	34	COAD	COAD (Colon adenocarcinoma)	3IJJ	33	C
+SIRT3	Q9NTG7	p.I291S	291	COAD	COAD (Colon adenocarcinoma)	4C7B	291	A
+PIK3CA	P42336	p.R93P	93	COAD	COAD (Colon adenocarcinoma)	5SWP	93	A
+MAT2A	P31153	p.F139S	139	COAD	COAD (Colon adenocarcinoma)	5UGH	139	C
+PRKAA2	P54646	p.I46L	46	COAD	COAD (Colon adenocarcinoma)	4CFE	46	A
+PRMT3	O60678	p.T449M	449	COAD	COAD (Colon adenocarcinoma)	4RYL	466	A
+OPRD1	P41143	p.A305T	305	COAD	COAD (Colon adenocarcinoma)	4N6H	305	A
+MAPK8	P45983	p.V260I	260	COAD	COAD (Colon adenocarcinoma)	3O2M	260	A
+MAP2K1	Q02750	p.V127M	127	COAD	COAD (Colon adenocarcinoma)	1S9J	127	A
+BRAF	P15056	p.N581I	581	COAD	COAD (Colon adenocarcinoma)	4JVG	581	A
+IDH1	O75874	p.R132C	132	COAD	COAD (Colon adenocarcinoma)	5TQH	132	A
+SLC1A3	P43003	p.V390M	390	COAD	COAD (Colon adenocarcinoma)	5LLM	370	A
+MAP2K2	P36507	p.R238W	238	COAD	COAD (Colon adenocarcinoma)	1S9I	238	A
+BRAF	P15056	p.K601E	601	DLBC	DLBC (Diffuse large B-cell lymphoma)	4JVG	601	A
+KRAS	P01116	p.G12D	12	ESCA	ESCA (Esophageal cancer)	5V9O	12	A
+ADORA2A	P29274	p.S35I	35	ESCA	ESCA (Esophageal cancer)	3VG9	35	A
+IDH1	O75874	p.M254I	254	ESCA	ESCA (Esophageal cancer)	5TQH	254	A
+PANK1	Q8TE04	p.A492V	492	ESCA	ESCA (Esophageal cancer)	2I7N	492	B
+ALB	P02768	p.S504F	504	ESCA	ESCA (Esophageal cancer)	2BXG	480	A
+MAPK1	P28482	p.Y316C	316	ESCA	ESCA (Esophageal cancer)	5AX3	306	A
+MTOR	P42345	p.E2032K	2032	ESCA	ESCA (Esophageal cancer)	1NSG	2032	B
+MAPK10	P53779	p.E367K	367	ESCA	ESCA (Esophageal cancer)	4H39	367	A
+PYGL	P06737	p.R243C	243	ESCA	ESCA (Esophageal cancer)	3DDS	242	A
+PKLR	P30613	p.R559Q	559	ESCA	ESCA (Esophageal cancer)	2VGB	559	A
+PANK3	Q9H999	p.W266L	266	ESCA	ESCA (Esophageal cancer)	3MK6	266	C
+ITK	Q08881	p.L433R	433	ESCA	ESCA (Esophageal cancer)	4M15	433	A
+ITK	Q08881	p.E436A	436	ESCA	ESCA (Esophageal cancer)	4M15	436	A
+SERPINC1	P01008	p.N77S	77	GBM	GBM (Glioblastoma multiforme)	3KCG	45	I
+CPS1	P31327	p.H1447P	1447	GBM	GBM (Glioblastoma multiforme)	5DOU	1447	A
+PTPN11	Q06124	p.F285S	285	GBM	GBM (Glioblastoma multiforme)	6BMY	285	A
+IDH1	O75874	p.R132H	132	GBM	GBM (Glioblastoma multiforme)	5TQH	132	A
+BRAF	P15056	p.V600E	600	GBM	GBM (Glioblastoma multiforme)	4JVG	600	A
+PIK3CA	P42336	p.R93Q	93	GBM	GBM (Glioblastoma multiforme)	5SWP	93	A
+PIK3CA	P42336	p.E542K	542	GBM	GBM (Glioblastoma multiforme)	5SWP	542	A
+SIRT1	Q96EB6	p.N417S	417	GBM	GBM (Glioblastoma multiforme)	5BTR	417	A
+KRAS	P01116	p.G12D	12	GBM	GBM (Glioblastoma multiforme)	5V9O	12	A
+PANK3	Q9H999	p.R207Q	207	GBM	GBM (Glioblastoma multiforme)	3MK6	207	A
+CALM1	P0DP23	p.N138S	138	GBM	GBM (Glioblastoma multiforme)	3J41	137	E
+VCP	P55072	p.Y495C	495	GBM	GBM (Glioblastoma multiforme)	5FTJ	495	A
+GRIN2A	Q12879	p.G762R	762	GBM	GBM (Glioblastoma multiforme)	5I2N	245	A
+ALB	P02768	p.D283E	283	GBM	GBM (Glioblastoma multiforme)	2BXD	259	A
+FBP1	Q2TU34	p.R141G	141	GBM	GBM (Glioblastoma multiforme)	5PZR	140	A
+ITGAL	P20701	p.I279N	279	GBM	GBM (Glioblastoma multiforme)	2ICA	254	A
+PIK3CA	P42336	p.R88Q	88	GBM	GBM (Glioblastoma multiforme)	5SWP	88	A
+PTPN11	Q06124	p.E69K	69	GBM	GBM (Glioblastoma multiforme)	6BMY	69	A
+SERPINC1	P01008	p.R161Q	161	GBM	GBM (Glioblastoma multiforme)	3KCG	129	I
+CPS1	P31327	p.D1396N	1396	GBM	GBM (Glioblastoma multiforme)	5DOU	1396	A
+ALB	P02768	p.E316K	316	GBM	GBM (Glioblastoma multiforme)	2BXD	292	A
+GLRA3	O75311	p.R304Q	304	GBM	GBM (Glioblastoma multiforme)	5VDH	271	A
+ITK	Q08881	p.S414Y	414	GBM	GBM (Glioblastoma multiforme)	4M15	414	A
+PFKP	Q01813	p.F578L	578	GBM	GBM (Glioblastoma multiforme)	4XZ2	578	A
+RRM1	P23921	p.R284Q	284	GBM	GBM (Glioblastoma multiforme)	3HNE	284	A
+EED	O75530	p.R414Q	414	GBM	GBM (Glioblastoma multiforme)	5HYN	414	B
+CSNK2A1	P68400	p.A110T	110	GBM	GBM (Glioblastoma multiforme)	3H30	110	A
+FKBP1A	P62942	p.E61K	61	GBM	GBM (Glioblastoma multiforme)	1NSG	60	A
+GNPDA1	P46926	p.M184T	184	GBM	GBM (Glioblastoma multiforme)	1NE7	184	A
+PTPN11	Q06124	p.S502L	502	GBM	GBM (Glioblastoma multiforme)	6BMY	502	A
+IDH1	O75874	p.R132G	132	GBM	GBM (Glioblastoma multiforme)	5TQH	132	A
+FBP2	O00757	p.S177F	177	GBM	GBM (Glioblastoma multiforme)	3IFC	176	A
+FBP2	O00757	p.S177A	177	GBM	GBM (Glioblastoma multiforme)	3IFC	176	A
+SIRT3	Q9NTG7	p.D172E	172	GBM	GBM (Glioblastoma multiforme)	4C7B	172	A
+MSH6	P52701	p.M452V	452	GBM	GBM (Glioblastoma multiforme)	2O8B	452	B
+SLC1A3	P43003	p.I438M	438	GBM	GBM (Glioblastoma multiforme)	5LLM	418	A
+AKT1	P31749	p.T211I	211	GBM	GBM (Glioblastoma multiforme)	3O96	211	A
+KDR	P35968	p.A352V	352	GBM	GBM (Glioblastoma multiforme)	5OYJ	352	D
+PRKAG1	P54619	p.Q320K	320	GBM	GBM (Glioblastoma multiforme)	4CFE	320	E
+FDPS	P14324	p.G121E	121	GBM	GBM (Glioblastoma multiforme)	3N45	55	F
+MAP2K1	Q02750	p.G79S	79	GBM	GBM (Glioblastoma multiforme)	1S9J	79	A
+PDE5A	O76074	p.D654N	654	GBM	GBM (Glioblastoma multiforme)	1TBF	654	A
+PTPN11	Q06124	p.A72V	72	GBM	GBM (Glioblastoma multiforme)	6BMY	72	A
+ESR2	Q92731	p.R329Q	329	GBM	GBM (Glioblastoma multiforme)	2FSZ	329	B
+IGF1R	P08069	p.M1179V	1179	GBM	GBM (Glioblastoma multiforme)	3LW0	1179	A
+BRAF	P15056	p.G596D	596	GBM	GBM (Glioblastoma multiforme)	4JVG	596	A
+NTRK1	P04629	p.K665T	665	GBM	GBM (Glioblastoma multiforme)	6D1Z	665	A
+PTPN11	Q06124	p.E76A	76	GBM	GBM (Glioblastoma multiforme)	6BMY	76	A
+SLC1A3	P43003	p.N398K	398	GBM	GBM (Glioblastoma multiforme)	5LLM	378	A
+IDH1	O75874	p.R132C	132	GBM	GBM (Glioblastoma multiforme)	5TQH	132	A
+KDR	P35968	p.R347H	347	GBM	GBM (Glioblastoma multiforme)	5OYJ	347	D
+PIK3CA	P42336	p.E542V	542	GBM	GBM (Glioblastoma multiforme)	5SWP	542	A
+PYGL	P06737	p.R243H	243	GBM	GBM (Glioblastoma multiforme)	3DDS	242	A
+PIK3CA	P42336	p.R93W	93	GBM	GBM (Glioblastoma multiforme)	5SWP	93	A
+LIMK2	P53671	p.L401M	401	GBM	GBM (Glioblastoma multiforme)	4TPT	401	A
+PTPN11	Q06124	p.I282M	282	GBM	GBM (Glioblastoma multiforme)	6BMY	282	A
+FCGR3A	P08637	p.R88G	88	HNSC	HNSC (Head and neck squamous cell carcinoma)	5MN2	70	A
+PDE10A	Q9Y233	p.T364M	364	HNSC	HNSC (Head and neck squamous cell carcinoma)	2ZMF	364	A
+RET	P07949	p.K740N	740	HNSC	HNSC (Head and neck squamous cell carcinoma)	5FM2	740	A
+PIK3CA	P42336	p.E542K	542	HNSC	HNSC (Head and neck squamous cell carcinoma)	5SWP	542	A
+HRAS	P01112	p.Q61L	61	HNSC	HNSC (Head and neck squamous cell carcinoma)	4G0N	61	A
+SERPINE1	P05121	p.F259L	259	HNSC	HNSC (Head and neck squamous cell carcinoma)	4G8O	236	D
+PADI4	Q9UM07	p.I381M	381	HNSC	HNSC (Head and neck squamous cell carcinoma)	1WD9	381	A
+MAPK1	P28482	p.E81K	81	HNSC	HNSC (Head and neck squamous cell carcinoma)	5AX3	72	A
+EIF4E	P06730	p.D90G	90	HNSC	HNSC (Head and neck squamous cell carcinoma)	4TPW	90	A
+CASP6	P55212	p.H58Y	58	HNSC	HNSC (Head and neck squamous cell carcinoma)	4EJF	58	C
+PIK3CA	P42336	p.R88Q	88	HNSC	HNSC (Head and neck squamous cell carcinoma)	5SWP	88	A
+BRAF	P15056	p.D594N	594	HNSC	HNSC (Head and neck squamous cell carcinoma)	4JVG	594	A
+PIK3CA	P42336	p.G363A	363	HNSC	HNSC (Head and neck squamous cell carcinoma)	5SWP	363	A
+GCK	P35557	p.S64F	64	HNSC	HNSC (Head and neck squamous cell carcinoma)	3F9M	64	A
+PDE10A	Q9Y233	p.I322M	322	HNSC	HNSC (Head and neck squamous cell carcinoma)	2ZMF	322	A
+PIK3CA	P42336	p.Y606C	606	HNSC	HNSC (Head and neck squamous cell carcinoma)	5SWP	606	A
+AKT1	P31749	p.E17K	17	HNSC	HNSC (Head and neck squamous cell carcinoma)	3O96	17	A
+CASP8	Q14790	p.T469I	469	HNSC	HNSC (Head and neck squamous cell carcinoma)	3KJQ	469	B
+EPAS1	Q99814	p.M338I	338	HNSC	HNSC (Head and neck squamous cell carcinoma)	3F1O	338	A
+PYGM	P11217	p.R570W	570	HNSC	HNSC (Head and neck squamous cell carcinoma)	1Z8D	569	A
+BRAF	P15056	p.V600E	600	HNSC	HNSC (Head and neck squamous cell carcinoma)	4JVG	600	A
+PDE4D	Q08499	p.E331Q	331	HNSC	HNSC (Head and neck squamous cell carcinoma)	3IAD	598	A
+HRAS	P01112	p.Q61H	61	HNSC	HNSC (Head and neck squamous cell carcinoma)	4G0N	61	A
+ADORA2A	P29274	p.R111L	111	HNSC	HNSC (Head and neck squamous cell carcinoma)	3VG9	111	A
+FBP2	O00757	p.I139M	139	HNSC	HNSC (Head and neck squamous cell carcinoma)	3IFC	138	A
+HSPA1A	P0DMV8	p.T37I	37	HNSC	HNSC (Head and neck squamous cell carcinoma)	4IO8	37	A
+CASP8	Q14790	p.I333M	333	HNSC	HNSC (Head and neck squamous cell carcinoma)	3KJQ	333	A
+HGF	P14210	p.R630P	630	HNSC	HNSC (Head and neck squamous cell carcinoma)	4O3T	630	A
+PRMT3	O60678	p.V373M	373	HNSC	HNSC (Head and neck squamous cell carcinoma)	4RYL	390	A
+PIK3CA	P42336	p.C604R	604	HNSC	HNSC (Head and neck squamous cell carcinoma)	5SWP	604	A
+GRIA2	P42262	p.Y445H	445	HNSC	HNSC (Head and neck squamous cell carcinoma)	2XHD	35	B
+PYGL	P06737	p.D228Y	228	HNSC	HNSC (Head and neck squamous cell carcinoma)	1EXV	227	A
+PARP14	Q460N5	p.G1135E	1135	HNSC	HNSC (Head and neck squamous cell carcinoma)	5O2D	1135	A
+ADCY10	Q96PN6	p.V172M	172	HNSC	HNSC (Head and neck squamous cell carcinoma)	4USW	172	A
+UGDH	O60701	p.Y14C	14	HNSC	HNSC (Head and neck squamous cell carcinoma)	3PTZ	14	A
+PRKAB1	Q9Y478	p.N110S	110	HNSC	HNSC (Head and neck squamous cell carcinoma)	4CFE	110	B
+AMD1	P17707	p.N319S	319	HNSC	HNSC (Head and neck squamous cell carcinoma)	1JL0	319	A
+ADORA2A	P29274	p.R300H	300	HNSC	HNSC (Head and neck squamous cell carcinoma)	3VG9	300	A
+PAK1	Q13153	p.L405I	405	HNSC	HNSC (Head and neck squamous cell carcinoma)	4ZJI	405	A
+GRM5	P41594	p.L653V	653	HNSC	HNSC (Head and neck squamous cell carcinoma)	4OO9	653	A
+GLRA3	O75311	p.Q299E	299	HNSC	HNSC (Head and neck squamous cell carcinoma)	5VDH	266	B
+PIK3CA	P42336	p.E365V	365	HNSC	HNSC (Head and neck squamous cell carcinoma)	5SWP	365	A
+ESR2	Q92731	p.D303N	303	KICH	KICH (Chromophobe renal cell carcinoma)	2FSZ	303	B
+PRKAG1	P54619	p.R299Q	299	KICH	KICH (Chromophobe renal cell carcinoma)	4CFE	299	E
+ADORA2A	P29274	p.R300C	300	KICH	KICH (Chromophobe renal cell carcinoma)	3VG9	300	A
+SLC1A3	P43003	p.R385H	385	KICH	KICH (Chromophobe renal cell carcinoma)	5LLM	365	A
+OPRD1	P41143	p.C273Y	273	KICH	KICH (Chromophobe renal cell carcinoma)	4N6H	273	A
+AMD1	P17707	p.L13M	13	KIRC	KIRC (Kidney renal clear cell carcinoma)	1JL0	13	A
+KRAS	P01116	p.A59G	59	KIRC	KIRC (Kidney renal clear cell carcinoma)	5V9O	59	A
+PRKAG1	P54619	p.V225I	225	KIRC	KIRC (Kidney renal clear cell carcinoma)	4CFE	225	E
+NTRK1	P04629	p.H489Q	489	KIRC	KIRC (Kidney renal clear cell carcinoma)	6D1Z	489	A
+PYGL	P06737	p.P195S	195	KIRC	KIRC (Kidney renal clear cell carcinoma)	1EXV	194	A
+CHRM2	P08172	p.V171M	171	KIRC	KIRC (Kidney renal clear cell carcinoma)	4MQT	171	A
+OPRD1	P41143	p.V281I	281	KIRC	KIRC (Kidney renal clear cell carcinoma)	4N6H	281	A
+ALB	P02768	p.A241G	241	KIRC	KIRC (Kidney renal clear cell carcinoma)	2BXD	217	A
+PAH	P00439	p.V45D	45	KIRC	KIRC (Kidney renal clear cell carcinoma)	5FII	45	C
+GRM5	P41594	p.A623S	623	KIRC	KIRC (Kidney renal clear cell carcinoma)	4OO9	623	A
+ADRB2	P07550	p.G276R	276	KIRC	KIRC (Kidney renal clear cell carcinoma)	5X7D	276	A
+MAPK14	Q16539	p.P191H	191	KIRC	KIRC (Kidney renal clear cell carcinoma)	4E6C	191	A
+KRAS	P01116	p.G12D	12	KIRP	KIRP (Kidney renal papillary cell carcinoma)	5V9O	12	A
+PKLR	P30613	p.R479C	479	KIRP	KIRP (Kidney renal papillary cell carcinoma)	2VGB	479	A
+KRAS	P01116	p.G12V	12	KIRP	KIRP (Kidney renal papillary cell carcinoma)	5V9O	12	A
+HK1	P19367	p.M300I	300	KIRP	KIRP (Kidney renal papillary cell carcinoma)	1CZA	300	N
+TTR	P02766	p.Y136C	136	KIRP	KIRP (Kidney renal papillary cell carcinoma)	1F86	116	B
+TTR	P02766	p.Y136D	136	KIRP	KIRP (Kidney renal papillary cell carcinoma)	1F86	116	B
+ITGAL	P20701	p.D156N	156	KIRP	KIRP (Kidney renal papillary cell carcinoma)	2ICA	131	A
+BRAF	P15056	p.V600E	600	KIRP	KIRP (Kidney renal papillary cell carcinoma)	4JVG	600	A
+PTPRZ1	P23471	p.Y1943D	1943	KIRP	KIRP (Kidney renal papillary cell carcinoma)	5H08	1943	A
+BRAF	P15056	p.N581S	581	KIRP	KIRP (Kidney renal papillary cell carcinoma)	4JVG	581	A
+ADORA2A	P29274	p.G114C	114	KIRP	KIRP (Kidney renal papillary cell carcinoma)	3VG9	114	A
+PADI4	Q9UM07	p.E378V	378	KIRP	KIRP (Kidney renal papillary cell carcinoma)	1WD9	378	A
+PTPRZ1	P23471	p.K1836I	1836	KIRP	KIRP (Kidney renal papillary cell carcinoma)	5H08	1836	A
+GRM5	P41594	p.W785R	785	KIRP	KIRP (Kidney renal papillary cell carcinoma)	4OO9	785	A
+PIK3CA	P42336	p.E542K	542	KIRP	KIRP (Kidney renal papillary cell carcinoma)	5SWP	542	A
+IDH1	O75874	p.R132C	132	LAML	LAML (Acute Myeloid Leukemia)	5TQH	132	A
+KRAS	P01116	p.G12D	12	LAML	LAML (Acute Myeloid Leukemia)	5V9O	12	A
+KRAS	P01116	p.G12V	12	LAML	LAML (Acute Myeloid Leukemia)	5V9O	12	A
+KRAS	P01116	p.Q61H	61	LAML	LAML (Acute Myeloid Leukemia)	5V9O	61	A
+HSPA5	P11021	p.P63Q	63	LAML	LAML (Acute Myeloid Leukemia)	5E84	63	A
+KRAS	P01116	p.G13D	13	LAML	LAML (Acute Myeloid Leukemia)	5V9O	13	A
+IDH1	O75874	p.R132H	132	LAML	LAML (Acute Myeloid Leukemia)	5TQH	132	A
+KRAS	P01116	p.I36M	36	LAML	LAML (Acute Myeloid Leukemia)	5V9O	36	A
+PTPN11	Q06124	p.A72V	72	LAML	LAML (Acute Myeloid Leukemia)	6BMY	72	A
+PKM	P14618	p.R106W	106	LAML	LAML (Acute Myeloid Leukemia)	4B2D	106	A
+KRAS	P01116	p.A59E	59	LAML	LAML (Acute Myeloid Leukemia)	5V9O	59	A
+IDH1	O75874	p.R132H	132	LGG	LGG (Brain Lower Grade Glioma)	5TQH	132	A
+IDH1	O75874	p.R132C	132	LGG	LGG (Brain Lower Grade Glioma)	5TQH	132	A
+IDH1	O75874	p.R132G	132	LGG	LGG (Brain Lower Grade Glioma)	5TQH	132	A
+BRAF	P15056	p.D594G	594	LGG	LGG (Brain Lower Grade Glioma)	4JVG	594	A
+SERPINC1	P01008	p.R78W	78	LGG	LGG (Brain Lower Grade Glioma)	3KCG	46	I
+PTPN11	Q06124	p.A72D	72	LGG	LGG (Brain Lower Grade Glioma)	6BMY	72	A
+IDH1	O75874	p.R132S	132	LGG	LGG (Brain Lower Grade Glioma)	5TQH	132	A
+PYGL	P06737	p.A611T	611	LGG	LGG (Brain Lower Grade Glioma)	3DDS	610	A
+TTR	P02766	p.M33I	33	LGG	LGG (Brain Lower Grade Glioma)	1F86	13	A
+PTPN11	Q06124	p.F71L	71	LGG	LGG (Brain Lower Grade Glioma)	6BMY	71	A
+HBB	P68871	p.V35F	35	LGG	LGG (Brain Lower Grade Glioma)	2D60	34	B
+UGDH	O60701	p.S275N	275	LGG	LGG (Brain Lower Grade Glioma)	3PTZ	275	A
+MAPK10	P53779	p.K121E	121	LGG	LGG (Brain Lower Grade Glioma)	4H39	121	A
+FBP1	Q2TU34	p.R141I	141	LGG	LGG (Brain Lower Grade Glioma)	5PZR	140	A
+AKT1	P31749	p.V201I	201	LGG	LGG (Brain Lower Grade Glioma)	3O96	201	A
+BRAF	P15056	p.V600E	600	LGG	LGG (Brain Lower Grade Glioma)	4JVG	600	A
+PTPN11	Q06124	p.R498W	498	LGG	LGG (Brain Lower Grade Glioma)	6BMY	498	A
+EIF4E	P06730	p.F47L	47	LGG	LGG (Brain Lower Grade Glioma)	4TPW	47	A
+KDR	P35968	p.R347H	347	LGG	LGG (Brain Lower Grade Glioma)	5OYJ	347	D
+RET	P07949	p.A807T	807	LGG	LGG (Brain Lower Grade Glioma)	5FM2	807	A
+PIK3CA	P42336	p.E542K	542	LGG	LGG (Brain Lower Grade Glioma)	5SWP	542	A
+PIK3CA	P42336	p.R88Q	88	LGG	LGG (Brain Lower Grade Glioma)	5SWP	88	A
+MMP9	P14780	p.A406V	406	LGG	LGG (Brain Lower Grade Glioma)	5UE4	231	B
+ME2	P23368	p.I126L	126	LGG	LGG (Brain Lower Grade Glioma)	1PJ3	1126	B
+PIK3CA	P42336	p.T86S	86	LIHC	LIHC (Liver hepatocellular carcinoma)	5SWP	86	A
+KRAS	P01116	p.G12C	12	LIHC	LIHC (Liver hepatocellular carcinoma)	5V9O	12	A
+ALB	P02768	p.Y174H	174	LIHC	LIHC (Liver hepatocellular carcinoma)	2BXD	150	A
+KRAS	P01116	p.G12D	12	LIHC	LIHC (Liver hepatocellular carcinoma)	5V9O	12	A
+MMP7	P09237	p.R127L	127	LIHC	LIHC (Liver hepatocellular carcinoma)	5UE5	107	A
+SAMHD1	Q9Y3Z3	p.K377N	377	LIHC	LIHC (Liver hepatocellular carcinoma)	4BZB	377	A
+GRIA2	P42262	p.S513T	513	LIHC	LIHC (Liver hepatocellular carcinoma)	2XHD	103	A
+IGF1R	P08069	p.L1066Q	1066	LIHC	LIHC (Liver hepatocellular carcinoma)	3LW0	1066	A
+MAPK1	P28482	p.Y131C	131	LIHC	LIHC (Liver hepatocellular carcinoma)	5AX3	122	A
+PTPN11	Q06124	p.Y279C	279	LIHC	LIHC (Liver hepatocellular carcinoma)	6BMY	279	A
+IDH1	O75874	p.R132G	132	LIHC	LIHC (Liver hepatocellular carcinoma)	5TQH	132	A
+ALB	P02768	p.P176A	176	LIHC	LIHC (Liver hepatocellular carcinoma)	2BXD	152	A
+PIK3CA	P42336	p.E542K	542	LIHC	LIHC (Liver hepatocellular carcinoma)	5SWP	542	A
+RRM1	P23921	p.Y285C	285	LIHC	LIHC (Liver hepatocellular carcinoma)	3HNE	285	A
+PYGM	P11217	p.A611T	611	LIHC	LIHC (Liver hepatocellular carcinoma)	1Z8D	610	A
+MAP2K1	Q02750	p.Y130C	130	LIHC	LIHC (Liver hepatocellular carcinoma)	1S9J	130	A
+PYGL	P06737	p.R194L	194	LIHC	LIHC (Liver hepatocellular carcinoma)	1EXV	193	A
+HGF	P14210	p.R685I	685	LIHC	LIHC (Liver hepatocellular carcinoma)	4O3T	685	A
+KRAS	P01116	p.G13D	13	LIHC	LIHC (Liver hepatocellular carcinoma)	5V9O	13	A
+ALB	P02768	p.A374S	374	LIHC	LIHC (Liver hepatocellular carcinoma)	2BXG	350	A
+PDE10A	Q9Y233	p.Q333K	333	LIHC	LIHC (Liver hepatocellular carcinoma)	2ZMF	333	A
+JAK2	Q506Q0	p.I559L	559	LIHC	LIHC (Liver hepatocellular carcinoma)	5UT6	559	A
+IDH1	O75874	p.R132C	132	LIHC	LIHC (Liver hepatocellular carcinoma)	5TQH	132	A
+KRAS	P01116	p.R68M	68	LIHC	LIHC (Liver hepatocellular carcinoma)	5V9O	68	A
+KDR	P35968	p.A352S	352	LIHC	LIHC (Liver hepatocellular carcinoma)	5OYJ	352	D
+AURKA	O14965	p.R180K	180	LIHC	LIHC (Liver hepatocellular carcinoma)	5DPV	180	A
+KRAS	P01116	p.G12C	12	LUAD	LUAD (Lung adenocarcinoma)	5V9O	12	A
+EIF4E	P06730	p.A58P	58	LUAD	LUAD (Lung adenocarcinoma)	4TPW	58	A
+RET	P07949	p.V757M	757	LUAD	LUAD (Lung adenocarcinoma)	5FM2	757	A
+KRAS	P01116	p.G12D	12	LUAD	LUAD (Lung adenocarcinoma)	5V9O	12	A
+PIK3CA	P42336	p.E542K	542	LUAD	LUAD (Lung adenocarcinoma)	5SWP	542	A
+PTPRZ1	P23471	p.V1915E	1915	LUAD	LUAD (Lung adenocarcinoma)	5H08	1915	A
+MAP2K1	Q02750	p.G128V	128	LUAD	LUAD (Lung adenocarcinoma)	1S9J	128	A
+KRAS	P01116	p.G12V	12	LUAD	LUAD (Lung adenocarcinoma)	5V9O	12	A
+ALB	P02768	p.D279Y	279	LUAD	LUAD (Lung adenocarcinoma)	2BXD	255	A
+FBP2	O00757	p.G29W	29	LUAD	LUAD (Lung adenocarcinoma)	3IFC	28	A
+PDE4D	Q08499	p.D620Y	620	LUAD	LUAD (Lung adenocarcinoma)	3IAD	484	A
+KRAS	P01116	p.G12A	12	LUAD	LUAD (Lung adenocarcinoma)	5V9O	12	A
+BRAF	P15056	p.V600E	600	LUAD	LUAD (Lung adenocarcinoma)	4JVG	600	A
+AKT1	P31749	p.E17K	17	LUAD	LUAD (Lung adenocarcinoma)	3O96	17	A
+MAPK7	Q13164	p.R98Q	98	LUAD	LUAD (Lung adenocarcinoma)	4ZSG	98	A
+CHRM2	P08172	p.W89S	89	LUAD	LUAD (Lung adenocarcinoma)	4MQT	89	A
+SERPINE1	P05121	p.E353D	353	LUAD	LUAD (Lung adenocarcinoma)	4G8O	330	D
+GLS	O94925	p.R317K	317	LUAD	LUAD (Lung adenocarcinoma)	3UO9	317	A
+BRAF	P15056	p.N581S	581	LUAD	LUAD (Lung adenocarcinoma)	4JVG	581	A
+GRM5	P41594	p.G628C	628	LUAD	LUAD (Lung adenocarcinoma)	4OO9	628	A
+IDH1	O75874	p.R132L	132	LUAD	LUAD (Lung adenocarcinoma)	5TQH	132	A
+PANK3	Q9H999	p.G210W	210	LUAD	LUAD (Lung adenocarcinoma)	3MK6	210	A
+KRAS	P01116	p.Q61L	61	LUAD	LUAD (Lung adenocarcinoma)	5V9O	61	A
+BRAF	P15056	p.D594N	594	LUAD	LUAD (Lung adenocarcinoma)	4JVG	594	A
+ME2	P23368	p.R91T	91	LUAD	LUAD (Lung adenocarcinoma)	1PJ3	91	A
+FDPS	P14324	p.G322S	322	LUAD	LUAD (Lung adenocarcinoma)	3N45	256	F
+KRAS	P01116	p.G13D	13	LUAD	LUAD (Lung adenocarcinoma)	5V9O	13	A
+BRAF	P15056	p.G596S	596	LUAD	LUAD (Lung adenocarcinoma)	4JVG	596	A
+GRM5	P41594	p.L627Q	627	LUAD	LUAD (Lung adenocarcinoma)	4OO9	627	A
+ITGAL	P20701	p.M183I	183	LUAD	LUAD (Lung adenocarcinoma)	2ICA	158	A
+CHRM2	P08172	p.P418T	418	LUAD	LUAD (Lung adenocarcinoma)	4MQT	418	A
+PANK3	Q9H999	p.A118G	118	LUAD	LUAD (Lung adenocarcinoma)	3MK6	118	A
+KRAS	P01116	p.G13C	13	LUAD	LUAD (Lung adenocarcinoma)	5V9O	13	A
+CHRM2	P08172	p.V421L	421	LUAD	LUAD (Lung adenocarcinoma)	4MQT	421	A
+EIF4E	P06730	p.F48S	48	LUAD	LUAD (Lung adenocarcinoma)	4TPW	48	A
+ABL1	P00519	p.W430L	430	LUAD	LUAD (Lung adenocarcinoma)	5MO4	449	A
+CASP8	Q14790	p.S338C	338	LUAD	LUAD (Lung adenocarcinoma)	3KJQ	338	A
+KDR	P35968	p.K378N	378	LUAD	LUAD (Lung adenocarcinoma)	5OYJ	378	D
+IDH1	O75874	p.R109K	109	LUAD	LUAD (Lung adenocarcinoma)	5TQH	109	A
+RRM1	P23921	p.D16H	16	LUAD	LUAD (Lung adenocarcinoma)	3HNE	16	B
+PRMT3	O60678	p.I380T	380	LUAD	LUAD (Lung adenocarcinoma)	4RYL	397	A
+PANK3	Q9H999	p.G216V	216	LUAD	LUAD (Lung adenocarcinoma)	3MK6	216	A
+FDPS	P14324	p.G322R	322	LUAD	LUAD (Lung adenocarcinoma)	3N45	256	F
+FCGR3A	P08637	p.R88S	88	LUAD	LUAD (Lung adenocarcinoma)	5MN2	70	A
+RRM1	P23921	p.I22F	22	LUAD	LUAD (Lung adenocarcinoma)	3HNE	22	B
+KRAS	P01116	p.G12S	12	LUAD	LUAD (Lung adenocarcinoma)	5V9O	12	A
+CPS1	P31327	p.H1447D	1447	LUAD	LUAD (Lung adenocarcinoma)	5DOU	1447	A
+NTRK1	P04629	p.G488S	488	LUAD	LUAD (Lung adenocarcinoma)	6D1Z	488	A
+NTRK1	P04629	p.R649L	649	LUAD	LUAD (Lung adenocarcinoma)	6D1Z	649	A
+NTRK1	P04629	p.F557Y	557	LUAD	LUAD (Lung adenocarcinoma)	6D1Z	557	A
+CASP8	Q14790	p.I333M	333	LUAD	LUAD (Lung adenocarcinoma)	3KJQ	333	A
+BRAF	P15056	p.G464V	464	LUAD	LUAD (Lung adenocarcinoma)	4JVG	464	A
+ME2	P23368	p.A39S	39	LUAD	LUAD (Lung adenocarcinoma)	1PJ3	39	A
+IDH1	O75874	p.R132C	132	LUAD	LUAD (Lung adenocarcinoma)	5TQH	132	A
+FDPS	P14324	p.A411V	411	LUAD	LUAD (Lung adenocarcinoma)	3N45	345	F
+ANXA5	P08758	p.A159S	159	LUAD	LUAD (Lung adenocarcinoma)	1HAK	159	A
+PYGL	P06737	p.G613R	613	LUAD	LUAD (Lung adenocarcinoma)	3DDS	612	A
+KRAS	P01116	p.D33E	33	LUAD	LUAD (Lung adenocarcinoma)	5V9O	33	A
+SAMHD1	Q9Y3Z3	p.G153V	153	LUAD	LUAD (Lung adenocarcinoma)	4BZB	153	A
+KDR	P35968	p.G380W	380	LUAD	LUAD (Lung adenocarcinoma)	5OYJ	380	D
+BRAF	P15056	p.E80D	80	LUAD	LUAD (Lung adenocarcinoma)	5VYK	1080	C
+PIK3CA	P42336	p.D84H	84	LUAD	LUAD (Lung adenocarcinoma)	5SWP	84	A
+MAOB	P27338	p.I316V	316	LUAD	LUAD (Lung adenocarcinoma)	2XCG	316	A
+PDE10A	Q9Y233	p.G332C	332	LUAD	LUAD (Lung adenocarcinoma)	2ZMF	332	A
+PDE4D	Q08499	p.C660F	660	LUAD	LUAD (Lung adenocarcinoma)	3IAD	524	A
+HSPA1A	P0DMV8	p.G34S	34	LUAD	LUAD (Lung adenocarcinoma)	4IO8	34	A
+ITK	Q08881	p.G423V	423	LUAD	LUAD (Lung adenocarcinoma)	4M15	423	A
+PDE10A	Q9Y233	p.C369S	369	LUAD	LUAD (Lung adenocarcinoma)	2ZMF	369	A
+SIRT3	Q9NTG7	p.H248N	248	LUAD	LUAD (Lung adenocarcinoma)	4C7B	248	A
+PKM	P14618	p.G46V	46	LUAD	LUAD (Lung adenocarcinoma)	4B2D	46	A
+MALT1	Q9UDY8	p.D716H	716	LUAD	LUAD (Lung adenocarcinoma)	4I1R	716	A
+PADI4	Q9UM07	p.P387T	387	LUAD	LUAD (Lung adenocarcinoma)	1WD9	387	A
+ALB	P02768	p.N507K	507	LUAD	LUAD (Lung adenocarcinoma)	2BXG	483	A
+CASP6	P55212	p.A213T	213	LUAD	LUAD (Lung adenocarcinoma)	4NBN	213	B
+NTRK1	P04629	p.M671L	671	LUAD	LUAD (Lung adenocarcinoma)	6D1Z	671	A
+BRAF	P15056	p.D594H	594	LUAD	LUAD (Lung adenocarcinoma)	4JVG	594	A
+EIF4E	P06730	p.S82C	82	LUAD	LUAD (Lung adenocarcinoma)	4TPW	82	A
+RXRA	P19793	p.G429V	429	LUAD	LUAD (Lung adenocarcinoma)	3UVV	429	B
+PRPS1	P60891	p.S103R	103	LUAD	LUAD (Lung adenocarcinoma)	2HCR	103	B
+SIRT1	Q96EB6	p.D298H	298	LUAD	LUAD (Lung adenocarcinoma)	5BTR	298	A
+NT5C2	P49902	p.S443N	443	LUAD	LUAD (Lung adenocarcinoma)	2JC9	443	A
+KDR	P35968	p.T376A	376	LUAD	LUAD (Lung adenocarcinoma)	5OYJ	376	D
+PTPRZ1	P23471	p.K1832N	1832	LUAD	LUAD (Lung adenocarcinoma)	5H08	1832	A
+MMP9	P14780	p.G404C	404	LUAD	LUAD (Lung adenocarcinoma)	5UE4	229	B
+HRAS	P01112	p.Q61L	61	LUAD	LUAD (Lung adenocarcinoma)	4G0N	61	A
+FCGR3A	P08637	p.W34R	34	LUAD	LUAD (Lung adenocarcinoma)	5MN2	16	A
+NT5C2	P49902	p.L119F	119	LUAD	LUAD (Lung adenocarcinoma)	2JC9	119	A
+BRAF	P15056	p.G596R	596	LUAD	LUAD (Lung adenocarcinoma)	4JVG	596	A
+CASP1	P29466	p.E390K	390	LUAD	LUAD (Lung adenocarcinoma)	2FQQ	390	B
+PTPN11	Q06124	p.M82V	82	LUAD	LUAD (Lung adenocarcinoma)	6BMY	82	A
+PANK3	Q9H999	p.N299S	299	LUAD	LUAD (Lung adenocarcinoma)	3MK6	299	C
+KRAS	P01116	p.Q61H	61	LUAD	LUAD (Lung adenocarcinoma)	5V9O	61	A
+ITK	Q08881	p.Q420K	420	LUAD	LUAD (Lung adenocarcinoma)	4M15	420	A
+CYP3A4	P08684	p.K209E	209	LUAD	LUAD (Lung adenocarcinoma)	1W0F	209	A
+PPARG	P37231	p.I277N	277	LUAD	LUAD (Lung adenocarcinoma)	3K8S	249	B
+CHRM2	P08172	p.M406I	406	LUAD	LUAD (Lung adenocarcinoma)	4MQT	406	A
+MALT1	Q9UDY8	p.S382L	382	LUAD	LUAD (Lung adenocarcinoma)	4I1R	382	A
+AMD1	P17707	p.N258I	258	LUAD	LUAD (Lung adenocarcinoma)	1JL0	258	A
+PYGL	P06737	p.I308T	308	LUAD	LUAD (Lung adenocarcinoma)	3DDS	307	A
+MAP2K7	O14733	p.T190M	190	LUAD	LUAD (Lung adenocarcinoma)	5Y90	206	A
+HGF	P14210	p.A661D	661	LUAD	LUAD (Lung adenocarcinoma)	4O3T	661	A
+GLRA3	O75311	p.G254R	254	LUAD	LUAD (Lung adenocarcinoma)	5VDH	221	B
+GRM5	P41594	p.L744V	744	LUAD	LUAD (Lung adenocarcinoma)	4OO9	744	A
+HBA2	P69906	p.T138I	138	LUAD	LUAD (Lung adenocarcinoma)	1A01	138	A
+MAP2K1	Q02750	p.C121S	121	LUAD	LUAD (Lung adenocarcinoma)	1S9J	121	A
+CASP1	P29466	p.T388N	388	LUAD	LUAD (Lung adenocarcinoma)	2FQQ	388	B
+IGF1R	P08069	p.A1051S	1051	LUAD	LUAD (Lung adenocarcinoma)	3LW0	1051	A
+SLC1A3	P43003	p.P392L	392	LUSC	LUSC (Lung squamous cell carcinoma)	5LLM	372	A
+PKM	P14618	p.R467C	467	LUSC	LUSC (Lung squamous cell carcinoma)	4B2D	467	A
+LIMK2	P53671	p.E361Q	361	LUSC	LUSC (Lung squamous cell carcinoma)	4TPT	361	A
+PIK3CA	P42336	p.E542K	542	LUSC	LUSC (Lung squamous cell carcinoma)	5SWP	542	A
+ALB	P02768	p.D261Y	261	LUSC	LUSC (Lung squamous cell carcinoma)	2BXD	237	A
+PIK3CA	P42336	p.E542V	542	LUSC	LUSC (Lung squamous cell carcinoma)	5SWP	542	A
+JAK2	Q506Q0	p.A676D	676	LUSC	LUSC (Lung squamous cell carcinoma)	5UT6	676	A
+PDE5A	O76074	p.D803N	803	LUSC	LUSC (Lung squamous cell carcinoma)	1TBF	803	A
+FBP1	Q2TU34	p.A25T	25	LUSC	LUSC (Lung squamous cell carcinoma)	5PZR	24	A
+ALB	P02768	p.V317L	317	LUSC	LUSC (Lung squamous cell carcinoma)	2BXD	293	A
+PDE10A	Q9Y233	p.G329R	329	LUSC	LUSC (Lung squamous cell carcinoma)	2ZMF	329	A
+AR	P10275	p.V717F	717	LUSC	LUSC (Lung squamous cell carcinoma)	2PIO	716	A
+PKM	P14618	p.S519F	519	LUSC	LUSC (Lung squamous cell carcinoma)	3GQY	519	A
+PANK3	Q9H999	p.G216D	216	LUSC	LUSC (Lung squamous cell carcinoma)	3MK6	216	A
+UBE2I	P63279	p.A26T	26	LUSC	LUSC (Lung squamous cell carcinoma)	5F6Y	26	A
+MAPK1	P28482	p.D321G	321	LUSC	LUSC (Lung squamous cell carcinoma)	5AX3	311	A
+BRAF	P15056	p.R95T	95	LUSC	LUSC (Lung squamous cell carcinoma)	5VYK	1095	C
+PDK1	Q15118	p.I135V	135	LUSC	LUSC (Lung squamous cell carcinoma)	2Q8G	135	A
+GRIN2A	Q12879	p.S519C	519	LUSC	LUSC (Lung squamous cell carcinoma)	5I2N	121	A
+CCR5	P51681	p.N258K	258	LUSC	LUSC (Lung squamous cell carcinoma)	4MBS	258	A
+FBP2	O00757	p.L176F	176	LUSC	LUSC (Lung squamous cell carcinoma)	3IFC	175	A
+GRIN2A	Q12879	p.T759N	759	LUSC	LUSC (Lung squamous cell carcinoma)	5I2N	242	A
+EPAS1	Q99814	p.A277P	277	LUSC	LUSC (Lung squamous cell carcinoma)	3F1O	277	A
+MAP2K1	Q02750	p.G128D	128	LUSC	LUSC (Lung squamous cell carcinoma)	1S9J	128	A
+HGF	P14210	p.G665R	665	LUSC	LUSC (Lung squamous cell carcinoma)	4O3T	665	A
+KDR	P35968	p.T376S	376	LUSC	LUSC (Lung squamous cell carcinoma)	5OYJ	376	D
+SERPINC1	P01008	p.F153L	153	LUSC	LUSC (Lung squamous cell carcinoma)	3KCG	121	I
+PYGL	P06737	p.F54C	54	LUSC	LUSC (Lung squamous cell carcinoma)	1EXV	53	B
+PYGM	P11217	p.D307G	307	LUSC	LUSC (Lung squamous cell carcinoma)	1Z8D	306	A
+MAP2K1	Q02750	p.R96K	96	LUSC	LUSC (Lung squamous cell carcinoma)	1S9J	96	A
+ITGAL	P20701	p.R281L	281	LUSC	LUSC (Lung squamous cell carcinoma)	2ICA	256	A
+CHRM2	P08172	p.P415T	415	LUSC	LUSC (Lung squamous cell carcinoma)	4MQT	415	A
+RXRA	P19793	p.H435Y	435	LUSC	LUSC (Lung squamous cell carcinoma)	3UVV	435	B
+HK1	P19367	p.G299C	299	LUSC	LUSC (Lung squamous cell carcinoma)	1CZA	299	N
+KRAS	P01116	p.G12A	12	LUSC	LUSC (Lung squamous cell carcinoma)	5V9O	12	A
+PAH	P00439	p.I65L	65	LUSC	LUSC (Lung squamous cell carcinoma)	5FII	65	C
+KRAS	P01116	p.V14I	14	LUSC	LUSC (Lung squamous cell carcinoma)	5V9O	14	A
+SNRNP200	O75643	p.I1681M	1681	LUSC	LUSC (Lung squamous cell carcinoma)	5URJ	1681	A
+GRM5	P41594	p.G739E	739	LUSC	LUSC (Lung squamous cell carcinoma)	4OO9	739	A
+GLRA3	O75311	p.I267M	267	LUSC	LUSC (Lung squamous cell carcinoma)	5VDH	234	B
+PKM	P14618	p.N350S	350	LUSC	LUSC (Lung squamous cell carcinoma)	4G1N	350	B
+MSH6	P52701	p.V508L	508	LUSC	LUSC (Lung squamous cell carcinoma)	2O8B	508	B
+MAPK1	P28482	p.D162G	162	LUSC	LUSC (Lung squamous cell carcinoma)	5AX3	153	A
+TTR	P02766	p.S135F	135	LUSC	LUSC (Lung squamous cell carcinoma)	1F86	115	B
+KDR	P35968	p.M386T	386	LUSC	LUSC (Lung squamous cell carcinoma)	5OYJ	386	D
+BRAF	P15056	p.D594N	594	LUSC	LUSC (Lung squamous cell carcinoma)	4JVG	594	A
+BRAF	P15056	p.G464V	464	LUSC	LUSC (Lung squamous cell carcinoma)	4JVG	464	A
+ESR2	Q92731	p.D326H	326	LUSC	LUSC (Lung squamous cell carcinoma)	2FSZ	326	B
+KRAS	P01116	p.G13C	13	LUSC	LUSC (Lung squamous cell carcinoma)	5V9O	13	A
+GCK	P35557	p.Y215N	215	LUSC	LUSC (Lung squamous cell carcinoma)	3F9M	215	A
+CPS1	P31327	p.T1443A	1443	LUSC	LUSC (Lung squamous cell carcinoma)	5DOU	1443	A
+IDH1	O75874	p.E262Q	262	LUSC	LUSC (Lung squamous cell carcinoma)	5TQH	262	A
+CALM1	P0DP23	p.G26C	26	LUSC	LUSC (Lung squamous cell carcinoma)	3J41	25	E
+CALM1	P0DP23	p.G26V	26	LUSC	LUSC (Lung squamous cell carcinoma)	3J41	25	E
+CHRM2	P08172	p.P418H	418	LUSC	LUSC (Lung squamous cell carcinoma)	4MQT	418	A
+MAPK10	P53779	p.M159V	159	LUSC	LUSC (Lung squamous cell carcinoma)	4H39	159	A
+SERPINE1	P05121	p.R386W	386	LUSC	LUSC (Lung squamous cell carcinoma)	4G8O	363	D
+CASP1	P29466	p.R391T	391	LUSC	LUSC (Lung squamous cell carcinoma)	2FQQ	391	B
+KRAS	P01116	p.Q61H	61	LUSC	LUSC (Lung squamous cell carcinoma)	5V9O	61	A
+PTPN11	Q06124	p.E76K	76	LUSC	LUSC (Lung squamous cell carcinoma)	6BMY	76	A
+HGF	P14210	p.W617C	617	LUSC	LUSC (Lung squamous cell carcinoma)	4O3T	617	A
+GRM5	P41594	p.L653F	653	LUSC	LUSC (Lung squamous cell carcinoma)	4OO9	653	A
+PAK1	Q13153	p.M319I	319	LUSC	LUSC (Lung squamous cell carcinoma)	4ZJI	319	A
+PRPS1	P60891	p.T126I	126	LUSC	LUSC (Lung squamous cell carcinoma)	2HCR	126	A
+PYGM	P11217	p.R310H	310	LUSC	LUSC (Lung squamous cell carcinoma)	1Z8D	309	A
+RET	P07949	p.A756G	756	LUSC	LUSC (Lung squamous cell carcinoma)	5FM2	756	A
+PAH	P00439	p.E44K	44	LUSC	LUSC (Lung squamous cell carcinoma)	5FII	44	C
+SERPINC1	P01008	p.R56C	56	LUSC	LUSC (Lung squamous cell carcinoma)	3KCG	24	I
+PRKAG1	P54619	p.V313L	313	LUSC	LUSC (Lung squamous cell carcinoma)	4CFE	313	E
+ITGAL	P20701	p.V155A	155	LUSC	LUSC (Lung squamous cell carcinoma)	2ICA	130	A
+HRAS	P01112	p.Q61K	61	LUSC	LUSC (Lung squamous cell carcinoma)	4G0N	61	A
+KRAS	P01116	p.G12V	12	LUSC	LUSC (Lung squamous cell carcinoma)	5V9O	12	A
+RXRA	P19793	p.R316L	316	LUSC	LUSC (Lung squamous cell carcinoma)	3UVV	316	B
+RNMT	O43148	p.N424S	424	LUSC	LUSC (Lung squamous cell carcinoma)	5E8J	424	A
+MTOR	P42345	p.G2030S	2030	LUSC	LUSC (Lung squamous cell carcinoma)	1NSG	2030	B
+FCGR3A	P08637	p.R36K	36	LUSC	LUSC (Lung squamous cell carcinoma)	5MN2	18	A
+KRAS	P01116	p.G12C	12	MESO	MESO (Mesothelioma)	5V9O	12	A
+NTRK1	P04629	p.R649W	649	OV	OV (Ovarian serous cystadenocarcinoma)	6D1Z	649	A
+MAPK8	P45983	p.L198F	198	OV	OV (Ovarian serous cystadenocarcinoma)	3O2M	198	A
+PYGM	P11217	p.R570W	570	OV	OV (Ovarian serous cystadenocarcinoma)	1Z8D	569	A
+KRAS	P01116	p.G12R	12	OV	OV (Ovarian serous cystadenocarcinoma)	5V9O	12	A
+GRIA2	P42262	p.D749H	749	OV	OV (Ovarian serous cystadenocarcinoma)	2XHD	216	B
+PIK3CA	P42336	p.E849K	849	OV	OV (Ovarian serous cystadenocarcinoma)	5SWP	849	A
+PADI4	Q9UM07	p.Y391N	391	OV	OV (Ovarian serous cystadenocarcinoma)	1WD9	391	A
+CCR5	P51681	p.Q280L	280	OV	OV (Ovarian serous cystadenocarcinoma)	4MBS	280	A
+OPRD1	P41143	p.K108N	108	OV	OV (Ovarian serous cystadenocarcinoma)	4N6H	108	A
+CASP6	P55212	p.Y216C	216	OV	OV (Ovarian serous cystadenocarcinoma)	4NBN	216	B
+MAPK1	P28482	p.Y316F	316	OV	OV (Ovarian serous cystadenocarcinoma)	5AX3	306	A
+WNK1	Q9H4A3	p.H347N	347	OV	OV (Ovarian serous cystadenocarcinoma)	5WE8	347	A
+GRIN2A	Q12879	p.G532E	532	OV	OV (Ovarian serous cystadenocarcinoma)	5I2N	134	A
+FKBP1A	P62942	p.F100L	100	OV	OV (Ovarian serous cystadenocarcinoma)	1NSG	99	A
+PDE4D	Q08499	p.E532Q	532	OV	OV (Ovarian serous cystadenocarcinoma)	3IAD	396	A
+CDC34	P49427	p.L130I	130	OV	OV (Ovarian serous cystadenocarcinoma)	4MDK	130	A
+PPARG	P37231	p.E319D	319	OV	OV (Ovarian serous cystadenocarcinoma)	3K8S	291	B
+KRAS	P01116	p.G12V	12	OV	OV (Ovarian serous cystadenocarcinoma)	5V9O	12	A
+PADI4	Q9UM07	p.F389V	389	OV	OV (Ovarian serous cystadenocarcinoma)	1WD9	389	A
+IDH3A	P50213	p.I258F	258	OV	OV (Ovarian serous cystadenocarcinoma)	5GRF	231	A
+ALB	P02768	p.Y174F	174	OV	OV (Ovarian serous cystadenocarcinoma)	2BXD	150	A
+BRAF	P15056	p.N581S	581	OV	OV (Ovarian serous cystadenocarcinoma)	4JVG	581	A
+PIK3CA	P42336	p.R115L	115	OV	OV (Ovarian serous cystadenocarcinoma)	5SWP	115	A
+ALB	P02768	p.L370R	370	OV	OV (Ovarian serous cystadenocarcinoma)	2BXG	346	A
+ITK	Q08881	p.D500V	500	OV	OV (Ovarian serous cystadenocarcinoma)	4M15	500	A
+PFKP	Q01813	p.S640R	640	OV	OV (Ovarian serous cystadenocarcinoma)	4XZ2	640	B
+HK1	P19367	p.L83V	83	OV	OV (Ovarian serous cystadenocarcinoma)	1CZA	83	N
+MMP9	P14780	p.A406V	406	OV	OV (Ovarian serous cystadenocarcinoma)	5UE4	231	B
+GCK	P35557	p.D160Y	160	OV	OV (Ovarian serous cystadenocarcinoma)	3F9M	160	A
+ALB	P02768	p.A234D	234	OV	OV (Ovarian serous cystadenocarcinoma)	2BXG	210	A
+KRAS	P01116	p.Q61L	61	OV	OV (Ovarian serous cystadenocarcinoma)	5V9O	61	A
+MAP2K4	P45985	p.D101E	101	OV	OV (Ovarian serous cystadenocarcinoma)	3ALO	101	A
+PAH	P00439	p.P69H	69	OV	OV (Ovarian serous cystadenocarcinoma)	5FII	69	C
+GRIA2	P42262	p.G754D	754	OV	OV (Ovarian serous cystadenocarcinoma)	2XHD	221	B
+KRAS	P01116	p.G12D	12	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	12	A
+KRAS	P01116	p.G12V	12	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	12	A
+ITK	Q08881	p.M411V	411	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	4M15	411	A
+KRAS	P01116	p.G12R	12	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	12	A
+PYGL	P06737	p.R243C	243	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	3DDS	242	A
+KRAS	P01116	p.Q61R	61	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	61	A
+KRAS	P01116	p.G12C	12	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	12	A
+PIK3CA	P42336	p.P539R	539	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5SWP	539	A
+KRAS	P01116	p.Q61H	61	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	61	A
+KRAS	P01116	p.G13C	13	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	13	A
+KRAS	P01116	p.G12A	12	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	12	A
+PIK3CA	P42336	p.D1017N	1017	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5SWP	1017	A
+OPRD1	P41143	p.V281I	281	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	4N6H	281	A
+SERPINC1	P01008	p.R161Q	161	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	3KCG	129	I
+AMD1	P17707	p.W157R	157	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	1JL0	157	A
+HSPA5	P11021	p.D231N	231	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5E84	231	A
+RET	P07949	p.A756D	756	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5FM2	756	A
+CASP7	P55210	p.V149I	149	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	1SHJ	149	A
+HRAS	P01112	p.A134T	134	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	4G0N	134	A
+EED	O75530	p.I363V	363	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5HYN	363	B
+ADORA2A	P29274	p.A30V	30	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	3VG9	30	A
+ALB	P02768	p.V506A	506	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	2BXG	482	A
+PDE10A	Q9Y233	p.F290Y	290	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	2ZMF	290	A
+KRAS	P01116	p.G12S	12	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5V9O	12	A
+GBA	P04062	p.N435K	435	PAAD	PAAD (Pancreatic ductal adenocarcinoma)	5LVX	396	A
+HRAS	P01112	p.Q61L	61	PCPG	PCPG (Pheochromocytoma and Paraganglioma)	4G0N	61	A
+HRAS	P01112	p.Q61R	61	PCPG	PCPG (Pheochromocytoma and Paraganglioma)	4G0N	61	A
+IDH1	O75874	p.R132C	132	PCPG	PCPG (Pheochromocytoma and Paraganglioma)	5TQH	132	A
+HRAS	P01112	p.Q61K	61	PCPG	PCPG (Pheochromocytoma and Paraganglioma)	4G0N	61	A
+CASP1	P29466	p.C331W	331	PRAD	PRAD (Prostate adenocarcinoma)	2FQQ	331	B
+HRAS	P01112	p.Q61R	61	PRAD	PRAD (Prostate adenocarcinoma)	4G0N	61	A
+PIK3CA	P42336	p.E542K	542	PRAD	PRAD (Prostate adenocarcinoma)	5SWP	542	A
+RNMT	O43148	p.L468F	468	PRAD	PRAD (Prostate adenocarcinoma)	5E8J	468	A
+PADI4	Q9UM07	p.E252D	252	PRAD	PRAD (Prostate adenocarcinoma)	1WD9	252	A
+CHRM2	P08172	p.Y80H	80	PRAD	PRAD (Prostate adenocarcinoma)	4MQT	80	A
+KRAS	P01116	p.G12D	12	PRAD	PRAD (Prostate adenocarcinoma)	5V9O	12	A
+ITGAL	P20701	p.R281C	281	PRAD	PRAD (Prostate adenocarcinoma)	2ICA	256	A
+AKT1	P31749	p.E17K	17	PRAD	PRAD (Prostate adenocarcinoma)	3O96	17	A
+IDH1	O75874	p.R132G	132	PRAD	PRAD (Prostate adenocarcinoma)	5TQH	132	A
+UGDH	O60701	p.L227V	227	PRAD	PRAD (Prostate adenocarcinoma)	3PTZ	227	A
+BRAF	P15056	p.F468C	468	PRAD	PRAD (Prostate adenocarcinoma)	4JVG	468	A
+PIK3CA	P42336	p.E542A	542	PRAD	PRAD (Prostate adenocarcinoma)	5SWP	542	A
+IDH1	O75874	p.R132C	132	PRAD	PRAD (Prostate adenocarcinoma)	5TQH	132	A
+BRAF	P15056	p.K601E	601	PRAD	PRAD (Prostate adenocarcinoma)	4JVG	601	A
+PIK3CA	P42336	p.R88Q	88	PRAD	PRAD (Prostate adenocarcinoma)	5SWP	88	A
+PDE10A	Q9Y233	p.Y347N	347	PRAD	PRAD (Prostate adenocarcinoma)	2ZMF	347	A
+F7	P08709	p.G278R	278	PRAD	PRAD (Prostate adenocarcinoma)	1DVA	78	H
+IDH1	O75874	p.R132H	132	PRAD	PRAD (Prostate adenocarcinoma)	5TQH	132	A
+CCR5	P51681	p.T284S	284	PRAD	PRAD (Prostate adenocarcinoma)	4MBS	284	A
+IGF1R	P08069	p.K1150R	1150	PRAD	PRAD (Prostate adenocarcinoma)	3LW0	1150	A
+CTSK	P43235	p.A234T	234	PRAD	PRAD (Prostate adenocarcinoma)	5J94	120	A
+GNPDA1	P46926	p.A185V	185	PRAD	PRAD (Prostate adenocarcinoma)	1NE7	185	A
+RXRA	P19793	p.D273G	273	PRAD	PRAD (Prostate adenocarcinoma)	3UVV	273	B
+KIF11	P52732	p.R138H	138	PRAD	PRAD (Prostate adenocarcinoma)	3ZCW	138	A
+KRAS	P01116	p.G12R	12	PRAD	PRAD (Prostate adenocarcinoma)	5V9O	12	A
+KRAS	P01116	p.G13D	13	READ	READ (Rectum adenocarcinoma)	5V9O	13	A
+KRAS	P01116	p.A59T	59	READ	READ (Rectum adenocarcinoma)	5V9O	59	A
+KRAS	P01116	p.Q61H	61	READ	READ (Rectum adenocarcinoma)	5V9O	61	A
+KRAS	P01116	p.Q61E	61	READ	READ (Rectum adenocarcinoma)	5V9O	61	A
+KRAS	P01116	p.G12D	12	READ	READ (Rectum adenocarcinoma)	5V9O	12	A
+KRAS	P01116	p.G12V	12	READ	READ (Rectum adenocarcinoma)	5V9O	12	A
+KRAS	P01116	p.G12C	12	READ	READ (Rectum adenocarcinoma)	5V9O	12	A
+NT5C2	P49902	p.K111Q	111	READ	READ (Rectum adenocarcinoma)	2JC9	111	A
+FKBP1A	P62942	p.S39C	39	READ	READ (Rectum adenocarcinoma)	1NSG	38	A
+ALB	P02768	p.A237T	237	READ	READ (Rectum adenocarcinoma)	2BXG	213	A
+PIK3CA	P42336	p.R88Q	88	READ	READ (Rectum adenocarcinoma)	5SWP	88	A
+KRAS	P01116	p.G12A	12	READ	READ (Rectum adenocarcinoma)	5V9O	12	A
+KRAS	P01116	p.G12S	12	READ	READ (Rectum adenocarcinoma)	5V9O	12	A
+PRKAG1	P54619	p.R299Q	299	READ	READ (Rectum adenocarcinoma)	4CFE	299	E
+CCR5	P51681	p.G106V	106	READ	READ (Rectum adenocarcinoma)	4MBS	106	A
+KRAS	P01116	p.Q61L	61	READ	READ (Rectum adenocarcinoma)	5V9O	61	A
+HGF	P14210	p.G616V	616	READ	READ (Rectum adenocarcinoma)	4O3T	616	A
+PAK1	Q13153	p.F410L	410	READ	READ (Rectum adenocarcinoma)	4ZJI	410	A
+PAK1	Q13153	p.I312S	312	READ	READ (Rectum adenocarcinoma)	4ZJI	312	A
+WNK1	Q9H4A3	p.R341Q	341	READ	READ (Rectum adenocarcinoma)	5WE8	341	A
+CASP7	P55210	p.R210Q	210	READ	READ (Rectum adenocarcinoma)	1SHJ	210	A
+LIMK2	P53671	p.R381C	381	READ	READ (Rectum adenocarcinoma)	4TPT	381	A
+F7	P08709	p.A266T	266	READ	READ (Rectum adenocarcinoma)	1DVA	66	H
+ALB	P02768	p.S216L	216	READ	READ (Rectum adenocarcinoma)	2BXD	192	A
+F2	P00734	p.D597G	597	READ	READ (Rectum adenocarcinoma)	3JZ1	222	B
+PIK3CA	P42336	p.R115P	115	READ	READ (Rectum adenocarcinoma)	5SWP	115	A
+PAH	P00439	p.S67C	67	READ	READ (Rectum adenocarcinoma)	5FII	67	C
+BRAF	P15056	p.V600E	600	READ	READ (Rectum adenocarcinoma)	4JVG	600	A
+CTSK	P43235	p.E232D	232	READ	READ (Rectum adenocarcinoma)	5J94	118	A
+PDK1	Q15118	p.R148Q	148	READ	READ (Rectum adenocarcinoma)	2Q8G	148	A
+PARP14	Q460N5	p.E1151D	1151	READ	READ (Rectum adenocarcinoma)	5O2D	1151	A
+PANK3	Q9H999	p.G216V	216	READ	READ (Rectum adenocarcinoma)	3MK6	216	A
+PDE10A	Q9Y233	p.L358M	358	READ	READ (Rectum adenocarcinoma)	2ZMF	358	A
+PKM	P14618	p.F307C	307	READ	READ (Rectum adenocarcinoma)	4G1N	307	B
+KRAS	P01116	p.G13C	13	SARC	SARC (Sarcoma)	5V9O	13	A
+MMP7	P09237	p.M135I	135	SARC	SARC (Sarcoma)	5UE5	115	A
+GRM5	P41594	p.A623D	623	SARC	SARC (Sarcoma)	4OO9	623	A
+MAPK10	P53779	p.Y168H	168	SARC	SARC (Sarcoma)	4H39	168	A
+KRAS	P01116	p.Q61H	61	SARC	SARC (Sarcoma)	5V9O	61	A
+MMP9	P14780	p.G408V	408	SARC	SARC (Sarcoma)	5UE4	233	B
+MAP2K4	P45985	p.G166C	166	SARC	SARC (Sarcoma)	3ALO	166	A
+ESR2	Q92731	p.L322I	322	SARC	SARC (Sarcoma)	2FSZ	322	B
+FCGR3A	P08637	p.Q33H	33	SARC	SARC (Sarcoma)	5MN2	15	A
+IDH1	O75874	p.R132C	132	SARC	SARC (Sarcoma)	5TQH	132	A
+MAPK10	P53779	p.M159I	159	SARC	SARC (Sarcoma)	4H39	159	A
+BRAF	P15056	p.V600E	600	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	600	A
+ALB	P02768	p.S311F	311	SKCM	SKCM (Skin cutaneous melanoma)	2BXD	287	A
+PPARG	P37231	p.R316C	316	SKCM	SKCM (Skin cutaneous melanoma)	3K8S	288	B
+IDH1	O75874	p.R132C	132	SKCM	SKCM (Skin cutaneous melanoma)	5TQH	132	A
+BRAF	P15056	p.V600M	600	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	600	A
+PIK3CA	P42336	p.D746Y	746	SKCM	SKCM (Skin cutaneous melanoma)	5SWP	746	A
+ITK	Q08881	p.M410I	410	SKCM	SKCM (Skin cutaneous melanoma)	4M15	410	A
+MAPK14	Q16539	p.P191S	191	SKCM	SKCM (Skin cutaneous melanoma)	4E6C	191	A
+TTR	P02766	p.T139K	139	SKCM	SKCM (Skin cutaneous melanoma)	1F86	119	A
+PTPN11	Q06124	p.F71L	71	SKCM	SKCM (Skin cutaneous melanoma)	6BMY	71	A
+RNMT	O43148	p.P452L	452	SKCM	SKCM (Skin cutaneous melanoma)	5E8J	452	A
+SAMHD1	Q9Y3Z3	p.R451C	451	SKCM	SKCM (Skin cutaneous melanoma)	4BZB	451	A
+GLRA3	O75311	p.P263L	263	SKCM	SKCM (Skin cutaneous melanoma)	5VDH	230	B
+SERPINC1	P01008	p.P73S	73	SKCM	SKCM (Skin cutaneous melanoma)	3KCG	41	I
+GLRA3	O75311	p.L325F	325	SKCM	SKCM (Skin cutaneous melanoma)	5VDH	292	A
+UGDH	O60701	p.R346K	346	SKCM	SKCM (Skin cutaneous melanoma)	3PTZ	346	A
+ADCY10	Q96PN6	p.V175M	175	SKCM	SKCM (Skin cutaneous melanoma)	4USW	175	A
+BRAF	P15056	p.K601E	601	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	601	A
+PYGL	P06737	p.R570S	570	SKCM	SKCM (Skin cutaneous melanoma)	3DDS	569	A
+PPARG	P37231	p.G372S	372	SKCM	SKCM (Skin cutaneous melanoma)	3K8S	344	B
+BRAF	P15056	p.N581S	581	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	581	A
+PRPS1	P60891	p.S103N	103	SKCM	SKCM (Skin cutaneous melanoma)	2HCR	103	B
+OPRD1	P41143	p.D210N	210	SKCM	SKCM (Skin cutaneous melanoma)	4N6H	210	A
+PPARG	P37231	p.G366E	366	SKCM	SKCM (Skin cutaneous melanoma)	3K8S	338	B
+MMP9	P14780	p.P193S	193	SKCM	SKCM (Skin cutaneous melanoma)	5UE4	193	B
+CPS1	P31327	p.H1447Y	1447	SKCM	SKCM (Skin cutaneous melanoma)	5DOU	1447	A
+RNMT	O43148	p.E397Q	397	SKCM	SKCM (Skin cutaneous melanoma)	5E8J	397	A
+CDC34	P49427	p.P49L	49	SKCM	SKCM (Skin cutaneous melanoma)	4MDK	49	A
+AR	P10275	p.E830K	830	SKCM	SKCM (Skin cutaneous melanoma)	2PIO	829	A
+PYGL	P06737	p.G187E	187	SKCM	SKCM (Skin cutaneous melanoma)	1EXV	186	B
+PKM	P14618	p.P107L	107	SKCM	SKCM (Skin cutaneous melanoma)	4B2D	107	A
+IGF1R	P08069	p.H1061Y	1061	SKCM	SKCM (Skin cutaneous melanoma)	3LW0	1061	A
+LIMK2	P53671	p.N456T	456	SKCM	SKCM (Skin cutaneous melanoma)	4TPT	456	A
+RXRA	P19793	p.E434K	434	SKCM	SKCM (Skin cutaneous melanoma)	3UVV	434	B
+HBB	P68871	p.R105K	105	SKCM	SKCM (Skin cutaneous melanoma)	2D60	104	B
+PANK3	Q9H999	p.D247N	247	SKCM	SKCM (Skin cutaneous melanoma)	3MK6	247	C
+BRAF	P15056	p.L597Q	597	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	597	A
+MAP2K4	P45985	p.L146F	146	SKCM	SKCM (Skin cutaneous melanoma)	3ALO	146	A
+BRAF	P15056	p.H574Y	574	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	574	A
+F7	P08709	p.V232M	232	SKCM	SKCM (Skin cutaneous melanoma)	1DVA	35	H
+KRAS	P01116	p.G13D	13	SKCM	SKCM (Skin cutaneous melanoma)	5V9O	13	A
+PTPN11	Q06124	p.L262F	262	SKCM	SKCM (Skin cutaneous melanoma)	6BMY	262	A
+RRM1	P23921	p.N85S	85	SKCM	SKCM (Skin cutaneous melanoma)	3HNE	85	B
+PPARG	P37231	p.S282F	282	SKCM	SKCM (Skin cutaneous melanoma)	3K8S	254	B
+PTPRZ1	P23471	p.G1903E	1903	SKCM	SKCM (Skin cutaneous melanoma)	5H08	1903	A
+RXRA	P19793	p.T278I	278	SKCM	SKCM (Skin cutaneous melanoma)	3UVV	278	B
+BRAF	P15056	p.D594N	594	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	594	A
+GLRA3	O75311	p.L265V	265	SKCM	SKCM (Skin cutaneous melanoma)	5VDH	232	B
+KRAS	P01116	p.G12R	12	SKCM	SKCM (Skin cutaneous melanoma)	5V9O	12	A
+PDE4D	Q08499	p.I638K	638	SKCM	SKCM (Skin cutaneous melanoma)	3IAD	502	A
+PDE10A	Q9Y233	p.R286C	286	SKCM	SKCM (Skin cutaneous melanoma)	2ZMF	286	A
+NTRK1	P04629	p.D709N	709	SKCM	SKCM (Skin cutaneous melanoma)	6D1Z	709	A
+FCGR3A	P08637	p.G168D	168	SKCM	SKCM (Skin cutaneous melanoma)	5MN2	150	A
+SNRNP200	O75643	p.H1457Y	1457	SKCM	SKCM (Skin cutaneous melanoma)	5URJ	1457	A
+GCK	P35557	p.R63H	63	SKCM	SKCM (Skin cutaneous melanoma)	3F9M	63	A
+AMY2A	P04746	p.E270K	270	SKCM	SKCM (Skin cutaneous melanoma)	3BAY	255	A
+BRAF	P15056	p.V600G	600	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	600	A
+IDH1	O75874	p.R132L	132	SKCM	SKCM (Skin cutaneous melanoma)	5TQH	132	A
+AR	P10275	p.E710V	710	SKCM	SKCM (Skin cutaneous melanoma)	2PIO	709	A
+PTPN11	Q06124	p.H114Y	114	SKCM	SKCM (Skin cutaneous melanoma)	5EHR	114	A
+ALB	P02768	p.D348N	348	SKCM	SKCM (Skin cutaneous melanoma)	2BXG	324	A
+MAPK10	P53779	p.A366V	366	SKCM	SKCM (Skin cutaneous melanoma)	4H39	366	A
+GRM5	P41594	p.S805L	805	SKCM	SKCM (Skin cutaneous melanoma)	4OO9	805	A
+AKT1	P31749	p.E17K	17	SKCM	SKCM (Skin cutaneous melanoma)	3O96	17	A
+FDPS	P14324	p.R412C	412	SKCM	SKCM (Skin cutaneous melanoma)	3N45	346	F
+GCK	P35557	p.D160N	160	SKCM	SKCM (Skin cutaneous melanoma)	3F9M	160	A
+KRAS	P01116	p.E62K	62	SKCM	SKCM (Skin cutaneous melanoma)	5V9O	62	A
+KRAS	P01116	p.Q61R	61	SKCM	SKCM (Skin cutaneous melanoma)	5V9O	61	A
+GCK	P35557	p.T65I	65	SKCM	SKCM (Skin cutaneous melanoma)	3F9M	65	A
+CCR5	P51681	p.G286E	286	SKCM	SKCM (Skin cutaneous melanoma)	4MBS	286	A
+GRIA2	P42262	p.S750F	750	SKCM	SKCM (Skin cutaneous melanoma)	2XHD	217	B
+ALB	P02768	p.G231E	231	SKCM	SKCM (Skin cutaneous melanoma)	2BXG	207	A
+GLRA3	O75311	p.S311L	311	SKCM	SKCM (Skin cutaneous melanoma)	5VDH	278	A
+HRAS	P01112	p.Q61K	61	SKCM	SKCM (Skin cutaneous melanoma)	4G0N	61	A
+F7	P08709	p.L273F	273	SKCM	SKCM (Skin cutaneous melanoma)	1DVA	73	H
+KRAS	P01116	p.Q61L	61	SKCM	SKCM (Skin cutaneous melanoma)	5V9O	61	A
+KDR	P35968	p.G345E	345	SKCM	SKCM (Skin cutaneous melanoma)	5OYJ	345	D
+KDR	P35968	p.G345R	345	SKCM	SKCM (Skin cutaneous melanoma)	5OYJ	345	D
+KRAS	P01116	p.G12D	12	SKCM	SKCM (Skin cutaneous melanoma)	5V9O	12	A
+SLC1A3	P43003	p.R388K	388	SKCM	SKCM (Skin cutaneous melanoma)	5LLM	368	A
+BRAF	P15056	p.N581H	581	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	581	A
+SERPINC1	P01008	p.E145K	145	SKCM	SKCM (Skin cutaneous melanoma)	3KCG	113	I
+RET	P07949	p.G736R	736	SKCM	SKCM (Skin cutaneous melanoma)	5FM2	736	A
+KDR	P35968	p.P351S	351	SKCM	SKCM (Skin cutaneous melanoma)	5OYJ	351	D
+CHRM2	P08172	p.F181L	181	SKCM	SKCM (Skin cutaneous melanoma)	4MQT	181	A
+PADI4	Q9UM07	p.P380L	380	SKCM	SKCM (Skin cutaneous melanoma)	1WD9	380	A
+CALM1	P0DP23	p.P67L	67	SKCM	SKCM (Skin cutaneous melanoma)	3J41	66	E
+MAPK8	P45983	p.M200I	200	SKCM	SKCM (Skin cutaneous melanoma)	3O2M	200	A
+PIK3CA	P42336	p.R818C	818	SKCM	SKCM (Skin cutaneous melanoma)	5SWP	818	A
+GCK	P35557	p.E221K	221	SKCM	SKCM (Skin cutaneous melanoma)	3F9M	221	A
+AR	P10275	p.D733N	733	SKCM	SKCM (Skin cutaneous melanoma)	2PIO	732	A
+RXRA	P19793	p.S317F	317	SKCM	SKCM (Skin cutaneous melanoma)	3UVV	317	B
+PYGM	P11217	p.R82K	82	SKCM	SKCM (Skin cutaneous melanoma)	1Z8D	81	A
+MAOB	P27338	p.H90Y	90	SKCM	SKCM (Skin cutaneous melanoma)	2XCG	90	A
+PYGM	P11217	p.E288K	288	SKCM	SKCM (Skin cutaneous melanoma)	1Z8D	287	A
+AR	P10275	p.M833I	833	SKCM	SKCM (Skin cutaneous melanoma)	2PIO	832	A
+GCK	P35557	p.D217N	217	SKCM	SKCM (Skin cutaneous melanoma)	3F9M	217	A
+F7	P08709	p.G234R	234	SKCM	SKCM (Skin cutaneous melanoma)	1DVA	38	H
+PADI4	Q9UM07	p.M352I	352	SKCM	SKCM (Skin cutaneous melanoma)	1WD9	352	A
+CYP3A4	P08684	p.P218L	218	SKCM	SKCM (Skin cutaneous melanoma)	1W0F	218	A
+ALB	P02768	p.S216L	216	SKCM	SKCM (Skin cutaneous melanoma)	2BXD	192	A
+KRAS	P01116	p.Q61K	61	SKCM	SKCM (Skin cutaneous melanoma)	5V9O	61	A
+PYGL	P06737	p.E383K	383	SKCM	SKCM (Skin cutaneous melanoma)	3DDS	382	A
+BRAF	P15056	p.N581T	581	SKCM	SKCM (Skin cutaneous melanoma)	4JVG	581	A
+SIRT3	Q9NTG7	p.E177K	177	SKCM	SKCM (Skin cutaneous melanoma)	4C7B	177	A
+PADI4	Q9UM07	p.P380S	380	SKCM	SKCM (Skin cutaneous melanoma)	1WD9	380	A
+SAMHD1	Q9Y3Z3	p.G324E	324	SKCM	SKCM (Skin cutaneous melanoma)	4BZB	324	A
+ADORA2A	P29274	p.A105V	105	SKCM	SKCM (Skin cutaneous melanoma)	3VG9	105	A
+CHRM2	P08172	p.Y88S	88	SKCM	SKCM (Skin cutaneous melanoma)	4MQT	88	A
+CHRM2	P08172	p.E175K	175	SKCM	SKCM (Skin cutaneous melanoma)	4MQT	175	A
+CASP7	P55210	p.K160E	160	SKCM	SKCM (Skin cutaneous melanoma)	1SHJ	160	A
+OPRD1	P41143	p.L125F	125	SKCM	SKCM (Skin cutaneous melanoma)	4N6H	125	A
+PDE4D	Q08499	p.E331A	331	SKCM	SKCM (Skin cutaneous melanoma)	3IAD	598	A
+MAP2K1	Q02750	p.L118V	118	SKCM	SKCM (Skin cutaneous melanoma)	1S9J	118	A
+NTRK1	P04629	p.M587I	587	SKCM	SKCM (Skin cutaneous melanoma)	6D1Z	587	A
+ALB	P02768	p.D283N	283	SKCM	SKCM (Skin cutaneous melanoma)	2BXD	259	A
+PADI4	Q9UM07	p.V152M	152	SKCM	SKCM (Skin cutaneous melanoma)	1WD9	152	A
+PTPN11	Q06124	p.P284L	284	SKCM	SKCM (Skin cutaneous melanoma)	6BMY	284	A
+ADORA2A	P29274	p.R111W	111	SKCM	SKCM (Skin cutaneous melanoma)	3VG9	111	A
+SLC1A3	P43003	p.G394E	394	SKCM	SKCM (Skin cutaneous melanoma)	5LLM	374	A
+KRAS	P01116	p.G13D	13	STAD	STAD (Stomach adenocarcinoma)	5V9O	13	A
+GLRA3	O75311	p.Y261C	261	STAD	STAD (Stomach adenocarcinoma)	5VDH	228	B
+GCK	P35557	p.E221K	221	STAD	STAD (Stomach adenocarcinoma)	3F9M	221	A
+ADORA2A	P29274	p.K227M	227	STAD	STAD (Stomach adenocarcinoma)	3VG9	227	A
+PFKP	Q01813	p.R576C	576	STAD	STAD (Stomach adenocarcinoma)	4XZ2	576	A
+KRAS	P01116	p.A59T	59	STAD	STAD (Stomach adenocarcinoma)	5V9O	59	A
+PYGL	P06737	p.I309V	309	STAD	STAD (Stomach adenocarcinoma)	3DDS	308	A
+PYGL	P06737	p.R243C	243	STAD	STAD (Stomach adenocarcinoma)	3DDS	242	A
+FCGR3A	P08637	p.S169A	169	STAD	STAD (Stomach adenocarcinoma)	5MN2	151	A
+MMP9	P14780	p.G404D	404	STAD	STAD (Stomach adenocarcinoma)	5UE4	229	B
+KRAS	P01116	p.G12D	12	STAD	STAD (Stomach adenocarcinoma)	5V9O	12	A
+USP7	Q93009	p.I354M	354	STAD	STAD (Stomach adenocarcinoma)	5N9T	354	A
+ESR2	Q92731	p.V307A	307	STAD	STAD (Stomach adenocarcinoma)	2FSZ	307	B
+MAP2K1	Q02750	p.G128V	128	STAD	STAD (Stomach adenocarcinoma)	1S9J	128	A
+FDPS	P14324	p.Y415H	415	STAD	STAD (Stomach adenocarcinoma)	3N45	349	F
+PIK3CA	P42336	p.R88Q	88	STAD	STAD (Stomach adenocarcinoma)	5SWP	88	A
+HBB	P68871	p.P37A	37	STAD	STAD (Stomach adenocarcinoma)	2D60	36	B
+AR	P10275	p.F814V	814	STAD	STAD (Stomach adenocarcinoma)	2PIO	813	A
+PIK3CA	P42336	p.R93Q	93	STAD	STAD (Stomach adenocarcinoma)	5SWP	93	A
+PIK3CA	P42336	p.E542K	542	STAD	STAD (Stomach adenocarcinoma)	5SWP	542	A
+PIK3CA	P42336	p.R93W	93	STAD	STAD (Stomach adenocarcinoma)	5SWP	93	A
+CASP6	P55212	p.A34T	34	STAD	STAD (Stomach adenocarcinoma)	4FXO	34	A
+HK1	P19367	p.T153M	153	STAD	STAD (Stomach adenocarcinoma)	1CZA	153	N
+MMP9	P14780	p.A406T	406	STAD	STAD (Stomach adenocarcinoma)	5UE4	231	B
+SIRT1	Q96EB6	p.R199Q	199	STAD	STAD (Stomach adenocarcinoma)	5BTR	199	A
+CHEK1	O14757	p.F93V	93	STAD	STAD (Stomach adenocarcinoma)	3JVR	93	A
+PKM	P14618	p.R467C	467	STAD	STAD (Stomach adenocarcinoma)	4B2D	467	A
+ADORA2A	P29274	p.R296H	296	STAD	STAD (Stomach adenocarcinoma)	3VG9	296	A
+GNPDA1	P46926	p.T187M	187	STAD	STAD (Stomach adenocarcinoma)	1NE7	187	A
+HK1	P19367	p.L228M	228	STAD	STAD (Stomach adenocarcinoma)	1CZA	228	N
+PYGL	P06737	p.R67C	67	STAD	STAD (Stomach adenocarcinoma)	3DDS	66	A
+BRAF	P15056	p.D594N	594	STAD	STAD (Stomach adenocarcinoma)	4JVG	594	A
+ADRB2	P07550	p.R63H	63	STAD	STAD (Stomach adenocarcinoma)	5X7D	63	A
+KIF11	P52732	p.N271S	271	STAD	STAD (Stomach adenocarcinoma)	3ZCW	271	A
+RRM1	P23921	p.G259D	259	STAD	STAD (Stomach adenocarcinoma)	3HNE	259	B
+AURKA	O14965	p.V206A	206	STAD	STAD (Stomach adenocarcinoma)	5DPV	206	A
+MAP2K1	Q02750	p.V224M	224	STAD	STAD (Stomach adenocarcinoma)	1S9J	224	A
+BRAF	P15056	p.M517V	517	STAD	STAD (Stomach adenocarcinoma)	4JVG	517	A
+MAOB	P27338	p.Q206H	206	STAD	STAD (Stomach adenocarcinoma)	2XCG	206	A
+KRAS	P01116	p.G12S	12	STAD	STAD (Stomach adenocarcinoma)	5V9O	12	A
+MAP2K1	Q02750	p.C121S	121	STAD	STAD (Stomach adenocarcinoma)	1S9J	121	A
+AR	P10275	p.F814L	814	STAD	STAD (Stomach adenocarcinoma)	2PIO	813	A
+KRAS	P01116	p.Q61H	61	STAD	STAD (Stomach adenocarcinoma)	5V9O	61	A
+RORC	P51449	p.C320R	320	STAD	STAD (Stomach adenocarcinoma)	5C4T	320	A
+PDE5A	O76074	p.W853R	853	STAD	STAD (Stomach adenocarcinoma)	1TBF	853	A
+GNPDA1	P46926	p.R158C	158	STAD	STAD (Stomach adenocarcinoma)	1NE7	158	A
+ESR2	Q92731	p.D326G	326	STAD	STAD (Stomach adenocarcinoma)	2FSZ	326	B
+KRAS	P01116	p.G12V	12	STAD	STAD (Stomach adenocarcinoma)	5V9O	12	A
+CPS1	P31327	p.R1371Q	1371	STAD	STAD (Stomach adenocarcinoma)	5DOU	1371	A
+GRM5	P41594	p.L808R	808	STAD	STAD (Stomach adenocarcinoma)	4OO9	808	A
+SERPINE1	P05121	p.M289I	289	STAD	STAD (Stomach adenocarcinoma)	4G8O	266	D
+PIK3CA	P42336	p.E365K	365	STAD	STAD (Stomach adenocarcinoma)	5SWP	365	A
+PARP14	Q460N5	p.A1128V	1128	STAD	STAD (Stomach adenocarcinoma)	5O2D	1128	A
+SIRT1	Q96EB6	p.P447S	447	STAD	STAD (Stomach adenocarcinoma)	5BTR	447	A
+KRAS	P01116	p.G12C	12	STAD	STAD (Stomach adenocarcinoma)	5V9O	12	A
+F7	P08709	p.A266V	266	STAD	STAD (Stomach adenocarcinoma)	1DVA	66	H
+HSPA1A	P0DMV8	p.T37I	37	STAD	STAD (Stomach adenocarcinoma)	4IO8	37	A
+ALB	P02768	p.I288N	288	STAD	STAD (Stomach adenocarcinoma)	2BXD	264	A
+HGF	P14210	p.H551Y	551	STAD	STAD (Stomach adenocarcinoma)	4O3T	551	A
+GLRA3	O75311	p.K314N	314	STAD	STAD (Stomach adenocarcinoma)	5VDH	281	A
+PDE5A	O76074	p.I813V	813	STAD	STAD (Stomach adenocarcinoma)	1TBF	813	A
+LTA4H	P09960	p.V28G	28	STAD	STAD (Stomach adenocarcinoma)	3FUD	27	A
+LIMK2	P53671	p.C365R	365	STAD	STAD (Stomach adenocarcinoma)	4TPT	365	A
+TTR	P02766	p.A129T	129	STAD	STAD (Stomach adenocarcinoma)	1F86	109	A
+GCK	P35557	p.M251L	251	STAD	STAD (Stomach adenocarcinoma)	3F9M	251	A
+BRAF	P15056	p.K601T	601	STAD	STAD (Stomach adenocarcinoma)	4JVG	601	A
+CHRM2	P08172	p.T411I	411	STAD	STAD (Stomach adenocarcinoma)	4MQT	411	A
+GRIN2A	Q12879	p.F524V	524	STAD	STAD (Stomach adenocarcinoma)	5I2N	126	A
+PIK3CA	P42336	p.G364R	364	STAD	STAD (Stomach adenocarcinoma)	5SWP	364	A
+AMY2A	P04746	p.Q56H	56	STAD	STAD (Stomach adenocarcinoma)	3BAY	41	A
+GNPDA1	P46926	p.C118Y	118	STAD	STAD (Stomach adenocarcinoma)	1NE7	118	A
+AKT1	P31749	p.E17K	17	STAD	STAD (Stomach adenocarcinoma)	3O96	17	A
+PYGM	P11217	p.R243H	243	STAD	STAD (Stomach adenocarcinoma)	1Z8D	242	A
+MAPK7	Q13164	p.A116T	116	STAD	STAD (Stomach adenocarcinoma)	4ZSG	116	A
+HRAS	P01112	p.Y71H	71	STAD	STAD (Stomach adenocarcinoma)	4G0N	71	A
+KRAS	P01116	p.G12R	12	TGCT	TGCT (Testicular Germ Cell Tumors)	5V9O	12	A
+KRAS	P01116	p.Q61L	61	TGCT	TGCT (Testicular Germ Cell Tumors)	5V9O	61	A
+KRAS	P01116	p.G12V	12	TGCT	TGCT (Testicular Germ Cell Tumors)	5V9O	12	A
+KRAS	P01116	p.G12A	12	TGCT	TGCT (Testicular Germ Cell Tumors)	5V9O	12	A
+KRAS	P01116	p.Q61R	61	TGCT	TGCT (Testicular Germ Cell Tumors)	5V9O	61	A
+KRAS	P01116	p.E63K	63	TGCT	TGCT (Testicular Germ Cell Tumors)	5V9O	63	A
+KRAS	P01116	p.G12S	12	TGCT	TGCT (Testicular Germ Cell Tumors)	5V9O	12	A
+HRAS	P01112	p.Q61R	61	THCA	THCA (Thyroid carcinoma)	4G0N	61	A
+BRAF	P15056	p.V600E	600	THCA	THCA (Thyroid carcinoma)	4JVG	600	A
+KRAS	P01116	p.Q61K	61	THCA	THCA (Thyroid carcinoma)	5V9O	61	A
+CASP6	P55212	p.L98H	98	THCA	THCA (Thyroid carcinoma)	4EJF	98	A
+HRAS	P01112	p.Q61K	61	THCA	THCA (Thyroid carcinoma)	4G0N	61	A
+BRAF	P15056	p.K601E	601	THCA	THCA (Thyroid carcinoma)	4JVG	601	A
+KRAS	P01116	p.G12V	12	THCA	THCA (Thyroid carcinoma)	5V9O	12	A
+AKT1	P31749	p.E17K	17	THCA	THCA (Thyroid carcinoma)	3O96	17	A
+KRAS	P01116	p.Q61R	61	THCA	THCA (Thyroid carcinoma)	5V9O	61	A
+PKM	P14618	p.L398H	398	THCA	THCA (Thyroid carcinoma)	4G1N	398	A
+OPRD1	P41143	p.V281I	281	THYM	THYM (Thymoma)	4N6H	281	A
+EED	O75530	p.Y308C	308	THYM	THYM (Thymoma)	5HYN	308	B
+HRAS	P01112	p.G60V	60	THYM	THYM (Thymoma)	4G0N	60	A
+KRAS	P01116	p.G12D	12	THYM	THYM (Thymoma)	5V9O	12	A
+IDH1	O75874	p.R132C	132	THYM	THYM (Thymoma)	5TQH	132	A
+PIK3CA	P42336	p.E542K	542	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	542	A
+BRAF	P15056	p.K601E	601	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4JVG	601	A
+PIK3CA	P42336	p.R115P	115	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	115	A
+KRAS	P01116	p.G12D	12	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	12	A
+KDR	P35968	p.K353N	353	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5OYJ	353	D
+ITGAL	P20701	p.S304T	304	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ICA	279	A
+CPS1	P31327	p.R1371W	1371	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5DOU	1371	A
+PIK3CA	P42336	p.R88Q	88	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	88	A
+CYP3A4	P08684	p.R212I	212	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1W0F	212	A
+GRM5	P41594	p.F804L	804	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4OO9	804	A
+KRAS	P01116	p.G13D	13	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	13	A
+CSNK2A1	P68400	p.L70I	70	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3H30	70	A
+KRAS	P01116	p.G12C	12	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	12	A
+PDE10A	Q9Y233	p.T363I	363	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ZMF	363	A
+PADI4	Q9UM07	p.L429I	429	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1WD9	429	A
+SIRT3	Q9NTG7	p.N229T	229	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4C7B	229	A
+GRM5	P41594	p.L808I	808	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4OO9	808	A
+TTR	P02766	p.T138A	138	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1F86	118	A
+RRM1	P23921	p.V43L	43	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3HNE	43	B
+KRAS	P01116	p.G13C	13	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	13	A
+PRKAA2	P54646	p.K45R	45	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4CFE	45	A
+PRKAA2	P54646	p.D88Y	88	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4CFE	88	A
+PPARG	P37231	p.R308C	308	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3K8S	280	B
+CASP6	P55212	p.A279V	279	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4NBN	279	A
+JAK2	Q506Q0	p.L579I	579	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5UT6	579	A
+MAPK8	P45983	p.E195K	195	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3O2M	195	A
+PANK1	Q8TE04	p.N547H	547	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2I7N	547	A
+LTA4H	P09960	p.S106Y	106	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3FUD	105	A
+SAMHD1	Q9Y3Z3	p.R333C	333	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4BZB	333	C
+PDK1	Q15118	p.L118I	118	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2Q8G	118	A
+GLS	O94925	p.R387Q	387	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3UO9	387	A
+PYGL	P06737	p.F286L	286	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3DDS	285	A
+CALM1	P0DP23	p.D57N	57	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3J41	56	E
+USP7	Q93009	p.C223Y	223	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5N9T	223	A
+FBP2	O00757	p.R23C	23	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3IFC	22	A
+PIK3CA	P42336	p.E542A	542	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	542	A
+PANK3	Q9H999	p.Y356N	356	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3MK6	356	A
+KRAS	P01116	p.G12V	12	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	12	A
+FDPS	P14324	p.F272L	272	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3N45	206	F
+PAH	P00439	p.K42E	42	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5FII	42	C
+PIK3CA	P42336	p.R93Q	93	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	93	A
+ALB	P02768	p.H266R	266	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2BXD	242	A
+CPS1	P31327	p.R1453W	1453	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5DOU	1453	A
+GC	P02774	p.V283I	283	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1KW2	283	A
+OPRD1	P41143	p.V217M	217	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4N6H	217	A
+PARP14	Q460N5	p.A1131S	1131	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5O2D	1131	A
+PFKP	Q01813	p.F509I	509	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4XZ2	509	B
+GLRA3	O75311	p.S300N	300	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5VDH	267	A
+PIK3CA	P42336	p.P539R	539	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	539	A
+BRAF	P15056	p.G464E	464	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4JVG	464	A
+CASP6	P55212	p.A195T	195	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4NBN	195	A
+MAPK14	Q16539	p.R149K	149	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3IW8	149	A
+CYP3A4	P08684	p.R212K	212	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1W0F	212	A
+GC	P02774	p.R218I	218	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1KW2	218	A
+SIRT1	Q96EB6	p.A295S	295	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5BTR	295	A
+GRM5	P41594	p.F818L	818	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4OO9	818	A
+SAMHD1	Q9Y3Z3	p.K116E	116	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4BZB	116	D
+GNPDA1	P46926	p.T161P	161	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1NE7	161	A
+UBE2I	P63279	p.R61W	61	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5F6Y	61	A
+CSNK2A1	P68400	p.F54C	54	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3H30	54	A
+JAK2	Q506Q0	p.F631C	631	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5UT6	631	A
+PFKP	Q01813	p.F509S	509	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4XZ2	509	B
+SLC1A3	P43003	p.Y127C	127	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5LLM	127	A
+F7	P08709	p.A266T	266	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1DVA	66	H
+PIK3CA	P42336	p.R93W	93	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	93	A
+BRAF	P15056	p.F516L	516	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4JVG	516	A
+AKT1	P31749	p.W80R	80	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3O96	80	A
+AKT1	P31749	p.E17K	17	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3O96	17	A
+IDH1	O75874	p.I113V	113	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5TQH	113	A
+AKT1	P31749	p.Q79K	79	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3O96	79	A
+ADORA2A	P29274	p.P215S	215	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3VG9	215	A
+PYGL	P06737	p.I69F	69	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1EXV	68	A
+PDK2	Q15119	p.I175V	175	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2BU2	167	A
+SERPINC1	P01008	p.R56H	56	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3KCG	24	I
+PIK3CA	P42336	p.N170S	170	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	170	A
+PIK3CA	P42336	p.D454Y	454	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	454	A
+PIK3CA	P42336	p.R818C	818	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	818	A
+ITGAL	P20701	p.D181N	181	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ICA	156	A
+ME2	P23368	p.E93D	93	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1PJ3	93	A
+ADORA2A	P29274	p.R220W	220	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3VG9	220	A
+CSNK2A1	P68400	p.D37V	37	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3H30	37	A
+ADRB2	P07550	p.K267T	267	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5X7D	267	A
+PDE10A	Q9Y233	p.V334L	334	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ZMF	334	A
+JAK2	Q506Q0	p.T636I	636	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5UT6	636	A
+HSPA5	P11021	p.R97W	97	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5E84	97	A
+NT5C2	P49902	p.R129M	129	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2JC9	129	A
+CDK2	P24941	p.P155H	155	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3PXZ	155	A
+PRPS1	P60891	p.F313L	313	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2HCR	313	A
+OPRD1	P41143	p.A305V	305	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4N6H	305	A
+PIK3CA	P42336	p.C604R	604	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	604	A
+PDE10A	Q9Y233	p.A288T	288	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ZMF	288	A
+RET	P07949	p.S891L	891	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5FM2	891	A
+SERPINC1	P01008	p.K43N	43	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3KCG	11	I
+IDH1	O75874	p.R119W	119	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5TQH	119	A
+GC	P02774	p.F159S	159	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1KW2	159	A
+CYP3A4	P08684	p.F219L	219	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1W0F	219	A
+PKM	P14618	p.R516C	516	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3GQY	516	A
+MAOB	P27338	p.F168L	168	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2XCG	168	A
+PRPS1	P60891	p.D101Y	101	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2HCR	101	B
+PKM	P14618	p.R106Q	106	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4B2D	106	A
+GCK	P35557	p.V222I	222	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3F9M	222	A
+MAPK10	P53779	p.L203F	203	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4H39	203	A
+RRM1	P23921	p.I18F	18	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3HNE	18	B
+MAP2K7	O14733	p.V134A	134	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5Y90	150	A
+AMY2A	P04746	p.H30N	30	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3BAY	15	A
+NTRK1	P04629	p.F646V	646	UCEC	UCEC (Uterine corpus endometrial carcinoma)	6D1Z	646	A
+GLRA3	O75311	p.S311A	311	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5VDH	278	A
+HK1	P19367	p.R91Q	91	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1CZA	91	N
+PRMT3	O60678	p.R379I	379	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4RYL	396	A
+PYGM	P11217	p.E573K	573	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1Z8D	572	A
+AURKA	O14965	p.E152K	152	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5ORO	152	A
+PIK3CA	P42336	p.M811I	811	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	811	A
+CASP6	P55212	p.F56L	56	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4EJF	56	A
+PYGM	P11217	p.R570Q	570	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1Z8D	569	A
+PARP14	Q460N5	p.A1145T	1145	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5O2D	1145	A
+GCK	P35557	p.G68S	68	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3F9M	68	A
+HK1	P19367	p.G414R	414	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1CZA	414	N
+F7	P08709	p.A266V	266	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1DVA	66	H
+MAP2K2	P36507	p.C211R	211	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1S9I	211	A
+SAMHD1	Q9Y3Z3	p.R333H	333	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4BZB	333	C
+ADORA2A	P29274	p.Y112H	112	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3VG9	112	A
+AR	P10275	p.R841C	841	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2PIO	840	A
+PANK3	Q9H999	p.R325H	325	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3MK6	325	A
+PDE5A	O76074	p.F786C	786	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1TBF	786	A
+ITGAL	P20701	p.F159V	159	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ICA	134	A
+PIK3CA	P42336	p.E542Q	542	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	542	A
+KRAS	P01116	p.G12A	12	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	12	A
+ALB	P02768	p.G352D	352	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2BXG	328	A
+WNK1	Q9H4A3	p.R341Q	341	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5WE8	341	A
+SERPINC1	P01008	p.A42T	42	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3KCG	10	I
+PIK3CA	P42336	p.R818H	818	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	818	A
+PDE10A	Q9Y233	p.R351H	351	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ZMF	351	A
+FBP2	O00757	p.R16H	16	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3IFC	15	A
+CDC34	P49427	p.P49L	49	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4MDK	49	A
+AURKA	O14965	p.D132Y	132	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5ORO	132	A
+LIMK2	P53671	p.R381C	381	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4TPT	381	A
+MAPK8	P45983	p.T183M	183	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3O2M	183	A
+NTRK1	P04629	p.S672I	672	UCEC	UCEC (Uterine corpus endometrial carcinoma)	6D1Z	672	A
+GLRA3	O75311	p.L265I	265	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5VDH	232	B
+AMD1	P17707	p.T161N	161	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1JL0	161	A
+GCK	P35557	p.A449V	449	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3F9M	449	A
+PTPRZ1	P23471	p.V1945M	1945	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5H08	1945	A
+CDC34	P49427	p.L124F	124	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4MDK	124	A
+ALB	P02768	p.I288T	288	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2BXD	264	A
+SERPINE1	P05121	p.N232S	232	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4G8O	209	D
+KRAS	P01116	p.G12S	12	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	12	A
+SERPINC1	P01008	p.C40Y	40	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3KCG	8	I
+GC	P02774	p.L285H	285	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1KW2	285	A
+PDE5A	O76074	p.F786L	786	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1TBF	786	A
+HGF	P14210	p.F706V	706	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4O3T	706	A
+KRAS	P01116	p.Q61H	61	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	61	A
+RORC	P51449	p.A497T	497	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5C4T	497	A
+IDH1	O75874	p.I128S	128	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5TQH	128	A
+MAP2K4	P45985	p.E179K	179	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3ALO	179	A
+CTSK	P43235	p.Y283N	283	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5J94	169	A
+FCGR3A	P08637	p.Y87C	87	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5MN2	69	A
+RXRA	P19793	p.D273N	273	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3UVV	273	B
+PANK1	Q8TE04	p.N525D	525	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2I7N	525	B
+EPAS1	Q99814	p.R247H	247	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3F1O	247	A
+HBB	P68871	p.V35L	35	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2D60	34	B
+PIK3CA	P42336	p.R115L	115	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	115	A
+PADI4	Q9UM07	p.D350N	350	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1WD9	350	A
+PADI4	Q9UM07	p.R394Q	394	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1WD9	394	A
+ALB	P02768	p.S216L	216	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2BXD	192	A
+ALB	P02768	p.R246I	246	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2BXD	222	A
+PANK3	Q9H999	p.F323L	323	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3MK6	323	A
+RXRA	P19793	p.A344T	344	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3UVV	344	B
+MAT2A	P31153	p.S341G	341	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5UGH	341	A
+IDH2	P48735	p.T169I	169	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4JA8	169	A
+TTR	P02766	p.T139M	139	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1F86	119	A
+AURKA	O14965	p.R189Q	189	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5ORL	189	A
+PIK3CA	P42336	p.E365K	365	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	365	A
+EPAS1	Q99814	p.R275H	275	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3F1O	275	A
+CASP6	P55212	p.L98F	98	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4EJF	98	A
+PDK1	Q15118	p.D151Y	151	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2Q8G	151	A
+RXRA	P19793	p.G429R	429	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3UVV	429	B
+PANK1	Q8TE04	p.S491A	491	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2I7N	491	B
+PAK1	Q13153	p.S382L	382	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4ZJI	382	A
+ABL1	P00519	p.W430C	430	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5MO4	449	A
+CCR5	P51681	p.N252S	252	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4MBS	252	A
+RRM1	P23921	p.G259D	259	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3HNE	259	B
+GRM5	P41594	p.L622I	622	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4OO9	622	A
+RNMT	O43148	p.D350Y	350	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5E8J	350	A
+MAPK1	P28482	p.L112R	112	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5AX3	103	A
+PRPS1	P60891	p.L145V	145	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2HCR	145	A
+MAP2K2	P36507	p.V228M	228	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1S9I	228	A
+NTRK1	P04629	p.L486F	486	UCEC	UCEC (Uterine corpus endometrial carcinoma)	6D1Z	486	A
+MSH6	P52701	p.Q485H	485	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2O8B	485	B
+GC	P02774	p.E437K	437	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1KW2	437	A
+ADRB2	P07550	p.G276D	276	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5X7D	276	A
+PYGM	P11217	p.R243H	243	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1Z8D	242	A
+CALM1	P0DP23	p.E68K	68	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3J41	67	E
+GRIN2A	Q12879	p.D776Y	776	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5I2N	259	A
+GC	P02774	p.D325E	325	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1KW2	325	A
+ANXA5	P08758	p.T118I	118	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1HAK	118	A
+KRAS	P01116	p.G13V	13	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	13	A
+CASP8	Q14790	p.K353T	353	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3KJQ	353	A
+KDR	P35968	p.A352V	352	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5OYJ	352	D
+PDE10A	Q9Y233	p.K279T	279	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ZMF	279	A
+RRM1	P23921	p.N354H	354	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3HNE	354	B
+PAK1	Q13153	p.N326H	326	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4ZJI	326	A
+ITGAL	P20701	p.K257R	257	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ICA	232	A
+FKBP1A	P62942	p.R58Q	58	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1NSG	57	A
+HSPA5	P11021	p.D231N	231	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5E84	231	A
+SIRT1	Q96EB6	p.R199Q	199	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5BTR	199	A
+PYGL	P06737	p.F287S	287	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3DDS	286	A
+RXRA	P19793	p.R316C	316	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3UVV	316	B
+OPRD1	P41143	p.A305T	305	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4N6H	305	A
+ADCY10	Q96PN6	p.R176C	176	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4USW	176	A
+PIK3CA	P42336	p.E80K	80	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	80	A
+RXRA	P19793	p.L308V	308	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3UVV	308	B
+HK1	P19367	p.G450S	450	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1CZA	450	N
+PAH	P00439	p.V45A	45	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5FII	45	C
+MAPK7	Q13164	p.L106I	106	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4ZSG	106	A
+PDK2	Q15119	p.S29F	29	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2BU2	21	A
+RNMT	O43148	p.W178C	178	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5E8J	178	A
+SLC1A5	Q15758	p.A244V	244	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5LLM	236	A
+BRAF	P15056	p.V471I	471	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4JVG	471	A
+ADORA2A	P29274	p.T41I	41	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3VG9	41	A
+PIK3CA	P42336	p.E542V	542	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	542	A
+GLRA3	O75311	p.T295M	295	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5VDH	262	B
+MAPK10	P53779	p.H163R	163	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4H39	163	A
+SLC1A3	P43003	p.I397V	397	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5LLM	377	A
+PTPRZ1	P23471	p.Q1981H	1981	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5H08	1981	A
+RNMT	O43148	p.R327C	327	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5E8J	327	A
+IDH2	P48735	p.Q296R	296	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4JA8	296	B
+PDE4D	Q08499	p.F337L	337	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3IAD	604	A
+MAPK14	Q16539	p.K249T	249	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4E6C	249	A
+BRAF	P15056	p.L584I	584	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4JVG	584	A
+ME2	P23368	p.R67Q	67	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1PJ3	67	A
+AR	P10275	p.E898D	898	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2PIO	897	A
+SLC1A3	P43003	p.F389L	389	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5LLM	369	A
+EED	O75530	p.Y308F	308	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5HYN	308	B
+KRAS	P01116	p.Q61L	61	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5V9O	61	A
+PIK3CA	P42336	p.G364R	364	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SWP	364	A
+PDK2	Q15119	p.L57M	57	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2BU2	49	A
+FDPS	P14324	p.K323N	323	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3N45	257	F
+PIK3CA	P42336	p.Q643H	643	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5SX8	643	A
+CASP6	P55212	p.A34T	34	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4FXO	34	A
+PDE10A	Q9Y233	p.R365L	365	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2ZMF	365	A
+MMP9	P14780	p.P194T	194	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5UE4	194	B
+PKM	P14618	p.R455Q	455	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3GQY	455	A
+KIF11	P52732	p.Q212H	212	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3ZCW	212	A
+MMP7	P09237	p.H122P	122	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5UE5	102	A
+GRIN2A	Q12879	p.D776N	776	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5I2N	259	A
+MTOR	P42345	p.L2103I	2103	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1NSG	2103	B
+FCGR3A	P08637	p.R115W	115	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5MN2	97	A
+MSH2	P43246	p.R524C	524	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2O8B	524	A
+CASP8	Q14790	p.K353N	353	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3KJQ	353	A
+PANK3	Q9H999	p.R251S	251	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3MK6	251	C
+HSPA5	P11021	p.L35M	35	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5E84	35	A
+SIRT3	Q9NTG7	p.G232V	232	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4C7B	232	A
+PYGM	P11217	p.Y614H	614	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1Z8D	613	A
+CDK2	P24941	p.D68N	68	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3PXZ	68	A
+ESR2	Q92731	p.V320M	320	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2FSZ	320	B
+KIF11	P52732	p.K357N	357	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3ZCW	357	A
+MAOB	P27338	p.T202A	202	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2XCG	202	A
+PAH	P00439	p.N61I	61	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5FII	61	A
+JAK2	Q506Q0	p.I559L	559	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5UT6	559	A
+GRIA2	P42262	p.G754D	754	UCEC	UCEC (Uterine corpus endometrial carcinoma)	2XHD	221	B
+BRAF	P15056	p.L64I	64	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5VYK	1064	C
+HK1	P19367	p.G87E	87	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1CZA	87	N
+CSNK2A1	P68400	p.A110T	110	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3H30	110	A
+MAPK1	P28482	p.L121I	121	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5AX3	112	A
+PRKAA2	P54646	p.G28S	28	UCEC	UCEC (Uterine corpus endometrial carcinoma)	4CFE	28	A
+SERPINC1	P01008	p.E446K	446	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3KCG	414	I
+SERPINC1	P01008	p.R45W	45	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3KCG	13	I
+EPAS1	Q99814	p.T321A	321	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3F1O	321	A
+MAT2A	P31153	p.I332V	332	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5UGH	332	C
+SNRNP200	O75643	p.V1256M	1256	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5URJ	1256	A
+AMD1	P17707	p.E178D	178	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1JL0	178	A
+PTPN11	Q06124	p.T219A	219	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5EHR	219	A
+IGF1R	P08069	p.T1157M	1157	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3LW0	1157	A
+AMY2A	P04746	p.V249I	249	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3BAY	234	A
+PDE4D	Q08499	p.E532D	532	UCEC	UCEC (Uterine corpus endometrial carcinoma)	3IAD	396	A
+HSPA5	P11021	p.G36R	36	UCEC	UCEC (Uterine corpus endometrial carcinoma)	5E84	36	A
+MAP2K1	Q02750	p.R189K	189	UCEC	UCEC (Uterine corpus endometrial carcinoma)	1S9J	189	A
+KIF11	P52732	p.L214F	214	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	3ZCW	214	A
+KRAS	P01116	p.G12A	12	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	5V9O	12	A
+EPAS1	Q99814	p.R308Q	308	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	3F1O	308	A
+ANXA5	P08758	p.I279M	279	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	1HAK	279	A
+PIK3CA	P42336	p.R115L	115	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	5SWP	115	A
+KRAS	P01116	p.G12D	12	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	5V9O	12	A
+KRAS	P01116	p.G12C	12	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	5V9O	12	A
+KRAS	P01116	p.G12V	12	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	5V9O	12	A
+SERPINC1	P01008	p.E145D	145	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	3KCG	113	I
+JAK2	Q506Q0	p.A676V	676	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	5UT6	676	A
+PIK3CA	P42336	p.C604R	604	UCS	UCS (Uterine Corpus Endometrial Carcinoma)	5SWP	604	A

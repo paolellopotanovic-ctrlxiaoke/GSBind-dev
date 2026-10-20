@@ -1,0 +1,92 @@
+cas_entry,source_pdb,source_annotation,uniprot,status,positions_0,method,reason
+cas0001,1nxe,cas0001/1nxe/ALLOSTERIC_SITES.txt,P0ABH7,mapped,106;108;110;111;112;113;114;117;145;147;155;158;159;162;163;167;180;181;182;187;189;204;206;207,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0002,1s8o,cas0002/1s8o/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0003,1oky,cas0003/1oky/ALLOSTERIC_SITES.txt,O15530,mapped,75;112;113;114;115;117;118;123;126;127;130;147;148;149;154;155;156,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0004,1b41,cas0004/1b41/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0005,1i72,cas0005/1i72/ALLOSTERIC_SITES.txt,P17707,mapped,110;112;156;173;174;175;177;255;284;317;319,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0006,1ao0,cas0006/1ao0/ALLOSTERIC_SITES.txt,P00497,mapped,252;253;254;255;256;269;291;292;293;314;315;316;317;338,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0007,1i7q,cas0007/1i7q/ALLOSTERIC_SITES.txt,P00897,mapped,36;37;38;47;48;50;289;290;291;292;451;452;453;461;462;463,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0008,1acm,cas0008/1acm/ALLOSTERIC_SITES.txt,P0A7F3,mapped,8;9;10;11;12;16;18;19;49;50;51;55;57;59;81;83;85;88;90;93,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0009,1pg5,cas0009/1pg5/ALLOSTERIC_SITES.txt,P74766,mapped,12;13;14;19;21;22;63;85;87;89;92;93;94;97,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0010,1i2d,cas0010/1i2d/ALLOSTERIC_SITES.txt,Q12650,mapped,403;407;431;432;435;444;449;452;453;473;474;475;476;477;513;515;524;525;526;527;528,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0011,1bia,cas0011/1bia/ALLOSTERIC_SITES.txt,P06709,mapped,181;222;227,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0012,1uwh,cas0012/1uwh/ALLOSTERIC_SITES.txt,P15056,mapped,462;466;467;470;480;481;482;497;500;503;504;507;512;513;514;515;526;527;528;529;530;531;566;571;572;573;582;591;592;593;594;595;597;598,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0013,1a9x,cas0013/1a9x/ALLOSTERIC_SITES.txt,P00968,mapped,947;948;949;953;973;974;975;976;977;992;993;994;1000;1014;1015;1016;1017;1021;1024;1025;1027;1028;1029,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0014,1jwh,cas0014/1jwh/ALLOSTERIC_SITES.txt,P68400,mapped,35;36;38;39;40;66;68;100;101;102;103;104;107;108;109;111,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0015,1ia8,cas0015/1ia8/ALLOSTERIC_SITES.txt,O14757,mapped,92;93;94;95;96;97;98;99;132;133;171;172;199;203;204;205;206;207;208;216;232,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0016,1csm,cas0016/1csm/ALLOSTERIC_SITES.txt,P32178,mapped,58;70;73;74;75;78;80;81;97;99;137;138;139;140;141;142;144;145,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0017,1og2,cas0017/1og2/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0018,1egy,cas0018/1egy/ALLOSTERIC_SITES.txt,Q00441,mapped,57;58;59;60;71;72;73;74;77;85;86;88;90;91;170;171;173;174;184;235;236;239;242;243;291;293;390;391,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0019,2i80,cas0019/2i80/ALLOSTERIC_SITES.txt,Q5HEB7,mapped,18;19;22;91;92;93;94;116;117;118;288;308;309;310;311;312;336,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0020,1dhp,cas0020/1dhp/ALLOSTERIC_SITES.txt,P0A6L2,mapped,47;48;49;50;51;52;55;78;79;80;83;87;105,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0021,1ii6,cas0021/1ii6/ALLOSTERIC_SITES.txt,P52732,mapped,114;115;116;118;126;129;131;132;133;135;136;139;159;161;170;171;209;210;212;213;214;215;216;217;218;219;220;223;227;238,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0022,1fta,cas0022/1fta/ALLOSTERIC_SITES.txt,P09467,mapped,16;17;18;20;21;22;24;25;26;27;28;29;30;31;32;34;112;113;140;160;177;178;179,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0023,1cnq,cas0023/1cnq/ALLOSTERIC_SITES.txt,P00636,mapped,17;18;21;24;26;27;28;29;30;31;34;47;50;51;52;53;55;56;64;68;70;71;72;73;76;97;112;113;140;160;177;276;280,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0024,1ado,cas0024/1ado/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0025,1aon,cas0025/1aon/ALLOSTERIC_SITES.txt,P0A6F5,mapped,101;104;105;108;109;110;437;441;444,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0026,2a8c,cas0026/2a8c/ALLOSTERIC_SITES.txt,P45148,mapped,38;44;45;46;47;48;95;180,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0027,1cza,cas0027/1cza/ALLOSTERIC_SITES.txt,P19367,mapped,18;22;28;29;30;372;375;376;379;380;383;421;424;425;428,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0028,1lld,cas0028/1lld/ALLOSTERIC_SITES.txt,E8ME30,mapped,158;170;171;172;173;175;194;258,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0029,1ldb,cas0029/1ldb/ALLOSTERIC_SITES.txt,P00344,mapped,156;167;168;169;170;171;172;173;192;254,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0030,2him,cas0030/2him/ALLOSTERIC_SITES.txt,P0A962,mapped,95;160;215;239;270;271;272;273;300;301;302,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0031,1do8,cas0031/1do8/ALLOSTERIC_SITES.txt,P23368,mapped,36;58;63;66;83;87;90;91;94;126;127,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0032,1oe9,cas0032/1oe9/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0033,1d6s,cas0033/1d6s/ALLOSTERIC_SITES.txt,P0A1E3,mapped,7;31;33;34;36;37;78;266;267;268,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0034,1dxh,cas0034/1dxh/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0035,1phz,cas0035/1phz/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0036,2nxw,cas0036/2nxw/ALLOSTERIC_SITES.txt,P51852,mapped,59;60;210;213;214;218;237;238;239;240;241;374;392;393;394;395;396,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0037,1fiy,cas0037/1fiy/ALLOSTERIC_SITES.txt,P00864,mapped,586;587;590;615;768;772;818;824;827;828;831;878;879;880,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0038,3cqd,cas0038/3cqd/ALLOSTERIC_SITES.txt,P06999,mapped,87,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0039,1ygy,cas0039/1ygy/ALLOSTERIC_SITES.txt,P9WNX3,mapped,459;460;461;462;463;464;465;466;467;478;479;480;485;494,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0040,1psd,cas0040/1psd/ALLOSTERIC_SITES.txt,P0A9T0,mapped,343;344;345;346;347;348;349;350;362;363;364;365;369;371;376,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0041,1pvd,cas0041/1pvd/ALLOSTERIC_SITES.txt,P06169,mapped,91;220;224;285;286;287;308;309;310;311;312;325,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0042,1jm6,cas0042/1jm6/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0043,1a3w,cas0043/1a3w/ALLOSTERIC_SITES.txt,P00549,mapped,400;401;402;403;404;405;406;407;424;451;454;455;458;481;482;483;484;489;490;491,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0044,1t5a,cas0044/1t5a/ALLOSTERIC_SITES.txt,P14618,mapped,430;431;432;433;434;435;436;437;452;453;454;455;481;484;485;488;511;512;513;514;515;516;517;518;519;520;521,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0045,2vgb,cas0045/2vgb/ALLOSTERIC_SITES.txt,P30613,mapped,473;474;475;476;477;478;479;480;497;524;527;531;555;556;557;558;559;560;561;562;563;564,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0046,1a49,cas0046/1a49/ALLOSTERIC_SITES.txt,P11974,mapped,42;43;44;45;69;104;105;106;357;462;463;464;465;467;468;469;470;471;499,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0047,1r1r,cas0047/1r1r/ALLOSTERIC_SITES.txt,P00452,mapped,8;90;231;232;233;234;236;245;248;249;260;261;266;267;268;272;273;274;275;280;290;291;292;294;295,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0048,1pem,cas0048/1pem/ALLOSTERIC_SITES.txt,Q08698,mapped,184;185;186;187;189;201;213;214;219;220;221;222;226;227;228;229;243;244;245;311,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0049,1iwo,cas0049/1iwo/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0050,1vst,cas0050/1vst/ALLOSTERIC_SITES.txt,Q980Q4,mapped,25;28;29;32;36;76;77;78;79;80;81;82;83;86;89;90;92;93;94;95;96;97;99;122;214,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0051,11ba,cas0051/11ba/ALLOSTERIC_SITES.txt,P00669,mapped,39;40;49;52;53;54;56;57;58;119;120,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0052,1fpu,cas0052/1fpu/ALLOSTERIC_SITES.txt,P00520,mapped,247;248;255;268;269;270;281;284;285;288;289;292;297;298;312;313;314;315;316;317;318;319;320;325;331;335;336;337;339;340;343;353;358;359;360;361;362;369;378;379;380;382;385;428;431;432;433;434;436;460;461;462;463;464;467;471;492;495,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0053,1a9u,cas0053/1a9u/ALLOSTERIC_SITES.txt,Q16539,mapped,27;28;29;30;31;32;33;34;35;36;37;39;48;50;51;52;66;69;70;73;74;77;82;83;84;85;87;103;104;105;106;107;108;109;110;111;114;140;145;146;147;148;149;155;156;157;165;168;169;170;171;172;173;188;324,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0054,2jfx,cas0054/2jfx/ALLOSTERIC_SITES.txt,Q9ZLT0,mapped,9;10;12;13;16;148;149;150;151;153;185;243;247;251;252,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0055,1pfk,cas0055/1pfk/ALLOSTERIC_SITES.txt,P0A796,mapped,21;25;54;55;57;58;59;60;61;154;158;184;185;186;187;211;212;213;214;215;319,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0056,2xyn,cas0056/2xyn/ALLOSTERIC_SITES.txt,P42684,mapped,377;382;383;385;386;474;477;478;480;507;508;509;510;513;541;542,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0057,2bty,cas0057/2bty/ALLOSTERIC_SITES.txt,Q9X2A4,mapped,16;49;50;159,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0058,1b4k,cas0058/1b4k/ALLOSTERIC_SITES.txt,Q59643,mapped,176;177;178;179;180;202;244;248,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0059,1b4e,cas0059/1b4e/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0060,1boz,cas0060/1boz/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0061,1ddr,cas0061/1ddr/ALLOSTERIC_SITES.txt,P0ABQ4,mapped,6;7;12;13;14;15;16;17;18;20;21;63;95;96,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0062,2g01,cas0062/2g01/ALLOSTERIC_SITES.txt,P45983,mapped,177;178;179;180;183;196;197;198;229;230;233;252;254;255;258,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0063,1d0x,cas0063/1d0x/ALLOSTERIC_SITES.txt,P08799,mapped,262;264;419;422;423;424;426;427;430;589;590;591;596;614;615;616;617;618;619;632,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0064,1aq8,cas0064/1aq8/ALLOSTERIC_SITES.txt,P38501,mapped,82;95;96;97;128;129;130;131;171;173;179;180;183;185;234,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0065,2qf7,cas0065/2qf7/ALLOSTERIC_SITES.txt,Q2K340,mapped,42;43;45;46;47;426;428;468;469;470;471;472;1025;1028;1029;1030;1031;1053;1054,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0066,1fap,cas0066/1fap/ALLOSTERIC_SITES.txt,,failed,,,No coordinate/identity-valid allosteric annotation
+cas0067,1gjo,cas0067/1gjo/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0068,2fyt,cas0068/2fyt/ALLOSTERIC_SITES.txt,O60678,mapped,369;371;374;375;378;402;404;406;448;449;483;485,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0069,2poc,cas0069/2poc/ALLOSTERIC_SITES.txt,P53704,mapped,372;382;383;384;385;474;475;476;479;483;484;487;488;489;490;491;492;494,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0070,1bmq,cas0070/1bmq/ALLOSTERIC_SITES.txt,P29466,mapped,240;257;258;261;281;285;330;332;387;389;390,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0071,1f1j,cas0071/1f1j/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0072,1fmk,cas0072/1fmk/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0073,1be3,cas0073/1be3/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0074,1hq6,cas0074/1hq6/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0075,1thf,cas0075/1thf/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0076,1s9j,cas0076/1s9j/ALLOSTERIC_SITES.txt,Q02750,mapped,78;79;96;98;114;117;125;126;127;128;140;142;205;206;208;209;210;211;214;215;218,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0077,1s9i,cas0077/1s9i/ALLOSTERIC_SITES.txt,P36507,mapped,81;82;102;118;121;129;130;131;132;144;192;193;209;210;212;213;214;215;218;219;222;233,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0078,1dpm,cas0078/1dpm/ALLOSTERIC_SITES.txt,P0A434,mapped,50;92;93;95;328;332;336;342;345;346;349;350,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0079,1a5y,cas0079/1a5y/ALLOSTERIC_SITES.txt,P18031,mapped,186;187;188;191;192;195;196;198;199;231;275;276;278;279;280;281,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0080,1hvy,cas0080/1hvy/ALLOSTERIC_SITES.txt,P04818,mapped,48;49;50;182;185;214;215;257,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0081,1mq4,cas0081/1mq4/ALLOSTERIC_SITES.txt,O14965,mapped,175;176;179;254;276;278;282;283;284;287;288;290;292;293;328;329;330;331;332;333;336,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0082,1ant,cas0082/1ant/ALLOSTERIC_SITES.txt,P01008,mapped,44;45;49;74;75;76;77;78;79;143;144;145;146;149;152;153;156;160;163,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0083,3aln,cas0083/3aln/ALLOSTERIC_SITES.txt,P45985,mapped,94;95;96;97;98;99;101;120;125;127;141;145;162;163;164;165;166;167;168;169;176,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0084,1yq7,cas0084/1yq7/ALLOSTERIC_SITES.txt,P14324,mapped,121;122;123;124;125;158;161;165;178;269;270;304,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0085,1fuo,cas0085/1fuo/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0086,1gos,cas0086/1gos/ALLOSTERIC_SITES.txt,P27338,mapped,101;102;103;118;163;166;167;170;171;197;198;205;315;325;327;340;342,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0087,1dd7,cas0087/1dd7/ALLOSTERIC_SITES.txt,P29477,mapped,256;258;259;273;275;339;340;343;344;345;362;363;364;366,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0088,1aq2,cas0088/1aq2/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0089,1po5,cas0089/1po5/ALLOSTERIC_SITES.txt,,failed,,,No SIFTS target identity in frozen 504-input cohort
+cas0090,1a50,cas0090/1a50/ALLOSTERIC_SITES.txt,P00929,mapped,21;48;58;59;63;99;101;126;127;128;129;152;174;176;178;182;183;184;210;211;212;213;214;231;232;233;234;235,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,
+cas0091,1aq1,cas0091/1aq1/ALLOSTERIC_SITES.txt,P24941,mapped,32;34;43;44;47;48;51;52;54;55;62;63;65;68;70;75;77;79;145;147,official_CASBench_modified_source_PDB_SIFTS_and_sequence_verified,

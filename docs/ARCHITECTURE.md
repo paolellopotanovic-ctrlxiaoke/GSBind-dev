@@ -1,99 +1,37 @@
-# Architecture and source-reading guide
+# Gaussian-direct128 architecture
 
-M4 is organized by scientific responsibility rather than by experiment history.
-The complete implementation is under `src/m4`; every public command uses this
-single code path.
+Gaussian-direct128 maps protein atomic structure to residue-level binding probabilities through two coupled stages: atom encoding and Gaussian surface interaction.
 
-## Start here
+## Forward path
 
-Read these files in order:
+1. `AtomEncoder` converts atom features and local topology into scalar/vector atom states.
+2. Atom states are pooled into residue states and projected to the Gaussian representation.
+3. A per-residue Gaussian field projects residue context onto sampled surface points.
+4. Pair-Gaussian corrections integrate cooperative residue context.
+5. GVP graph encoders update surface states at multiple graph scales.
+6. Connected patch pooling and surface-to-residue attention exchange information.
+7. Three co-update rounds refine residue and surface states.
+8. A direct head emits protein, nucleic-acid, ion, ligand, and lipid channels.
 
-1. `src/m4/models/m4.py` defines the public build/load/batch-forward contract.
-2. `src/m4/models/components/predictor.py` assembles the complete M4 network.
-   Its constructor is the architecture composition root.
-3. `src/m4/models/components/execution.py` contains the complete forward data
-   flow. Parameter-free helper stages live in `components/runtime/`.
-4. `src/m4/losses.py` defines the weighted multi-objective training target.
-5. `src/m4/data/datamodule.py` owns manifests, grouped splits, class weighting,
-   and strict four-cache loaders.
-6. `src/m4/lightning/module.py` owns optimization, scheduling, epoch state,
-   logging, and checkpoint export.
-7. `src/m4/predictor.py` is the label-free inference application that maps PDB
-   residue identities to final, prior, and surface-conditioned probabilities.
+The released E11 checkpoint uses `architecture=vg`, `gaussian_dim=128`, and `direct_protein_head=true`.
 
-## Model decomposition
+## Module map
 
-```text
-src/m4/models/
-|-- m4.py                         public build/load/forward contract
-|-- config.py                     checkpoint args -> constructor kwargs
-`-- components/
-    |-- residue_encoder.py        atom pooling, multiview GVP, Gear/OAGNN refiners
-    |-- surface_encoder.py        surface GVP, connected patches, Laplacian blocks
-    |-- gaussian_projection.py    single-residue and multiscale Gaussian fields
-    |-- pair_gaussian.py          pair/triplet-conditioned Gaussian corrections
-    |-- cross_scale.py            residue<->surface attention and patch feedback
-    |-- predictor.py              architecture assembly
-    |-- execution.py              end-to-end forward algorithm
-    `-- runtime/
-        |-- stochastic.py         feature/view/stochastic helpers
-        |-- surface_flow.py        residue/surface graph runtime
-        `-- gaussian_flow.py       chunked pair-Gaussian runtime
-```
+| Path | Responsibility |
+|---|---|
+| `model.py` | `GaussianDirectModel` and Gaussian interaction block |
+| `atom_encoding/atom_encoder.py` | Atom feature, state update, pooling, and residue decoder |
+| `atom_encoding/dataset.py` | Compact NPZ training payload |
+| `atom_encoding/surface_cache.py` | Surface sampling and graph cache |
+| `modules/gaussian_projection.py` | Per-residue adaptive Gaussian field |
+| `modules/pair_gaussian.py` | Residue-pair Gaussian correction |
+| `modules/surface_encoder.py` | GVP surface encoder and connected patches |
+| `modules/cross_scale.py` | Surface-to-residue attention |
+| `modules/global_context.py` | Residue and surface global-context feedback |
+| `modules/semantic_patch.py` | Optional semantic patch objective |
+| `lightning.py` | Deterministic distributed training loop |
+| `app.py` | Inference and evaluation use cases |
 
-The supporting packages are equally explicit:
+## Parameter budget
 
-```text
-src/m4/data/          manifest schema, PDB encoding, datasets, loaders, splits
-src/m4/training/      runtime helpers, teacher adapters, auxiliary objectives
-src/m4/evaluation/    residue/case metrics and strict evaluation runner
-src/m4/preprocessing/ tensor, graph, surface, static-cache builders and audits
-src/m4/lightning/     training module and configuration-driven CLI
-```
-
-The high-level path is:
-
-```text
-atoms -> residue features -> multiview residue graph encoder
-      -> Gaussian residue-to-surface field -> surface GVP/patch processing
-      -> surface-to-residue fusion -> semantic patch refinement
-      -> per-residue interface logits
-```
-
-All component classes retain the validated module attribute names. Therefore the
-released checkpoint still has 791 state tensors and 4,360,516 parameters and
-loads with `strict=True` without key translation.
-
-## Training boundaries
-
-The paper-facing training path is PyTorch Lightning:
-
-```bash
-python main.py train --config configs/m4_holo20k.yaml
-```
-
-- `M4DataModule` performs state filtering, fixed/grouped splits, positive-class
-  weighting, and cache-backed loading.
-- `M4LightningModule` performs forward, exact losses, AdamW, warmup/cosine or
-  linear scheduling, AMP, accumulation, clipping, metrics, and checkpointing.
-- Epoch seeding and the semantic-boundary activation epoch match the validated
-  trainer.
-- Lightning checkpoints also export the original `model_state_dict` and
-  `args` fields so released inference remains compatible.
-
-## Equivalence contract
-
-`tests/test_modular_training.py` verifies deterministic constructor state,
-parameter count and keys, loss behavior, scheduler behavior, and epoch-state
-logic. The final migration was additionally checked against an external,
-read-only copy of the research implementation on a real cache-backed CUDA batch.
-That audit compared:
-
-- eval and train outputs;
-- every objective component;
-- every parameter gradient; and
-- one AdamW update.
-
-The immutable result is stored in
-`docs/validation/final_external_oracle_equivalence.json`; the external source
-copy is not part of the release package or runtime dependency graph.
+The released model contains 3,355,001 parameters: 1,474,957 in `AtomEncoder` and 1,880,044 in the Gaussian/direct path. Bypass and parameter-matched switches exist in the implementation; their presence alone is not a reported retraining experiment. The current paper engineering contains the E11 model and Gaussian-surface pathway interventions.

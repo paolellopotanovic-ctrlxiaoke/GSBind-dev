@@ -1,0 +1,11 @@
+{
+  "registered_enzyme_entries": 91,
+  "registered_structures": 2871,
+  "evaluated_source_structures": 91,
+  "representative_policy": "lexicographically_first_PDB_per_CAS_entry_before_outcome_evaluation",
+  "mapped_enzyme_entries": 70,
+  "mapped_uniprot_proteins": 70,
+  "evaluated_only_exact_SIFTS_UniProt_identity": true,
+  "other_entries_explicitly_audited_as_missing_frozen_input_or_mapping": true,
+  "not_claimed_identical_to_PASSer_anonymous_1049_ordering": true
+}

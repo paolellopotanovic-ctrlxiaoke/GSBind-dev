@@ -1,283 +1,108 @@
-# Gaussian-PPBS (M4)
+# GSbind
 
-[![CI](https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS/actions/workflows/ci.yml/badge.svg)](https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/paolellopotanovic-ctrlxiaoke/Guassion-PPBS?include_prereleases)](https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS/releases)
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](LICENSE)
+**Gaussian-surface interaction for protein binding-site prediction and functional representation analysis.**
 
-Gaussian-PPBS is the public implementation of **M4**, a receptor-only model for
-protein-protein binding-site prediction. Given one protein structure, M4 assigns
-an interface probability to every residue. A binding partner and biological
-labels are not required at inference time.
+This is the current paper engineering for **Gaussian-direct128 E11 / GSbind**, not a collection of historical experiments. It contains the model, Lightning training pipeline, final evaluation protocols, E11 weights, frozen diagnostic readouts, paper metrics, and residue-level prediction tables.
 
-M4 combines residue geometry, multi-scale residue graphs, a 1,024-point
-solvent-accessible surface representation, and a learned Gaussian surface field.
-This repository preserves the exact model tensors and checkpoint keys used by
-the validated research implementation while exposing a modular PyTorch
-Lightning codebase for dataset construction, caching, training, evaluation,
-and label-free inference.
+旧仓库已完整保存在 [`archive/pre-gsbind-20261020`](https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS/tree/archive/pre-gsbind-20261020) 分支及 `legacy-pre-gsbind-20261020` 标签。默认分支只维护当前论文主工程，见 [历史入口](HISTORY.md)。
 
-> **Scope.** M4 predicts protein-protein interface residues. It is a
-> prioritization model, not a docking engine, affinity predictor, or causal
-> mechanism detector.
+## Paper scope and results
 
-## Start here: understand M4 in 15 minutes
-
-M4 has one public scientific path. Start with these files in this order:
-
-| Question | Open this file | What it contains |
+| Evidence | Current scope | Main result / entry |
 |---|---|---|
-| What enters and leaves the model? | [`src/m4/models/m4.py`](src/m4/models/m4.py) | Public build, strict checkpoint-load, and batch-forward contract |
-| Which scientific modules make up M4? | [`src/m4/models/components/predictor.py`](src/m4/models/components/predictor.py) | Architecture composition root: residue encoder, Gaussian field, surface encoder, fusion, and heads |
-| What happens in one forward pass? | [`src/m4/models/components/execution.py`](src/m4/models/components/execution.py) | Complete operation order from atoms to residue logits |
-| How is the Gaussian surface field computed? | [`gaussian_projection.py`](src/m4/models/components/gaussian_projection.py) and [`pair_gaussian.py`](src/m4/models/components/pair_gaussian.py) | Single-residue projection and pair-conditioned correction |
-| How are residue and surface states exchanged? | [`cross_scale.py`](src/m4/models/components/cross_scale.py) | Residue-to-surface, surface-to-residue, patch, and feedback operators |
-| What objective is optimized? | [`src/m4/losses.py`](src/m4/losses.py) | Complete weighted training objective |
-| Where is the training loop? | [`src/m4/lightning/module.py`](src/m4/lightning/module.py) | Lightning steps, optimizer, exact scheduler, metrics, and checkpoint export |
-| How are samples and caches loaded? | [`src/m4/data/datamodule.py`](src/m4/data/datamodule.py) | Manifest splits, class weighting, and strict four-cache loaders |
-| How is an unlabeled PDB predicted? | [`src/m4/predictor.py`](src/m4/predictor.py) | Label-free inference and residue-level CSV export |
+| Binding-site prediction | 20,801 training records; official MMseqs holo 988 and APO/AF2 874 test cases | GSbind case-macro AUPR **0.7915 / 0.7281**; PeSTo **0.7380 / 0.6770** |
+| Gaussian-surface pathway | Surface-to-residue feedback/fusion; native, identity, retain50, retain00 | Full cutoff AUPR **0.5220 / 0.4765** on the two binding panels |
+| Allosteric representation | AlloBench383 and AM127 grouped nested fivefold; fixed-source transfers to four other sources and AM | Geometry / AA / hidden / full; component-macro AUPR **0.1697** AlloBench, **0.7216** AM for full |
+| SSM220 | Native binding-score prioritization of experimental sensitivity | All 220 inputs retained; coverage differs by sensitivity endpoint; no hidden SSM classifier |
+| KRAS/Src | Frozen diagnostic readouts versus experimental functional/folding effects | Low-score non-contact functional rho **0.4498 / 0.3634**, full surface cutoff **0.0223 / 0.1195** |
 
-A single forward pass follows five scientific stages:
+Allosteric probes use supervised linear logistic readouts on a **frozen** binding model, not retraining of GSbind. KRAS/Src retain their separately frozen functional readout protocol. Gaussian-surface cutoff is a model intervention, not a biochemical knockout or proof of an allosteric signal-transmission pathway.
+
+## What is available now?
+
+**Included in Git:** all source code, training/configuration scripts, E11 weights, four-method probe weights, functional readout weights, complete train/test manifests and labels, current result CSVs, detailed saved prediction Parquet files, figure source tables, small CPU examples, functional source measurements, and mapping/homology audits.
+
+**External data URL pending:** bulk structures, training compact caches, allosteric seven-condition hidden tensors and per-protein forward caches, and large SSM raw assay tables. The complete server bundle exists (15.32 GB compressed); its checksum and exact missing-file inventory are in [`data_release/`](data_release/README.md). A normal Git clone is **not** the full training-data download. No working public download URL is claimed yet.
+
+The available prediction tables already support recomputing paper metrics without downloading bulk inputs. Re-extracting all hidden states, refitting allosteric probes, and full training require the external data.
+
+## Quick start: public checkout
+
+Python 3.10 is the tested environment. Install PyTorch appropriate for your hardware first if needed.
+
+```bash
+python -m pip install -r requirements-tested.txt
+python -m pip install -e . --no-deps
+export OPENBLAS_NUM_THREADS=2 OMP_NUM_THREADS=2
+python tools/check_publication.py
+python -m pytest tests -q
+python main.py --config configs/smoke.json infer
+python main.py --config configs/smoke.json evaluate
+python tools/smoke_lightning.py
+python main.py summarize --task all --output runs/public_recompute
+python main.py figures
+```
+
+`summarize` recomputes metrics, paired contrasts and confidence intervals. Allosteric probabilities are read from the included saved prediction tables and checked against native reference predictions; this command does **not** replay hidden features or refit probes. Main/SSM use saved binding scores; KRAS/Src replay their frozen readouts from included small hidden arrays. Outputs go to `runs/` and do not overwrite the delivered paper tables.
+
+`figures` creates basic evidence PDFs and refreshes source CSVs. These are not the final four-panel publication layout. [`FOUR_FIGURE_PLAN_CN.md`](docs/FOUR_FIGURE_PLAN_CN.md) specifies the final figure narrative.
+
+## Full-data reproduction
+
+After the external bundle is available, overlay its **`datasets/` directory** into this repository, retaining current public code/docs/results. Its archive directory is named `GSbind`, regardless of the name of this checkout. See [data installation and checksums](data_release/README.md).
+
+```bash
+python main.py verify
+python main.py evidence --task all
+python main.py rebuild-allosteric-labels
+python main.py rebuild-ssm-labels
+python main.py rebuild-functional-labels
+python main.py fit-probes --cohort both --output runs/refit_probes
+python main.py --config configs/main.json train
+python main.py --config configs/main.json evaluate
+python main.py --config configs/apo_af2.json evaluate
+```
+
+`evidence --task allosteric` replays frozen heads against the full hidden tensors. `fit-probes` trains only the four small logistic classifiers, using component-grouped outer5/inner3 folds and train-side regularization/threshold selection. The main-model checkpoint remains frozen. `train` is the separate Lightning main-task training entrypoint and saves new checkpoints under `runs/`.
+
+## Engineering map
 
 ```text
-PDB atoms
-   -> multi-view residue graph encoding
-   -> residue-conditioned Gaussian field on 1,024 surface points
-   -> surface graph and connected-patch reasoning
-   -> bidirectional residue/surface fusion
-   -> one protein-interface probability per residue
+main.py + configs/                 one application entrypoint and typed configurations
+src/gaussian_direct/               model, atom encoder, Gaussian-surface, preprocessing
+  lightning.py                    LightningModule + LightningDataModule + optimizer/loss
+  app.py                          preprocessing / train / infer / evaluate orchestration
+src/gsbind/
+  allostery.py + probe_training.py  exact four-method readout and grouped evaluation
+  evidence.py                     main / allosteric / score-only SSM / KRAS-Src endpoints
+  forward.py + surface.py         actual Gaussian-surface forward interventions
+  metrics.py + labels.py          shared metric, statistical, and label contracts
+datasets/                         manifests, labels, prediction inputs, source audits
+checkpoints/                      E11 and frozen diagnostic readouts
+results/{main,allosteric,ssm220,functional}/
+                                  authoritative final result CSVs and detailed predictions
+figures/source_data/              CSV copies used by basic plots
+data_release/                     bulk-data status and checksums; no fake download links
+docs/ + tests/ + provenance/       methods, paper narrative, protocol tests and audit records
 ```
 
-The main forward algorithm stays in one file so its operation order is
-auditable. Parameter-free helpers are separated by responsibility under
-[`src/m4/models/components/runtime/`](src/m4/models/components/runtime):
-feature/stochastic transforms, surface flow, and chunked pair-Gaussian flow.
-All model operators, data parsing, cache formats, objectives, evaluation, and
-training logic are implemented directly under `src/m4`; there is no vendored
-research tree or hidden alternate execution path.
+## Paper writing and plotting
 
-For a deeper method-to-code map, continue with
-[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) after reading the three primary
-files above.
+- [完整论文证据报告](docs/PAPER_EVIDENCE_REPORT_CN.md)
+- [架构说明](docs/ARCHITECTURE.md) · [工程与协议](docs/ENGINEERING_CONTRACT_CN.md)
+- [指标和统计契约](docs/METRIC_CONTRACT_CN.md) · [数据字典](docs/DATA_DICTIONARY_CN.md)
+- [四张主图设计](docs/FOUR_FIGURE_PLAN_CN.md) · [全部表格字段索引](docs/TABLE_INDEX.csv)
+- [变构原始来源与重建](docs/ALLOSTERY_REPRODUCTION_CN.md)
+- [主工程审查与公开范围](docs/PUBLICATION_AUDIT_CN.md)
+- [当前变构AUPR主表](results/allosteric/MAIN_AUPR_TABLE.csv)
 
-## Repository layout
+The main tables use **AUPR (average precision)**. MCC, AUROC and F1 are retained as supplementary metrics; KRAS/Src use continuous-effect Spearman correlation and fixed-budget enrichment. Case-macro, component-macro and pooled metrics must not be interchanged. Unknown experimental labels are not converted to negatives.
 
-```text
-main.py                     unified train/eval/cache/data-entry CLI
-inference.py                label-free per-residue prediction CLI
-src/m4/                     modular model, data, loss, Lightning, and inference code
-configs/                    paper training and fine-tuning configurations
-scripts/run_1crn_example.py one-command checkpoint-to-forward example
-scripts/dataset/            Pinder construction, union, selection, and audits
-assets/                     immutable checkpoint and dataset registries
-examples/inference/         included 1CRN receptor-only example
-docs/                       architecture, data, experiment, and validation docs
-tests/                      unit and publication-contract tests
-```
-
-## Requirements
-
-- Linux or Windows with Python 3.10
-- NVIDIA GPU for the static-geometry cache and practical M4 inference
-- CUDA 12.1 and PyTorch 2.1.2+cu121 in the validated environment
-- Approximately 1 GB of free disk for the example environment, checkpoint, and
-  generated caches (the checkpoint itself is 46.4 MB)
-- At least 130 GB of free disk for the complete Holo20k structure and cache
-  build. The validated cache occupied approximately 105 GB.
-
-The CPU-only path can inspect configs and strictly validate checkpoint loading,
-but the complete surface/static-cache/forward example requires CUDA.
-
-## Quick start: one real forward pass
-
-### 1. Clone and install
+CSV tables are directly viewable. Larger residue-level predictions use Parquet; export them without loading all rows at once:
 
 ```bash
-git clone https://github.com/paolellopotanovic-ctrlxiaoke/Guassion-PPBS.git
-cd Guassion-PPBS
-conda env create -f environment.yml
-conda activate m4
+python tools/export_tables.py --input results/allosteric/AlloBench/predictions.parquet \
+  --output runs/csv/AlloBench_predictions.csv.gz
 ```
 
-### 2. Run the bundled 1CRN example
-
-```bash
-python scripts/run_1crn_example.py
-```
-
-This single command performs the complete inference chain:
-
-1. downloads `m4_holo20k_v9_clean_epoch4.pt` from the GitHub Release;
-2. verifies its byte size and SHA-256;
-3. strictly loads the checkpoint with zero missing/unexpected keys;
-4. converts `examples/inference/1CRN.pdb` into a label-free manifest;
-5. builds tensor, residue-graph, SHRake surface, and static-geometry caches;
-6. runs one M4 forward pass; and
-7. writes one probability row per PDB residue.
-
-Expected outputs:
-
-```text
-work/1CRN/
-|-- manifest.csv
-|-- tensor/
-|-- graph/
-|-- surface/
-|-- static/
-`-- predictions/
-    |-- residue_predictions.csv
-    `-- prediction_metadata.json
-```
-
-Inspect the highest-scoring residues:
-
-```bash
-python -c "import pandas as pd; p=pd.read_csv('work/1CRN/predictions/residue_predictions.csv'); print(p.nlargest(10, 'interface_probability').to_string(index=False))"
-```
-
-On a CPU-only machine, print and audit the exact command chain without running
-GPU work:
-
-```bash
-python scripts/run_1crn_example.py --dry-run
-```
-
-Use a previously downloaded checkpoint or run a receptor-only PDB of your own:
-
-```bash
-python scripts/run_1crn_example.py --pdb path/to/receptor.pdb --case-id MY_PROTEIN --input-state apo --checkpoint /path/to/model.pt --work-dir work/MY_PROTEIN
-```
-
-## Checkpoint
-
-The primary inference checkpoint is stored as a GitHub Release asset, never as
-an ordinary Git blob:
-
-```bash
-python scripts/download_checkpoint.py m4_holo20k_v9_clean_epoch4
-python scripts/validate_checkpoint.py checkpoints/m4_holo20k_v9_clean_epoch4.pt --registry-name m4_holo20k_v9_clean_epoch4
-```
-
-| Field | Value |
-|---|---:|
-| Epoch / global step | 4 / 10,000 |
-| Parameters | 4,360,516 |
-| State tensors | 791 |
-| File size | 46,437,755 bytes |
-| SHA-256 | `d6b418e21d8fc43f347f7c4438e2339877dd3afb240c6196aa7eff896caaee14` |
-
-The downloader refuses a file with a different size or checksum. The validator
-also requires strict loading with no missing or unexpected keys.
-
-## Inference on your own structure
-
-The input must be a receptor-only PDB file with standard protein atoms and
-stable chain/residue numbering. Replace the example PDB and case ID:
-
-```bash
-python main.py prepare-input --pdb path/to/receptor.pdb --case-id MY_PROTEIN --input-state apo --output work/MY_PROTEIN/manifest.csv
-```
-
-Then build the same four cache families used during training and call
-`inference.py`. The exact manual commands are documented in
-[`examples/inference/README.md`](examples/inference/README.md). Inference fails
-closed on missing caches, residue-order mismatches, skipped cases, or non-strict
-checkpoint loading.
-
-`residue_predictions.csv` contains identifiers and probabilities including:
-
-- case, chain, PDB residue number, insertion code, and amino acid;
-- validity mask;
-- final interface probability;
-- Gaussian prior probability; and
-- surface-conditioned probability.
-
-`prediction_metadata.json` records the checkpoint SHA-256, epoch, device,
-number of cases/residues, and output schema. Technical zero labels created by
-`prepare-input` only preserve deterministic manifest-derived cache keys;
-prediction never treats them as observed negatives.
-
-## Training and evaluation
-
-The unified CLI trains the modular implementation through PyTorch Lightning:
-
-```bash
-python main.py train --config configs/m4_holo20k.yaml
-python main.py eval --help
-python main.py build-tensor-cache --help
-python main.py build-graph-cache --help
-python main.py build-surface-cache --help
-python main.py build-static-cache --help
-```
-
-Read [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the source-reading
-order. The complete model is assembled in
-`src/m4/models/components/predictor.py`; its runtime graph is in
-`src/m4/models/components/execution.py`. Training, evaluation, prediction, and
-all four cache builders call this same implementation.
-
-For the Holo20k experiment:
-
-Download the immutable paper manifest, hydrate its 20,000 public Pinder
-structures, and replace only the obsolete server path column:
-
-```bash
-python scripts/download_dataset.py holo20k_v9_mmseqclean --include-audit
-python scripts/prepare_holo20k.py \
-  --manifest data/manifests/holo20k_gpsfun_clusterdiverse_v9_mmseqclean_train.csv \
-  --pdb-dir data/pinder/2024-02/pdbs \
-  --output-manifest data/manifests/holo20k_v9.local.csv \
-  --workers 32
-```
-
-`prepare_holo20k.py` verifies the immutable manifest SHA-256, downloads each
-structure from the Pinder 2024-02 public bucket, applies the one registered
-fixed-width PDB B-factor repair only when the source hash matches, and records
-the source and localized manifest hashes. Labels, masks, residue ordinals,
-clusters, row order, and case IDs are unchanged.
-
-Then build the four cache families using the commands in
-[`docs/DATASET_BUILD_CHECKLIST.md`](docs/DATASET_BUILD_CHECKLIST.md), require a
-zero-error cache audit, update the four cache paths and manifest path in
-`configs/m4_holo20k.yaml`, and run:
-
-```bash
-python main.py train --config configs/m4_holo20k.yaml
-```
-
-The same checklist documents the longer raw-Pinder reconstruction route. That
-route is useful for auditing dataset logic; the immutable Release manifest is
-required for byte-identical sample selection.
-
-The registered v9 manifest has 20,000 unique structures, 9,812 clusters,
-cluster cap 20, and zero MMseq30/cov80 hits. The exact manifest and its
-construction/MMseq2/cache audit bundle are immutable v0.1.0 GitHub Release
-assets registered in [`assets/datasets.json`](assets/datasets.json).
-
-## Reproducibility and validation
-
-```bash
-python -m pytest -q
-```
-
-Local tests, tracked-only installation, strict checkpoint loading, and exact
-dataset artifact identity pass. Before deleting the research implementation,
-the final package was compared against an external read-only copy on two real
-Holo20k cases and an RTX 4080. Evaluation outputs, training outputs, and all 14
-loss components were identical; the worst gradient difference was `5.96e-8`
-and the worst post-AdamW parameter difference was `2.97e-6`. The
-machine-readable audit is registered in
-[`docs/VALIDATION.md`](docs/VALIDATION.md).
-
-See [`docs/VALIDATION.md`](docs/VALIDATION.md),
-[`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md), and
-[`docs/EXPERIMENTS.md`](docs/EXPERIMENTS.md) for the complete audit trail. The
-exact data identity, registered PDB repair, cache sizes, and audit-bundle
-contents are documented in
-[`docs/DATASET_RELEASE.md`](docs/DATASET_RELEASE.md).
-
-## License
-
-Code and model weights are released under
-[CC BY-NC-SA 4.0](LICENSE). Cite the associated manuscript when using M4 in
-academic work; formal citation metadata will be added when the manuscript
-record is available.
+Original data retain their source attribution and redistribution restrictions; repository inclusion does not change their licenses. The repository license is retained in `LICENSE`.

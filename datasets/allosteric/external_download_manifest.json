@@ -1,0 +1,680 @@
+[
+  {
+    "path": "raw/external/official_AlloBench.csv",
+    "url": "https://raw.githubusercontent.com/djmaity/allobench/main/AlloBench.csv",
+    "sha256": "89d5a5971007cf14f50f874d952756ac0745d32af67e39c04bdb0105f2900acd",
+    "bytes": 3018573
+  },
+  {
+    "path": "raw/external/official_README.md",
+    "url": "https://raw.githubusercontent.com/djmaity/allobench/main/README.md",
+    "sha256": "fed9920c6adadacf5d8bb8c009af1ece8f901c1ba4630e7b8915d018a31b1948",
+    "bytes": 2792
+  },
+  {
+    "path": "raw/external/asbench_download.js",
+    "url": "https://mdl.shsmu.edu.cn/asbench/module/download/download.js",
+    "sha256": "213c69e1b2314e1502f01e54000af26f88668b403015ea8da10d14315eecc655",
+    "bytes": 9204
+  },
+  {
+    "path": "raw/external/asbench_core.tar.gz",
+    "url": "https://mdl.shsmu.edu.cn/asbench/datasource/file/AsBench_Core_Set.tar.gz",
+    "sha256": "8e3fc61a4be4ba77edf4729b45d35aaa4f067ce91a4150e82b0347e8d4325cab",
+    "bytes": 111801542
+  },
+  {
+    "path": "raw/external/asbench_diversity.tar.gz",
+    "url": "https://mdl.shsmu.edu.cn/asbench/datasource/file/ASBench_Core_Diversity_Set.tar.gz",
+    "sha256": "37356618b9376dee4390b056281f7dfecbc570f3581a2e40af1363488783fef5",
+    "bytes": 70695635
+  },
+  {
+    "path": "raw/external/asbench_statistics.xls",
+    "url": "https://mdl.shsmu.edu.cn/asbench/datasource/file/AsBench_Core_Set_20141111.xls",
+    "sha256": "a65e712141e73fd47ebef07919b61c72c1333856b1b904b463357a20e0009270",
+    "bytes": 176128
+  },
+  {
+    "path": "raw/external/passer.zip",
+    "url": "https://passer.smu.edu/static/allorank.zip",
+    "sha256": "617b1c56cdc241ed93ee5899316b9e9474c9a6ea3b7a901fc192d9284ccbb344",
+    "bytes": 1460572
+  },
+  {
+    "path": "raw/external/casbench_compact.tgz",
+    "url": "https://biokinet.belozersky.msu.ru/sites/default/data/casbench.tgz",
+    "sha256": "b72c2fc4554b7951189dee3a6368d8d9d4992d2a187247639a70851e69e14c75",
+    "bytes": 1988320810
+  },
+  {
+    "path": "raw/external/passerrank_README.md",
+    "url": "https://raw.githubusercontent.com/smu-tao-group/PASSerRank/main/README.md",
+    "sha256": "9b8dc13130f6de9074a4690c7b58c33437550e367333c7f4633c5174b079e4cb",
+    "bytes": 616
+  },
+  {
+    "path": "raw/external/passerrank_data_source_data_ASD_Release_201909_AS.txt",
+    "url": "https://raw.githubusercontent.com/smu-tao-group/PASSerRank/main/data/source_data/ASD_Release_201909_AS.txt",
+    "sha256": "98e2a1755cd954858a5c9dedb080f3b02c26dd3e9099936de2599dc113b40ee2",
+    "bytes": 842961
+  },
+  {
+    "path": "raw/external/alloppi_records.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiMain?start=0&limit=10000&page=1",
+    "sha256": "23609d0ccccf5a9b6404e023dae4645f6ff3afcb88500520eeed19f62a17b58e",
+    "bytes": 21574
+  },
+  {
+    "path": "raw/external/alloppi_detail.js",
+    "url": "https://mdl.shsmu.edu.cn/ASD/module/alloppi/js/alloppi_detail.js",
+    "sha256": "871232da40d30690beed368c9f94f8f22f7df294b8f62c4c48b1b73797cf9e4a",
+    "bytes": 20284
+  },
+  {
+    "path": "raw/external/alloppi_record.js",
+    "url": "https://mdl.shsmu.edu.cn/ASD/module/alloppi/js/alloppi_record.js",
+    "sha256": "b6f669740ace47244352f85d948e42aa20d340b69456e6f9b9a351409322235e",
+    "bytes": 22189
+  },
+  {
+    "path": "raw/external/alloppi_details/1.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=1",
+    "sha256": "86f01c60b4bd9f5e19520e9f91027b094be5a843bc256b3459fd53983675ec9a",
+    "bytes": 2414
+  },
+  {
+    "path": "raw/external/alloppi_modulators/1.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=1&draw=1&start=0&length=10000",
+    "sha256": "db3c0bb68ee2f0c73ec0bdf3f6c13522e06cf020e32bab87d980e3d15c995a87",
+    "bytes": 3580
+  },
+  {
+    "path": "raw/external/alloppi_details/2.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=2",
+    "sha256": "f7a772f9f0e04342cf8da6bfaf9d58dae9535eced598fc5f926757b9463d3959",
+    "bytes": 1382
+  },
+  {
+    "path": "raw/external/alloppi_modulators/2.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=2&draw=1&start=0&length=10000",
+    "sha256": "c15a1be9dc2e2faddda0819189ddc74a8636f3f5400bce47e91546235dac860e",
+    "bytes": 1379
+  },
+  {
+    "path": "raw/external/alloppi_details/3.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=3",
+    "sha256": "0a1b84b71dc366d829dfeaad98ab2a3ae8d6b1797884795b1a589da80f4e2f2d",
+    "bytes": 1345
+  },
+  {
+    "path": "raw/external/alloppi_modulators/3.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=3&draw=1&start=0&length=10000",
+    "sha256": "d29f4a7b71730e41fba6c5bd3f14ebe6d208dbb68465f50156177ce640454e5d",
+    "bytes": 1339
+  },
+  {
+    "path": "raw/external/alloppi_details/4.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=4",
+    "sha256": "57679468a1f7a9dab738ee2dd6eedf286b9b47fce19e79ab46053350375042ee",
+    "bytes": 1391
+  },
+  {
+    "path": "raw/external/alloppi_modulators/4.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=4&draw=1&start=0&length=10000",
+    "sha256": "b4e6b6e07767fa4c1280a0d18c49503c58998ec6407562748bb0a314d3691c85",
+    "bytes": 835
+  },
+  {
+    "path": "raw/external/alloppi_details/5.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=5",
+    "sha256": "ad6d233851ca63937daf8dff2f679c2ebe7c14192fee39c544438d376145294c",
+    "bytes": 1447
+  },
+  {
+    "path": "raw/external/alloppi_modulators/5.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=5&draw=1&start=0&length=10000",
+    "sha256": "a9a799ef9822e7ce845cfeca9153b77fa405ecfcffef5e8a7ca8515be9815018",
+    "bytes": 859
+  },
+  {
+    "path": "raw/external/alloppi_details/6.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=6",
+    "sha256": "f65988cdefac50f7b24c936c874c0b907469c54c4fadd5da30a56ac833802fc3",
+    "bytes": 1907
+  },
+  {
+    "path": "raw/external/alloppi_modulators/6.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=6&draw=1&start=0&length=10000",
+    "sha256": "3dd92b8bd1ef5cac1929bb02deba4f10ff3eb58907ac049975dc51161c333617",
+    "bytes": 1302
+  },
+  {
+    "path": "raw/external/alloppi_details/7.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=7",
+    "sha256": "b5229f1c6872c74e3ee050f78b6a54ecb915add4b16060811dfb315220f8d6e2",
+    "bytes": 1614
+  },
+  {
+    "path": "raw/external/alloppi_modulators/7.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=7&draw=1&start=0&length=10000",
+    "sha256": "1950d7676aa24b9988c6f168d6ff4cd2358497e1e8d1bebf60a8c5738aee8258",
+    "bytes": 1083
+  },
+  {
+    "path": "raw/external/alloppi_details/8.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=8",
+    "sha256": "12b5d2307374ddc0f780075b8a3ec7bba547a366f826d4ef92d86cd25552d0b9",
+    "bytes": 2070
+  },
+  {
+    "path": "raw/external/alloppi_modulators/8.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=8&draw=1&start=0&length=10000",
+    "sha256": "5dd76093620d62087f8864f2b3e0cf0ee7d374a7605acf9ccd91925d505f920f",
+    "bytes": 1467
+  },
+  {
+    "path": "raw/external/alloppi_details/9.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=9",
+    "sha256": "cec108e437dc03fef352d8b66a5a2ebad74fab7e06ad361235be319ce41b5e0d",
+    "bytes": 1393
+  },
+  {
+    "path": "raw/external/alloppi_modulators/9.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=9&draw=1&start=0&length=10000",
+    "sha256": "0942366a905eed9d3c8756fd5205556a2055787d4d546003016e3cc984766b52",
+    "bytes": 3156
+  },
+  {
+    "path": "raw/external/alloppi_details/10.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=10",
+    "sha256": "0df2a057c781320ba2e3b98d5198f91918e4ae48a3e5b06cae4fc574d1892763",
+    "bytes": 1917
+  },
+  {
+    "path": "raw/external/alloppi_modulators/10.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=10&draw=1&start=0&length=10000",
+    "sha256": "aded3803e34a178a8cec75229ab63c27cf82e6db615be6c3c989d38bfe07b6c8",
+    "bytes": 36626
+  },
+  {
+    "path": "raw/external/alloppi_details/11.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=11",
+    "sha256": "436601ae501b9acfd055ebfb2c507187c6ee50d4adaa273bc3d626ef1192c506",
+    "bytes": 1867
+  },
+  {
+    "path": "raw/external/alloppi_modulators/11.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=11&draw=1&start=0&length=10000",
+    "sha256": "51e375256ac395f63373c4349c4093c2d28220a55a4a553fadf77d84a1a76fe5",
+    "bytes": 22112
+  },
+  {
+    "path": "raw/external/alloppi_details/12.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=12",
+    "sha256": "409ba3f945e8f7be3087313ea61c4a6fd0b7f4ce5388557ca758a9b47ec3aa24",
+    "bytes": 2215
+  },
+  {
+    "path": "raw/external/alloppi_modulators/12.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=12&draw=1&start=0&length=10000",
+    "sha256": "d2ba0f4368a16c0e74e7a2915468f28fdfd901c18858e383f1f2f0eb8bdd7d46",
+    "bytes": 156007
+  },
+  {
+    "path": "raw/external/alloppi_details/13.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=13",
+    "sha256": "23ad2164d41b2031f41c1a53e7c6c802a83d01bc50a41482fb788c2210ffb1f6",
+    "bytes": 2039
+  },
+  {
+    "path": "raw/external/alloppi_modulators/13.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=13&draw=1&start=0&length=10000",
+    "sha256": "504d5159420d2cdf6e4e477df05b09e2503f86278fba52016f66ed597a602f91",
+    "bytes": 5486
+  },
+  {
+    "path": "raw/external/alloppi_details/14.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=14",
+    "sha256": "25fe9782c4d4c5527f051f8bb5419500027be134dc28bd76cddc7c7021898cb2",
+    "bytes": 2149
+  },
+  {
+    "path": "raw/external/alloppi_modulators/14.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=14&draw=1&start=0&length=10000",
+    "sha256": "c294e87ccfa81ae5997549db31e6b47cc886c9669895f7b1b3f3ad70b17e2f0e",
+    "bytes": 39403
+  },
+  {
+    "path": "raw/external/alloppi_details/15.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=15",
+    "sha256": "97ea38104dd780022ec5d03aeb38e4cf28f277784b438f65dc16458cec28e549",
+    "bytes": 1850
+  },
+  {
+    "path": "raw/external/alloppi_modulators/15.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=15&draw=1&start=0&length=10000",
+    "sha256": "f037cf822f70535a5e4543cf25b1eef4ebe461b310ebf721257f61e201dc64bc",
+    "bytes": 44292
+  },
+  {
+    "path": "raw/external/alloppi_details/16.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=16",
+    "sha256": "4ee6ed8b6d39f67b6a66b6303fb8e442ef36e6a48af45e17f5b847320f241f49",
+    "bytes": 1694
+  },
+  {
+    "path": "raw/external/alloppi_modulators/16.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=16&draw=1&start=0&length=10000",
+    "sha256": "a93de2968bd6b3242543276b18bdbc3f778a65eefc54699b51d901d711be3e19",
+    "bytes": 68765
+  },
+  {
+    "path": "raw/external/alloppi_details/17.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=17",
+    "sha256": "be1fbeb94b3e1df53b24509f1b6e44f775c162bc317d1ac35760a34d3748bc0f",
+    "bytes": 1911
+  },
+  {
+    "path": "raw/external/alloppi_modulators/17.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=17&draw=1&start=0&length=10000",
+    "sha256": "b8bdc2a6566aacce84e97126b43cc32ef85384496caae15480f576f34923941c",
+    "bytes": 7350
+  },
+  {
+    "path": "raw/external/alloppi_details/18.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=18",
+    "sha256": "f2ad85844a4be6764be19a3df934039194e5e233e0ceabf1fb7b238cd5b4e915",
+    "bytes": 1581
+  },
+  {
+    "path": "raw/external/alloppi_modulators/18.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=18&draw=1&start=0&length=10000",
+    "sha256": "24cbae24dea0ab7033aed1be679f256b4bc947861d32f808353bc9bd7d103734",
+    "bytes": 6048
+  },
+  {
+    "path": "raw/external/alloppi_details/19.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=19",
+    "sha256": "0de7c7fdc3601fafe0b6975b2a461b4f75243dd6767739afff313ef490672fa2",
+    "bytes": 2769
+  },
+  {
+    "path": "raw/external/alloppi_modulators/19.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=19&draw=1&start=0&length=10000",
+    "sha256": "82fe4ecb7a8365a2be451bee8244478db2c673d7a517a5f951d2b90373a461cc",
+    "bytes": 4474
+  },
+  {
+    "path": "raw/external/alloppi_details/20.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=20",
+    "sha256": "7240554f557a63a38d1f89d9e8cd0320aefbf20130a77c10ae0dff5206495b0a",
+    "bytes": 2036
+  },
+  {
+    "path": "raw/external/alloppi_modulators/20.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=20&draw=1&start=0&length=10000",
+    "sha256": "a3afcc65987a794972f0ae8e5bb6b80cc6be64694130c712627787a6918faea3",
+    "bytes": 1475
+  },
+  {
+    "path": "raw/external/alloppi_details/21.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=21",
+    "sha256": "07cd55f54a36e7efed2f697329503fd81757449f6fd3e30437b3550a485e6198",
+    "bytes": 2908
+  },
+  {
+    "path": "raw/external/alloppi_modulators/21.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=21&draw=1&start=0&length=10000",
+    "sha256": "d5027d4f73e53989d17491c0a5287b994d57f8597fe4a297d1bf6dc7caaa0286",
+    "bytes": 18708
+  },
+  {
+    "path": "raw/external/alloppi_details/22.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=22",
+    "sha256": "650509406f86f029c0697584b2b2f07116380b8db289a09f7c9879755cab838e",
+    "bytes": 1950
+  },
+  {
+    "path": "raw/external/alloppi_modulators/22.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=22&draw=1&start=0&length=10000",
+    "sha256": "dc059f2c22ed6ab00e26345f0eb4d9a4da20317482d1a2b3a42d85a43cbb88ae",
+    "bytes": 2565
+  },
+  {
+    "path": "raw/external/alloppi_details/23.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=23",
+    "sha256": "c2affb1a51aa600398f86983f9c8fe927181f6cbf8e36ca4a46430ed936e93b8",
+    "bytes": 3308
+  },
+  {
+    "path": "raw/external/alloppi_modulators/23.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=23&draw=1&start=0&length=10000",
+    "sha256": "0f76431b1a7cdda452ff277aeaf8b4bc5b13f9730154adbc321380a00127504c",
+    "bytes": 340208
+  },
+  {
+    "path": "raw/external/alloppi_details/24.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=24",
+    "sha256": "efaf2bbec2ce747431e66839396de210842a8099b7a280ed4d511aaf5a9ff634",
+    "bytes": 1961
+  },
+  {
+    "path": "raw/external/alloppi_modulators/24.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=24&draw=1&start=0&length=10000",
+    "sha256": "c9764c2a1f59e5a08ff79ce2a09aabb21937104487066f281f69a970d1da5147",
+    "bytes": 30296
+  },
+  {
+    "path": "raw/external/alloppi_details/25.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=25",
+    "sha256": "1c6b783db407c17fead7d0174f7b2dadb480e19398be9291eb0dbd5f0ff41303",
+    "bytes": 1769
+  },
+  {
+    "path": "raw/external/alloppi_modulators/25.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=25&draw=1&start=0&length=10000",
+    "sha256": "57d56e2689644c6d1d80dbbb54bc02f6f45f14b74ac3be39694881a66b3614ef",
+    "bytes": 9402
+  },
+  {
+    "path": "raw/external/alloppi_details/26.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=26",
+    "sha256": "d2f5c3a9f847d0ec1c9dc38bf5eccc517b56892145c87e3a981ca52873db6a70",
+    "bytes": 2917
+  },
+  {
+    "path": "raw/external/alloppi_modulators/26.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=26&draw=1&start=0&length=10000",
+    "sha256": "8ab29ce1d4ab6def16e26ae93a7ae2462f1f6db3124247a17ae551b32f377d0c",
+    "bytes": 64415
+  },
+  {
+    "path": "raw/external/alloppi_details/27.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=27",
+    "sha256": "9d28896a0e4f5b8159fc691f1fd47f3dd677190d449e5299f542336befc0a5a4",
+    "bytes": 1830
+  },
+  {
+    "path": "raw/external/alloppi_modulators/27.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=27&draw=1&start=0&length=10000",
+    "sha256": "9d6dc758ee553b8efd91798c3b49d6895abca7c78c31d0455c142a9e964b66e4",
+    "bytes": 5017
+  },
+  {
+    "path": "raw/external/alloppi_details/28.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=28",
+    "sha256": "0d9731bc55a4d98f93d9ae16ae50142e624b5e73ea722fba2a0241ded35b659b",
+    "bytes": 1822
+  },
+  {
+    "path": "raw/external/alloppi_modulators/28.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=28&draw=1&start=0&length=10000",
+    "sha256": "16fe916034a2215017bff31aa08c2ac0b88dbdc6d26a27b38560bc4d8d2db787",
+    "bytes": 2568
+  },
+  {
+    "path": "raw/external/alloppi_details/29.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=29",
+    "sha256": "0148a67024295b297c1304d874d0cd2079014ed7b9b74080f1eadfea3fa9ed72",
+    "bytes": 1961
+  },
+  {
+    "path": "raw/external/alloppi_modulators/29.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=29&draw=1&start=0&length=10000",
+    "sha256": "00486ede3d396b71ef452c10dab877d8cb898c9ed05c69c4d154e3dd91b54387",
+    "bytes": 36540
+  },
+  {
+    "path": "raw/external/alloppi_details/30.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=30",
+    "sha256": "972f5d5dac9fd7b81222c677175c28d4111f5ed9d48d06266616e1c704162325",
+    "bytes": 2415
+  },
+  {
+    "path": "raw/external/alloppi_modulators/30.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=30&draw=1&start=0&length=10000",
+    "sha256": "780d3062f9d8bcaa892e9e5e4511bba0cd3e2aeea87793fbed427e616794a8f8",
+    "bytes": 16188
+  },
+  {
+    "path": "raw/external/alloppi_details/31.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=31",
+    "sha256": "d879e2e25cffa03de00ceabf30a274dc504afb71f6eb229b6d207b39ee77dea2",
+    "bytes": 1951
+  },
+  {
+    "path": "raw/external/alloppi_modulators/31.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=31&draw=1&start=0&length=10000",
+    "sha256": "f4d64c8bfad30cd775c4d45c8d59f198f6e269d572466d6070a3d6cad3d23953",
+    "bytes": 83883
+  },
+  {
+    "path": "raw/external/alloppi_details/32.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=32",
+    "sha256": "db30eb42a28e29116e66b2be38578c265e0e9acf497bb3692ec05ebcd38cc475",
+    "bytes": 1822
+  },
+  {
+    "path": "raw/external/alloppi_modulators/32.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=32&draw=1&start=0&length=10000",
+    "sha256": "c1b57c3a7c2c32e2336e308ba801006c1b6c061d5db2dda36d1da3d5549fbc52",
+    "bytes": 16001
+  },
+  {
+    "path": "raw/external/alloppi_details/33.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=33",
+    "sha256": "5ee11452d020c540d8fab2854ad3a48ebf8b341163caefa7f5c526b5f6f73c41",
+    "bytes": 1861
+  },
+  {
+    "path": "raw/external/alloppi_modulators/33.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=33&draw=1&start=0&length=10000",
+    "sha256": "6f997be4f9cfda00e5e5edb1f83a35e6255de06e8364fc51b3bfb18d30bf9433",
+    "bytes": 2868
+  },
+  {
+    "path": "raw/external/alloppi_details/34.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=34",
+    "sha256": "4e4979f76310372040725dbe11bc181c9d89ed1488f2d6a2aee54ef3163c0117",
+    "bytes": 1775
+  },
+  {
+    "path": "raw/external/alloppi_modulators/34.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=34&draw=1&start=0&length=10000",
+    "sha256": "96ec3fe2ef256b9c02470dfedb5327e4125f9102dc07f775a97a62e1de65aee9",
+    "bytes": 21670
+  },
+  {
+    "path": "raw/external/alloppi_details/35.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=35",
+    "sha256": "80230c54201b14eca9173d9601e749e5f905d6362b651149f1111846f10aad70",
+    "bytes": 2106
+  },
+  {
+    "path": "raw/external/alloppi_modulators/35.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=35&draw=1&start=0&length=10000",
+    "sha256": "6a6ffc62dcb56a6c6996103d8f48ed64fe4e8d340ba179c5541600557021b4f2",
+    "bytes": 29584
+  },
+  {
+    "path": "raw/external/alloppi_details/36.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=36",
+    "sha256": "272fedb1acf894db60d87e40549ab1da7d18148d2817c0db518527f919908bd3",
+    "bytes": 1297
+  },
+  {
+    "path": "raw/external/alloppi_modulators/36.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=36&draw=1&start=0&length=10000",
+    "sha256": "3079a4663cc6d29ffcddeb072260f486bba2dbb34a23cf22a6c654577c9c9bb5",
+    "bytes": 5342
+  },
+  {
+    "path": "raw/external/alloppi_details/37.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=37",
+    "sha256": "21e15709d6826af6bea20c253da6cfd47d0ee4bd20eaaeed96a566d6c2515411",
+    "bytes": 1579
+  },
+  {
+    "path": "raw/external/alloppi_modulators/37.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=37&draw=1&start=0&length=10000",
+    "sha256": "8440ffabdaf74b1c1f1350e7885397580a59f3486997f1aacc9bf87f86e79f5c",
+    "bytes": 3010
+  },
+  {
+    "path": "raw/external/alloppi_details/38.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=38",
+    "sha256": "a1244953d9631cf2886102d1598eef3e353d5b789651307900cf7bd00cdfef7f",
+    "bytes": 1960
+  },
+  {
+    "path": "raw/external/alloppi_modulators/38.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=38&draw=1&start=0&length=10000",
+    "sha256": "c0729eaaff0a9540ae40da2e5ceadd199dde818f07c1372bcd510ad10d628e9a",
+    "bytes": 2600
+  },
+  {
+    "path": "raw/external/alloppi_details/39.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=39",
+    "sha256": "d7441b100f85c0142af2cbed03598adf5b8e34fff4c5a224aadc1525b049f49a",
+    "bytes": 1717
+  },
+  {
+    "path": "raw/external/alloppi_modulators/39.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=39&draw=1&start=0&length=10000",
+    "sha256": "fcdba4d5cc949fc7bf9319029edc0f9fd75356483b59d07f0f16f90721cae280",
+    "bytes": 1145
+  },
+  {
+    "path": "raw/external/alloppi_details/40.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=40",
+    "sha256": "cdfc08cf095cbf127205d7334d3caa9433399c3026fb50e07b4d0bd2477792c4",
+    "bytes": 1809
+  },
+  {
+    "path": "raw/external/alloppi_modulators/40.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=40&draw=1&start=0&length=10000",
+    "sha256": "9d50112fd7846687a4ea1985c05c7e302639c20205af4d7e247212def3f9e997",
+    "bytes": 2182
+  },
+  {
+    "path": "raw/external/alloppi_details/41.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=41",
+    "sha256": "b3031b8d62ddb04539d1eab229b238f00155ed8bd62ca9d5057139f77af96f78",
+    "bytes": 1876
+  },
+  {
+    "path": "raw/external/alloppi_modulators/41.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=41&draw=1&start=0&length=10000",
+    "sha256": "2754b4bfda820247dfe3c786728a5f2bdbf3a708ca1a7f9ca8fd357b6fb9ab3a",
+    "bytes": 1326
+  },
+  {
+    "path": "raw/external/alloppi_details/42.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=42",
+    "sha256": "bf67402fb11cb240bc8386451e3c407e44aa0909385a16d34722e827917b6b50",
+    "bytes": 1890
+  },
+  {
+    "path": "raw/external/alloppi_modulators/42.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=42&draw=1&start=0&length=10000",
+    "sha256": "942530f853399bbf163b9cc84dc058b8c7eb69a3e2113530374579c258d4b2b6",
+    "bytes": 4950
+  },
+  {
+    "path": "raw/external/alloppi_details/43.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=43",
+    "sha256": "957ab424b469d6561cf5c923b153ff561b83200493b49d32a000ae5b15c8f413",
+    "bytes": 2044
+  },
+  {
+    "path": "raw/external/alloppi_modulators/43.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=43&draw=1&start=0&length=10000",
+    "sha256": "f7a52d9145261c79af8d32c7592cca7801f25db4f6386d5eed1543155f3b084b",
+    "bytes": 1402
+  },
+  {
+    "path": "raw/external/alloppi_details/44.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=44",
+    "sha256": "1a730707e1e6b809b1c0ab4a98f9cfe3513d8ea1be962fe4513771d4bcc08a53",
+    "bytes": 2317
+  },
+  {
+    "path": "raw/external/alloppi_modulators/44.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=44&draw=1&start=0&length=10000",
+    "sha256": "edb763cb3c1f39e880aed4a7d3c11529edc380e33f998ade20fefadcd02a087c",
+    "bytes": 1735
+  },
+  {
+    "path": "raw/external/alloppi_details/45.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=45",
+    "sha256": "1d966a19626f9fd78da42ca5745f7b280af1ba811d7006e49ea5ed259be7109e",
+    "bytes": 1967
+  },
+  {
+    "path": "raw/external/alloppi_modulators/45.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=45&draw=1&start=0&length=10000",
+    "sha256": "13fe3928cc11b5840f372ef5ec0d83a26df9ed455daf11967a73b2dde0bf4235",
+    "bytes": 5174
+  },
+  {
+    "path": "raw/external/alloppi_details/46.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=46",
+    "sha256": "61248d017f75ba9797c137d3bac2bf8a1404d1c7fc967e099414d75a428759f3",
+    "bytes": 1443
+  },
+  {
+    "path": "raw/external/alloppi_modulators/46.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=46&draw=1&start=0&length=10000",
+    "sha256": "91d827d19bdfef052d8b2a0508afe20e02c65d87d5c17d90ed0a402645a11cfa",
+    "bytes": 907
+  },
+  {
+    "path": "raw/external/alloppi_details/47.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=47",
+    "sha256": "312d83a0d1c03002db781820768c5258f451caa55d37982e8f45b5c0945daece",
+    "bytes": 1230
+  },
+  {
+    "path": "raw/external/alloppi_modulators/47.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=47&draw=1&start=0&length=10000",
+    "sha256": "2ca578401d97cc29ce52f74859944260fd5fd7ad7af7a57a26e4785787171872",
+    "bytes": 719
+  },
+  {
+    "path": "raw/external/alloppi_details/48.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=48",
+    "sha256": "200dd46c89ee0f180aca0b43b82f6e54cb608bd55da8c9db8be0352b66ac707e",
+    "bytes": 1221
+  },
+  {
+    "path": "raw/external/alloppi_modulators/48.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=48&draw=1&start=0&length=10000",
+    "sha256": "827eefbcc88e45daf0abed2b07b5005b21696313df6cdcbc4764649a93122cb9",
+    "bytes": 697
+  },
+  {
+    "path": "raw/external/alloppi_details/49.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=49",
+    "sha256": "1c73dea5c02ccde429e97fb3157def99320f5044092bde34e2c467f94fcab04f",
+    "bytes": 1241
+  },
+  {
+    "path": "raw/external/alloppi_modulators/49.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=49&draw=1&start=0&length=10000",
+    "sha256": "1c52c00e687656514591b3f025befb124aa6449364a87cbae8aabaf3af4e7fd1",
+    "bytes": 742
+  },
+  {
+    "path": "raw/external/alloppi_details/50.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiDetail?main_id=50",
+    "sha256": "7cf0c01636554c3990a16a75c2df84a8e51e6e04db2a3e153109c836a82da014",
+    "bytes": 1241
+  },
+  {
+    "path": "raw/external/alloppi_modulators/50.json",
+    "url": "https://mdl.shsmu.edu.cn/ASD/BrowsePpiModulator?main_id=50&draw=1&start=0&length=10000",
+    "sha256": "ab215e5a30c11774533ebcf173fa0a80abc6a43d611243df7cdfc5a03d50a36f",
+    "bytes": 1407
+  }
+]

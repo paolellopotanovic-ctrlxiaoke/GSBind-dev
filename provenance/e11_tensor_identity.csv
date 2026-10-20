@@ -1,0 +1,1409 @@
+archive_key,release_key,dtype,shape,elements,exactly_equal
+pesto.em.0.weight,atom_encoder.atom_feature_mlp.0.weight,torch.float32,"[32, 30]",960,True
+pesto.em.0.bias,atom_encoder.atom_feature_mlp.0.bias,torch.float32,[32],32,True
+pesto.em.2.weight,atom_encoder.atom_feature_mlp.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.em.2.bias,atom_encoder.atom_feature_mlp.2.bias,torch.float32,[32],32,True
+pesto.em.4.weight,atom_encoder.atom_feature_mlp.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.em.4.bias,atom_encoder.atom_feature_mlp.4.bias,torch.float32,[32],32,True
+pesto.sum.0.m_nn,atom_encoder.state_updates.0.m_nn,torch.int64,[8],8,True
+pesto.sum.0.su.sdk,atom_encoder.state_updates.0.su.sdk,torch.float32,[],1,True
+pesto.sum.0.su.nqm.0.weight,atom_encoder.state_updates.0.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.0.su.nqm.0.bias,atom_encoder.state_updates.0.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.0.su.nqm.2.weight,atom_encoder.state_updates.0.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.0.su.nqm.2.bias,atom_encoder.state_updates.0.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.0.su.nqm.4.weight,atom_encoder.state_updates.0.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.0.su.nqm.4.bias,atom_encoder.state_updates.0.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.0.su.eqkm.0.weight,atom_encoder.state_updates.0.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.0.su.eqkm.0.bias,atom_encoder.state_updates.0.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.0.su.eqkm.2.weight,atom_encoder.state_updates.0.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.0.su.eqkm.2.bias,atom_encoder.state_updates.0.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.0.su.eqkm.4.weight,atom_encoder.state_updates.0.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.0.su.eqkm.4.bias,atom_encoder.state_updates.0.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.0.su.epkm.0.weight,atom_encoder.state_updates.0.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.0.su.epkm.0.bias,atom_encoder.state_updates.0.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.0.su.epkm.2.weight,atom_encoder.state_updates.0.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.0.su.epkm.2.bias,atom_encoder.state_updates.0.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.0.su.epkm.4.weight,atom_encoder.state_updates.0.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.0.su.epkm.4.bias,atom_encoder.state_updates.0.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.0.su.evm.0.weight,atom_encoder.state_updates.0.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.0.su.evm.0.bias,atom_encoder.state_updates.0.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.0.su.evm.2.weight,atom_encoder.state_updates.0.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.0.su.evm.2.bias,atom_encoder.state_updates.0.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.0.su.evm.4.weight,atom_encoder.state_updates.0.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.0.su.evm.4.bias,atom_encoder.state_updates.0.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.0.su.qpm.0.weight,atom_encoder.state_updates.0.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.0.su.qpm.0.bias,atom_encoder.state_updates.0.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.0.su.qpm.2.weight,atom_encoder.state_updates.0.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.0.su.qpm.2.bias,atom_encoder.state_updates.0.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.0.su.qpm.4.weight,atom_encoder.state_updates.0.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.0.su.qpm.4.bias,atom_encoder.state_updates.0.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.0.su.ppm.0.weight,atom_encoder.state_updates.0.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.1.m_nn,atom_encoder.state_updates.1.m_nn,torch.int64,[8],8,True
+pesto.sum.1.su.sdk,atom_encoder.state_updates.1.su.sdk,torch.float32,[],1,True
+pesto.sum.1.su.nqm.0.weight,atom_encoder.state_updates.1.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.1.su.nqm.0.bias,atom_encoder.state_updates.1.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.1.su.nqm.2.weight,atom_encoder.state_updates.1.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.1.su.nqm.2.bias,atom_encoder.state_updates.1.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.1.su.nqm.4.weight,atom_encoder.state_updates.1.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.1.su.nqm.4.bias,atom_encoder.state_updates.1.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.1.su.eqkm.0.weight,atom_encoder.state_updates.1.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.1.su.eqkm.0.bias,atom_encoder.state_updates.1.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.1.su.eqkm.2.weight,atom_encoder.state_updates.1.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.1.su.eqkm.2.bias,atom_encoder.state_updates.1.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.1.su.eqkm.4.weight,atom_encoder.state_updates.1.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.1.su.eqkm.4.bias,atom_encoder.state_updates.1.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.1.su.epkm.0.weight,atom_encoder.state_updates.1.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.1.su.epkm.0.bias,atom_encoder.state_updates.1.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.1.su.epkm.2.weight,atom_encoder.state_updates.1.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.1.su.epkm.2.bias,atom_encoder.state_updates.1.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.1.su.epkm.4.weight,atom_encoder.state_updates.1.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.1.su.epkm.4.bias,atom_encoder.state_updates.1.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.1.su.evm.0.weight,atom_encoder.state_updates.1.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.1.su.evm.0.bias,atom_encoder.state_updates.1.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.1.su.evm.2.weight,atom_encoder.state_updates.1.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.1.su.evm.2.bias,atom_encoder.state_updates.1.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.1.su.evm.4.weight,atom_encoder.state_updates.1.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.1.su.evm.4.bias,atom_encoder.state_updates.1.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.1.su.qpm.0.weight,atom_encoder.state_updates.1.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.1.su.qpm.0.bias,atom_encoder.state_updates.1.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.1.su.qpm.2.weight,atom_encoder.state_updates.1.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.1.su.qpm.2.bias,atom_encoder.state_updates.1.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.1.su.qpm.4.weight,atom_encoder.state_updates.1.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.1.su.qpm.4.bias,atom_encoder.state_updates.1.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.1.su.ppm.0.weight,atom_encoder.state_updates.1.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.2.m_nn,atom_encoder.state_updates.2.m_nn,torch.int64,[8],8,True
+pesto.sum.2.su.sdk,atom_encoder.state_updates.2.su.sdk,torch.float32,[],1,True
+pesto.sum.2.su.nqm.0.weight,atom_encoder.state_updates.2.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.2.su.nqm.0.bias,atom_encoder.state_updates.2.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.2.su.nqm.2.weight,atom_encoder.state_updates.2.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.2.su.nqm.2.bias,atom_encoder.state_updates.2.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.2.su.nqm.4.weight,atom_encoder.state_updates.2.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.2.su.nqm.4.bias,atom_encoder.state_updates.2.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.2.su.eqkm.0.weight,atom_encoder.state_updates.2.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.2.su.eqkm.0.bias,atom_encoder.state_updates.2.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.2.su.eqkm.2.weight,atom_encoder.state_updates.2.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.2.su.eqkm.2.bias,atom_encoder.state_updates.2.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.2.su.eqkm.4.weight,atom_encoder.state_updates.2.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.2.su.eqkm.4.bias,atom_encoder.state_updates.2.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.2.su.epkm.0.weight,atom_encoder.state_updates.2.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.2.su.epkm.0.bias,atom_encoder.state_updates.2.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.2.su.epkm.2.weight,atom_encoder.state_updates.2.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.2.su.epkm.2.bias,atom_encoder.state_updates.2.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.2.su.epkm.4.weight,atom_encoder.state_updates.2.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.2.su.epkm.4.bias,atom_encoder.state_updates.2.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.2.su.evm.0.weight,atom_encoder.state_updates.2.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.2.su.evm.0.bias,atom_encoder.state_updates.2.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.2.su.evm.2.weight,atom_encoder.state_updates.2.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.2.su.evm.2.bias,atom_encoder.state_updates.2.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.2.su.evm.4.weight,atom_encoder.state_updates.2.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.2.su.evm.4.bias,atom_encoder.state_updates.2.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.2.su.qpm.0.weight,atom_encoder.state_updates.2.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.2.su.qpm.0.bias,atom_encoder.state_updates.2.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.2.su.qpm.2.weight,atom_encoder.state_updates.2.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.2.su.qpm.2.bias,atom_encoder.state_updates.2.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.2.su.qpm.4.weight,atom_encoder.state_updates.2.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.2.su.qpm.4.bias,atom_encoder.state_updates.2.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.2.su.ppm.0.weight,atom_encoder.state_updates.2.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.3.m_nn,atom_encoder.state_updates.3.m_nn,torch.int64,[8],8,True
+pesto.sum.3.su.sdk,atom_encoder.state_updates.3.su.sdk,torch.float32,[],1,True
+pesto.sum.3.su.nqm.0.weight,atom_encoder.state_updates.3.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.3.su.nqm.0.bias,atom_encoder.state_updates.3.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.3.su.nqm.2.weight,atom_encoder.state_updates.3.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.3.su.nqm.2.bias,atom_encoder.state_updates.3.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.3.su.nqm.4.weight,atom_encoder.state_updates.3.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.3.su.nqm.4.bias,atom_encoder.state_updates.3.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.3.su.eqkm.0.weight,atom_encoder.state_updates.3.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.3.su.eqkm.0.bias,atom_encoder.state_updates.3.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.3.su.eqkm.2.weight,atom_encoder.state_updates.3.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.3.su.eqkm.2.bias,atom_encoder.state_updates.3.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.3.su.eqkm.4.weight,atom_encoder.state_updates.3.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.3.su.eqkm.4.bias,atom_encoder.state_updates.3.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.3.su.epkm.0.weight,atom_encoder.state_updates.3.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.3.su.epkm.0.bias,atom_encoder.state_updates.3.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.3.su.epkm.2.weight,atom_encoder.state_updates.3.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.3.su.epkm.2.bias,atom_encoder.state_updates.3.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.3.su.epkm.4.weight,atom_encoder.state_updates.3.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.3.su.epkm.4.bias,atom_encoder.state_updates.3.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.3.su.evm.0.weight,atom_encoder.state_updates.3.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.3.su.evm.0.bias,atom_encoder.state_updates.3.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.3.su.evm.2.weight,atom_encoder.state_updates.3.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.3.su.evm.2.bias,atom_encoder.state_updates.3.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.3.su.evm.4.weight,atom_encoder.state_updates.3.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.3.su.evm.4.bias,atom_encoder.state_updates.3.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.3.su.qpm.0.weight,atom_encoder.state_updates.3.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.3.su.qpm.0.bias,atom_encoder.state_updates.3.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.3.su.qpm.2.weight,atom_encoder.state_updates.3.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.3.su.qpm.2.bias,atom_encoder.state_updates.3.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.3.su.qpm.4.weight,atom_encoder.state_updates.3.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.3.su.qpm.4.bias,atom_encoder.state_updates.3.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.3.su.ppm.0.weight,atom_encoder.state_updates.3.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.4.m_nn,atom_encoder.state_updates.4.m_nn,torch.int64,[8],8,True
+pesto.sum.4.su.sdk,atom_encoder.state_updates.4.su.sdk,torch.float32,[],1,True
+pesto.sum.4.su.nqm.0.weight,atom_encoder.state_updates.4.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.4.su.nqm.0.bias,atom_encoder.state_updates.4.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.4.su.nqm.2.weight,atom_encoder.state_updates.4.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.4.su.nqm.2.bias,atom_encoder.state_updates.4.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.4.su.nqm.4.weight,atom_encoder.state_updates.4.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.4.su.nqm.4.bias,atom_encoder.state_updates.4.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.4.su.eqkm.0.weight,atom_encoder.state_updates.4.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.4.su.eqkm.0.bias,atom_encoder.state_updates.4.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.4.su.eqkm.2.weight,atom_encoder.state_updates.4.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.4.su.eqkm.2.bias,atom_encoder.state_updates.4.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.4.su.eqkm.4.weight,atom_encoder.state_updates.4.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.4.su.eqkm.4.bias,atom_encoder.state_updates.4.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.4.su.epkm.0.weight,atom_encoder.state_updates.4.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.4.su.epkm.0.bias,atom_encoder.state_updates.4.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.4.su.epkm.2.weight,atom_encoder.state_updates.4.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.4.su.epkm.2.bias,atom_encoder.state_updates.4.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.4.su.epkm.4.weight,atom_encoder.state_updates.4.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.4.su.epkm.4.bias,atom_encoder.state_updates.4.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.4.su.evm.0.weight,atom_encoder.state_updates.4.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.4.su.evm.0.bias,atom_encoder.state_updates.4.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.4.su.evm.2.weight,atom_encoder.state_updates.4.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.4.su.evm.2.bias,atom_encoder.state_updates.4.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.4.su.evm.4.weight,atom_encoder.state_updates.4.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.4.su.evm.4.bias,atom_encoder.state_updates.4.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.4.su.qpm.0.weight,atom_encoder.state_updates.4.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.4.su.qpm.0.bias,atom_encoder.state_updates.4.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.4.su.qpm.2.weight,atom_encoder.state_updates.4.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.4.su.qpm.2.bias,atom_encoder.state_updates.4.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.4.su.qpm.4.weight,atom_encoder.state_updates.4.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.4.su.qpm.4.bias,atom_encoder.state_updates.4.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.4.su.ppm.0.weight,atom_encoder.state_updates.4.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.5.m_nn,atom_encoder.state_updates.5.m_nn,torch.int64,[8],8,True
+pesto.sum.5.su.sdk,atom_encoder.state_updates.5.su.sdk,torch.float32,[],1,True
+pesto.sum.5.su.nqm.0.weight,atom_encoder.state_updates.5.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.5.su.nqm.0.bias,atom_encoder.state_updates.5.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.5.su.nqm.2.weight,atom_encoder.state_updates.5.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.5.su.nqm.2.bias,atom_encoder.state_updates.5.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.5.su.nqm.4.weight,atom_encoder.state_updates.5.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.5.su.nqm.4.bias,atom_encoder.state_updates.5.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.5.su.eqkm.0.weight,atom_encoder.state_updates.5.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.5.su.eqkm.0.bias,atom_encoder.state_updates.5.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.5.su.eqkm.2.weight,atom_encoder.state_updates.5.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.5.su.eqkm.2.bias,atom_encoder.state_updates.5.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.5.su.eqkm.4.weight,atom_encoder.state_updates.5.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.5.su.eqkm.4.bias,atom_encoder.state_updates.5.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.5.su.epkm.0.weight,atom_encoder.state_updates.5.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.5.su.epkm.0.bias,atom_encoder.state_updates.5.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.5.su.epkm.2.weight,atom_encoder.state_updates.5.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.5.su.epkm.2.bias,atom_encoder.state_updates.5.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.5.su.epkm.4.weight,atom_encoder.state_updates.5.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.5.su.epkm.4.bias,atom_encoder.state_updates.5.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.5.su.evm.0.weight,atom_encoder.state_updates.5.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.5.su.evm.0.bias,atom_encoder.state_updates.5.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.5.su.evm.2.weight,atom_encoder.state_updates.5.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.5.su.evm.2.bias,atom_encoder.state_updates.5.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.5.su.evm.4.weight,atom_encoder.state_updates.5.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.5.su.evm.4.bias,atom_encoder.state_updates.5.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.5.su.qpm.0.weight,atom_encoder.state_updates.5.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.5.su.qpm.0.bias,atom_encoder.state_updates.5.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.5.su.qpm.2.weight,atom_encoder.state_updates.5.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.5.su.qpm.2.bias,atom_encoder.state_updates.5.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.5.su.qpm.4.weight,atom_encoder.state_updates.5.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.5.su.qpm.4.bias,atom_encoder.state_updates.5.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.5.su.ppm.0.weight,atom_encoder.state_updates.5.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.6.m_nn,atom_encoder.state_updates.6.m_nn,torch.int64,[8],8,True
+pesto.sum.6.su.sdk,atom_encoder.state_updates.6.su.sdk,torch.float32,[],1,True
+pesto.sum.6.su.nqm.0.weight,atom_encoder.state_updates.6.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.6.su.nqm.0.bias,atom_encoder.state_updates.6.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.6.su.nqm.2.weight,atom_encoder.state_updates.6.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.6.su.nqm.2.bias,atom_encoder.state_updates.6.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.6.su.nqm.4.weight,atom_encoder.state_updates.6.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.6.su.nqm.4.bias,atom_encoder.state_updates.6.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.6.su.eqkm.0.weight,atom_encoder.state_updates.6.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.6.su.eqkm.0.bias,atom_encoder.state_updates.6.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.6.su.eqkm.2.weight,atom_encoder.state_updates.6.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.6.su.eqkm.2.bias,atom_encoder.state_updates.6.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.6.su.eqkm.4.weight,atom_encoder.state_updates.6.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.6.su.eqkm.4.bias,atom_encoder.state_updates.6.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.6.su.epkm.0.weight,atom_encoder.state_updates.6.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.6.su.epkm.0.bias,atom_encoder.state_updates.6.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.6.su.epkm.2.weight,atom_encoder.state_updates.6.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.6.su.epkm.2.bias,atom_encoder.state_updates.6.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.6.su.epkm.4.weight,atom_encoder.state_updates.6.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.6.su.epkm.4.bias,atom_encoder.state_updates.6.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.6.su.evm.0.weight,atom_encoder.state_updates.6.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.6.su.evm.0.bias,atom_encoder.state_updates.6.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.6.su.evm.2.weight,atom_encoder.state_updates.6.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.6.su.evm.2.bias,atom_encoder.state_updates.6.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.6.su.evm.4.weight,atom_encoder.state_updates.6.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.6.su.evm.4.bias,atom_encoder.state_updates.6.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.6.su.qpm.0.weight,atom_encoder.state_updates.6.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.6.su.qpm.0.bias,atom_encoder.state_updates.6.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.6.su.qpm.2.weight,atom_encoder.state_updates.6.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.6.su.qpm.2.bias,atom_encoder.state_updates.6.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.6.su.qpm.4.weight,atom_encoder.state_updates.6.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.6.su.qpm.4.bias,atom_encoder.state_updates.6.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.6.su.ppm.0.weight,atom_encoder.state_updates.6.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.7.m_nn,atom_encoder.state_updates.7.m_nn,torch.int64,[8],8,True
+pesto.sum.7.su.sdk,atom_encoder.state_updates.7.su.sdk,torch.float32,[],1,True
+pesto.sum.7.su.nqm.0.weight,atom_encoder.state_updates.7.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.7.su.nqm.0.bias,atom_encoder.state_updates.7.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.7.su.nqm.2.weight,atom_encoder.state_updates.7.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.7.su.nqm.2.bias,atom_encoder.state_updates.7.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.7.su.nqm.4.weight,atom_encoder.state_updates.7.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.7.su.nqm.4.bias,atom_encoder.state_updates.7.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.7.su.eqkm.0.weight,atom_encoder.state_updates.7.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.7.su.eqkm.0.bias,atom_encoder.state_updates.7.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.7.su.eqkm.2.weight,atom_encoder.state_updates.7.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.7.su.eqkm.2.bias,atom_encoder.state_updates.7.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.7.su.eqkm.4.weight,atom_encoder.state_updates.7.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.7.su.eqkm.4.bias,atom_encoder.state_updates.7.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.7.su.epkm.0.weight,atom_encoder.state_updates.7.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.7.su.epkm.0.bias,atom_encoder.state_updates.7.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.7.su.epkm.2.weight,atom_encoder.state_updates.7.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.7.su.epkm.2.bias,atom_encoder.state_updates.7.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.7.su.epkm.4.weight,atom_encoder.state_updates.7.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.7.su.epkm.4.bias,atom_encoder.state_updates.7.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.7.su.evm.0.weight,atom_encoder.state_updates.7.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.7.su.evm.0.bias,atom_encoder.state_updates.7.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.7.su.evm.2.weight,atom_encoder.state_updates.7.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.7.su.evm.2.bias,atom_encoder.state_updates.7.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.7.su.evm.4.weight,atom_encoder.state_updates.7.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.7.su.evm.4.bias,atom_encoder.state_updates.7.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.7.su.qpm.0.weight,atom_encoder.state_updates.7.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.7.su.qpm.0.bias,atom_encoder.state_updates.7.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.7.su.qpm.2.weight,atom_encoder.state_updates.7.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.7.su.qpm.2.bias,atom_encoder.state_updates.7.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.7.su.qpm.4.weight,atom_encoder.state_updates.7.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.7.su.qpm.4.bias,atom_encoder.state_updates.7.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.7.su.ppm.0.weight,atom_encoder.state_updates.7.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.8.m_nn,atom_encoder.state_updates.8.m_nn,torch.int64,[16],16,True
+pesto.sum.8.su.sdk,atom_encoder.state_updates.8.su.sdk,torch.float32,[],1,True
+pesto.sum.8.su.nqm.0.weight,atom_encoder.state_updates.8.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.8.su.nqm.0.bias,atom_encoder.state_updates.8.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.8.su.nqm.2.weight,atom_encoder.state_updates.8.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.8.su.nqm.2.bias,atom_encoder.state_updates.8.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.8.su.nqm.4.weight,atom_encoder.state_updates.8.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.8.su.nqm.4.bias,atom_encoder.state_updates.8.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.8.su.eqkm.0.weight,atom_encoder.state_updates.8.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.8.su.eqkm.0.bias,atom_encoder.state_updates.8.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.8.su.eqkm.2.weight,atom_encoder.state_updates.8.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.8.su.eqkm.2.bias,atom_encoder.state_updates.8.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.8.su.eqkm.4.weight,atom_encoder.state_updates.8.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.8.su.eqkm.4.bias,atom_encoder.state_updates.8.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.8.su.epkm.0.weight,atom_encoder.state_updates.8.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.8.su.epkm.0.bias,atom_encoder.state_updates.8.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.8.su.epkm.2.weight,atom_encoder.state_updates.8.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.8.su.epkm.2.bias,atom_encoder.state_updates.8.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.8.su.epkm.4.weight,atom_encoder.state_updates.8.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.8.su.epkm.4.bias,atom_encoder.state_updates.8.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.8.su.evm.0.weight,atom_encoder.state_updates.8.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.8.su.evm.0.bias,atom_encoder.state_updates.8.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.8.su.evm.2.weight,atom_encoder.state_updates.8.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.8.su.evm.2.bias,atom_encoder.state_updates.8.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.8.su.evm.4.weight,atom_encoder.state_updates.8.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.8.su.evm.4.bias,atom_encoder.state_updates.8.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.8.su.qpm.0.weight,atom_encoder.state_updates.8.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.8.su.qpm.0.bias,atom_encoder.state_updates.8.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.8.su.qpm.2.weight,atom_encoder.state_updates.8.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.8.su.qpm.2.bias,atom_encoder.state_updates.8.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.8.su.qpm.4.weight,atom_encoder.state_updates.8.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.8.su.qpm.4.bias,atom_encoder.state_updates.8.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.8.su.ppm.0.weight,atom_encoder.state_updates.8.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.9.m_nn,atom_encoder.state_updates.9.m_nn,torch.int64,[16],16,True
+pesto.sum.9.su.sdk,atom_encoder.state_updates.9.su.sdk,torch.float32,[],1,True
+pesto.sum.9.su.nqm.0.weight,atom_encoder.state_updates.9.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.9.su.nqm.0.bias,atom_encoder.state_updates.9.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.9.su.nqm.2.weight,atom_encoder.state_updates.9.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.9.su.nqm.2.bias,atom_encoder.state_updates.9.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.9.su.nqm.4.weight,atom_encoder.state_updates.9.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.9.su.nqm.4.bias,atom_encoder.state_updates.9.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.9.su.eqkm.0.weight,atom_encoder.state_updates.9.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.9.su.eqkm.0.bias,atom_encoder.state_updates.9.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.9.su.eqkm.2.weight,atom_encoder.state_updates.9.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.9.su.eqkm.2.bias,atom_encoder.state_updates.9.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.9.su.eqkm.4.weight,atom_encoder.state_updates.9.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.9.su.eqkm.4.bias,atom_encoder.state_updates.9.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.9.su.epkm.0.weight,atom_encoder.state_updates.9.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.9.su.epkm.0.bias,atom_encoder.state_updates.9.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.9.su.epkm.2.weight,atom_encoder.state_updates.9.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.9.su.epkm.2.bias,atom_encoder.state_updates.9.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.9.su.epkm.4.weight,atom_encoder.state_updates.9.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.9.su.epkm.4.bias,atom_encoder.state_updates.9.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.9.su.evm.0.weight,atom_encoder.state_updates.9.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.9.su.evm.0.bias,atom_encoder.state_updates.9.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.9.su.evm.2.weight,atom_encoder.state_updates.9.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.9.su.evm.2.bias,atom_encoder.state_updates.9.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.9.su.evm.4.weight,atom_encoder.state_updates.9.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.9.su.evm.4.bias,atom_encoder.state_updates.9.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.9.su.qpm.0.weight,atom_encoder.state_updates.9.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.9.su.qpm.0.bias,atom_encoder.state_updates.9.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.9.su.qpm.2.weight,atom_encoder.state_updates.9.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.9.su.qpm.2.bias,atom_encoder.state_updates.9.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.9.su.qpm.4.weight,atom_encoder.state_updates.9.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.9.su.qpm.4.bias,atom_encoder.state_updates.9.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.9.su.ppm.0.weight,atom_encoder.state_updates.9.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.10.m_nn,atom_encoder.state_updates.10.m_nn,torch.int64,[16],16,True
+pesto.sum.10.su.sdk,atom_encoder.state_updates.10.su.sdk,torch.float32,[],1,True
+pesto.sum.10.su.nqm.0.weight,atom_encoder.state_updates.10.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.10.su.nqm.0.bias,atom_encoder.state_updates.10.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.10.su.nqm.2.weight,atom_encoder.state_updates.10.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.10.su.nqm.2.bias,atom_encoder.state_updates.10.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.10.su.nqm.4.weight,atom_encoder.state_updates.10.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.10.su.nqm.4.bias,atom_encoder.state_updates.10.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.10.su.eqkm.0.weight,atom_encoder.state_updates.10.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.10.su.eqkm.0.bias,atom_encoder.state_updates.10.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.10.su.eqkm.2.weight,atom_encoder.state_updates.10.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.10.su.eqkm.2.bias,atom_encoder.state_updates.10.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.10.su.eqkm.4.weight,atom_encoder.state_updates.10.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.10.su.eqkm.4.bias,atom_encoder.state_updates.10.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.10.su.epkm.0.weight,atom_encoder.state_updates.10.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.10.su.epkm.0.bias,atom_encoder.state_updates.10.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.10.su.epkm.2.weight,atom_encoder.state_updates.10.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.10.su.epkm.2.bias,atom_encoder.state_updates.10.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.10.su.epkm.4.weight,atom_encoder.state_updates.10.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.10.su.epkm.4.bias,atom_encoder.state_updates.10.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.10.su.evm.0.weight,atom_encoder.state_updates.10.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.10.su.evm.0.bias,atom_encoder.state_updates.10.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.10.su.evm.2.weight,atom_encoder.state_updates.10.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.10.su.evm.2.bias,atom_encoder.state_updates.10.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.10.su.evm.4.weight,atom_encoder.state_updates.10.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.10.su.evm.4.bias,atom_encoder.state_updates.10.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.10.su.qpm.0.weight,atom_encoder.state_updates.10.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.10.su.qpm.0.bias,atom_encoder.state_updates.10.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.10.su.qpm.2.weight,atom_encoder.state_updates.10.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.10.su.qpm.2.bias,atom_encoder.state_updates.10.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.10.su.qpm.4.weight,atom_encoder.state_updates.10.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.10.su.qpm.4.bias,atom_encoder.state_updates.10.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.10.su.ppm.0.weight,atom_encoder.state_updates.10.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.11.m_nn,atom_encoder.state_updates.11.m_nn,torch.int64,[16],16,True
+pesto.sum.11.su.sdk,atom_encoder.state_updates.11.su.sdk,torch.float32,[],1,True
+pesto.sum.11.su.nqm.0.weight,atom_encoder.state_updates.11.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.11.su.nqm.0.bias,atom_encoder.state_updates.11.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.11.su.nqm.2.weight,atom_encoder.state_updates.11.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.11.su.nqm.2.bias,atom_encoder.state_updates.11.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.11.su.nqm.4.weight,atom_encoder.state_updates.11.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.11.su.nqm.4.bias,atom_encoder.state_updates.11.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.11.su.eqkm.0.weight,atom_encoder.state_updates.11.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.11.su.eqkm.0.bias,atom_encoder.state_updates.11.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.11.su.eqkm.2.weight,atom_encoder.state_updates.11.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.11.su.eqkm.2.bias,atom_encoder.state_updates.11.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.11.su.eqkm.4.weight,atom_encoder.state_updates.11.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.11.su.eqkm.4.bias,atom_encoder.state_updates.11.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.11.su.epkm.0.weight,atom_encoder.state_updates.11.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.11.su.epkm.0.bias,atom_encoder.state_updates.11.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.11.su.epkm.2.weight,atom_encoder.state_updates.11.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.11.su.epkm.2.bias,atom_encoder.state_updates.11.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.11.su.epkm.4.weight,atom_encoder.state_updates.11.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.11.su.epkm.4.bias,atom_encoder.state_updates.11.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.11.su.evm.0.weight,atom_encoder.state_updates.11.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.11.su.evm.0.bias,atom_encoder.state_updates.11.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.11.su.evm.2.weight,atom_encoder.state_updates.11.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.11.su.evm.2.bias,atom_encoder.state_updates.11.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.11.su.evm.4.weight,atom_encoder.state_updates.11.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.11.su.evm.4.bias,atom_encoder.state_updates.11.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.11.su.qpm.0.weight,atom_encoder.state_updates.11.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.11.su.qpm.0.bias,atom_encoder.state_updates.11.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.11.su.qpm.2.weight,atom_encoder.state_updates.11.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.11.su.qpm.2.bias,atom_encoder.state_updates.11.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.11.su.qpm.4.weight,atom_encoder.state_updates.11.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.11.su.qpm.4.bias,atom_encoder.state_updates.11.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.11.su.ppm.0.weight,atom_encoder.state_updates.11.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.12.m_nn,atom_encoder.state_updates.12.m_nn,torch.int64,[16],16,True
+pesto.sum.12.su.sdk,atom_encoder.state_updates.12.su.sdk,torch.float32,[],1,True
+pesto.sum.12.su.nqm.0.weight,atom_encoder.state_updates.12.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.12.su.nqm.0.bias,atom_encoder.state_updates.12.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.12.su.nqm.2.weight,atom_encoder.state_updates.12.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.12.su.nqm.2.bias,atom_encoder.state_updates.12.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.12.su.nqm.4.weight,atom_encoder.state_updates.12.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.12.su.nqm.4.bias,atom_encoder.state_updates.12.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.12.su.eqkm.0.weight,atom_encoder.state_updates.12.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.12.su.eqkm.0.bias,atom_encoder.state_updates.12.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.12.su.eqkm.2.weight,atom_encoder.state_updates.12.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.12.su.eqkm.2.bias,atom_encoder.state_updates.12.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.12.su.eqkm.4.weight,atom_encoder.state_updates.12.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.12.su.eqkm.4.bias,atom_encoder.state_updates.12.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.12.su.epkm.0.weight,atom_encoder.state_updates.12.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.12.su.epkm.0.bias,atom_encoder.state_updates.12.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.12.su.epkm.2.weight,atom_encoder.state_updates.12.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.12.su.epkm.2.bias,atom_encoder.state_updates.12.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.12.su.epkm.4.weight,atom_encoder.state_updates.12.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.12.su.epkm.4.bias,atom_encoder.state_updates.12.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.12.su.evm.0.weight,atom_encoder.state_updates.12.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.12.su.evm.0.bias,atom_encoder.state_updates.12.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.12.su.evm.2.weight,atom_encoder.state_updates.12.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.12.su.evm.2.bias,atom_encoder.state_updates.12.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.12.su.evm.4.weight,atom_encoder.state_updates.12.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.12.su.evm.4.bias,atom_encoder.state_updates.12.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.12.su.qpm.0.weight,atom_encoder.state_updates.12.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.12.su.qpm.0.bias,atom_encoder.state_updates.12.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.12.su.qpm.2.weight,atom_encoder.state_updates.12.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.12.su.qpm.2.bias,atom_encoder.state_updates.12.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.12.su.qpm.4.weight,atom_encoder.state_updates.12.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.12.su.qpm.4.bias,atom_encoder.state_updates.12.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.12.su.ppm.0.weight,atom_encoder.state_updates.12.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.13.m_nn,atom_encoder.state_updates.13.m_nn,torch.int64,[16],16,True
+pesto.sum.13.su.sdk,atom_encoder.state_updates.13.su.sdk,torch.float32,[],1,True
+pesto.sum.13.su.nqm.0.weight,atom_encoder.state_updates.13.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.13.su.nqm.0.bias,atom_encoder.state_updates.13.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.13.su.nqm.2.weight,atom_encoder.state_updates.13.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.13.su.nqm.2.bias,atom_encoder.state_updates.13.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.13.su.nqm.4.weight,atom_encoder.state_updates.13.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.13.su.nqm.4.bias,atom_encoder.state_updates.13.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.13.su.eqkm.0.weight,atom_encoder.state_updates.13.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.13.su.eqkm.0.bias,atom_encoder.state_updates.13.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.13.su.eqkm.2.weight,atom_encoder.state_updates.13.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.13.su.eqkm.2.bias,atom_encoder.state_updates.13.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.13.su.eqkm.4.weight,atom_encoder.state_updates.13.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.13.su.eqkm.4.bias,atom_encoder.state_updates.13.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.13.su.epkm.0.weight,atom_encoder.state_updates.13.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.13.su.epkm.0.bias,atom_encoder.state_updates.13.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.13.su.epkm.2.weight,atom_encoder.state_updates.13.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.13.su.epkm.2.bias,atom_encoder.state_updates.13.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.13.su.epkm.4.weight,atom_encoder.state_updates.13.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.13.su.epkm.4.bias,atom_encoder.state_updates.13.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.13.su.evm.0.weight,atom_encoder.state_updates.13.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.13.su.evm.0.bias,atom_encoder.state_updates.13.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.13.su.evm.2.weight,atom_encoder.state_updates.13.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.13.su.evm.2.bias,atom_encoder.state_updates.13.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.13.su.evm.4.weight,atom_encoder.state_updates.13.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.13.su.evm.4.bias,atom_encoder.state_updates.13.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.13.su.qpm.0.weight,atom_encoder.state_updates.13.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.13.su.qpm.0.bias,atom_encoder.state_updates.13.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.13.su.qpm.2.weight,atom_encoder.state_updates.13.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.13.su.qpm.2.bias,atom_encoder.state_updates.13.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.13.su.qpm.4.weight,atom_encoder.state_updates.13.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.13.su.qpm.4.bias,atom_encoder.state_updates.13.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.13.su.ppm.0.weight,atom_encoder.state_updates.13.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.14.m_nn,atom_encoder.state_updates.14.m_nn,torch.int64,[16],16,True
+pesto.sum.14.su.sdk,atom_encoder.state_updates.14.su.sdk,torch.float32,[],1,True
+pesto.sum.14.su.nqm.0.weight,atom_encoder.state_updates.14.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.14.su.nqm.0.bias,atom_encoder.state_updates.14.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.14.su.nqm.2.weight,atom_encoder.state_updates.14.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.14.su.nqm.2.bias,atom_encoder.state_updates.14.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.14.su.nqm.4.weight,atom_encoder.state_updates.14.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.14.su.nqm.4.bias,atom_encoder.state_updates.14.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.14.su.eqkm.0.weight,atom_encoder.state_updates.14.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.14.su.eqkm.0.bias,atom_encoder.state_updates.14.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.14.su.eqkm.2.weight,atom_encoder.state_updates.14.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.14.su.eqkm.2.bias,atom_encoder.state_updates.14.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.14.su.eqkm.4.weight,atom_encoder.state_updates.14.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.14.su.eqkm.4.bias,atom_encoder.state_updates.14.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.14.su.epkm.0.weight,atom_encoder.state_updates.14.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.14.su.epkm.0.bias,atom_encoder.state_updates.14.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.14.su.epkm.2.weight,atom_encoder.state_updates.14.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.14.su.epkm.2.bias,atom_encoder.state_updates.14.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.14.su.epkm.4.weight,atom_encoder.state_updates.14.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.14.su.epkm.4.bias,atom_encoder.state_updates.14.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.14.su.evm.0.weight,atom_encoder.state_updates.14.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.14.su.evm.0.bias,atom_encoder.state_updates.14.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.14.su.evm.2.weight,atom_encoder.state_updates.14.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.14.su.evm.2.bias,atom_encoder.state_updates.14.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.14.su.evm.4.weight,atom_encoder.state_updates.14.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.14.su.evm.4.bias,atom_encoder.state_updates.14.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.14.su.qpm.0.weight,atom_encoder.state_updates.14.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.14.su.qpm.0.bias,atom_encoder.state_updates.14.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.14.su.qpm.2.weight,atom_encoder.state_updates.14.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.14.su.qpm.2.bias,atom_encoder.state_updates.14.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.14.su.qpm.4.weight,atom_encoder.state_updates.14.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.14.su.qpm.4.bias,atom_encoder.state_updates.14.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.14.su.ppm.0.weight,atom_encoder.state_updates.14.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.15.m_nn,atom_encoder.state_updates.15.m_nn,torch.int64,[16],16,True
+pesto.sum.15.su.sdk,atom_encoder.state_updates.15.su.sdk,torch.float32,[],1,True
+pesto.sum.15.su.nqm.0.weight,atom_encoder.state_updates.15.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.15.su.nqm.0.bias,atom_encoder.state_updates.15.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.15.su.nqm.2.weight,atom_encoder.state_updates.15.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.15.su.nqm.2.bias,atom_encoder.state_updates.15.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.15.su.nqm.4.weight,atom_encoder.state_updates.15.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.15.su.nqm.4.bias,atom_encoder.state_updates.15.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.15.su.eqkm.0.weight,atom_encoder.state_updates.15.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.15.su.eqkm.0.bias,atom_encoder.state_updates.15.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.15.su.eqkm.2.weight,atom_encoder.state_updates.15.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.15.su.eqkm.2.bias,atom_encoder.state_updates.15.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.15.su.eqkm.4.weight,atom_encoder.state_updates.15.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.15.su.eqkm.4.bias,atom_encoder.state_updates.15.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.15.su.epkm.0.weight,atom_encoder.state_updates.15.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.15.su.epkm.0.bias,atom_encoder.state_updates.15.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.15.su.epkm.2.weight,atom_encoder.state_updates.15.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.15.su.epkm.2.bias,atom_encoder.state_updates.15.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.15.su.epkm.4.weight,atom_encoder.state_updates.15.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.15.su.epkm.4.bias,atom_encoder.state_updates.15.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.15.su.evm.0.weight,atom_encoder.state_updates.15.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.15.su.evm.0.bias,atom_encoder.state_updates.15.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.15.su.evm.2.weight,atom_encoder.state_updates.15.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.15.su.evm.2.bias,atom_encoder.state_updates.15.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.15.su.evm.4.weight,atom_encoder.state_updates.15.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.15.su.evm.4.bias,atom_encoder.state_updates.15.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.15.su.qpm.0.weight,atom_encoder.state_updates.15.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.15.su.qpm.0.bias,atom_encoder.state_updates.15.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.15.su.qpm.2.weight,atom_encoder.state_updates.15.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.15.su.qpm.2.bias,atom_encoder.state_updates.15.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.15.su.qpm.4.weight,atom_encoder.state_updates.15.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.15.su.qpm.4.bias,atom_encoder.state_updates.15.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.15.su.ppm.0.weight,atom_encoder.state_updates.15.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.16.m_nn,atom_encoder.state_updates.16.m_nn,torch.int64,[32],32,True
+pesto.sum.16.su.sdk,atom_encoder.state_updates.16.su.sdk,torch.float32,[],1,True
+pesto.sum.16.su.nqm.0.weight,atom_encoder.state_updates.16.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.16.su.nqm.0.bias,atom_encoder.state_updates.16.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.16.su.nqm.2.weight,atom_encoder.state_updates.16.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.16.su.nqm.2.bias,atom_encoder.state_updates.16.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.16.su.nqm.4.weight,atom_encoder.state_updates.16.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.16.su.nqm.4.bias,atom_encoder.state_updates.16.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.16.su.eqkm.0.weight,atom_encoder.state_updates.16.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.16.su.eqkm.0.bias,atom_encoder.state_updates.16.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.16.su.eqkm.2.weight,atom_encoder.state_updates.16.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.16.su.eqkm.2.bias,atom_encoder.state_updates.16.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.16.su.eqkm.4.weight,atom_encoder.state_updates.16.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.16.su.eqkm.4.bias,atom_encoder.state_updates.16.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.16.su.epkm.0.weight,atom_encoder.state_updates.16.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.16.su.epkm.0.bias,atom_encoder.state_updates.16.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.16.su.epkm.2.weight,atom_encoder.state_updates.16.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.16.su.epkm.2.bias,atom_encoder.state_updates.16.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.16.su.epkm.4.weight,atom_encoder.state_updates.16.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.16.su.epkm.4.bias,atom_encoder.state_updates.16.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.16.su.evm.0.weight,atom_encoder.state_updates.16.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.16.su.evm.0.bias,atom_encoder.state_updates.16.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.16.su.evm.2.weight,atom_encoder.state_updates.16.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.16.su.evm.2.bias,atom_encoder.state_updates.16.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.16.su.evm.4.weight,atom_encoder.state_updates.16.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.16.su.evm.4.bias,atom_encoder.state_updates.16.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.16.su.qpm.0.weight,atom_encoder.state_updates.16.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.16.su.qpm.0.bias,atom_encoder.state_updates.16.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.16.su.qpm.2.weight,atom_encoder.state_updates.16.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.16.su.qpm.2.bias,atom_encoder.state_updates.16.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.16.su.qpm.4.weight,atom_encoder.state_updates.16.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.16.su.qpm.4.bias,atom_encoder.state_updates.16.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.16.su.ppm.0.weight,atom_encoder.state_updates.16.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.17.m_nn,atom_encoder.state_updates.17.m_nn,torch.int64,[32],32,True
+pesto.sum.17.su.sdk,atom_encoder.state_updates.17.su.sdk,torch.float32,[],1,True
+pesto.sum.17.su.nqm.0.weight,atom_encoder.state_updates.17.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.17.su.nqm.0.bias,atom_encoder.state_updates.17.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.17.su.nqm.2.weight,atom_encoder.state_updates.17.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.17.su.nqm.2.bias,atom_encoder.state_updates.17.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.17.su.nqm.4.weight,atom_encoder.state_updates.17.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.17.su.nqm.4.bias,atom_encoder.state_updates.17.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.17.su.eqkm.0.weight,atom_encoder.state_updates.17.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.17.su.eqkm.0.bias,atom_encoder.state_updates.17.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.17.su.eqkm.2.weight,atom_encoder.state_updates.17.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.17.su.eqkm.2.bias,atom_encoder.state_updates.17.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.17.su.eqkm.4.weight,atom_encoder.state_updates.17.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.17.su.eqkm.4.bias,atom_encoder.state_updates.17.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.17.su.epkm.0.weight,atom_encoder.state_updates.17.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.17.su.epkm.0.bias,atom_encoder.state_updates.17.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.17.su.epkm.2.weight,atom_encoder.state_updates.17.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.17.su.epkm.2.bias,atom_encoder.state_updates.17.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.17.su.epkm.4.weight,atom_encoder.state_updates.17.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.17.su.epkm.4.bias,atom_encoder.state_updates.17.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.17.su.evm.0.weight,atom_encoder.state_updates.17.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.17.su.evm.0.bias,atom_encoder.state_updates.17.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.17.su.evm.2.weight,atom_encoder.state_updates.17.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.17.su.evm.2.bias,atom_encoder.state_updates.17.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.17.su.evm.4.weight,atom_encoder.state_updates.17.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.17.su.evm.4.bias,atom_encoder.state_updates.17.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.17.su.qpm.0.weight,atom_encoder.state_updates.17.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.17.su.qpm.0.bias,atom_encoder.state_updates.17.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.17.su.qpm.2.weight,atom_encoder.state_updates.17.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.17.su.qpm.2.bias,atom_encoder.state_updates.17.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.17.su.qpm.4.weight,atom_encoder.state_updates.17.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.17.su.qpm.4.bias,atom_encoder.state_updates.17.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.17.su.ppm.0.weight,atom_encoder.state_updates.17.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.18.m_nn,atom_encoder.state_updates.18.m_nn,torch.int64,[32],32,True
+pesto.sum.18.su.sdk,atom_encoder.state_updates.18.su.sdk,torch.float32,[],1,True
+pesto.sum.18.su.nqm.0.weight,atom_encoder.state_updates.18.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.18.su.nqm.0.bias,atom_encoder.state_updates.18.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.18.su.nqm.2.weight,atom_encoder.state_updates.18.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.18.su.nqm.2.bias,atom_encoder.state_updates.18.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.18.su.nqm.4.weight,atom_encoder.state_updates.18.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.18.su.nqm.4.bias,atom_encoder.state_updates.18.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.18.su.eqkm.0.weight,atom_encoder.state_updates.18.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.18.su.eqkm.0.bias,atom_encoder.state_updates.18.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.18.su.eqkm.2.weight,atom_encoder.state_updates.18.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.18.su.eqkm.2.bias,atom_encoder.state_updates.18.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.18.su.eqkm.4.weight,atom_encoder.state_updates.18.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.18.su.eqkm.4.bias,atom_encoder.state_updates.18.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.18.su.epkm.0.weight,atom_encoder.state_updates.18.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.18.su.epkm.0.bias,atom_encoder.state_updates.18.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.18.su.epkm.2.weight,atom_encoder.state_updates.18.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.18.su.epkm.2.bias,atom_encoder.state_updates.18.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.18.su.epkm.4.weight,atom_encoder.state_updates.18.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.18.su.epkm.4.bias,atom_encoder.state_updates.18.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.18.su.evm.0.weight,atom_encoder.state_updates.18.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.18.su.evm.0.bias,atom_encoder.state_updates.18.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.18.su.evm.2.weight,atom_encoder.state_updates.18.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.18.su.evm.2.bias,atom_encoder.state_updates.18.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.18.su.evm.4.weight,atom_encoder.state_updates.18.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.18.su.evm.4.bias,atom_encoder.state_updates.18.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.18.su.qpm.0.weight,atom_encoder.state_updates.18.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.18.su.qpm.0.bias,atom_encoder.state_updates.18.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.18.su.qpm.2.weight,atom_encoder.state_updates.18.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.18.su.qpm.2.bias,atom_encoder.state_updates.18.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.18.su.qpm.4.weight,atom_encoder.state_updates.18.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.18.su.qpm.4.bias,atom_encoder.state_updates.18.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.18.su.ppm.0.weight,atom_encoder.state_updates.18.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.19.m_nn,atom_encoder.state_updates.19.m_nn,torch.int64,[32],32,True
+pesto.sum.19.su.sdk,atom_encoder.state_updates.19.su.sdk,torch.float32,[],1,True
+pesto.sum.19.su.nqm.0.weight,atom_encoder.state_updates.19.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.19.su.nqm.0.bias,atom_encoder.state_updates.19.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.19.su.nqm.2.weight,atom_encoder.state_updates.19.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.19.su.nqm.2.bias,atom_encoder.state_updates.19.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.19.su.nqm.4.weight,atom_encoder.state_updates.19.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.19.su.nqm.4.bias,atom_encoder.state_updates.19.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.19.su.eqkm.0.weight,atom_encoder.state_updates.19.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.19.su.eqkm.0.bias,atom_encoder.state_updates.19.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.19.su.eqkm.2.weight,atom_encoder.state_updates.19.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.19.su.eqkm.2.bias,atom_encoder.state_updates.19.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.19.su.eqkm.4.weight,atom_encoder.state_updates.19.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.19.su.eqkm.4.bias,atom_encoder.state_updates.19.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.19.su.epkm.0.weight,atom_encoder.state_updates.19.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.19.su.epkm.0.bias,atom_encoder.state_updates.19.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.19.su.epkm.2.weight,atom_encoder.state_updates.19.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.19.su.epkm.2.bias,atom_encoder.state_updates.19.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.19.su.epkm.4.weight,atom_encoder.state_updates.19.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.19.su.epkm.4.bias,atom_encoder.state_updates.19.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.19.su.evm.0.weight,atom_encoder.state_updates.19.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.19.su.evm.0.bias,atom_encoder.state_updates.19.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.19.su.evm.2.weight,atom_encoder.state_updates.19.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.19.su.evm.2.bias,atom_encoder.state_updates.19.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.19.su.evm.4.weight,atom_encoder.state_updates.19.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.19.su.evm.4.bias,atom_encoder.state_updates.19.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.19.su.qpm.0.weight,atom_encoder.state_updates.19.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.19.su.qpm.0.bias,atom_encoder.state_updates.19.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.19.su.qpm.2.weight,atom_encoder.state_updates.19.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.19.su.qpm.2.bias,atom_encoder.state_updates.19.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.19.su.qpm.4.weight,atom_encoder.state_updates.19.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.19.su.qpm.4.bias,atom_encoder.state_updates.19.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.19.su.ppm.0.weight,atom_encoder.state_updates.19.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.20.m_nn,atom_encoder.state_updates.20.m_nn,torch.int64,[32],32,True
+pesto.sum.20.su.sdk,atom_encoder.state_updates.20.su.sdk,torch.float32,[],1,True
+pesto.sum.20.su.nqm.0.weight,atom_encoder.state_updates.20.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.20.su.nqm.0.bias,atom_encoder.state_updates.20.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.20.su.nqm.2.weight,atom_encoder.state_updates.20.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.20.su.nqm.2.bias,atom_encoder.state_updates.20.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.20.su.nqm.4.weight,atom_encoder.state_updates.20.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.20.su.nqm.4.bias,atom_encoder.state_updates.20.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.20.su.eqkm.0.weight,atom_encoder.state_updates.20.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.20.su.eqkm.0.bias,atom_encoder.state_updates.20.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.20.su.eqkm.2.weight,atom_encoder.state_updates.20.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.20.su.eqkm.2.bias,atom_encoder.state_updates.20.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.20.su.eqkm.4.weight,atom_encoder.state_updates.20.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.20.su.eqkm.4.bias,atom_encoder.state_updates.20.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.20.su.epkm.0.weight,atom_encoder.state_updates.20.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.20.su.epkm.0.bias,atom_encoder.state_updates.20.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.20.su.epkm.2.weight,atom_encoder.state_updates.20.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.20.su.epkm.2.bias,atom_encoder.state_updates.20.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.20.su.epkm.4.weight,atom_encoder.state_updates.20.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.20.su.epkm.4.bias,atom_encoder.state_updates.20.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.20.su.evm.0.weight,atom_encoder.state_updates.20.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.20.su.evm.0.bias,atom_encoder.state_updates.20.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.20.su.evm.2.weight,atom_encoder.state_updates.20.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.20.su.evm.2.bias,atom_encoder.state_updates.20.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.20.su.evm.4.weight,atom_encoder.state_updates.20.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.20.su.evm.4.bias,atom_encoder.state_updates.20.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.20.su.qpm.0.weight,atom_encoder.state_updates.20.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.20.su.qpm.0.bias,atom_encoder.state_updates.20.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.20.su.qpm.2.weight,atom_encoder.state_updates.20.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.20.su.qpm.2.bias,atom_encoder.state_updates.20.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.20.su.qpm.4.weight,atom_encoder.state_updates.20.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.20.su.qpm.4.bias,atom_encoder.state_updates.20.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.20.su.ppm.0.weight,atom_encoder.state_updates.20.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.21.m_nn,atom_encoder.state_updates.21.m_nn,torch.int64,[32],32,True
+pesto.sum.21.su.sdk,atom_encoder.state_updates.21.su.sdk,torch.float32,[],1,True
+pesto.sum.21.su.nqm.0.weight,atom_encoder.state_updates.21.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.21.su.nqm.0.bias,atom_encoder.state_updates.21.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.21.su.nqm.2.weight,atom_encoder.state_updates.21.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.21.su.nqm.2.bias,atom_encoder.state_updates.21.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.21.su.nqm.4.weight,atom_encoder.state_updates.21.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.21.su.nqm.4.bias,atom_encoder.state_updates.21.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.21.su.eqkm.0.weight,atom_encoder.state_updates.21.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.21.su.eqkm.0.bias,atom_encoder.state_updates.21.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.21.su.eqkm.2.weight,atom_encoder.state_updates.21.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.21.su.eqkm.2.bias,atom_encoder.state_updates.21.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.21.su.eqkm.4.weight,atom_encoder.state_updates.21.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.21.su.eqkm.4.bias,atom_encoder.state_updates.21.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.21.su.epkm.0.weight,atom_encoder.state_updates.21.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.21.su.epkm.0.bias,atom_encoder.state_updates.21.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.21.su.epkm.2.weight,atom_encoder.state_updates.21.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.21.su.epkm.2.bias,atom_encoder.state_updates.21.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.21.su.epkm.4.weight,atom_encoder.state_updates.21.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.21.su.epkm.4.bias,atom_encoder.state_updates.21.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.21.su.evm.0.weight,atom_encoder.state_updates.21.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.21.su.evm.0.bias,atom_encoder.state_updates.21.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.21.su.evm.2.weight,atom_encoder.state_updates.21.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.21.su.evm.2.bias,atom_encoder.state_updates.21.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.21.su.evm.4.weight,atom_encoder.state_updates.21.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.21.su.evm.4.bias,atom_encoder.state_updates.21.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.21.su.qpm.0.weight,atom_encoder.state_updates.21.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.21.su.qpm.0.bias,atom_encoder.state_updates.21.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.21.su.qpm.2.weight,atom_encoder.state_updates.21.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.21.su.qpm.2.bias,atom_encoder.state_updates.21.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.21.su.qpm.4.weight,atom_encoder.state_updates.21.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.21.su.qpm.4.bias,atom_encoder.state_updates.21.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.21.su.ppm.0.weight,atom_encoder.state_updates.21.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.22.m_nn,atom_encoder.state_updates.22.m_nn,torch.int64,[32],32,True
+pesto.sum.22.su.sdk,atom_encoder.state_updates.22.su.sdk,torch.float32,[],1,True
+pesto.sum.22.su.nqm.0.weight,atom_encoder.state_updates.22.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.22.su.nqm.0.bias,atom_encoder.state_updates.22.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.22.su.nqm.2.weight,atom_encoder.state_updates.22.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.22.su.nqm.2.bias,atom_encoder.state_updates.22.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.22.su.nqm.4.weight,atom_encoder.state_updates.22.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.22.su.nqm.4.bias,atom_encoder.state_updates.22.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.22.su.eqkm.0.weight,atom_encoder.state_updates.22.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.22.su.eqkm.0.bias,atom_encoder.state_updates.22.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.22.su.eqkm.2.weight,atom_encoder.state_updates.22.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.22.su.eqkm.2.bias,atom_encoder.state_updates.22.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.22.su.eqkm.4.weight,atom_encoder.state_updates.22.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.22.su.eqkm.4.bias,atom_encoder.state_updates.22.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.22.su.epkm.0.weight,atom_encoder.state_updates.22.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.22.su.epkm.0.bias,atom_encoder.state_updates.22.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.22.su.epkm.2.weight,atom_encoder.state_updates.22.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.22.su.epkm.2.bias,atom_encoder.state_updates.22.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.22.su.epkm.4.weight,atom_encoder.state_updates.22.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.22.su.epkm.4.bias,atom_encoder.state_updates.22.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.22.su.evm.0.weight,atom_encoder.state_updates.22.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.22.su.evm.0.bias,atom_encoder.state_updates.22.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.22.su.evm.2.weight,atom_encoder.state_updates.22.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.22.su.evm.2.bias,atom_encoder.state_updates.22.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.22.su.evm.4.weight,atom_encoder.state_updates.22.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.22.su.evm.4.bias,atom_encoder.state_updates.22.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.22.su.qpm.0.weight,atom_encoder.state_updates.22.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.22.su.qpm.0.bias,atom_encoder.state_updates.22.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.22.su.qpm.2.weight,atom_encoder.state_updates.22.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.22.su.qpm.2.bias,atom_encoder.state_updates.22.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.22.su.qpm.4.weight,atom_encoder.state_updates.22.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.22.su.qpm.4.bias,atom_encoder.state_updates.22.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.22.su.ppm.0.weight,atom_encoder.state_updates.22.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.23.m_nn,atom_encoder.state_updates.23.m_nn,torch.int64,[32],32,True
+pesto.sum.23.su.sdk,atom_encoder.state_updates.23.su.sdk,torch.float32,[],1,True
+pesto.sum.23.su.nqm.0.weight,atom_encoder.state_updates.23.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.23.su.nqm.0.bias,atom_encoder.state_updates.23.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.23.su.nqm.2.weight,atom_encoder.state_updates.23.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.23.su.nqm.2.bias,atom_encoder.state_updates.23.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.23.su.nqm.4.weight,atom_encoder.state_updates.23.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.23.su.nqm.4.bias,atom_encoder.state_updates.23.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.23.su.eqkm.0.weight,atom_encoder.state_updates.23.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.23.su.eqkm.0.bias,atom_encoder.state_updates.23.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.23.su.eqkm.2.weight,atom_encoder.state_updates.23.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.23.su.eqkm.2.bias,atom_encoder.state_updates.23.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.23.su.eqkm.4.weight,atom_encoder.state_updates.23.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.23.su.eqkm.4.bias,atom_encoder.state_updates.23.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.23.su.epkm.0.weight,atom_encoder.state_updates.23.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.23.su.epkm.0.bias,atom_encoder.state_updates.23.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.23.su.epkm.2.weight,atom_encoder.state_updates.23.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.23.su.epkm.2.bias,atom_encoder.state_updates.23.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.23.su.epkm.4.weight,atom_encoder.state_updates.23.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.23.su.epkm.4.bias,atom_encoder.state_updates.23.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.23.su.evm.0.weight,atom_encoder.state_updates.23.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.23.su.evm.0.bias,atom_encoder.state_updates.23.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.23.su.evm.2.weight,atom_encoder.state_updates.23.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.23.su.evm.2.bias,atom_encoder.state_updates.23.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.23.su.evm.4.weight,atom_encoder.state_updates.23.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.23.su.evm.4.bias,atom_encoder.state_updates.23.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.23.su.qpm.0.weight,atom_encoder.state_updates.23.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.23.su.qpm.0.bias,atom_encoder.state_updates.23.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.23.su.qpm.2.weight,atom_encoder.state_updates.23.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.23.su.qpm.2.bias,atom_encoder.state_updates.23.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.23.su.qpm.4.weight,atom_encoder.state_updates.23.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.23.su.qpm.4.bias,atom_encoder.state_updates.23.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.23.su.ppm.0.weight,atom_encoder.state_updates.23.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.24.m_nn,atom_encoder.state_updates.24.m_nn,torch.int64,[64],64,True
+pesto.sum.24.su.sdk,atom_encoder.state_updates.24.su.sdk,torch.float32,[],1,True
+pesto.sum.24.su.nqm.0.weight,atom_encoder.state_updates.24.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.24.su.nqm.0.bias,atom_encoder.state_updates.24.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.24.su.nqm.2.weight,atom_encoder.state_updates.24.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.24.su.nqm.2.bias,atom_encoder.state_updates.24.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.24.su.nqm.4.weight,atom_encoder.state_updates.24.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.24.su.nqm.4.bias,atom_encoder.state_updates.24.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.24.su.eqkm.0.weight,atom_encoder.state_updates.24.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.24.su.eqkm.0.bias,atom_encoder.state_updates.24.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.24.su.eqkm.2.weight,atom_encoder.state_updates.24.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.24.su.eqkm.2.bias,atom_encoder.state_updates.24.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.24.su.eqkm.4.weight,atom_encoder.state_updates.24.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.24.su.eqkm.4.bias,atom_encoder.state_updates.24.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.24.su.epkm.0.weight,atom_encoder.state_updates.24.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.24.su.epkm.0.bias,atom_encoder.state_updates.24.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.24.su.epkm.2.weight,atom_encoder.state_updates.24.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.24.su.epkm.2.bias,atom_encoder.state_updates.24.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.24.su.epkm.4.weight,atom_encoder.state_updates.24.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.24.su.epkm.4.bias,atom_encoder.state_updates.24.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.24.su.evm.0.weight,atom_encoder.state_updates.24.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.24.su.evm.0.bias,atom_encoder.state_updates.24.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.24.su.evm.2.weight,atom_encoder.state_updates.24.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.24.su.evm.2.bias,atom_encoder.state_updates.24.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.24.su.evm.4.weight,atom_encoder.state_updates.24.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.24.su.evm.4.bias,atom_encoder.state_updates.24.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.24.su.qpm.0.weight,atom_encoder.state_updates.24.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.24.su.qpm.0.bias,atom_encoder.state_updates.24.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.24.su.qpm.2.weight,atom_encoder.state_updates.24.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.24.su.qpm.2.bias,atom_encoder.state_updates.24.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.24.su.qpm.4.weight,atom_encoder.state_updates.24.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.24.su.qpm.4.bias,atom_encoder.state_updates.24.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.24.su.ppm.0.weight,atom_encoder.state_updates.24.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.25.m_nn,atom_encoder.state_updates.25.m_nn,torch.int64,[64],64,True
+pesto.sum.25.su.sdk,atom_encoder.state_updates.25.su.sdk,torch.float32,[],1,True
+pesto.sum.25.su.nqm.0.weight,atom_encoder.state_updates.25.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.25.su.nqm.0.bias,atom_encoder.state_updates.25.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.25.su.nqm.2.weight,atom_encoder.state_updates.25.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.25.su.nqm.2.bias,atom_encoder.state_updates.25.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.25.su.nqm.4.weight,atom_encoder.state_updates.25.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.25.su.nqm.4.bias,atom_encoder.state_updates.25.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.25.su.eqkm.0.weight,atom_encoder.state_updates.25.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.25.su.eqkm.0.bias,atom_encoder.state_updates.25.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.25.su.eqkm.2.weight,atom_encoder.state_updates.25.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.25.su.eqkm.2.bias,atom_encoder.state_updates.25.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.25.su.eqkm.4.weight,atom_encoder.state_updates.25.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.25.su.eqkm.4.bias,atom_encoder.state_updates.25.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.25.su.epkm.0.weight,atom_encoder.state_updates.25.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.25.su.epkm.0.bias,atom_encoder.state_updates.25.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.25.su.epkm.2.weight,atom_encoder.state_updates.25.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.25.su.epkm.2.bias,atom_encoder.state_updates.25.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.25.su.epkm.4.weight,atom_encoder.state_updates.25.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.25.su.epkm.4.bias,atom_encoder.state_updates.25.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.25.su.evm.0.weight,atom_encoder.state_updates.25.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.25.su.evm.0.bias,atom_encoder.state_updates.25.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.25.su.evm.2.weight,atom_encoder.state_updates.25.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.25.su.evm.2.bias,atom_encoder.state_updates.25.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.25.su.evm.4.weight,atom_encoder.state_updates.25.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.25.su.evm.4.bias,atom_encoder.state_updates.25.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.25.su.qpm.0.weight,atom_encoder.state_updates.25.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.25.su.qpm.0.bias,atom_encoder.state_updates.25.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.25.su.qpm.2.weight,atom_encoder.state_updates.25.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.25.su.qpm.2.bias,atom_encoder.state_updates.25.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.25.su.qpm.4.weight,atom_encoder.state_updates.25.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.25.su.qpm.4.bias,atom_encoder.state_updates.25.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.25.su.ppm.0.weight,atom_encoder.state_updates.25.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.26.m_nn,atom_encoder.state_updates.26.m_nn,torch.int64,[64],64,True
+pesto.sum.26.su.sdk,atom_encoder.state_updates.26.su.sdk,torch.float32,[],1,True
+pesto.sum.26.su.nqm.0.weight,atom_encoder.state_updates.26.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.26.su.nqm.0.bias,atom_encoder.state_updates.26.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.26.su.nqm.2.weight,atom_encoder.state_updates.26.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.26.su.nqm.2.bias,atom_encoder.state_updates.26.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.26.su.nqm.4.weight,atom_encoder.state_updates.26.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.26.su.nqm.4.bias,atom_encoder.state_updates.26.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.26.su.eqkm.0.weight,atom_encoder.state_updates.26.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.26.su.eqkm.0.bias,atom_encoder.state_updates.26.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.26.su.eqkm.2.weight,atom_encoder.state_updates.26.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.26.su.eqkm.2.bias,atom_encoder.state_updates.26.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.26.su.eqkm.4.weight,atom_encoder.state_updates.26.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.26.su.eqkm.4.bias,atom_encoder.state_updates.26.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.26.su.epkm.0.weight,atom_encoder.state_updates.26.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.26.su.epkm.0.bias,atom_encoder.state_updates.26.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.26.su.epkm.2.weight,atom_encoder.state_updates.26.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.26.su.epkm.2.bias,atom_encoder.state_updates.26.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.26.su.epkm.4.weight,atom_encoder.state_updates.26.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.26.su.epkm.4.bias,atom_encoder.state_updates.26.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.26.su.evm.0.weight,atom_encoder.state_updates.26.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.26.su.evm.0.bias,atom_encoder.state_updates.26.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.26.su.evm.2.weight,atom_encoder.state_updates.26.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.26.su.evm.2.bias,atom_encoder.state_updates.26.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.26.su.evm.4.weight,atom_encoder.state_updates.26.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.26.su.evm.4.bias,atom_encoder.state_updates.26.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.26.su.qpm.0.weight,atom_encoder.state_updates.26.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.26.su.qpm.0.bias,atom_encoder.state_updates.26.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.26.su.qpm.2.weight,atom_encoder.state_updates.26.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.26.su.qpm.2.bias,atom_encoder.state_updates.26.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.26.su.qpm.4.weight,atom_encoder.state_updates.26.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.26.su.qpm.4.bias,atom_encoder.state_updates.26.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.26.su.ppm.0.weight,atom_encoder.state_updates.26.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.27.m_nn,atom_encoder.state_updates.27.m_nn,torch.int64,[64],64,True
+pesto.sum.27.su.sdk,atom_encoder.state_updates.27.su.sdk,torch.float32,[],1,True
+pesto.sum.27.su.nqm.0.weight,atom_encoder.state_updates.27.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.27.su.nqm.0.bias,atom_encoder.state_updates.27.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.27.su.nqm.2.weight,atom_encoder.state_updates.27.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.27.su.nqm.2.bias,atom_encoder.state_updates.27.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.27.su.nqm.4.weight,atom_encoder.state_updates.27.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.27.su.nqm.4.bias,atom_encoder.state_updates.27.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.27.su.eqkm.0.weight,atom_encoder.state_updates.27.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.27.su.eqkm.0.bias,atom_encoder.state_updates.27.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.27.su.eqkm.2.weight,atom_encoder.state_updates.27.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.27.su.eqkm.2.bias,atom_encoder.state_updates.27.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.27.su.eqkm.4.weight,atom_encoder.state_updates.27.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.27.su.eqkm.4.bias,atom_encoder.state_updates.27.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.27.su.epkm.0.weight,atom_encoder.state_updates.27.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.27.su.epkm.0.bias,atom_encoder.state_updates.27.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.27.su.epkm.2.weight,atom_encoder.state_updates.27.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.27.su.epkm.2.bias,atom_encoder.state_updates.27.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.27.su.epkm.4.weight,atom_encoder.state_updates.27.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.27.su.epkm.4.bias,atom_encoder.state_updates.27.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.27.su.evm.0.weight,atom_encoder.state_updates.27.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.27.su.evm.0.bias,atom_encoder.state_updates.27.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.27.su.evm.2.weight,atom_encoder.state_updates.27.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.27.su.evm.2.bias,atom_encoder.state_updates.27.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.27.su.evm.4.weight,atom_encoder.state_updates.27.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.27.su.evm.4.bias,atom_encoder.state_updates.27.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.27.su.qpm.0.weight,atom_encoder.state_updates.27.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.27.su.qpm.0.bias,atom_encoder.state_updates.27.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.27.su.qpm.2.weight,atom_encoder.state_updates.27.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.27.su.qpm.2.bias,atom_encoder.state_updates.27.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.27.su.qpm.4.weight,atom_encoder.state_updates.27.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.27.su.qpm.4.bias,atom_encoder.state_updates.27.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.27.su.ppm.0.weight,atom_encoder.state_updates.27.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.28.m_nn,atom_encoder.state_updates.28.m_nn,torch.int64,[64],64,True
+pesto.sum.28.su.sdk,atom_encoder.state_updates.28.su.sdk,torch.float32,[],1,True
+pesto.sum.28.su.nqm.0.weight,atom_encoder.state_updates.28.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.28.su.nqm.0.bias,atom_encoder.state_updates.28.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.28.su.nqm.2.weight,atom_encoder.state_updates.28.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.28.su.nqm.2.bias,atom_encoder.state_updates.28.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.28.su.nqm.4.weight,atom_encoder.state_updates.28.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.28.su.nqm.4.bias,atom_encoder.state_updates.28.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.28.su.eqkm.0.weight,atom_encoder.state_updates.28.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.28.su.eqkm.0.bias,atom_encoder.state_updates.28.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.28.su.eqkm.2.weight,atom_encoder.state_updates.28.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.28.su.eqkm.2.bias,atom_encoder.state_updates.28.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.28.su.eqkm.4.weight,atom_encoder.state_updates.28.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.28.su.eqkm.4.bias,atom_encoder.state_updates.28.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.28.su.epkm.0.weight,atom_encoder.state_updates.28.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.28.su.epkm.0.bias,atom_encoder.state_updates.28.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.28.su.epkm.2.weight,atom_encoder.state_updates.28.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.28.su.epkm.2.bias,atom_encoder.state_updates.28.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.28.su.epkm.4.weight,atom_encoder.state_updates.28.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.28.su.epkm.4.bias,atom_encoder.state_updates.28.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.28.su.evm.0.weight,atom_encoder.state_updates.28.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.28.su.evm.0.bias,atom_encoder.state_updates.28.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.28.su.evm.2.weight,atom_encoder.state_updates.28.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.28.su.evm.2.bias,atom_encoder.state_updates.28.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.28.su.evm.4.weight,atom_encoder.state_updates.28.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.28.su.evm.4.bias,atom_encoder.state_updates.28.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.28.su.qpm.0.weight,atom_encoder.state_updates.28.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.28.su.qpm.0.bias,atom_encoder.state_updates.28.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.28.su.qpm.2.weight,atom_encoder.state_updates.28.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.28.su.qpm.2.bias,atom_encoder.state_updates.28.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.28.su.qpm.4.weight,atom_encoder.state_updates.28.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.28.su.qpm.4.bias,atom_encoder.state_updates.28.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.28.su.ppm.0.weight,atom_encoder.state_updates.28.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.29.m_nn,atom_encoder.state_updates.29.m_nn,torch.int64,[64],64,True
+pesto.sum.29.su.sdk,atom_encoder.state_updates.29.su.sdk,torch.float32,[],1,True
+pesto.sum.29.su.nqm.0.weight,atom_encoder.state_updates.29.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.29.su.nqm.0.bias,atom_encoder.state_updates.29.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.29.su.nqm.2.weight,atom_encoder.state_updates.29.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.29.su.nqm.2.bias,atom_encoder.state_updates.29.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.29.su.nqm.4.weight,atom_encoder.state_updates.29.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.29.su.nqm.4.bias,atom_encoder.state_updates.29.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.29.su.eqkm.0.weight,atom_encoder.state_updates.29.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.29.su.eqkm.0.bias,atom_encoder.state_updates.29.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.29.su.eqkm.2.weight,atom_encoder.state_updates.29.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.29.su.eqkm.2.bias,atom_encoder.state_updates.29.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.29.su.eqkm.4.weight,atom_encoder.state_updates.29.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.29.su.eqkm.4.bias,atom_encoder.state_updates.29.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.29.su.epkm.0.weight,atom_encoder.state_updates.29.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.29.su.epkm.0.bias,atom_encoder.state_updates.29.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.29.su.epkm.2.weight,atom_encoder.state_updates.29.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.29.su.epkm.2.bias,atom_encoder.state_updates.29.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.29.su.epkm.4.weight,atom_encoder.state_updates.29.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.29.su.epkm.4.bias,atom_encoder.state_updates.29.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.29.su.evm.0.weight,atom_encoder.state_updates.29.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.29.su.evm.0.bias,atom_encoder.state_updates.29.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.29.su.evm.2.weight,atom_encoder.state_updates.29.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.29.su.evm.2.bias,atom_encoder.state_updates.29.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.29.su.evm.4.weight,atom_encoder.state_updates.29.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.29.su.evm.4.bias,atom_encoder.state_updates.29.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.29.su.qpm.0.weight,atom_encoder.state_updates.29.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.29.su.qpm.0.bias,atom_encoder.state_updates.29.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.29.su.qpm.2.weight,atom_encoder.state_updates.29.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.29.su.qpm.2.bias,atom_encoder.state_updates.29.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.29.su.qpm.4.weight,atom_encoder.state_updates.29.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.29.su.qpm.4.bias,atom_encoder.state_updates.29.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.29.su.ppm.0.weight,atom_encoder.state_updates.29.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.30.m_nn,atom_encoder.state_updates.30.m_nn,torch.int64,[64],64,True
+pesto.sum.30.su.sdk,atom_encoder.state_updates.30.su.sdk,torch.float32,[],1,True
+pesto.sum.30.su.nqm.0.weight,atom_encoder.state_updates.30.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.30.su.nqm.0.bias,atom_encoder.state_updates.30.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.30.su.nqm.2.weight,atom_encoder.state_updates.30.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.30.su.nqm.2.bias,atom_encoder.state_updates.30.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.30.su.nqm.4.weight,atom_encoder.state_updates.30.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.30.su.nqm.4.bias,atom_encoder.state_updates.30.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.30.su.eqkm.0.weight,atom_encoder.state_updates.30.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.30.su.eqkm.0.bias,atom_encoder.state_updates.30.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.30.su.eqkm.2.weight,atom_encoder.state_updates.30.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.30.su.eqkm.2.bias,atom_encoder.state_updates.30.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.30.su.eqkm.4.weight,atom_encoder.state_updates.30.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.30.su.eqkm.4.bias,atom_encoder.state_updates.30.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.30.su.epkm.0.weight,atom_encoder.state_updates.30.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.30.su.epkm.0.bias,atom_encoder.state_updates.30.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.30.su.epkm.2.weight,atom_encoder.state_updates.30.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.30.su.epkm.2.bias,atom_encoder.state_updates.30.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.30.su.epkm.4.weight,atom_encoder.state_updates.30.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.30.su.epkm.4.bias,atom_encoder.state_updates.30.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.30.su.evm.0.weight,atom_encoder.state_updates.30.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.30.su.evm.0.bias,atom_encoder.state_updates.30.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.30.su.evm.2.weight,atom_encoder.state_updates.30.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.30.su.evm.2.bias,atom_encoder.state_updates.30.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.30.su.evm.4.weight,atom_encoder.state_updates.30.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.30.su.evm.4.bias,atom_encoder.state_updates.30.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.30.su.qpm.0.weight,atom_encoder.state_updates.30.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.30.su.qpm.0.bias,atom_encoder.state_updates.30.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.30.su.qpm.2.weight,atom_encoder.state_updates.30.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.30.su.qpm.2.bias,atom_encoder.state_updates.30.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.30.su.qpm.4.weight,atom_encoder.state_updates.30.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.30.su.qpm.4.bias,atom_encoder.state_updates.30.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.30.su.ppm.0.weight,atom_encoder.state_updates.30.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.31.m_nn,atom_encoder.state_updates.31.m_nn,torch.int64,[64],64,True
+pesto.sum.31.su.sdk,atom_encoder.state_updates.31.su.sdk,torch.float32,[],1,True
+pesto.sum.31.su.nqm.0.weight,atom_encoder.state_updates.31.su.nqm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.31.su.nqm.0.bias,atom_encoder.state_updates.31.su.nqm.0.bias,torch.float32,[32],32,True
+pesto.sum.31.su.nqm.2.weight,atom_encoder.state_updates.31.su.nqm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.31.su.nqm.2.bias,atom_encoder.state_updates.31.su.nqm.2.bias,torch.float32,[32],32,True
+pesto.sum.31.su.nqm.4.weight,atom_encoder.state_updates.31.su.nqm.4.weight,torch.float32,"[12, 32]",384,True
+pesto.sum.31.su.nqm.4.bias,atom_encoder.state_updates.31.su.nqm.4.bias,torch.float32,[12],12,True
+pesto.sum.31.su.eqkm.0.weight,atom_encoder.state_updates.31.su.eqkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.31.su.eqkm.0.bias,atom_encoder.state_updates.31.su.eqkm.0.bias,torch.float32,[32],32,True
+pesto.sum.31.su.eqkm.2.weight,atom_encoder.state_updates.31.su.eqkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.31.su.eqkm.2.bias,atom_encoder.state_updates.31.su.eqkm.2.bias,torch.float32,[32],32,True
+pesto.sum.31.su.eqkm.4.weight,atom_encoder.state_updates.31.su.eqkm.4.weight,torch.float32,"[3, 32]",96,True
+pesto.sum.31.su.eqkm.4.bias,atom_encoder.state_updates.31.su.eqkm.4.bias,torch.float32,[3],3,True
+pesto.sum.31.su.epkm.0.weight,atom_encoder.state_updates.31.su.epkm.0.weight,torch.float32,"[32, 193]",6176,True
+pesto.sum.31.su.epkm.0.bias,atom_encoder.state_updates.31.su.epkm.0.bias,torch.float32,[32],32,True
+pesto.sum.31.su.epkm.2.weight,atom_encoder.state_updates.31.su.epkm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.31.su.epkm.2.bias,atom_encoder.state_updates.31.su.epkm.2.bias,torch.float32,[32],32,True
+pesto.sum.31.su.epkm.4.weight,atom_encoder.state_updates.31.su.epkm.4.weight,torch.float32,"[9, 32]",288,True
+pesto.sum.31.su.epkm.4.bias,atom_encoder.state_updates.31.su.epkm.4.bias,torch.float32,[9],9,True
+pesto.sum.31.su.evm.0.weight,atom_encoder.state_updates.31.su.evm.0.weight,torch.float32,"[64, 193]",12352,True
+pesto.sum.31.su.evm.0.bias,atom_encoder.state_updates.31.su.evm.0.bias,torch.float32,[64],64,True
+pesto.sum.31.su.evm.2.weight,atom_encoder.state_updates.31.su.evm.2.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.31.su.evm.2.bias,atom_encoder.state_updates.31.su.evm.2.bias,torch.float32,[64],64,True
+pesto.sum.31.su.evm.4.weight,atom_encoder.state_updates.31.su.evm.4.weight,torch.float32,"[64, 64]",4096,True
+pesto.sum.31.su.evm.4.bias,atom_encoder.state_updates.31.su.evm.4.bias,torch.float32,[64],64,True
+pesto.sum.31.su.qpm.0.weight,atom_encoder.state_updates.31.su.qpm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.sum.31.su.qpm.0.bias,atom_encoder.state_updates.31.su.qpm.0.bias,torch.float32,[32],32,True
+pesto.sum.31.su.qpm.2.weight,atom_encoder.state_updates.31.su.qpm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.31.su.qpm.2.bias,atom_encoder.state_updates.31.su.qpm.2.bias,torch.float32,[32],32,True
+pesto.sum.31.su.qpm.4.weight,atom_encoder.state_updates.31.su.qpm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.sum.31.su.qpm.4.bias,atom_encoder.state_updates.31.su.qpm.4.bias,torch.float32,[32],32,True
+pesto.sum.31.su.ppm.0.weight,atom_encoder.state_updates.31.su.ppm.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.spl.sam.0.weight,atom_encoder.atom_to_residue_pool.sam.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.spl.sam.0.bias,atom_encoder.atom_to_residue_pool.sam.0.bias,torch.float32,[32],32,True
+pesto.spl.sam.2.weight,atom_encoder.atom_to_residue_pool.sam.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.spl.sam.2.bias,atom_encoder.atom_to_residue_pool.sam.2.bias,torch.float32,[32],32,True
+pesto.spl.sam.4.weight,atom_encoder.atom_to_residue_pool.sam.4.weight,torch.float32,"[8, 32]",256,True
+pesto.spl.sam.4.bias,atom_encoder.atom_to_residue_pool.sam.4.bias,torch.float32,[8],8,True
+pesto.spl.zdm.0.weight,atom_encoder.atom_to_residue_pool.zdm.0.weight,torch.float32,"[32, 128]",4096,True
+pesto.spl.zdm.0.bias,atom_encoder.atom_to_residue_pool.zdm.0.bias,torch.float32,[32],32,True
+pesto.spl.zdm.2.weight,atom_encoder.atom_to_residue_pool.zdm.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.spl.zdm.2.bias,atom_encoder.atom_to_residue_pool.zdm.2.bias,torch.float32,[32],32,True
+pesto.spl.zdm.4.weight,atom_encoder.atom_to_residue_pool.zdm.4.weight,torch.float32,"[32, 32]",1024,True
+pesto.spl.zdm.4.bias,atom_encoder.atom_to_residue_pool.zdm.4.bias,torch.float32,[32],32,True
+pesto.spl.zdm_vec.0.weight,atom_encoder.atom_to_residue_pool.zdm_vec.0.weight,torch.float32,"[32, 128]",4096,True
+pesto.dm.0.weight,atom_encoder.residue_decoder.0.weight,torch.float32,"[32, 64]",2048,True
+pesto.dm.0.bias,atom_encoder.residue_decoder.0.bias,torch.float32,[32],32,True
+pesto.dm.2.weight,atom_encoder.residue_decoder.2.weight,torch.float32,"[32, 32]",1024,True
+pesto.dm.2.bias,atom_encoder.residue_decoder.2.bias,torch.float32,[32],32,True
+pesto.dm.4.weight,atom_encoder.residue_decoder.4.weight,torch.float32,"[5, 32]",160,True
+pesto.dm.4.bias,atom_encoder.residue_decoder.4.bias,torch.float32,[5],5,True
+gaussian.surface_graph_logits,gaussian.surface_graph_logits,torch.float32,[2],2,True
+gaussian.input_adapter.weight,gaussian.input_adapter.weight,torch.float32,"[128, 32]",4096,True
+gaussian.input_adapter.bias,gaussian.input_adapter.bias,torch.float32,[128],128,True
+gaussian.output_projection.weight,gaussian.output_projection.weight,torch.float32,"[32, 128]",4096,True
+gaussian.output_projection.bias,gaussian.output_projection.bias,torch.float32,[32],32,True
+gaussian.res_to_surface.context_proj.0.weight,gaussian.res_to_surface.context_proj.0.weight,torch.float32,[128],128,True
+gaussian.res_to_surface.context_proj.0.bias,gaussian.res_to_surface.context_proj.0.bias,torch.float32,[128],128,True
+gaussian.res_to_surface.context_proj.1.weight,gaussian.res_to_surface.context_proj.1.weight,torch.float32,"[128, 128]",16384,True
+gaussian.res_to_surface.context_proj.1.bias,gaussian.res_to_surface.context_proj.1.bias,torch.float32,[128],128,True
+gaussian.res_to_surface.geom_proj.0.weight,gaussian.res_to_surface.geom_proj.0.weight,torch.float32,[6],6,True
+gaussian.res_to_surface.geom_proj.0.bias,gaussian.res_to_surface.geom_proj.0.bias,torch.float32,[6],6,True
+gaussian.res_to_surface.geom_proj.1.weight,gaussian.res_to_surface.geom_proj.1.weight,torch.float32,"[128, 6]",768,True
+gaussian.res_to_surface.geom_proj.1.bias,gaussian.res_to_surface.geom_proj.1.bias,torch.float32,[128],128,True
+gaussian.res_to_surface.geom_proj.4.weight,gaussian.res_to_surface.geom_proj.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.res_to_surface.geom_proj.4.bias,gaussian.res_to_surface.geom_proj.4.bias,torch.float32,[128],128,True
+gaussian.res_to_surface.sigma_head.0.weight,gaussian.res_to_surface.sigma_head.0.weight,torch.float32,[128],128,True
+gaussian.res_to_surface.sigma_head.0.bias,gaussian.res_to_surface.sigma_head.0.bias,torch.float32,[128],128,True
+gaussian.res_to_surface.sigma_head.1.weight,gaussian.res_to_surface.sigma_head.1.weight,torch.float32,"[128, 128]",16384,True
+gaussian.res_to_surface.sigma_head.1.bias,gaussian.res_to_surface.sigma_head.1.bias,torch.float32,[128],128,True
+gaussian.res_to_surface.sigma_head.4.weight,gaussian.res_to_surface.sigma_head.4.weight,torch.float32,"[2, 128]",256,True
+gaussian.res_to_surface.sigma_head.4.bias,gaussian.res_to_surface.sigma_head.4.bias,torch.float32,[2],2,True
+gaussian.res_to_surface.norm.weight,gaussian.res_to_surface.norm.weight,torch.float32,[128],128,True
+gaussian.res_to_surface.norm.bias,gaussian.res_to_surface.norm.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.input_proj.0.weight,gaussian.surface_encoder.input_proj.0.weight,torch.float32,[134],134,True
+gaussian.surface_encoder.input_proj.0.bias,gaussian.surface_encoder.input_proj.0.bias,torch.float32,[134],134,True
+gaussian.surface_encoder.input_proj.1.weight,gaussian.surface_encoder.input_proj.1.weight,torch.float32,"[128, 134]",17152,True
+gaussian.surface_encoder.input_proj.1.bias,gaussian.surface_encoder.input_proj.1.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.input_proj.4.weight,gaussian.surface_encoder.input_proj.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_encoder.input_proj.4.bias,gaussian.surface_encoder.input_proj.4.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.node_vector_proj.weight,gaussian.surface_encoder.node_vector_proj.weight,torch.float32,"[16, 1]",16,True
+gaussian.surface_encoder.edge_scalar_proj.0.weight,gaussian.surface_encoder.edge_scalar_proj.0.weight,torch.float32,[8],8,True
+gaussian.surface_encoder.edge_scalar_proj.0.bias,gaussian.surface_encoder.edge_scalar_proj.0.bias,torch.float32,[8],8,True
+gaussian.surface_encoder.edge_scalar_proj.1.weight,gaussian.surface_encoder.edge_scalar_proj.1.weight,torch.float32,"[128, 8]",1024,True
+gaussian.surface_encoder.edge_scalar_proj.1.bias,gaussian.surface_encoder.edge_scalar_proj.1.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.edge_scalar_proj.4.weight,gaussian.surface_encoder.edge_scalar_proj.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_encoder.edge_scalar_proj.4.bias,gaussian.surface_encoder.edge_scalar_proj.4.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.edge_vector_proj.weight,gaussian.surface_encoder.edge_vector_proj.weight,torch.float32,"[16, 1]",16,True
+gaussian.surface_encoder.layers.0.msg_gvp1.wh.weight,gaussian.surface_encoder.layers.0.msg_gvp1.wh.weight,torch.float32,"[48, 48]",2304,True
+gaussian.surface_encoder.layers.0.msg_gvp1.wv.weight,gaussian.surface_encoder.layers.0.msg_gvp1.wv.weight,torch.float32,"[16, 48]",768,True
+gaussian.surface_encoder.layers.0.msg_gvp1.ws.weight,gaussian.surface_encoder.layers.0.msg_gvp1.ws.weight,torch.float32,"[128, 432]",55296,True
+gaussian.surface_encoder.layers.0.msg_gvp1.ws.bias,gaussian.surface_encoder.layers.0.msg_gvp1.ws.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.msg_gvp1.wg.weight,gaussian.surface_encoder.layers.0.msg_gvp1.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_encoder.layers.0.msg_gvp1.wg.bias,gaussian.surface_encoder.layers.0.msg_gvp1.wg.bias,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.0.msg_norm1.vector_scale,gaussian.surface_encoder.layers.0.msg_norm1.vector_scale,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.0.msg_norm1.scalar_norm.weight,gaussian.surface_encoder.layers.0.msg_norm1.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.msg_norm1.scalar_norm.bias,gaussian.surface_encoder.layers.0.msg_norm1.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.msg_gvp2.wh.weight,gaussian.surface_encoder.layers.0.msg_gvp2.wh.weight,torch.float32,"[16, 16]",256,True
+gaussian.surface_encoder.layers.0.msg_gvp2.wv.weight,gaussian.surface_encoder.layers.0.msg_gvp2.wv.weight,torch.float32,"[16, 16]",256,True
+gaussian.surface_encoder.layers.0.msg_gvp2.ws.weight,gaussian.surface_encoder.layers.0.msg_gvp2.ws.weight,torch.float32,"[128, 144]",18432,True
+gaussian.surface_encoder.layers.0.msg_gvp2.ws.bias,gaussian.surface_encoder.layers.0.msg_gvp2.ws.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.msg_gvp2.wg.weight,gaussian.surface_encoder.layers.0.msg_gvp2.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_encoder.layers.0.msg_gvp2.wg.bias,gaussian.surface_encoder.layers.0.msg_gvp2.wg.bias,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.0.msg_norm2.vector_scale,gaussian.surface_encoder.layers.0.msg_norm2.vector_scale,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.0.msg_norm2.scalar_norm.weight,gaussian.surface_encoder.layers.0.msg_norm2.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.msg_norm2.scalar_norm.bias,gaussian.surface_encoder.layers.0.msg_norm2.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.node_norm.vector_scale,gaussian.surface_encoder.layers.0.node_norm.vector_scale,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.0.node_norm.scalar_norm.weight,gaussian.surface_encoder.layers.0.node_norm.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.node_norm.scalar_norm.bias,gaussian.surface_encoder.layers.0.node_norm.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.ff_gvp1.wh.weight,gaussian.surface_encoder.layers.0.ff_gvp1.wh.weight,torch.float32,"[32, 16]",512,True
+gaussian.surface_encoder.layers.0.ff_gvp1.wv.weight,gaussian.surface_encoder.layers.0.ff_gvp1.wv.weight,torch.float32,"[32, 32]",1024,True
+gaussian.surface_encoder.layers.0.ff_gvp1.ws.weight,gaussian.surface_encoder.layers.0.ff_gvp1.ws.weight,torch.float32,"[256, 160]",40960,True
+gaussian.surface_encoder.layers.0.ff_gvp1.ws.bias,gaussian.surface_encoder.layers.0.ff_gvp1.ws.bias,torch.float32,[256],256,True
+gaussian.surface_encoder.layers.0.ff_gvp1.wg.weight,gaussian.surface_encoder.layers.0.ff_gvp1.wg.weight,torch.float32,"[32, 256]",8192,True
+gaussian.surface_encoder.layers.0.ff_gvp1.wg.bias,gaussian.surface_encoder.layers.0.ff_gvp1.wg.bias,torch.float32,[32],32,True
+gaussian.surface_encoder.layers.0.ff_gvp2.wh.weight,gaussian.surface_encoder.layers.0.ff_gvp2.wh.weight,torch.float32,"[32, 32]",1024,True
+gaussian.surface_encoder.layers.0.ff_gvp2.wv.weight,gaussian.surface_encoder.layers.0.ff_gvp2.wv.weight,torch.float32,"[16, 32]",512,True
+gaussian.surface_encoder.layers.0.ff_gvp2.ws.weight,gaussian.surface_encoder.layers.0.ff_gvp2.ws.weight,torch.float32,"[128, 288]",36864,True
+gaussian.surface_encoder.layers.0.ff_gvp2.ws.bias,gaussian.surface_encoder.layers.0.ff_gvp2.ws.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.ff_gvp2.wg.weight,gaussian.surface_encoder.layers.0.ff_gvp2.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_encoder.layers.0.ff_gvp2.wg.bias,gaussian.surface_encoder.layers.0.ff_gvp2.wg.bias,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.0.ff_norm.vector_scale,gaussian.surface_encoder.layers.0.ff_norm.vector_scale,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.0.ff_norm.scalar_norm.weight,gaussian.surface_encoder.layers.0.ff_norm.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.0.ff_norm.scalar_norm.bias,gaussian.surface_encoder.layers.0.ff_norm.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.msg_gvp1.wh.weight,gaussian.surface_encoder.layers.1.msg_gvp1.wh.weight,torch.float32,"[48, 48]",2304,True
+gaussian.surface_encoder.layers.1.msg_gvp1.wv.weight,gaussian.surface_encoder.layers.1.msg_gvp1.wv.weight,torch.float32,"[16, 48]",768,True
+gaussian.surface_encoder.layers.1.msg_gvp1.ws.weight,gaussian.surface_encoder.layers.1.msg_gvp1.ws.weight,torch.float32,"[128, 432]",55296,True
+gaussian.surface_encoder.layers.1.msg_gvp1.ws.bias,gaussian.surface_encoder.layers.1.msg_gvp1.ws.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.msg_gvp1.wg.weight,gaussian.surface_encoder.layers.1.msg_gvp1.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_encoder.layers.1.msg_gvp1.wg.bias,gaussian.surface_encoder.layers.1.msg_gvp1.wg.bias,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.1.msg_norm1.vector_scale,gaussian.surface_encoder.layers.1.msg_norm1.vector_scale,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.1.msg_norm1.scalar_norm.weight,gaussian.surface_encoder.layers.1.msg_norm1.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.msg_norm1.scalar_norm.bias,gaussian.surface_encoder.layers.1.msg_norm1.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.msg_gvp2.wh.weight,gaussian.surface_encoder.layers.1.msg_gvp2.wh.weight,torch.float32,"[16, 16]",256,True
+gaussian.surface_encoder.layers.1.msg_gvp2.wv.weight,gaussian.surface_encoder.layers.1.msg_gvp2.wv.weight,torch.float32,"[16, 16]",256,True
+gaussian.surface_encoder.layers.1.msg_gvp2.ws.weight,gaussian.surface_encoder.layers.1.msg_gvp2.ws.weight,torch.float32,"[128, 144]",18432,True
+gaussian.surface_encoder.layers.1.msg_gvp2.ws.bias,gaussian.surface_encoder.layers.1.msg_gvp2.ws.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.msg_gvp2.wg.weight,gaussian.surface_encoder.layers.1.msg_gvp2.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_encoder.layers.1.msg_gvp2.wg.bias,gaussian.surface_encoder.layers.1.msg_gvp2.wg.bias,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.1.msg_norm2.vector_scale,gaussian.surface_encoder.layers.1.msg_norm2.vector_scale,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.1.msg_norm2.scalar_norm.weight,gaussian.surface_encoder.layers.1.msg_norm2.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.msg_norm2.scalar_norm.bias,gaussian.surface_encoder.layers.1.msg_norm2.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.node_norm.vector_scale,gaussian.surface_encoder.layers.1.node_norm.vector_scale,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.1.node_norm.scalar_norm.weight,gaussian.surface_encoder.layers.1.node_norm.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.node_norm.scalar_norm.bias,gaussian.surface_encoder.layers.1.node_norm.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.ff_gvp1.wh.weight,gaussian.surface_encoder.layers.1.ff_gvp1.wh.weight,torch.float32,"[32, 16]",512,True
+gaussian.surface_encoder.layers.1.ff_gvp1.wv.weight,gaussian.surface_encoder.layers.1.ff_gvp1.wv.weight,torch.float32,"[32, 32]",1024,True
+gaussian.surface_encoder.layers.1.ff_gvp1.ws.weight,gaussian.surface_encoder.layers.1.ff_gvp1.ws.weight,torch.float32,"[256, 160]",40960,True
+gaussian.surface_encoder.layers.1.ff_gvp1.ws.bias,gaussian.surface_encoder.layers.1.ff_gvp1.ws.bias,torch.float32,[256],256,True
+gaussian.surface_encoder.layers.1.ff_gvp1.wg.weight,gaussian.surface_encoder.layers.1.ff_gvp1.wg.weight,torch.float32,"[32, 256]",8192,True
+gaussian.surface_encoder.layers.1.ff_gvp1.wg.bias,gaussian.surface_encoder.layers.1.ff_gvp1.wg.bias,torch.float32,[32],32,True
+gaussian.surface_encoder.layers.1.ff_gvp2.wh.weight,gaussian.surface_encoder.layers.1.ff_gvp2.wh.weight,torch.float32,"[32, 32]",1024,True
+gaussian.surface_encoder.layers.1.ff_gvp2.wv.weight,gaussian.surface_encoder.layers.1.ff_gvp2.wv.weight,torch.float32,"[16, 32]",512,True
+gaussian.surface_encoder.layers.1.ff_gvp2.ws.weight,gaussian.surface_encoder.layers.1.ff_gvp2.ws.weight,torch.float32,"[128, 288]",36864,True
+gaussian.surface_encoder.layers.1.ff_gvp2.ws.bias,gaussian.surface_encoder.layers.1.ff_gvp2.ws.bias,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.ff_gvp2.wg.weight,gaussian.surface_encoder.layers.1.ff_gvp2.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_encoder.layers.1.ff_gvp2.wg.bias,gaussian.surface_encoder.layers.1.ff_gvp2.wg.bias,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.1.ff_norm.vector_scale,gaussian.surface_encoder.layers.1.ff_norm.vector_scale,torch.float32,[16],16,True
+gaussian.surface_encoder.layers.1.ff_norm.scalar_norm.weight,gaussian.surface_encoder.layers.1.ff_norm.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_encoder.layers.1.ff_norm.scalar_norm.bias,gaussian.surface_encoder.layers.1.ff_norm.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.input_proj.0.weight,gaussian.surface_extra_encoders.0.input_proj.0.weight,torch.float32,[134],134,True
+gaussian.surface_extra_encoders.0.input_proj.0.bias,gaussian.surface_extra_encoders.0.input_proj.0.bias,torch.float32,[134],134,True
+gaussian.surface_extra_encoders.0.input_proj.1.weight,gaussian.surface_extra_encoders.0.input_proj.1.weight,torch.float32,"[128, 134]",17152,True
+gaussian.surface_extra_encoders.0.input_proj.1.bias,gaussian.surface_extra_encoders.0.input_proj.1.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.input_proj.4.weight,gaussian.surface_extra_encoders.0.input_proj.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_extra_encoders.0.input_proj.4.bias,gaussian.surface_extra_encoders.0.input_proj.4.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.node_vector_proj.weight,gaussian.surface_extra_encoders.0.node_vector_proj.weight,torch.float32,"[16, 1]",16,True
+gaussian.surface_extra_encoders.0.edge_scalar_proj.0.weight,gaussian.surface_extra_encoders.0.edge_scalar_proj.0.weight,torch.float32,[8],8,True
+gaussian.surface_extra_encoders.0.edge_scalar_proj.0.bias,gaussian.surface_extra_encoders.0.edge_scalar_proj.0.bias,torch.float32,[8],8,True
+gaussian.surface_extra_encoders.0.edge_scalar_proj.1.weight,gaussian.surface_extra_encoders.0.edge_scalar_proj.1.weight,torch.float32,"[128, 8]",1024,True
+gaussian.surface_extra_encoders.0.edge_scalar_proj.1.bias,gaussian.surface_extra_encoders.0.edge_scalar_proj.1.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.edge_scalar_proj.4.weight,gaussian.surface_extra_encoders.0.edge_scalar_proj.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_extra_encoders.0.edge_scalar_proj.4.bias,gaussian.surface_extra_encoders.0.edge_scalar_proj.4.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.edge_vector_proj.weight,gaussian.surface_extra_encoders.0.edge_vector_proj.weight,torch.float32,"[16, 1]",16,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.wh.weight,gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.wh.weight,torch.float32,"[48, 48]",2304,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.wv.weight,gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.wv.weight,torch.float32,"[16, 48]",768,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.ws.weight,gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.ws.weight,torch.float32,"[128, 432]",55296,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.ws.bias,gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.ws.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.wg.weight,gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.wg.bias,gaussian.surface_extra_encoders.0.layers.0.msg_gvp1.wg.bias,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.0.msg_norm1.vector_scale,gaussian.surface_extra_encoders.0.layers.0.msg_norm1.vector_scale,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.0.msg_norm1.scalar_norm.weight,gaussian.surface_extra_encoders.0.layers.0.msg_norm1.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.msg_norm1.scalar_norm.bias,gaussian.surface_extra_encoders.0.layers.0.msg_norm1.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.wh.weight,gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.wh.weight,torch.float32,"[16, 16]",256,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.wv.weight,gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.wv.weight,torch.float32,"[16, 16]",256,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.ws.weight,gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.ws.weight,torch.float32,"[128, 144]",18432,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.ws.bias,gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.ws.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.wg.weight,gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.wg.bias,gaussian.surface_extra_encoders.0.layers.0.msg_gvp2.wg.bias,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.0.msg_norm2.vector_scale,gaussian.surface_extra_encoders.0.layers.0.msg_norm2.vector_scale,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.0.msg_norm2.scalar_norm.weight,gaussian.surface_extra_encoders.0.layers.0.msg_norm2.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.msg_norm2.scalar_norm.bias,gaussian.surface_extra_encoders.0.layers.0.msg_norm2.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.node_norm.vector_scale,gaussian.surface_extra_encoders.0.layers.0.node_norm.vector_scale,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.0.node_norm.scalar_norm.weight,gaussian.surface_extra_encoders.0.layers.0.node_norm.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.node_norm.scalar_norm.bias,gaussian.surface_extra_encoders.0.layers.0.node_norm.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.wh.weight,gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.wh.weight,torch.float32,"[32, 16]",512,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.wv.weight,gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.wv.weight,torch.float32,"[32, 32]",1024,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.ws.weight,gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.ws.weight,torch.float32,"[256, 160]",40960,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.ws.bias,gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.ws.bias,torch.float32,[256],256,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.wg.weight,gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.wg.weight,torch.float32,"[32, 256]",8192,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.wg.bias,gaussian.surface_extra_encoders.0.layers.0.ff_gvp1.wg.bias,torch.float32,[32],32,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.wh.weight,gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.wh.weight,torch.float32,"[32, 32]",1024,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.wv.weight,gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.wv.weight,torch.float32,"[16, 32]",512,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.ws.weight,gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.ws.weight,torch.float32,"[128, 288]",36864,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.ws.bias,gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.ws.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.wg.weight,gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.wg.bias,gaussian.surface_extra_encoders.0.layers.0.ff_gvp2.wg.bias,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.0.ff_norm.vector_scale,gaussian.surface_extra_encoders.0.layers.0.ff_norm.vector_scale,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.0.ff_norm.scalar_norm.weight,gaussian.surface_extra_encoders.0.layers.0.ff_norm.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.0.ff_norm.scalar_norm.bias,gaussian.surface_extra_encoders.0.layers.0.ff_norm.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.wh.weight,gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.wh.weight,torch.float32,"[48, 48]",2304,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.wv.weight,gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.wv.weight,torch.float32,"[16, 48]",768,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.ws.weight,gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.ws.weight,torch.float32,"[128, 432]",55296,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.ws.bias,gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.ws.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.wg.weight,gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.wg.bias,gaussian.surface_extra_encoders.0.layers.1.msg_gvp1.wg.bias,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.1.msg_norm1.vector_scale,gaussian.surface_extra_encoders.0.layers.1.msg_norm1.vector_scale,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.1.msg_norm1.scalar_norm.weight,gaussian.surface_extra_encoders.0.layers.1.msg_norm1.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.msg_norm1.scalar_norm.bias,gaussian.surface_extra_encoders.0.layers.1.msg_norm1.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.wh.weight,gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.wh.weight,torch.float32,"[16, 16]",256,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.wv.weight,gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.wv.weight,torch.float32,"[16, 16]",256,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.ws.weight,gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.ws.weight,torch.float32,"[128, 144]",18432,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.ws.bias,gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.ws.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.wg.weight,gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.wg.bias,gaussian.surface_extra_encoders.0.layers.1.msg_gvp2.wg.bias,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.1.msg_norm2.vector_scale,gaussian.surface_extra_encoders.0.layers.1.msg_norm2.vector_scale,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.1.msg_norm2.scalar_norm.weight,gaussian.surface_extra_encoders.0.layers.1.msg_norm2.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.msg_norm2.scalar_norm.bias,gaussian.surface_extra_encoders.0.layers.1.msg_norm2.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.node_norm.vector_scale,gaussian.surface_extra_encoders.0.layers.1.node_norm.vector_scale,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.1.node_norm.scalar_norm.weight,gaussian.surface_extra_encoders.0.layers.1.node_norm.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.node_norm.scalar_norm.bias,gaussian.surface_extra_encoders.0.layers.1.node_norm.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.wh.weight,gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.wh.weight,torch.float32,"[32, 16]",512,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.wv.weight,gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.wv.weight,torch.float32,"[32, 32]",1024,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.ws.weight,gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.ws.weight,torch.float32,"[256, 160]",40960,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.ws.bias,gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.ws.bias,torch.float32,[256],256,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.wg.weight,gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.wg.weight,torch.float32,"[32, 256]",8192,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.wg.bias,gaussian.surface_extra_encoders.0.layers.1.ff_gvp1.wg.bias,torch.float32,[32],32,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.wh.weight,gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.wh.weight,torch.float32,"[32, 32]",1024,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.wv.weight,gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.wv.weight,torch.float32,"[16, 32]",512,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.ws.weight,gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.ws.weight,torch.float32,"[128, 288]",36864,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.ws.bias,gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.ws.bias,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.wg.weight,gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.wg.weight,torch.float32,"[16, 128]",2048,True
+gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.wg.bias,gaussian.surface_extra_encoders.0.layers.1.ff_gvp2.wg.bias,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.1.ff_norm.vector_scale,gaussian.surface_extra_encoders.0.layers.1.ff_norm.vector_scale,torch.float32,[16],16,True
+gaussian.surface_extra_encoders.0.layers.1.ff_norm.scalar_norm.weight,gaussian.surface_extra_encoders.0.layers.1.ff_norm.scalar_norm.weight,torch.float32,[128],128,True
+gaussian.surface_extra_encoders.0.layers.1.ff_norm.scalar_norm.bias,gaussian.surface_extra_encoders.0.layers.1.ff_norm.scalar_norm.bias,torch.float32,[128],128,True
+gaussian.surface_graph_fusion_norm.weight,gaussian.surface_graph_fusion_norm.weight,torch.float32,[128],128,True
+gaussian.surface_graph_fusion_norm.bias,gaussian.surface_graph_fusion_norm.bias,torch.float32,[128],128,True
+gaussian.surface_to_residue.score.0.weight,gaussian.surface_to_residue.score.0.weight,torch.float32,[325],325,True
+gaussian.surface_to_residue.score.0.bias,gaussian.surface_to_residue.score.0.bias,torch.float32,[325],325,True
+gaussian.surface_to_residue.score.1.weight,gaussian.surface_to_residue.score.1.weight,torch.float32,"[128, 325]",41600,True
+gaussian.surface_to_residue.score.1.bias,gaussian.surface_to_residue.score.1.bias,torch.float32,[128],128,True
+gaussian.surface_to_residue.score.4.weight,gaussian.surface_to_residue.score.4.weight,torch.float32,"[1, 128]",128,True
+gaussian.surface_to_residue.score.4.bias,gaussian.surface_to_residue.score.4.bias,torch.float32,[1],1,True
+gaussian.surface_to_residue.context_proj.0.weight,gaussian.surface_to_residue.context_proj.0.weight,torch.float32,[128],128,True
+gaussian.surface_to_residue.context_proj.0.bias,gaussian.surface_to_residue.context_proj.0.bias,torch.float32,[128],128,True
+gaussian.surface_to_residue.context_proj.1.weight,gaussian.surface_to_residue.context_proj.1.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_to_residue.context_proj.1.bias,gaussian.surface_to_residue.context_proj.1.bias,torch.float32,[128],128,True
+gaussian.surface_to_residue.context_proj.4.weight,gaussian.surface_to_residue.context_proj.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_to_residue.context_proj.4.bias,gaussian.surface_to_residue.context_proj.4.bias,torch.float32,[128],128,True
+gaussian.surface_to_residue.vector_context_proj.0.weight,gaussian.surface_to_residue.vector_context_proj.0.weight,torch.float32,[192],192,True
+gaussian.surface_to_residue.vector_context_proj.0.bias,gaussian.surface_to_residue.vector_context_proj.0.bias,torch.float32,[192],192,True
+gaussian.surface_to_residue.vector_context_proj.1.weight,gaussian.surface_to_residue.vector_context_proj.1.weight,torch.float32,"[128, 192]",24576,True
+gaussian.surface_to_residue.vector_context_proj.1.bias,gaussian.surface_to_residue.vector_context_proj.1.bias,torch.float32,[128],128,True
+gaussian.surface_to_residue.vector_context_proj.4.weight,gaussian.surface_to_residue.vector_context_proj.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_to_residue.vector_context_proj.4.bias,gaussian.surface_to_residue.vector_context_proj.4.bias,torch.float32,[128],128,True
+gaussian.residue_global_feedback.gate.0.weight,gaussian.residue_global_feedback.gate.0.weight,torch.float32,[384],384,True
+gaussian.residue_global_feedback.gate.0.bias,gaussian.residue_global_feedback.gate.0.bias,torch.float32,[384],384,True
+gaussian.residue_global_feedback.gate.1.weight,gaussian.residue_global_feedback.gate.1.weight,torch.float32,"[128, 384]",49152,True
+gaussian.residue_global_feedback.gate.1.bias,gaussian.residue_global_feedback.gate.1.bias,torch.float32,[128],128,True
+gaussian.residue_global_feedback.gate.4.weight,gaussian.residue_global_feedback.gate.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.residue_global_feedback.gate.4.bias,gaussian.residue_global_feedback.gate.4.bias,torch.float32,[128],128,True
+gaussian.residue_global_feedback.update.0.weight,gaussian.residue_global_feedback.update.0.weight,torch.float32,[384],384,True
+gaussian.residue_global_feedback.update.0.bias,gaussian.residue_global_feedback.update.0.bias,torch.float32,[384],384,True
+gaussian.residue_global_feedback.update.1.weight,gaussian.residue_global_feedback.update.1.weight,torch.float32,"[128, 384]",49152,True
+gaussian.residue_global_feedback.update.1.bias,gaussian.residue_global_feedback.update.1.bias,torch.float32,[128],128,True
+gaussian.residue_global_feedback.update.4.weight,gaussian.residue_global_feedback.update.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.residue_global_feedback.update.4.bias,gaussian.residue_global_feedback.update.4.bias,torch.float32,[128],128,True
+gaussian.residue_global_feedback.norm.weight,gaussian.residue_global_feedback.norm.weight,torch.float32,[128],128,True
+gaussian.residue_global_feedback.norm.bias,gaussian.residue_global_feedback.norm.bias,torch.float32,[128],128,True
+gaussian.surface_global_feedback.gate.0.weight,gaussian.surface_global_feedback.gate.0.weight,torch.float32,[384],384,True
+gaussian.surface_global_feedback.gate.0.bias,gaussian.surface_global_feedback.gate.0.bias,torch.float32,[384],384,True
+gaussian.surface_global_feedback.gate.1.weight,gaussian.surface_global_feedback.gate.1.weight,torch.float32,"[128, 384]",49152,True
+gaussian.surface_global_feedback.gate.1.bias,gaussian.surface_global_feedback.gate.1.bias,torch.float32,[128],128,True
+gaussian.surface_global_feedback.gate.4.weight,gaussian.surface_global_feedback.gate.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_global_feedback.gate.4.bias,gaussian.surface_global_feedback.gate.4.bias,torch.float32,[128],128,True
+gaussian.surface_global_feedback.update.0.weight,gaussian.surface_global_feedback.update.0.weight,torch.float32,[384],384,True
+gaussian.surface_global_feedback.update.0.bias,gaussian.surface_global_feedback.update.0.bias,torch.float32,[384],384,True
+gaussian.surface_global_feedback.update.1.weight,gaussian.surface_global_feedback.update.1.weight,torch.float32,"[128, 384]",49152,True
+gaussian.surface_global_feedback.update.1.bias,gaussian.surface_global_feedback.update.1.bias,torch.float32,[128],128,True
+gaussian.surface_global_feedback.update.4.weight,gaussian.surface_global_feedback.update.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_global_feedback.update.4.bias,gaussian.surface_global_feedback.update.4.bias,torch.float32,[128],128,True
+gaussian.surface_global_feedback.norm.weight,gaussian.surface_global_feedback.norm.weight,torch.float32,[128],128,True
+gaussian.surface_global_feedback.norm.bias,gaussian.surface_global_feedback.norm.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.assignment.0.weight,gaussian.surface_patch_cluster.assignment.0.weight,torch.float32,[265],265,True
+gaussian.surface_patch_cluster.assignment.0.bias,gaussian.surface_patch_cluster.assignment.0.bias,torch.float32,[265],265,True
+gaussian.surface_patch_cluster.assignment.1.weight,gaussian.surface_patch_cluster.assignment.1.weight,torch.float32,"[128, 265]",33920,True
+gaussian.surface_patch_cluster.assignment.1.bias,gaussian.surface_patch_cluster.assignment.1.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.assignment.4.weight,gaussian.surface_patch_cluster.assignment.4.weight,torch.float32,"[32, 128]",4096,True
+gaussian.surface_patch_cluster.assignment.4.bias,gaussian.surface_patch_cluster.assignment.4.bias,torch.float32,[32],32,True
+gaussian.surface_patch_cluster.patch_token.0.weight,gaussian.surface_patch_cluster.patch_token.0.weight,torch.float32,[141],141,True
+gaussian.surface_patch_cluster.patch_token.0.bias,gaussian.surface_patch_cluster.patch_token.0.bias,torch.float32,[141],141,True
+gaussian.surface_patch_cluster.patch_token.1.weight,gaussian.surface_patch_cluster.patch_token.1.weight,torch.float32,"[128, 141]",18048,True
+gaussian.surface_patch_cluster.patch_token.1.bias,gaussian.surface_patch_cluster.patch_token.1.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.patch_token.4.weight,gaussian.surface_patch_cluster.patch_token.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_patch_cluster.patch_token.4.bias,gaussian.surface_patch_cluster.patch_token.4.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.patch_importance.0.weight,gaussian.surface_patch_cluster.patch_importance.0.weight,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.patch_importance.0.bias,gaussian.surface_patch_cluster.patch_importance.0.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.patch_importance.1.weight,gaussian.surface_patch_cluster.patch_importance.1.weight,torch.float32,"[64, 128]",8192,True
+gaussian.surface_patch_cluster.patch_importance.1.bias,gaussian.surface_patch_cluster.patch_importance.1.bias,torch.float32,[64],64,True
+gaussian.surface_patch_cluster.patch_importance.4.weight,gaussian.surface_patch_cluster.patch_importance.4.weight,torch.float32,"[1, 64]",64,True
+gaussian.surface_patch_cluster.patch_importance.4.bias,gaussian.surface_patch_cluster.patch_importance.4.bias,torch.float32,[1],1,True
+gaussian.surface_patch_cluster.patch_self_attn.in_proj_weight,gaussian.surface_patch_cluster.patch_self_attn.in_proj_weight,torch.float32,"[384, 128]",49152,True
+gaussian.surface_patch_cluster.patch_self_attn.in_proj_bias,gaussian.surface_patch_cluster.patch_self_attn.in_proj_bias,torch.float32,[384],384,True
+gaussian.surface_patch_cluster.patch_self_attn.out_proj.weight,gaussian.surface_patch_cluster.patch_self_attn.out_proj.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_patch_cluster.patch_self_attn.out_proj.bias,gaussian.surface_patch_cluster.patch_self_attn.out_proj.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.residue_patch_attn.in_proj_weight,gaussian.surface_patch_cluster.residue_patch_attn.in_proj_weight,torch.float32,"[384, 128]",49152,True
+gaussian.surface_patch_cluster.residue_patch_attn.in_proj_bias,gaussian.surface_patch_cluster.residue_patch_attn.in_proj_bias,torch.float32,[384],384,True
+gaussian.surface_patch_cluster.residue_patch_attn.out_proj.weight,gaussian.surface_patch_cluster.residue_patch_attn.out_proj.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_patch_cluster.residue_patch_attn.out_proj.bias,gaussian.surface_patch_cluster.residue_patch_attn.out_proj.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.patch_norm.weight,gaussian.surface_patch_cluster.patch_norm.weight,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.patch_norm.bias,gaussian.surface_patch_cluster.patch_norm.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.residue_gate.0.weight,gaussian.surface_patch_cluster.residue_gate.0.weight,torch.float32,[256],256,True
+gaussian.surface_patch_cluster.residue_gate.0.bias,gaussian.surface_patch_cluster.residue_gate.0.bias,torch.float32,[256],256,True
+gaussian.surface_patch_cluster.residue_gate.1.weight,gaussian.surface_patch_cluster.residue_gate.1.weight,torch.float32,"[128, 256]",32768,True
+gaussian.surface_patch_cluster.residue_gate.1.bias,gaussian.surface_patch_cluster.residue_gate.1.bias,torch.float32,[128],128,True
+gaussian.surface_patch_cluster.residue_gate.4.weight,gaussian.surface_patch_cluster.residue_gate.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.surface_patch_cluster.residue_gate.4.bias,gaussian.surface_patch_cluster.residue_gate.4.bias,torch.float32,[128],128,True
+gaussian.pair_gaussian.pair_proj.0.weight,gaussian.pair_gaussian.pair_proj.0.weight,torch.float32,[518],518,True
+gaussian.pair_gaussian.pair_proj.0.bias,gaussian.pair_gaussian.pair_proj.0.bias,torch.float32,[518],518,True
+gaussian.pair_gaussian.pair_proj.1.weight,gaussian.pair_gaussian.pair_proj.1.weight,torch.float32,"[128, 518]",66304,True
+gaussian.pair_gaussian.pair_proj.1.bias,gaussian.pair_gaussian.pair_proj.1.bias,torch.float32,[128],128,True
+gaussian.pair_gaussian.pair_proj.4.weight,gaussian.pair_gaussian.pair_proj.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.pair_gaussian.pair_proj.4.bias,gaussian.pair_gaussian.pair_proj.4.bias,torch.float32,[128],128,True
+gaussian.pair_gaussian.gate.0.weight,gaussian.pair_gaussian.gate.0.weight,torch.float32,[134],134,True
+gaussian.pair_gaussian.gate.0.bias,gaussian.pair_gaussian.gate.0.bias,torch.float32,[134],134,True
+gaussian.pair_gaussian.gate.1.weight,gaussian.pair_gaussian.gate.1.weight,torch.float32,"[128, 134]",17152,True
+gaussian.pair_gaussian.gate.1.bias,gaussian.pair_gaussian.gate.1.bias,torch.float32,[128],128,True
+gaussian.pair_gaussian.gate.4.weight,gaussian.pair_gaussian.gate.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.pair_gaussian.gate.4.bias,gaussian.pair_gaussian.gate.4.bias,torch.float32,[128],128,True
+gaussian.pair_gaussian.rho_proj.0.weight,gaussian.pair_gaussian.rho_proj.0.weight,torch.float32,[518],518,True
+gaussian.pair_gaussian.rho_proj.0.bias,gaussian.pair_gaussian.rho_proj.0.bias,torch.float32,[518],518,True
+gaussian.pair_gaussian.rho_proj.1.weight,gaussian.pair_gaussian.rho_proj.1.weight,torch.float32,"[128, 518]",66304,True
+gaussian.pair_gaussian.rho_proj.1.bias,gaussian.pair_gaussian.rho_proj.1.bias,torch.float32,[128],128,True
+gaussian.pair_gaussian.rho_proj.4.weight,gaussian.pair_gaussian.rho_proj.4.weight,torch.float32,"[3, 128]",384,True
+gaussian.pair_gaussian.rho_proj.4.bias,gaussian.pair_gaussian.rho_proj.4.bias,torch.float32,[3],3,True
+gaussian.pair_gaussian.norm.weight,gaussian.pair_gaussian.norm.weight,torch.float32,[128],128,True
+gaussian.pair_gaussian.norm.bias,gaussian.pair_gaussian.norm.bias,torch.float32,[128],128,True
+gaussian.same_level_fusion.0.weight,gaussian.same_level_fusion.0.weight,torch.float32,[256],256,True
+gaussian.same_level_fusion.0.bias,gaussian.same_level_fusion.0.bias,torch.float32,[256],256,True
+gaussian.same_level_fusion.1.weight,gaussian.same_level_fusion.1.weight,torch.float32,"[128, 256]",32768,True
+gaussian.same_level_fusion.1.bias,gaussian.same_level_fusion.1.bias,torch.float32,[128],128,True
+gaussian.same_level_fusion.4.weight,gaussian.same_level_fusion.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.same_level_fusion.4.bias,gaussian.same_level_fusion.4.bias,torch.float32,[128],128,True
+gaussian.core_residue_update.0.weight,gaussian.core_residue_update.0.weight,torch.float32,[256],256,True
+gaussian.core_residue_update.0.bias,gaussian.core_residue_update.0.bias,torch.float32,[256],256,True
+gaussian.core_residue_update.1.weight,gaussian.core_residue_update.1.weight,torch.float32,"[128, 256]",32768,True
+gaussian.core_residue_update.1.bias,gaussian.core_residue_update.1.bias,torch.float32,[128],128,True
+gaussian.core_residue_update.4.weight,gaussian.core_residue_update.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.core_residue_update.4.bias,gaussian.core_residue_update.4.bias,torch.float32,[128],128,True
+gaussian.core_residue_gate.0.weight,gaussian.core_residue_gate.0.weight,torch.float32,[256],256,True
+gaussian.core_residue_gate.0.bias,gaussian.core_residue_gate.0.bias,torch.float32,[256],256,True
+gaussian.core_residue_gate.1.weight,gaussian.core_residue_gate.1.weight,torch.float32,"[128, 256]",32768,True
+gaussian.core_residue_gate.1.bias,gaussian.core_residue_gate.1.bias,torch.float32,[128],128,True
+gaussian.core_residue_gate.4.weight,gaussian.core_residue_gate.4.weight,torch.float32,"[128, 128]",16384,True
+gaussian.core_residue_gate.4.bias,gaussian.core_residue_gate.4.bias,torch.float32,[128],128,True
+gaussian.core_norm.weight,gaussian.core_norm.weight,torch.float32,[128],128,True
+gaussian.core_norm.bias,gaussian.core_norm.bias,torch.float32,[128],128,True
+gaussian.residue_input_norm.weight,gaussian.residue_input_norm.weight,torch.float32,[128],128,True
+gaussian.residue_input_norm.bias,gaussian.residue_input_norm.bias,torch.float32,[128],128,True
+protein_output_head.0.weight,protein_output_head.0.weight,torch.float32,[128],128,True
+protein_output_head.0.bias,protein_output_head.0.bias,torch.float32,[128],128,True
+protein_output_head.1.weight,protein_output_head.1.weight,torch.float32,"[128, 128]",16384,True
+protein_output_head.1.bias,protein_output_head.1.bias,torch.float32,[128],128,True
+protein_output_head.4.weight,protein_output_head.4.weight,torch.float32,"[128, 128]",16384,True
+protein_output_head.4.bias,protein_output_head.4.bias,torch.float32,[128],128,True
+protein_output_head.7.weight,protein_output_head.7.weight,torch.float32,"[5, 128]",640,True
+protein_output_head.7.bias,protein_output_head.7.bias,torch.float32,[5],5,True

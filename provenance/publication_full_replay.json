@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "data_scope": "complete_server_dataset",
+  "experiments": {
+    "AlloBench": {
+      "rows": 2165560,
+      "maximum_error": 0.0
+    },
+    "AM": {
+      "rows": 18010,
+      "maximum_error": 0.0
+    },
+    "AlloBench_to_AM": {
+      "rows": 18010,
+      "maximum_error": 0.0
+    },
+    "AlloBench_to_ASBench": {
+      "rows": 878320,
+      "maximum_error": 0.0
+    },
+    "AlloBench_to_PASSer_ASD_source": {
+      "rows": 1458700,
+      "maximum_error": 0.0
+    },
+    "AlloBench_to_CASBench": {
+      "rows": 356190,
+      "maximum_error": 0.0
+    },
+    "AlloBench_to_ASD_AlloPPI": {
+      "rows": 125090,
+      "maximum_error": 0.0
+    }
+  }
+}

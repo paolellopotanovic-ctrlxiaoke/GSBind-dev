@@ -1,0 +1,26 @@
+[
+  {
+    "uniprot": "P00519",
+    "condition": "baseline",
+    "hidden_max_difference": 0.0,
+    "logit_max_difference": 0.0
+  },
+  {
+    "uniprot": "P00519",
+    "condition": "S_retain00",
+    "hidden_max_difference": 0.0,
+    "logit_max_difference": 0.0
+  },
+  {
+    "uniprot": "P0A7F3",
+    "condition": "baseline",
+    "hidden_max_difference": 0.0,
+    "logit_max_difference": 0.0
+  },
+  {
+    "uniprot": "P0A7F3",
+    "condition": "S_retain00",
+    "hidden_max_difference": 0.0,
+    "logit_max_difference": 0.0
+  }
+]

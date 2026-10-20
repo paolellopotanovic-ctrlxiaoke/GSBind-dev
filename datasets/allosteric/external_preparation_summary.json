@@ -1,0 +1,22 @@
+{
+  "registered_asbench_records": 235,
+  "registered_passer_source_records": 1914,
+  "registered_alloppi_records": 50,
+  "requested_additional_structures": 104,
+  "available_additional_structures": 68,
+  "mapped": {
+    "ASBench": {
+      "records": 192,
+      "proteins": 168
+    },
+    "ASD_AlloPPI": {
+      "records": 12,
+      "proteins": 9
+    },
+    "PASSer_ASD_source": {
+      "records": 1371,
+      "proteins": 288
+    }
+  },
+  "passer_prepared_pocket_dataset": "downloaded numeric pocket features/labels lack protein identity mapping; not misrepresented as residue benchmark; PASSer_ASD_source is an explicitly reconstructed source cohort"
+}

@@ -1,0 +1,22 @@
+{
+  "sources": {
+    "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/gaussian-direct128/work/gsbind_surface_pathway_unified_20261019/analyze_ssm_score_task.py": "f366bc94d1f734d5405f2852c56b3f1af6237f687b47cb814d57c80ee64ac584",
+    "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/cao_nature_binder_af2_m4_downstream_remote_mirror/analysis/ssm220_model_comparison_v1/ssm220_model_residue_table.csv": "7f77addbade8ede4dc29c534a7fe0a0f345179660086131e4f2afe1e681ed023",
+    "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/M4-Gaussian-PPBS/work/ssm_raw_measurement_audit_20261017/all236_interval_residues.csv": "0f63399bb5d0370052f2de096dc566e46be747ab10c170a3b928ce908e073499",
+    "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/cao_nature_binder_af2_m4_downstream_remote_mirror/m4_predictions/pesto_gaussian_direct128_non_test_e11_ssm220_gaussian_export_latentfix/residue_predictions.csv": "f46b78664ce2e884bc929e8e3a4cc5e6610e2bb7076f15d2daae9e08b471e9e2",
+    "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/M4-Gaussian-PPBS/work/frozen_allosteric_direction_functional_20261017/ssm_evaluation_atlas.csv": "6897b939fface71e892779359101d827acdcfea37ce96cd7bc3641fca16bc898"
+  },
+  "task": "Original binding score ranking of SSM positions, distinct from frozen low-score hidden readout",
+  "endpoints": [
+    "is_direct_interface",
+    "sensitive_ge_1",
+    "sensitive_ge_2",
+    "primary18_label",
+    "relaxed1_label"
+  ],
+  "regions": "all,noninterface,baseline_high,baseline_low; original baseline population fixed under every intervention",
+  "bootstrap": 10000,
+  "sign_flip": 2000,
+  "q": "BH across all generated comparisons within each metric",
+  "warning": "Legacy center labels retained only to reproduce historical estimates; interval-supported labels separately evaluated; unknown not negative."
+}

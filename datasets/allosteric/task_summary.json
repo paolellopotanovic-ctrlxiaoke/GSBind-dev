@@ -1,0 +1,34 @@
+{
+  "ASBench": {
+    "proteins": 168,
+    "positions": 87832,
+    "positives": 2989
+  },
+  "ASD_AlloPPI": {
+    "proteins": 21,
+    "positions": 12509,
+    "positives": 236
+  },
+  "PASSer_ASD_source": {
+    "proteins": 288,
+    "positions": 145870,
+    "positives": 4774
+  },
+  "AlloBench": {
+    "proteins": 383,
+    "positions": 216556,
+    "positives": 7409,
+    "components": 282
+  },
+  "AM": {
+    "proteins": 127,
+    "positions": 1801,
+    "positives": 839,
+    "components": 112
+  },
+  "CASBench": {
+    "proteins": 70,
+    "positions": 35619,
+    "positives": 1252
+  }
+}

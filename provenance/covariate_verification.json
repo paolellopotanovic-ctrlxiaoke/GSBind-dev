@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "maximum_errors": {
+    "relative_sasa": 0.0,
+    "residue_plddt": 0.0,
+    "dssp_helix": 0.0,
+    "dssp_strand": 0.0,
+    "dssp_turn": 0.0,
+    "contact_density_8A": 0.0
+  }
+}

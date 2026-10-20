@@ -1,0 +1,53 @@
+{
+  "commands": [
+    [
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/M4-Gaussian-PPBS/tools/mmseqs2_official_avx2/mmseqs/bin/mmseqs",
+      "easy-search",
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind_allostery_v2_20261020/homology/query.fasta",
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind_allostery_v2_20261020/homology/query.fasta",
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind_allostery_v2_20261020/homology/query_hits.tsv",
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind_allostery_v2_20261020/homology/tmp_query",
+      "--min-seq-id",
+      "0.30",
+      "-c",
+      "0.0",
+      "--cov-mode",
+      "0",
+      "-s",
+      "7.5",
+      "--max-seqs",
+      "100000",
+      "--threads",
+      "6",
+      "--format-output",
+      "query,target,fident,qcov,tcov,evalue,bits"
+    ],
+    [
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/M4-Gaussian-PPBS/tools/mmseqs2_official_avx2/mmseqs/bin/mmseqs",
+      "easy-search",
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind_allostery_v2_20261020/homology/query.fasta",
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/gaussian-direct128/work/datasets11_information_increment_20261019/homology/e11_training.fasta",
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind_allostery_v2_20261020/homology/e11_hits.tsv",
+      "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind_allostery_v2_20261020/homology/tmp_e11",
+      "--min-seq-id",
+      "0.30",
+      "-c",
+      "0.0",
+      "--cov-mode",
+      "0",
+      "-s",
+      "7.5",
+      "--max-seqs",
+      "100000",
+      "--threads",
+      "6",
+      "--format-output",
+      "query,target,fident,qcov,tcov,evalue,bits"
+    ]
+  ],
+  "proteins": 504,
+  "components": 368,
+  "identity": 0.3,
+  "qcov": 0.8,
+  "tcov": 0.8
+}

@@ -1,0 +1,9 @@
+{
+  "requested_proteins": 457,
+  "available_structures": 436,
+  "raw_allobench_proteins": 430,
+  "mapped_allobench_proteins": 379,
+  "mapped_records": 1671,
+  "registered_records": 2257,
+  "mutation_proteins": 128
+}

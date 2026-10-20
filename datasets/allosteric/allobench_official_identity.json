@@ -1,0 +1,10 @@
+{
+  "local_sha256": "89d5a5971007cf14f50f874d952756ac0745d32af67e39c04bdb0105f2900acd",
+  "official_sha256": "89d5a5971007cf14f50f874d952756ac0745d32af67e39c04bdb0105f2900acd",
+  "identical": true,
+  "official_source": "https://github.com/djmaity/allobench",
+  "current_snapshot_proteins": 430,
+  "current_snapshot_records": 2257,
+  "published_2025_paper_proteins": 418,
+  "published_2025_paper_records": 2141
+}

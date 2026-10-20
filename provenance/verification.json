@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "manifests": [
+    {
+      "manifest": "main/train.csv",
+      "cases": 20801
+    },
+    {
+      "manifest": "main/holo_test.csv",
+      "cases": 988
+    },
+    {
+      "manifest": "main/apo_af2_test.csv",
+      "cases": 874
+    },
+    {
+      "manifest": "allosteric/input_manifest.csv",
+      "cases": 504
+    },
+    {
+      "manifest": "ssm220/manifest.csv",
+      "cases": 220
+    },
+    {
+      "manifest": "functional/manifest.csv",
+      "cases": 3
+    }
+  ],
+  "missing": [],
+  "checkpoint_sha256": "9d920481b5bf7ddd3e4b6542b2b1951b5a4683ce50f5b2392d22e7eb7945f397",
+  "symlinks": []
+}

@@ -1,0 +1,84 @@
+import argparse
+import json
+import os
+from dataclasses import replace
+from pathlib import Path
+
+
+ROOT = Path(__file__).resolve().parents[2]
+
+
+def main():
+    parser = argparse.ArgumentParser(description='GSbind E11 paper engineering and evidence')
+    parser.add_argument('--config', type=Path, default=ROOT / 'configs/main.json')
+    commands = parser.add_subparsers(dest='command', required=True)
+    for name in ['train', 'preprocess', 'infer', 'evaluate', 'show-config']:
+        commands.add_parser(name)
+    evidence = commands.add_parser('evidence')
+    evidence.add_argument('--task', choices=['all', 'main', 'allosteric', 'ssm220', 'functional'], default='all')
+    summary = commands.add_parser('summarize', help='Recompute paper metrics from public saved predictions; no model fitting')
+    summary.add_argument('--task', choices=['all', 'main', 'allosteric', 'ssm220', 'functional'], default='all')
+    summary.add_argument('--output', type=Path, default=ROOT / 'runs/public_recompute')
+    verification = commands.add_parser('verify')
+    verification.add_argument('--hashes', action='store_true')
+    commands.add_parser('figures')
+    commands.add_parser('rebuild-ssm-labels')
+    commands.add_parser('rebuild-allosteric-labels')
+    commands.add_parser('rebuild-functional-labels')
+    covariates = commands.add_parser('covariates')
+    covariates.add_argument('--manifest', type=Path, required=True)
+    covariates.add_argument('--output', type=Path, required=True)
+    probes = commands.add_parser('fit-probes')
+    probes.add_argument('--output', type=Path, default=ROOT / 'runs/refit_probes')
+    probes.add_argument('--cohort', choices=['AlloBench', 'AM', 'both'], default='both')
+    surface = commands.add_parser('surface-forward')
+    surface.add_argument('--manifest', type=Path, required=True)
+    surface.add_argument('--output', type=Path, required=True)
+    surface.add_argument('--device', default='cpu')
+    surface.add_argument('--limit', type=int, default=0)
+    args = parser.parse_args()
+    args.config = args.config.resolve()
+    if args.command in ['surface-forward', 'covariates']:
+        args.manifest = args.manifest.resolve()
+        args.output = args.output.resolve()
+    if args.command in ['fit-probes', 'summarize']:
+        args.output = args.output.resolve()
+    os.chdir(ROOT)
+    if args.command == 'summarize':
+        from .evidence import run
+        run(ROOT, args.task, output_root=args.output, saved_allosteric=True)
+    elif args.command == 'evidence':
+        from .evidence import run
+        run(ROOT, args.task)
+    elif args.command == 'verify':
+        from .verification import verify, verify_hashes
+        print(json.dumps(verify_hashes(ROOT) if args.hashes else verify(ROOT), indent=2))
+    elif args.command == 'figures':
+        from .figures import build
+        build(ROOT)
+    elif args.command == 'rebuild-ssm-labels':
+        from .labels import rebuild_ssm
+        rebuild_ssm(ROOT, ROOT / 'runs/ssm_labels')
+    elif args.command == 'rebuild-allosteric-labels':
+        from .labels import rebuild_allosteric
+        rebuild_allosteric(ROOT, ROOT / 'runs/allosteric_labels')
+    elif args.command == 'rebuild-functional-labels':
+        from .labels import rebuild_functional
+        rebuild_functional(ROOT, ROOT / 'runs/functional_labels')
+    elif args.command == 'covariates':
+        from .covariates import rebuild
+        rebuild(ROOT, args.manifest, args.output)
+    elif args.command == 'fit-probes':
+        from .probe_training import fit
+        fit(ROOT, args.output, args.cohort)
+    elif args.command == 'surface-forward':
+        from .forward import run
+        run(ROOT, args.manifest, args.output, args.device, args.limit)
+    else:
+        from gaussian_direct.app import GaussianDirectApp
+        from gaussian_direct.config import ExperimentConfig
+        config = ExperimentConfig.from_file(args.config)
+        if args.command == 'show-config':
+            print(json.dumps(config.to_dict(), indent=2))
+        else:
+            getattr(GaussianDirectApp(config), args.command)()

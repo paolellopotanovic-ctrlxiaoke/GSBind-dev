@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "aligned_experimental_rows": 1656,
+  "source_substitutions_kras": 18956,
+  "source_substitutions_src": 10222,
+  "function_max_error": 4.440892098500626e-16,
+  "stability_max_error": 4.440892098500626e-16
+}

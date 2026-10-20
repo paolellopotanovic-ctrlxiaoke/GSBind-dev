@@ -1,2 +1,1 @@
-examples/inference/*.pdb -text -whitespace
-src/m4/legacy_repo/** -text -whitespace
+* -text

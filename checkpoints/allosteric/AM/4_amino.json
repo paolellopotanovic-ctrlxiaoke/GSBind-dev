@@ -1,0 +1,8 @@
+{
+  "fold": 4,
+  "design": "amino",
+  "C": 0.1,
+  "threshold": 0.46382770834727277,
+  "inner_component_ap": 0.6366177616356486,
+  "features": 20
+}

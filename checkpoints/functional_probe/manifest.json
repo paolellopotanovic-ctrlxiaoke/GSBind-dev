@@ -1,0 +1,778 @@
+{
+  "schema_version": 1,
+  "bundle_id": "full_hidden_allobench_probe_v1_20261017",
+  "frozen_on": "2026-10-17",
+  "checkpoint_sha256": "45641b561ac3df690e58328dc5d6daa856ca53a20c13771f6956a387d8f501a4",
+  "checkpoint_modified": false,
+  "new_model_fits": 0,
+  "endpoint": "annotated_allosteric_ligand_site_not_mutational_allostery_or_binding_stability",
+  "new_protein_rule": "arithmetic_mean_of_five_frozen_sigmoid_outputs",
+  "historical_rule": "registered_component_heldout_fold_only_not_ensemble",
+  "ranking_budget_fraction": 0.1,
+  "binary_biochemical_threshold": null,
+  "scores_are_not_calibrated_biochemical_probabilities": true,
+  "post_freeze_independent_validation_completed": false,
+  "historical_oof_is_not_validation_of_the_new_protein_ensemble": true,
+  "checkpoint_training_homology_cleanliness_not_established": true,
+  "new_protein_homology_audit_required_separately": true,
+  "input_contract": {
+    "hidden": "Gaussian-updated last_fused residue-surface representation",
+    "hidden_dtype": "float32",
+    "hidden_dimensions": 128,
+    "require_complete_input_proteins": true,
+    "score_cutoff": 0.5,
+    "centering": "pandas_float32_group_mean_over_all_score_lt_0.5_residues_per_case_then_float32_subtraction",
+    "basic_scalar_order": [
+      "score",
+      "relative_sasa",
+      "residue_plddt",
+      "contact_density_8A",
+      "dssp_helix",
+      "dssp_strand",
+      "dssp_turn"
+    ],
+    "amino_acid_order": [
+      "A",
+      "R",
+      "N",
+      "D",
+      "C",
+      "Q",
+      "E",
+      "G",
+      "H",
+      "I",
+      "L",
+      "K",
+      "M",
+      "F",
+      "P",
+      "S",
+      "T",
+      "W",
+      "Y",
+      "V"
+    ],
+    "packing": "number_of_other_CA_atoms_with_distance_le_8_angstrom",
+    "dssp_helix": "H,I,G",
+    "dssp_strand": "E,B",
+    "dssp_turn": "T,S",
+    "true_interface_distance_or_function_labels_used_at_inference": false
+  },
+  "historical_membership": [
+    {
+      "case_id": "allobench_A0A0H3ADR8",
+      "sequence_sha256": "36dc46324efbd2f1a729cb1aa63eb01c890c88685aa64dac6f0bdff92a75688a",
+      "cluster_rep": "allobench_A0A0H3ADR8",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_A0A0J9WZA6",
+      "sequence_sha256": "0b57b9c903b48fd639c2354e6835925e112f576df7623c9f6746b827eaa5fcae",
+      "cluster_rep": "allobench_A0A0J9WZA6",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_A0A0S4VB05",
+      "sequence_sha256": "83948aad3519f69a3a680349781f7cb78a7eea74463db7d1c93f04314f102b6c",
+      "cluster_rep": "allobench_A0A0S4VB05",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_A0A0X1KGP2",
+      "sequence_sha256": "a9265d8cc515217e26242c2ce32c910939da3660960557f5c2f41566b4887c7e",
+      "cluster_rep": "allobench_A0A0X1KGP2",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_A0A6L7HKK4",
+      "sequence_sha256": "c359dbb2b86cda4741fd4901197aed32f95c17948e6be91327191673f5f543c7",
+      "cluster_rep": "allobench_A0A6L7HKK4",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_A3XHF9",
+      "sequence_sha256": "c8d4c723a76aee7c3354270957b660cb1f0f50c2b716d45e3338ba597f50a55b",
+      "cluster_rep": "allobench_A3XHF9",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_A8EVM5",
+      "sequence_sha256": "0bcb5b396742b1da53096ab82f4abe95574b8abfccac92c6d0cbecee47117a11",
+      "cluster_rep": "allobench_A8EVM5",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_D0CFC3",
+      "sequence_sha256": "6fc8fc5cc697426a4d38a20027e6f609339024995fda7d26705110be109f7eb0",
+      "cluster_rep": "allobench_D0CFC3",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_D5KM69",
+      "sequence_sha256": "421efb460115a7b279a08d9749d6ef69036b03b9bfaf22584026c17b6e5c20db",
+      "cluster_rep": "allobench_D5KM69",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_E8ME30",
+      "sequence_sha256": "1e18e456904e85638ce41f3d70c0e965328c779d40f5d5c36dfd1f6c02b47dac",
+      "cluster_rep": "allobench_E8ME30",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_G7JFL4",
+      "sequence_sha256": "0222250619238a2ca4b3b6f4b5ac2e6ad2fd62e70dd35b3654e218f7db317039",
+      "cluster_rep": "allobench_G7JFL4",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_H7C677",
+      "sequence_sha256": "3b45998858e91db262613eec820b6fd30dd4cbd54a93e92dca751873c76be923",
+      "cluster_rep": "allobench_H7C677",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_I6YFP0",
+      "sequence_sha256": "d03e72dda9823b817d1f46412f3cdb7330d7847621dbbb03201048178cc4e630",
+      "cluster_rep": "allobench_I6YFP0",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_L8A208",
+      "sequence_sha256": "77d522024985a387b8fd726c8d710ea5364ce551a74d320a18fbed98f98d1ed3",
+      "cluster_rep": "allobench_L8A208",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_O00757",
+      "sequence_sha256": "a3e896f56d41e838ddd05e758b545f994008076870cbed9db4719a63d2fb745e",
+      "cluster_rep": "allobench_O00757",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_O05581",
+      "sequence_sha256": "2e8325a080ebdb1af708e2404089ecded00412cc30dc5dbec3f239d4fa48592d",
+      "cluster_rep": "allobench_O05581",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_O14965",
+      "sequence_sha256": "7192d652f813d4d86f957b1edb7729c8adb429515fb591d7f4c6937a9d54dec2",
+      "cluster_rep": "allobench_O14965",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_O25926",
+      "sequence_sha256": "289f9912f0b9da0ac032a6639f12ca25fa9716b5b2360eec5e310bbbf31f792d",
+      "cluster_rep": "allobench_O25926",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_O31611",
+      "sequence_sha256": "2cb4d90e4ad9c3568693152f54544c4b533f8041c9e153d8d5d5c41d0f5a8e89",
+      "cluster_rep": "allobench_O31611",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_O57883",
+      "sequence_sha256": "88842365a1a7f210cec661030a32fa9917836bb34ef0a565f946764d14a451b4",
+      "cluster_rep": "allobench_O57883",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_O57946",
+      "sequence_sha256": "94f2faed719d9cb0b4436bbf68147478230a928c998863ea9e48e9f17a53b25a",
+      "cluster_rep": "allobench_O57946",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_O60547",
+      "sequence_sha256": "44e395f9b41eb651862628fc933e70eec3bad31789884a36637cdf614850b254",
+      "cluster_rep": "allobench_O60547",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_O73948",
+      "sequence_sha256": "56f7d5a8a15ed0d50bf16aeef74e2b6fc677018aae31362adde8a29222d5ffb3",
+      "cluster_rep": "allobench_O73948",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_O75874",
+      "sequence_sha256": "5c99fe8bf1991cd76f6c3552589adbbf6067dea9f85a4be30a041aed43113415",
+      "cluster_rep": "allobench_O75874",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_O93430",
+      "sequence_sha256": "1828be894d6145618a5c09a3b9112cec99a41eb18288a037f8c2f06c8f1fc008",
+      "cluster_rep": "allobench_O93430",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_O97193",
+      "sequence_sha256": "ee2f39226b0b1c64c2dd9e452fa9eb2fb739375fbba5ae47a0d8f1d23d9a8fbe",
+      "cluster_rep": "allobench_O00757",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P00512",
+      "sequence_sha256": "75c3fb2936faf9964529794b26d66843133fd556a17c070ed8d69bf1622ed6da",
+      "cluster_rep": "allobench_P00512",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P00514",
+      "sequence_sha256": "8a729fc3df454bbc8d44c4f87d81baae1fb1572c396ee48df132a9dce0cccb99",
+      "cluster_rep": "allobench_P00514",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P01111",
+      "sequence_sha256": "89016168d82568aa2caa97166c99ff0b61c6fb19d5729272a7e3f03ab26ce518",
+      "cluster_rep": "allobench_P01111",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P01112",
+      "sequence_sha256": "d9360238882c010c8474ef1eba1d2532cd96e706c7d7f689ea2014f37f8f886c",
+      "cluster_rep": "allobench_P01111",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P01958",
+      "sequence_sha256": "34f72a94ef098425806170a58469300c30d6ac8d2afca5a4533275a7918b7c56",
+      "cluster_rep": "allobench_P01958",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P02766",
+      "sequence_sha256": "53ef846fd8d80a7ff20d41bc55ff0f5213a732e1c5471cfc2206e39be8fdd0c1",
+      "cluster_rep": "allobench_P02766",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P04818",
+      "sequence_sha256": "d4978a79f2cd2a7fa529c8632ede803a9632661f71146ce517d787c3dc5aebdd",
+      "cluster_rep": "allobench_P04818",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P05132",
+      "sequence_sha256": "09790ca752b2c4d89d139f9aed5ae97351dcf32149a9e6a065260be51c045776",
+      "cluster_rep": "allobench_P05132",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P06709",
+      "sequence_sha256": "d48d98649de9755382aee47937e82df9878efe73834ef57606a839407b3759c8",
+      "cluster_rep": "allobench_P06709",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P06730",
+      "sequence_sha256": "157e57336ec87f9f746263022cafc4b988e9ebaf633e0d9724b5dc5e14d7c49b",
+      "cluster_rep": "allobench_P06730",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P07278",
+      "sequence_sha256": "e0f2a5659850ad87eb7ee26bc639edcdbc1fea6263999db677c70ae8d768eefa",
+      "cluster_rep": "allobench_P07278",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P09467",
+      "sequence_sha256": "11ca4f69548f1002574e0f6194d21a68c80a53fa9216ae4d86e9631ad37cb6c0",
+      "cluster_rep": "allobench_O00757",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P0A183",
+      "sequence_sha256": "7133a5908785dd03d9cc0f59e44d3051d71425adadf248095974926ab5d862ad",
+      "cluster_rep": "allobench_P0A183",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P0A434",
+      "sequence_sha256": "9d1278b38575c3f1a16a62725fe17a7ffef89237170c7d531862d63d7f4ab501",
+      "cluster_rep": "allobench_P0A434",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P0A6H1",
+      "sequence_sha256": "93bb1d834247867a19bf4a3c048f9ccddbb9cdd7043298466ad734af401b0981",
+      "cluster_rep": "allobench_O25926",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P0A6L2",
+      "sequence_sha256": "0bce3fd79a982684b8d419fd1cde86994d086490a61928430ffe1c134192d731",
+      "cluster_rep": "allobench_D0CFC3",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_P0A6V1",
+      "sequence_sha256": "72c75b9172cc1cbfcb1a121145f6db9459cc77cdad2e9ff2d64638517675b7bf",
+      "cluster_rep": "allobench_P0A6V1",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P0A759",
+      "sequence_sha256": "914386341353c57fdbd8947086accf3a0ecb3265f2afbbcd1f629430eb721f80",
+      "cluster_rep": "allobench_P0A759",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_P0A7F3",
+      "sequence_sha256": "51b5deb3b14f375444b391a038aa2cdbfa0ea7ba6446b284420bb8f68af4f8bd",
+      "cluster_rep": "allobench_P0A7F3",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_P0A8V6",
+      "sequence_sha256": "b2b863f0e4031b6e1e52a4f310efd18c09b543dfa1103f46a8683212250fdf6b",
+      "cluster_rep": "allobench_P0A8V6",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P0A993",
+      "sequence_sha256": "f1a62da4898125d12cbdebe541bfed0095ae4e8f83743b0663c33424d9ce8957",
+      "cluster_rep": "allobench_O00757",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P0A9G4",
+      "sequence_sha256": "2ecacd449549a459edf5e00c7f899d0598044b820815300231e82c70072fbcd5",
+      "cluster_rep": "allobench_P0A9G4",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P0ABQ4",
+      "sequence_sha256": "e193a4b689d70ba3b38c9f812a9b212e4ec24cec07f6c90f0600341c8b0c77f5",
+      "cluster_rep": "allobench_P0ABQ4",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P0ACP7",
+      "sequence_sha256": "eeccdc5fe1b7538eebab8c4a2dd3fc40f231090b4046fa4f38b95afbaa5f3b78",
+      "cluster_rep": "allobench_P0ACP7",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P0AEE3",
+      "sequence_sha256": "f7a42229147d2a5f00a80429d9391cf9f9e235c6402159c8981660a3ec819299",
+      "cluster_rep": "allobench_P0AEE3",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P0CW58",
+      "sequence_sha256": "a14585d7491399d513ef2f23d34e1534d611061a95ae656a129a596f14d8ce94",
+      "cluster_rep": "allobench_O73948",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_P0DP23",
+      "sequence_sha256": "4a9f2f38a0afe61f9cd35d05788764536c1b394551a521687d0e537ad2760ff5",
+      "cluster_rep": "allobench_P0DP23",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P0DP33",
+      "sequence_sha256": "4a9f2f38a0afe61f9cd35d05788764536c1b394551a521687d0e537ad2760ff5",
+      "cluster_rep": "allobench_P0DP23",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P13491",
+      "sequence_sha256": "b124efcdd5dea07737bccff8842dc8dfb744f3f4a114abe61616b57a159599ac",
+      "cluster_rep": "allobench_E8ME30",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P14324",
+      "sequence_sha256": "265d3e283924e8ac4ea8bc436c687772d97f9703fd677b466a605ac7f1a560d7",
+      "cluster_rep": "allobench_P14324",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P20171",
+      "sequence_sha256": "d9360238882c010c8474ef1eba1d2532cd96e706c7d7f689ea2014f37f8f886c",
+      "cluster_rep": "allobench_P01111",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P21457",
+      "sequence_sha256": "6ad8c540bf2edafcca10c1b90ea3c1a4aa6d9b6a7aa334b22daba3434619aed3",
+      "cluster_rep": "allobench_P21457",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P22634",
+      "sequence_sha256": "e48832aa7932c706ce42658858824357449e96a339f30586dce9339ef8c02940",
+      "cluster_rep": "allobench_P22634",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P24941",
+      "sequence_sha256": "fe22d91e18cd544a85d7c768cd864172200252df906b774d890dc103224f7c8d",
+      "cluster_rep": "allobench_P24941",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P29274",
+      "sequence_sha256": "d1707e447ac7d7fcd10f6f1c1e61754460b8f5e206eedc0ba64747cd49b733f2",
+      "cluster_rep": "allobench_P29274",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P31129",
+      "sequence_sha256": "2a60d3e379f105afeeb4e18d99d056dd46bbe97ea6c1b794751d4889a3b4e1a5",
+      "cluster_rep": "allobench_P31129",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P31153",
+      "sequence_sha256": "6536bd18f0366739cbf66393cb67bb3ea93be03aea2e459cc63002e0c85da50e",
+      "cluster_rep": "allobench_P31153",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_P32178",
+      "sequence_sha256": "2a597422a88e6b05f6175ddd66bd472847e855c770e01465353857ea9de6b6b1",
+      "cluster_rep": "allobench_P32178",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P38501",
+      "sequence_sha256": "ba8ed6da3faa74f3a1a91eed67788b139ca067200eb65a6d6ce4e8260d509472",
+      "cluster_rep": "allobench_P38501",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_P39669",
+      "sequence_sha256": "060453fabc3dfd0cfbff42d1548d1136bc325d47313ef40e6f81b20c482c3417",
+      "cluster_rep": "allobench_P0A6V1",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P42574",
+      "sequence_sha256": "81962b47787bfaba76936dd091396e21617e3f444f9efac4085cd2ac133f56d2",
+      "cluster_rep": "allobench_P42574",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P43235",
+      "sequence_sha256": "13aade37cfa34320dabd0a767557abf7f24021728a2bdf4e9e605a99b86a70b2",
+      "cluster_rep": "allobench_P43235",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P51561",
+      "sequence_sha256": "cb0700ed8ab01210249c7d6fca1ecc3ce6fc2654952180124ce81719f5759e5b",
+      "cluster_rep": "allobench_P51561",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P53608",
+      "sequence_sha256": "ee6e6ec8cd494085e557d3ff828bea9228c0a8ae3c348d1b08b7d6a71f52269d",
+      "cluster_rep": "allobench_P53608",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P54619",
+      "sequence_sha256": "da6f1d4fec04fcc71b62cf6c7cbb0683151b5e29db9653e77276b8f3b27f2774",
+      "cluster_rep": "allobench_P54619",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P55222",
+      "sequence_sha256": "8ad6473f3418018c471900405ab57bc4f2419edec60d897cc58b4082fd36d016",
+      "cluster_rep": "allobench_P55222",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_P56106",
+      "sequence_sha256": "b3849197602255fc01101d5b71dbad52545db2b754ea0e835a110855a6452ae0",
+      "cluster_rep": "allobench_A0A6L7HKK4",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P56373",
+      "sequence_sha256": "0ade5cb5055eb17bde6b4f539f3f72f19246f20d8d5ee17be1f1cfac3fba4f44",
+      "cluster_rep": "allobench_P56373",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P63279",
+      "sequence_sha256": "6142db5eafe756bef6dc78c524f340e76dea6f48ae465a38a2a518c962631d47",
+      "cluster_rep": "allobench_P63279",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_P68400",
+      "sequence_sha256": "f76d4444f84e1144c3d580f7f6c2ccb02d021a741c16a909ae2a9e2bc90b32f3",
+      "cluster_rep": "allobench_P68400",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_P69681",
+      "sequence_sha256": "6aa4fc28318f7a1366c3525f070536830538333ba8d7fbc63fef20128f41a6e1",
+      "cluster_rep": "allobench_P69681",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P74766",
+      "sequence_sha256": "e0cc7c5f31236effe30e695e7e9f40912dd67a2b28c0232488f58f0f61116e5d",
+      "cluster_rep": "allobench_P0A7F3",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_P80385",
+      "sequence_sha256": "1dd3a4be326c2e27744996b6ebfeef0e4154369297d8090c09003981cd03aa46",
+      "cluster_rep": "allobench_P54619",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_P9WI55",
+      "sequence_sha256": "b9db7a702b41b067573d0c7e248bc84ca90b8f2bff0617756b9db65bc7042997",
+      "cluster_rep": "allobench_P9WI55",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_P9WQN9",
+      "sequence_sha256": "65618b9224a217b960ffca008596f0332d3abd7f06a76c71a53e457f693fe181",
+      "cluster_rep": "allobench_P9WQN9",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_Q0ASS9",
+      "sequence_sha256": "00bcbed47edc470c6ffa1b8cefa606fc002a9f417d7d1df9b4a15eeccf215331",
+      "cluster_rep": "allobench_Q0ASS9",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_Q15119",
+      "sequence_sha256": "611a141089a3c9af8250356bab8d80266a97e864664d5c69ec55f222d691bbe9",
+      "cluster_rep": "allobench_Q15119",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_Q16539",
+      "sequence_sha256": "539a4d890afc072187b18b4a970c82df0c180f5a8e93ab2442dbfe99c0aec049",
+      "cluster_rep": "allobench_P24941",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_Q2G036",
+      "sequence_sha256": "685489fc7d4d464586151c2cf01093cd1ae082c1a60d881fda35628fdf78d41f",
+      "cluster_rep": "allobench_Q2G036",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q59643",
+      "sequence_sha256": "2e429c19391b36fd7c2e393dd6029c978a78d9a167def13d770928b3b5206659",
+      "cluster_rep": "allobench_Q59643",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_Q5FAK7",
+      "sequence_sha256": "097fa87df01d0e7446561da1f3ed2b53e6cf569b83cc26079e65a0d1f3cc7496",
+      "cluster_rep": "allobench_Q5FAK7",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_Q5SHU3",
+      "sequence_sha256": "7ef1fc3c9034e7761cc3465e156e2427ad2a6c12dcaf901b30daecf11a975231",
+      "cluster_rep": "allobench_Q5SHU3",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_Q6VE93",
+      "sequence_sha256": "c781ccc89abd9b38f1dd268996a0593505f26d0fe9fbe11560514ca688c62310",
+      "cluster_rep": "allobench_Q6VE93",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q7KQK0",
+      "sequence_sha256": "b2228764ccd4c4d4173b5133f10cbbd122d4d7c3488675e507e2a230a8b839ad",
+      "cluster_rep": "allobench_Q7KQK0",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_Q836J0",
+      "sequence_sha256": "c9316230a2616584bb52b9c97f7240607ea2b2caf20bf2b4285be08e167baf74",
+      "cluster_rep": "allobench_P22634",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_Q8DSE5",
+      "sequence_sha256": "f49a52325cf5b947c3029e10418cf20e209851d600174757e8a97b6ec74374c8",
+      "cluster_rep": "allobench_Q8DSE5",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_Q8N6T7",
+      "sequence_sha256": "7fd5d2b9e2c38a655a96b3f8b84b4a048aaec9f877d23df942f455338e86448c",
+      "cluster_rep": "allobench_Q8N6T7",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q8PDA8",
+      "sequence_sha256": "6ad46852da5ee26cd5ba6e4f1828e4f4a424e86724b3893f1af29c0b7c8cb44d",
+      "cluster_rep": "allobench_Q8PDA8",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q8Y7N7",
+      "sequence_sha256": "42967342e9499edb2ac0ff3cdc9d9d9d59e68e974b0a0759f203a82fcd43dcd7",
+      "cluster_rep": "allobench_P22634",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_Q99538",
+      "sequence_sha256": "7bfacd22313d7f3098c682ba9cc70d3053f30a73e05b5b24fdefb23f723c3c09",
+      "cluster_rep": "allobench_Q99538",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_Q9FVC8",
+      "sequence_sha256": "4953d4fea7d307b63baf7e68f3e36ec2edf5d1f92f7b34b39c9fe93a4893336a",
+      "cluster_rep": "allobench_Q9FVC8",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q9HU22",
+      "sequence_sha256": "6d7c70f2a015024deaf10db91aaa082a21e9986c7bdaf15f37d205312947e502",
+      "cluster_rep": "allobench_Q9HU22",
+      "heldout_fold": 1
+    },
+    {
+      "case_id": "allobench_Q9HVB9",
+      "sequence_sha256": "17700ccfb60223e6865e7aa9aefc05e4aa0b331c2957973d6d9e7740db16ff25",
+      "cluster_rep": "allobench_Q9HVB9",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_Q9HWY4",
+      "sequence_sha256": "e6d0ff150cd5bfa541b277d0ffdbbf97a37f4131c611c7309095d281243dd909",
+      "cluster_rep": "allobench_Q9HWY4",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q9I000",
+      "sequence_sha256": "b75e182a176be086f4b4c9461ea3f29565540b0cb443a524caa16b2f5c02073a",
+      "cluster_rep": "allobench_Q9I000",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q9I4W3",
+      "sequence_sha256": "6723c5c448679b109d1048afdfa9a560e6ca7adc51a9ef7de34b11f6640b80db",
+      "cluster_rep": "allobench_D0CFC3",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q9K169",
+      "sequence_sha256": "0a65b8888ffd05d56ab16d8df44119525de58285048feeb7eab3f26e8efc7980",
+      "cluster_rep": "allobench_Q9K169",
+      "heldout_fold": 3
+    },
+    {
+      "case_id": "allobench_Q9KL03",
+      "sequence_sha256": "f3b17ee66a9313fb2692bc569fd43ca23bc65367940e23023ea10e074e032ea7",
+      "cluster_rep": "allobench_Q9KL03",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_Q9NPD8",
+      "sequence_sha256": "5adf00d7297fe32c6e47ae684fd071a2eaa51683f8ffd433dfcb18aa4c65493d",
+      "cluster_rep": "allobench_Q9NPD8",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_Q9NTG7",
+      "sequence_sha256": "f2d07041af22e226b457bf91c3076c7f7120aca41217c5054ff4709272490e29",
+      "cluster_rep": "allobench_Q9NTG7",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_Q9PPB4",
+      "sequence_sha256": "0bc0f0d16fa559f0b4ba37f18bcfa22bd204c5ccc46502e9a167378e056c68a9",
+      "cluster_rep": "allobench_D0CFC3",
+      "heldout_fold": 0
+    },
+    {
+      "case_id": "allobench_Q9SCL7",
+      "sequence_sha256": "f50adb24004f25117fc4da7c306672ec591730321c139744e15a8791da93a651",
+      "cluster_rep": "allobench_Q9SCL7",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_Q9TZZ6",
+      "sequence_sha256": "22d471dc95fbe4684fd7682b03e1848450ca3c6d193293a37d342f8a11b9e4b6",
+      "cluster_rep": "allobench_Q9TZZ6",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_Q9X2A4",
+      "sequence_sha256": "a5052017256fbc79502bd69129a96bd21a180c457cfdfcb66fd678786c8c9f22",
+      "cluster_rep": "allobench_Q9X2A4",
+      "heldout_fold": 4
+    },
+    {
+      "case_id": "allobench_Q9ZLT0",
+      "sequence_sha256": "b1a3755012c170ecc5f57659385e17a18913b438f5bfcf77ce6945dd21b81e05",
+      "cluster_rep": "allobench_P22634",
+      "heldout_fold": 2
+    },
+    {
+      "case_id": "allobench_V5TDZ4",
+      "sequence_sha256": "4ca57acde8a3d644be54d8bb94142306f7738c8af67091f4f219d54237314196",
+      "cluster_rep": "allobench_V5TDZ4",
+      "heldout_fold": 0
+    }
+  ],
+  "source_sha256": {
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold0_basic_center128.joblib": "279dd87531d9d94d8d7d9b1aa84fffd22d5f86b1c779cafe1fab3a9a00b93a28",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold0_basic_linear.joblib": "964c34d42e3af703bb18cffd7a2b5251910ef061519b3195e7b4c30adc7d00d9",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold0_score_linear.joblib": "4464e9e4c49902b35867c049f05d51fdeffc2daed636683f77d1987479018752",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold1_basic_center128.joblib": "7175334f7abc4a64823bc3ea147c1f96846b55d3550e554fa12045cf13348c7d",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold1_basic_linear.joblib": "0f7dcafd41a67b293c641af1df8bb2f8a142224859ddababe592c0a1307e9ae0",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold1_score_linear.joblib": "47aa6214b34d30b07948af323966b031bffeb4e729e255c4e7158df7a84fab52",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold2_basic_center128.joblib": "aca172bfdd24f3716d643a7363c6840d73b0b0b69d694def73dc691ca13f79cd",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold2_basic_linear.joblib": "dbec23979d0c33f17c4da8745ef4f5eac2ab4b2836891125af3fa8bc02a055ec",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold2_score_linear.joblib": "752fa2b2f3de67b9fe3199553f1a8f35f038981a50cdc61dc7b99a7488b2382b",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold3_basic_center128.joblib": "f8c44c60f0eeb5562652f18b5a1931e8c7bcdf5a66737ba40de69442023d04eb",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold3_basic_linear.joblib": "c742994d4df6b6be8290f8dc1b50e006109490c2964dbdef291843ed019a57a3",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold3_score_linear.joblib": "1e26536f063e52a58db378fd299d5e08d482d63bf75228f725036fdb36c3aa16",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold4_basic_center128.joblib": "58180b043c40262d9183e626f2406f7d2528d7e514940d3131b3f57674b63ae2",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold4_basic_linear.joblib": "c24f451caa085fcb1577aa9fda6b9e7d3324c2487dc91e0f430ba9ffff371147",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold4_score_linear.joblib": "06965af5d0a49f39476bff36f1a52b25f2a69ace4e1ae24ff5e6c45c8c14ee94",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_fold_contract.json": "fd25d2084c136c286dcde02f233f47433685e75f82048d8e151e4218beeb683d",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_train_only_selection.csv": "55b0fc007511308470a90cacfc01b2255d5311801fe9da07008465894d230ad0",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_test_predictions.csv": "1a6ae154f9c86da667ee9aa90a27554cca01ea7b17b1ea340bb4e5601fb960a8",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_low_score_atlas.csv": "135f14a74491127743207faa6434ad916d7eb003831d0772c4e817a9224cc190",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_hidden.npy": "0101221b9ea59012273a79483f1a7bf1643a0bf5b7d97e9ebf9efb64a34f7432",
+    "work/hidden_pattern_basic_controls_20261017/results/allobench_membership.csv": "bfe2a8edb6e66936b255dd9cf6bedb72fd7e182b8773aca4e892abdc14d7b30f",
+    "scripts/frozen_full_hidden_probe.py": "20ad14a07d1cfffe9ccad135dd1dc81c8db9bc4924c1e551e6ead04f1af416a5"
+  },
+  "runtime": {
+    "python": "3.10.20",
+    "numpy": "1.26.3",
+    "pandas": "2.3.3",
+    "sklearn_export_only": "1.7.2"
+  },
+  "artifact_sha256": {
+    "weights.json": "596795ecf3512fdd7289b7ad86feaf8168535f260304b6da16e09aef2668cfda",
+    "historical_membership.json": "7757aba6c5a25011df9e60a168786147d141d0b496addb7d1bd4db531ca52abc",
+    "historical_oof_replay.csv": "14aee56a0182e501578c6bd549566b5c187ed35e1bd1447033fd2fab1ff84ab7",
+    "example_complete_residues.csv": "6c3d48b8a3601a2c0e5cf935f839f7ec638d72fcff6574f80ec3bf87dcb13bd9",
+    "example_complete_hidden.npy": "884147c696ffd5d7fbf4370f1b02460d9bf93a70cf12aadc578f7ecb1d0c6880"
+  },
+  "replay_errors": {
+    "hidden_probe_score": 5.551115123125783e-16,
+    "basic_probe_score": 9.71445146547012e-17,
+    "score_probe_score": 3.469446951953614e-17
+  }
+}

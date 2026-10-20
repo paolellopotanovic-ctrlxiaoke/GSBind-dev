@@ -1,0 +1,68 @@
+{
+  "schema_version": "gaussian_direct128_app_config_v1",
+  "architecture": {
+    "experiment": "scratch",
+    "gaussian_dim": 128,
+    "gaussian_architecture": "vg",
+    "direct_protein_head": true,
+    "direct_protein_residual": false,
+    "bypass_gaussian": false,
+    "co_update_rounds": 3,
+    "dropout": 0.1
+  },
+  "runtime": {
+    "accelerator": "cpu",
+    "devices": 1,
+    "precision": "32",
+    "seed": 42,
+    "num_workers": 0,
+    "log_every": 50
+  },
+  "training": {
+    "output_dir": "../runs/smoke_training",
+    "data": {
+      "train_manifest": "../examples/cases.csv",
+      "train_compact_dir": "../datasets/main/compact",
+      "expected_train_rows": 2
+    },
+    "optimizer": {
+      "epochs": 1,
+      "schedule_epochs": 20,
+      "local_batch_size": 1,
+      "atom_lr": 0.0001,
+      "gaussian_lr": 0.0001,
+      "warmup_ratio": 0.05,
+      "min_lr_ratio": 0.1,
+      "weight_decay": 0.0001,
+      "pos_weight_factor": 0.5
+    }
+  },
+  "preprocessing": {
+    "manifest": "../examples/cases.csv",
+    "output_dir": "../runs/example_preprocessed",
+    "workers": 1,
+    "torch_threads": 1,
+    "max_num_nn": 64,
+    "payload": "training",
+    "progress_every": 1000,
+    "chunksize": 8,
+    "limit": 1
+  },
+  "inference": {
+    "checkpoint": "../checkpoints/direct128_e11.pt",
+    "manifest": "../examples/cases.csv",
+    "compact_dir": "../datasets/main/compact",
+    "output": "../runs/example_predictions.csv",
+    "device": "cpu",
+    "batch_size": 1,
+    "threshold": 0.5
+  },
+  "evaluation": {
+    "manifest": "../examples/cases.csv",
+    "compact_dir": "../datasets/main/compact",
+    "output": "../runs/example_metrics.json",
+    "device": "cpu",
+    "batch_size": 1,
+    "checkpoint": "../checkpoints/direct128_e11.pt"
+  }
+}

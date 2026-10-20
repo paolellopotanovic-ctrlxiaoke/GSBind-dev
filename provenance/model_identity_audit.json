@@ -1,0 +1,26 @@
+{
+  "status": "all_model_state_tensors_exactly_equal_after_renaming",
+  "archive_path": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/M4-Gaussian-PPBS/work/pesto_hidden_gaussian_direct128_non_test_sideclean_scratch_e20_20260916/run/model_epoch_11.pt",
+  "release_path": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/gaussian-direct128/checkpoints/direct128_e11.pt",
+  "archive_sha256": "45641b561ac3df690e58328dc5d6daa856ca53a20c13771f6956a387d8f501a4",
+  "release_sha256": "9d920481b5bf7ddd3e4b6542b2b1951b5a4683ce50f5b2392d22e7eb7945f397",
+  "epoch": 11,
+  "model_state_tensors": 1408,
+  "tensor_elements": 3355001,
+  "rename_prefixes": {
+    "pesto.em.": "atom_encoder.atom_feature_mlp.",
+    "pesto.sum.": "atom_encoder.state_updates.",
+    "pesto.spl.": "atom_encoder.atom_to_residue_pool.",
+    "pesto.dm.": "atom_encoder.residue_decoder."
+  },
+  "model_configuration": {
+    "gaussian_dim": 128,
+    "gaussian_architecture": "vg",
+    "direct_protein_residual": false,
+    "direct_protein_head": true,
+    "bypass_gaussian": false,
+    "dropout": 0.1
+  },
+  "caveat": "Weight identity does not itself prove preprocessing or execution-path equivalence; those require forward replay",
+  "script_sha256": "1a8014c025aade2a40beb2bc1a227a0758e9c28c569183953d57643bcc278b17"
+}
