@@ -1,0 +1,17 @@
+dataset,region,method,controls,estimate,lower,upper,bootstrap,block_length,refit_controls_each_draw
+KRAS,all,full_probe,score_geometry_AA_plddt,0.307566224793751,0.1253116223586051,0.46351078874206136,10000,10,True
+KRAS,all,current_hidden,score_geometry_AA_plddt,0.2983729524530641,0.1291002429855152,0.4506036473402354,10000,10,True
+KRAS,all,full_probe,score_geometry_AA_plddt_folding,0.2594806078881798,0.07379386261601846,0.4186314373988756,10000,10,True
+KRAS,all,current_hidden,score_geometry_AA_plddt_folding,0.2650667727146571,0.10630962337746087,0.41009401162887815,10000,10,True
+KRAS,noncontact,full_probe,score_geometry_AA_plddt,0.3231954704317945,0.14766692085011143,0.4358258227430215,10000,10,True
+KRAS,noncontact,current_hidden,score_geometry_AA_plddt,0.3323456176866728,0.16559193024063523,0.450098305258462,10000,10,True
+KRAS,noncontact,full_probe,score_geometry_AA_plddt_folding,0.2651001338595743,0.08307532447760856,0.39962616737091305,10000,10,True
+KRAS,noncontact,current_hidden,score_geometry_AA_plddt_folding,0.281535338830654,0.1130349986667077,0.4178901308760039,10000,10,True
+SRC,all,full_probe,score_geometry_AA_plddt,0.3480769782770273,0.2130778781768081,0.45718872811958594,10000,10,True
+SRC,all,current_hidden,score_geometry_AA_plddt,0.327216872990926,0.17804281913639125,0.44618936152967786,10000,10,True
+SRC,all,full_probe,score_geometry_AA_plddt_folding,0.3486698001622624,0.213339973084578,0.45532157962027664,10000,10,True
+SRC,all,current_hidden,score_geometry_AA_plddt_folding,0.3283579424649859,0.17847077225275812,0.4468914790933383,10000,10,True
+SRC,noncontact,full_probe,score_geometry_AA_plddt,0.2691713456568085,0.14238550208506134,0.3775692753830096,10000,10,True
+SRC,noncontact,current_hidden,score_geometry_AA_plddt,0.2379213226934155,0.09587027281186983,0.3602355359686504,10000,10,True
+SRC,noncontact,full_probe,score_geometry_AA_plddt_folding,0.26856370300349,0.14139205504854904,0.3739227709989779,10000,10,True
+SRC,noncontact,current_hidden,score_geometry_AA_plddt_folding,0.2388683156981406,0.0965294555286456,0.35889487646094886,10000,10,True

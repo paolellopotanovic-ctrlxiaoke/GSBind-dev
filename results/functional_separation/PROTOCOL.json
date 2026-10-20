@@ -1,0 +1,23 @@
+{
+  "model": "Gaussian-direct128 E11",
+  "target_training": false,
+  "iterations": 10000,
+  "score_groups": "five native-score quantiles; raw-score ties retained; duplicates dropped",
+  "score_bin_aggregation": "equal bins within assay, then assays within case, then cases within parent",
+  "folding_group": "observed folding-effect lower half by average percentile rank; not zero folding effect",
+  "selectivity": "(rank(functional magnitude)-rank(folding magnitude))/N; descriptive experimental index",
+  "analysis_status": "follow-up analyses on already inspected experimental systems",
+  "block_length": 10,
+  "fixed_observed_membership": true,
+  "multiple_comparison_adjustment": false,
+  "all_methods": [
+    "raw_score",
+    "reverse_score",
+    "burial",
+    "packing",
+    "basic_probe",
+    "full_probe",
+    "current_hidden",
+    "current_full"
+  ]
+}

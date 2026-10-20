@@ -19,6 +19,14 @@ def main():
     summary = commands.add_parser('summarize', help='Recompute paper metrics from public saved predictions; no model fitting')
     summary.add_argument('--task', choices=['all', 'main', 'allosteric', 'ssm220', 'functional'], default='all')
     summary.add_argument('--output', type=Path, default=ROOT / 'runs/public_recompute')
+    strata = commands.add_parser('allosteric-strata', help='Audit complete coverage and compare all/low/high native-score positions')
+    strata.add_argument('--output', type=Path, default=ROOT / 'results/allosteric_strata')
+    statistics = commands.add_parser('functional-statistics', help='Recompute paired sequence-block functional confidence intervals')
+    statistics.add_argument('--output', type=Path, default=ROOT / 'results/functional')
+    statistics.add_argument('--bootstrap', type=int, default=10000)
+    separation = commands.add_parser('functional-separation', help='Functional ordering within similar binding-score environments')
+    separation.add_argument('--output', type=Path, default=ROOT / 'results/functional_separation')
+    separation.add_argument('--bootstrap', type=int, default=10000)
     verification = commands.add_parser('verify')
     verification.add_argument('--hashes', action='store_true')
     commands.add_parser('figures')
@@ -41,10 +49,19 @@ def main():
     if args.command in ['surface-forward', 'covariates']:
         args.manifest = args.manifest.resolve()
         args.output = args.output.resolve()
-    if args.command in ['fit-probes', 'summarize']:
+    if args.command in ['fit-probes', 'summarize', 'allosteric-strata', 'functional-statistics', 'functional-separation']:
         args.output = args.output.resolve()
     os.chdir(ROOT)
-    if args.command == 'summarize':
+    if args.command == 'functional-separation':
+        from .functional_separation import run
+        run(ROOT, args.output, args.bootstrap)
+    elif args.command == 'allosteric-strata':
+        from .allosteric_strata import run
+        run(ROOT, args.output)
+    elif args.command == 'functional-statistics':
+        from .functional_statistics import run
+        run(args.output, args.bootstrap)
+    elif args.command == 'summarize':
         from .evidence import run
         run(ROOT, args.task, output_root=args.output, saved_allosteric=True)
     elif args.command == 'evidence':

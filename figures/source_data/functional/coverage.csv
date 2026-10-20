@@ -1,0 +1,393 @@
+dataset,context,case_id,interaction,version,condition,region,positions,unique_positions,missing_function,missing_folding
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,baseline,all,187,187,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,baseline,all,187,187,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,baseline,all,185,185,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,baseline,all,187,187,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,baseline,all,185,185,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,baseline,all,187,187,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,baseline,all,269,269,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,baseline,all,269,269,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,baseline,noncontact,138,138,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,baseline,noncontact,140,140,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,baseline,noncontact,137,137,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,baseline,noncontact,153,153,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,baseline,noncontact,139,139,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,baseline,noncontact,117,117,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,baseline,noncontact,244,244,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,baseline,noncontact,244,244,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,baseline,not_noncontact,49,49,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,baseline,not_noncontact,47,47,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,baseline,not_noncontact,48,48,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,baseline,not_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,baseline,not_noncontact,46,46,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,baseline,not_noncontact,70,70,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,baseline,not_noncontact,25,25,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,baseline,not_noncontact,25,25,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,baseline,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,baseline,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,baseline,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,baseline,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,baseline,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,baseline,low_all,171,171,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,baseline,low_all,221,221,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,baseline,low_all,233,233,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,baseline,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,baseline,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,baseline,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,baseline,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,baseline,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,baseline,high_all,16,16,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,baseline,high_all,48,48,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,baseline,high_all,36,36,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,baseline,low_noncontact,130,130,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,baseline,low_noncontact,135,135,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,baseline,low_noncontact,129,129,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,baseline,low_noncontact,142,142,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,baseline,low_noncontact,131,131,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,baseline,low_noncontact,116,116,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,baseline,low_noncontact,197,197,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,baseline,low_noncontact,210,210,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,baseline,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,baseline,high_noncontact,5,5,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,baseline,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,baseline,high_noncontact,11,11,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,baseline,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,baseline,high_noncontact,1,1,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,baseline,high_noncontact,47,47,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,baseline,high_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,identity,all,187,187,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,identity,all,187,187,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,identity,all,185,185,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,identity,all,187,187,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,identity,all,185,185,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,identity,all,187,187,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,identity,all,269,269,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,identity,all,269,269,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,identity,noncontact,138,138,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,identity,noncontact,140,140,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,identity,noncontact,137,137,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,identity,noncontact,153,153,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,identity,noncontact,139,139,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,identity,noncontact,117,117,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,identity,noncontact,244,244,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,identity,noncontact,244,244,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,identity,not_noncontact,49,49,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,identity,not_noncontact,47,47,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,identity,not_noncontact,48,48,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,identity,not_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,identity,not_noncontact,46,46,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,identity,not_noncontact,70,70,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,identity,not_noncontact,25,25,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,identity,not_noncontact,25,25,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,identity,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,identity,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,identity,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,identity,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,identity,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,identity,low_all,171,171,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,identity,low_all,221,221,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,identity,low_all,233,233,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,identity,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,identity,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,identity,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,identity,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,identity,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,identity,high_all,16,16,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,identity,high_all,48,48,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,identity,high_all,36,36,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,identity,low_noncontact,130,130,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,identity,low_noncontact,135,135,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,identity,low_noncontact,129,129,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,identity,low_noncontact,142,142,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,identity,low_noncontact,131,131,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,identity,low_noncontact,116,116,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,identity,low_noncontact,197,197,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,identity,low_noncontact,210,210,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,identity,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,identity,high_noncontact,5,5,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,identity,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,identity,high_noncontact,11,11,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,identity,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,identity,high_noncontact,1,1,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,identity,high_noncontact,47,47,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,identity,high_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain50,all,187,187,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain50,all,187,187,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain50,all,185,185,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain50,all,187,187,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain50,all,185,185,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain50,all,187,187,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain50,all,269,269,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain50,all,269,269,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain50,noncontact,138,138,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain50,noncontact,140,140,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain50,noncontact,137,137,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain50,noncontact,153,153,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain50,noncontact,139,139,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain50,noncontact,117,117,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain50,noncontact,244,244,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain50,noncontact,244,244,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain50,not_noncontact,49,49,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain50,not_noncontact,47,47,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain50,not_noncontact,48,48,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain50,not_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain50,not_noncontact,46,46,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain50,not_noncontact,70,70,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain50,not_noncontact,25,25,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain50,not_noncontact,25,25,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain50,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain50,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain50,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain50,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain50,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain50,low_all,171,171,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain50,low_all,221,221,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain50,low_all,233,233,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain50,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain50,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain50,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain50,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain50,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain50,high_all,16,16,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain50,high_all,48,48,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain50,high_all,36,36,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain50,low_noncontact,130,130,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain50,low_noncontact,135,135,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain50,low_noncontact,129,129,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain50,low_noncontact,142,142,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain50,low_noncontact,131,131,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain50,low_noncontact,116,116,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain50,low_noncontact,197,197,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain50,low_noncontact,210,210,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain50,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain50,high_noncontact,5,5,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain50,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain50,high_noncontact,11,11,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain50,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain50,high_noncontact,1,1,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain50,high_noncontact,47,47,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain50,high_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain00,all,187,187,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain00,all,187,187,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain00,all,185,185,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain00,all,187,187,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain00,all,185,185,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain00,all,187,187,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain00,all,269,269,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain00,all,269,269,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain00,noncontact,138,138,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain00,noncontact,140,140,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain00,noncontact,137,137,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain00,noncontact,153,153,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain00,noncontact,139,139,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain00,noncontact,117,117,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain00,noncontact,244,244,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain00,noncontact,244,244,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain00,not_noncontact,49,49,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain00,not_noncontact,47,47,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain00,not_noncontact,48,48,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain00,not_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain00,not_noncontact,46,46,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain00,not_noncontact,70,70,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain00,not_noncontact,25,25,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain00,not_noncontact,25,25,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain00,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain00,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain00,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain00,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain00,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain00,low_all,171,171,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain00,low_all,221,221,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain00,low_all,233,233,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain00,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain00,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain00,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain00,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain00,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain00,high_all,16,16,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain00,high_all,48,48,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain00,high_all,36,36,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain00,low_noncontact,130,130,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain00,low_noncontact,135,135,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain00,low_noncontact,129,129,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain00,low_noncontact,142,142,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain00,low_noncontact,131,131,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain00,low_noncontact,116,116,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain00,low_noncontact,197,197,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain00,low_noncontact,210,210,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_retain00,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_retain00,high_noncontact,5,5,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_retain00,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_retain00,high_noncontact,11,11,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_retain00,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_retain00,high_noncontact,1,1,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_retain00,high_noncontact,47,47,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_retain00,high_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise101,all,187,187,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise101,all,187,187,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise101,all,185,185,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise101,all,187,187,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise101,all,185,185,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise101,all,187,187,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise101,all,269,269,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise101,all,269,269,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise101,noncontact,138,138,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise101,noncontact,140,140,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise101,noncontact,137,137,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise101,noncontact,153,153,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise101,noncontact,139,139,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise101,noncontact,117,117,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise101,noncontact,244,244,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise101,noncontact,244,244,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise101,not_noncontact,49,49,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise101,not_noncontact,47,47,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise101,not_noncontact,48,48,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise101,not_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise101,not_noncontact,46,46,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise101,not_noncontact,70,70,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise101,not_noncontact,25,25,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise101,not_noncontact,25,25,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise101,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise101,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise101,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise101,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise101,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise101,low_all,171,171,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise101,low_all,221,221,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise101,low_all,233,233,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise101,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise101,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise101,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise101,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise101,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise101,high_all,16,16,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise101,high_all,48,48,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise101,high_all,36,36,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise101,low_noncontact,130,130,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise101,low_noncontact,135,135,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise101,low_noncontact,129,129,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise101,low_noncontact,142,142,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise101,low_noncontact,131,131,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise101,low_noncontact,116,116,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise101,low_noncontact,197,197,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise101,low_noncontact,210,210,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise101,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise101,high_noncontact,5,5,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise101,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise101,high_noncontact,11,11,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise101,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise101,high_noncontact,1,1,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise101,high_noncontact,47,47,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise101,high_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise211,all,187,187,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise211,all,187,187,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise211,all,185,185,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise211,all,187,187,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise211,all,185,185,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise211,all,187,187,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise211,all,269,269,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise211,all,269,269,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise211,noncontact,138,138,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise211,noncontact,140,140,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise211,noncontact,137,137,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise211,noncontact,153,153,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise211,noncontact,139,139,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise211,noncontact,117,117,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise211,noncontact,244,244,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise211,noncontact,244,244,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise211,not_noncontact,49,49,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise211,not_noncontact,47,47,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise211,not_noncontact,48,48,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise211,not_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise211,not_noncontact,46,46,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise211,not_noncontact,70,70,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise211,not_noncontact,25,25,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise211,not_noncontact,25,25,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise211,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise211,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise211,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise211,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise211,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise211,low_all,171,171,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise211,low_all,221,221,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise211,low_all,233,233,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise211,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise211,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise211,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise211,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise211,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise211,high_all,16,16,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise211,high_all,48,48,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise211,high_all,36,36,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise211,low_noncontact,130,130,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise211,low_noncontact,135,135,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise211,low_noncontact,129,129,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise211,low_noncontact,142,142,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise211,low_noncontact,131,131,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise211,low_noncontact,116,116,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise211,low_noncontact,197,197,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise211,low_noncontact,210,210,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise211,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise211,high_noncontact,5,5,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise211,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise211,high_noncontact,11,11,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise211,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise211,high_noncontact,1,1,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise211,high_noncontact,47,47,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise211,high_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise307,all,187,187,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise307,all,187,187,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise307,all,185,185,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise307,all,187,187,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise307,all,185,185,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise307,all,187,187,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise307,all,269,269,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise307,all,269,269,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise307,noncontact,138,138,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise307,noncontact,140,140,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise307,noncontact,137,137,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise307,noncontact,153,153,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise307,noncontact,139,139,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise307,noncontact,117,117,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise307,noncontact,244,244,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise307,noncontact,244,244,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise307,not_noncontact,49,49,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise307,not_noncontact,47,47,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise307,not_noncontact,48,48,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise307,not_noncontact,34,34,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise307,not_noncontact,46,46,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise307,not_noncontact,70,70,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise307,not_noncontact,25,25,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise307,not_noncontact,25,25,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise307,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise307,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise307,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise307,low_all,171,171,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise307,low_all,169,169,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise307,low_all,171,171,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise307,low_all,221,221,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise307,low_all,233,233,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise307,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise307,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise307,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise307,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise307,high_all,16,16,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise307,high_all,16,16,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise307,high_all,48,48,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise307,high_all,36,36,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise307,low_noncontact,130,130,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise307,low_noncontact,135,135,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise307,low_noncontact,129,129,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise307,low_noncontact,142,142,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise307,low_noncontact,131,131,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise307,low_noncontact,116,116,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise307,low_noncontact,197,197,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise307,low_noncontact,210,210,0,0
+KRAS,,kras4b_af2_full,DARPin K27,fresh_E11,S_noise307,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,DARPin K55,fresh_E11,S_noise307,high_noncontact,5,5,0,0
+KRAS,,kras4b_af2_full,PIK3CG,fresh_E11,S_noise307,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,RAF1,fresh_E11,S_noise307,high_noncontact,11,11,0,0
+KRAS,,kras4b_af2_full,RALGDS,fresh_E11,S_noise307,high_noncontact,8,8,0,0
+KRAS,,kras4b_af2_full,SOS1,fresh_E11,S_noise307,high_noncontact,1,1,0,0
+SRC,FL,src_fl_af2,SRC_FL,fresh_E11,S_noise307,high_noncontact,47,47,0,0
+SRC,KD,src_kd_af2,SRC_KD,fresh_E11,S_noise307,high_noncontact,34,34,0,0

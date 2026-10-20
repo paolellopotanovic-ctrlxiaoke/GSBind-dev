@@ -1,0 +1,8 @@
+experiment,task,proteins,complete_positions,low_positions,high_positions,task_positions,identical_complete_position_set,positives
+AM,AM,127,1801,1234,567,1801,True,839
+AlloBench,AlloBench,383,216556,152848,63708,216556,True,7409
+AlloBench_to_AM,AM,127,1801,1234,567,1801,True,839
+AlloBench_to_ASBench,ASBench,168,87832,63051,24781,87832,True,2989
+AlloBench_to_ASD_AlloPPI,ASD_AlloPPI,21,12509,8448,4061,12509,True,236
+AlloBench_to_CASBench,CASBench,70,35619,25837,9782,35619,True,1252
+AlloBench_to_PASSer_ASD_source,PASSer_ASD_source,288,145870,104461,41409,145870,True,4774

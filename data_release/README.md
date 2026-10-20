@@ -14,13 +14,13 @@ The server has a complete, checksum-verified bundle. This Git repository contain
 | Full server snapshot | `FULL_BUNDLE_INVENTORY.csv`, 61,801 files; not the public checkout inventory |
 | Public checkout inventory | Root `FILE_INVENTORY.csv`; excludes itself and generated `runs/` |
 
-The archive's root directory is `GSbind/`. Its code/docs are the pre-publication snapshot. Install **only its datasets** over the current checkout so publication fixes are retained:
+The archive's root directory is `GSbind/`. It is an older snapshot, retained as the source of unchanged bulk datasets; it does not contain the current all-position functional analysis. Install **only missing datasets**, preserving current public files, including the updated functional caches:
 
 ```bash
 sha256sum GSbind_paper_20261020.tar.zst
 mkdir -p /path/to/temporary_extract
 tar --zstd -xf GSbind_paper_20261020.tar.zst -C /path/to/temporary_extract
-cp -a /path/to/temporary_extract/GSbind/datasets/. /path/to/Guassion-PPBS/datasets/
+rsync -a --ignore-existing /path/to/temporary_extract/GSbind/datasets/ /path/to/Guassion-PPBS/datasets/
 cd /path/to/Guassion-PPBS
 python tools/check_publication.py --external
 python main.py verify

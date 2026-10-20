@@ -7,7 +7,7 @@
 3. `AUROC`仅在正负兼有时定义。不得用0补足未定义的case。
 4. 主任务/SSM的MCC、F1等以固定score≥0.5判正。新变构探针阈值由训练侧内折OOF选MCC最大，同时另存固定0.5结果；不在测试集选阈值。TP/TN/FP/FN全部保存。MCC分母为0给0，并保存mcc_defined=false。
 5. 主任务原始protein score的0.5有分类意义。SSM下游沿用这个binding score阈值，不将其说成校准过的“突变敏感概率”；变构探针也未做生化概率校准，稀疏阳性下0.5-MCC/F1可能接近0。它们的主要生物应用是**排名和相同实验预算富集**，不能挑测试阈值让MCC变高。
-6. KRAS/Src的功能/折叠效应是连续测量。报告Spearman rho、固定预算top20%效应均值，不凭空二值化产生MCC。这是“该任务不适用”，不是漏算指标。
+6. KRAS/Src的功能/折叠效应是连续测量。主分析覆盖全部实验位置，报告Spearman rho、Top10和固定预算前20%效应均值，不凭空二值化产生MCC。
 
 ## 人群与未知标签
 
@@ -31,6 +31,8 @@ Top-10固定每个蛋白最多10个位置；不足10取全部。按预测降序�
 
 KRAS/Src预算为该有效人群位置数的`ceil(0.2*N)`，原始`position`升序打破同分，功能和折叠效应各自报告，不因目标效应改变候选排序。
 
+KRAS/Src新增Top10固定预算，完整位置、非接触、高低score均输出。主分析不是low_noncontact。变构高分分层AUPR仍仅在同时含正负标签的蛋白上计算，随后组件宏平均；不同分层的绝对AUPR不直接相减解释增益，方法之间须在同层配对。
+
 ## 配对统计
 
 `src/gsbind/metrics.py`固定10,000次cluster bootstrap、2,000次随机sign-flip；新变构实验显式使用seed20261020，其他任务沿用各自固定种子。每次以同源组件或system为重采样单元。先在case上计算“comparison−baseline”，再组件内均值，再bootstrap；配对缺失只在同一对的完整数据上剔除。
@@ -42,3 +44,5 @@ KRAS/Src预算为该有效人群位置数的`ceil(0.2*N)`，原始`position`升�
 `S_zero_minus_noise`单独比较完整截断与三次噪声的均值，负值表示截断比同模长噪声造成更大损失。主任务已保存预测采用的sigmoid数值转换与四模型原始CSV最多相差约1.2e-7，按2e-7容差检查；identity仍要求同协议逐值完全相同。
 
 既有结果保留于`evidence/`，本工程使用统一随机种子重算区间。点估计应一致，Monte Carlo CI可有小幅差异；不能把两次随机抽样的CI混成同一次实验。
+
+KRAS/Src功能区间另使用10,000次、块长10的序列块bootstrap，同一parent位置跨实验共享抽样权重。`partial_rank_bootstrap.csv`每次抽样重算并列秩与控制回归。变构新高分分层区间为组件bootstrap，符号置换2,000次；`paired_aupr_contrasts.csv`未对全部新增分层比较作BH校正，与原含q的主分析表区分。

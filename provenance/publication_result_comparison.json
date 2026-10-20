@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "csv_tables": 81,
+  "csv_tables": 92,
   "atol": 1e-10,
   "files": [
     "allosteric/ALL_AUPR_CONTRASTS.csv",
@@ -67,10 +67,21 @@
     "allosteric/AlloBench_to_PASSer_ASD_source/top10_added_lost.csv",
     "allosteric/MAIN_AUPR_TABLE.csv",
     "allosteric/SUPPLEMENTARY_CLASSIFICATION_METRICS.csv",
+    "functional/MAIN_ALLPOSITION_RESULTS.csv",
+    "functional/PAPER_functional_all_positions.csv",
+    "functional/PAPER_functional_budget.csv",
+    "functional/PAPER_functional_surface.csv",
+    "functional/assay_metrics.csv",
+    "functional/candidate_positions.csv",
     "functional/case_metrics.csv",
-    "functional/interaction_metrics.csv",
+    "functional/coverage.csv",
+    "functional/current_source_homology_audit.csv",
+    "functional/experimental_coverage_summary.csv",
+    "functional/native_experimental_positions.csv",
     "functional/parent_metrics.csv",
-    "functional/surface_effects.csv",
+    "functional/partial_rank_assay.csv",
+    "functional/partial_rank_parent.csv",
+    "functional/top10_added_lost.csv",
     "main/case_macro_metrics.csv",
     "main/case_metrics.csv",
     "main/four_model_paired_statistics.csv",
@@ -84,5 +95,6 @@
     "ssm220/endpoint_coverage.csv",
     "ssm220/pooled_metrics.csv",
     "ssm220/surface_paired_statistics.csv"
-  ]
+  ],
+  "application_update": "all-position functional evaluation; separate complete interval/strata audit in application_update_validation.json"
 }

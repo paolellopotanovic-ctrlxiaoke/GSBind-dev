@@ -218,6 +218,32 @@ AP为混合标签蛋白先计算、组件内平均再组件宏平均；10000次�
 
 datasets/allosteric包含504个完整输入、结构/compact、六任务标签、完整430注册审计、七条件hidden、实际MMseqs序列与命中。checkpoints/allosteric仅四种头×两任务×五折及全数据头；src/gsbind/allostery.py与probe_training.py负责冻结重算和独立探针训练。tools/allosteric_data保留下载、源结构映射、同源分组、前向和任务构建代码。所有活动路径本地化。
 
+### 4.7 高结合分数内部的额外变构信息
+
+七组主结果均为完整任务可评价位置，不是低分筛选结果；本次预测与标签逐残基一对一核对。高分固定为native score≥0.5，在同一位置集合比较各方法。
+
+| experiment | proteins | mixed_proteins | geometry | amino | hidden | full | binding_score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| AM | 114 | 70 | 0.788324 | 0.706531 | 0.770955 | 0.817027 | 0.593806 |
+| AlloBench | 383 | 258 | 0.157063 | 0.133391 | 0.224182 | 0.229375 | 0.114803 |
+| AlloBench_to_AM | 114 | 70 | 0.807157 | 0.706204 | 0.819183 | 0.837182 | 0.593806 |
+| AlloBench_to_ASBench | 168 | 126 | 0.177883 | 0.142012 | 0.234978 | 0.234839 | 0.134736 |
+| AlloBench_to_ASD_AlloPPI | 21 | 15 | 0.138568 | 0.144094 | 0.146604 | 0.147056 | 0.104428 |
+| AlloBench_to_CASBench | 70 | 49 | 0.155770 | 0.143772 | 0.195658 | 0.215363 | 0.113325 |
+| AlloBench_to_PASSer_ASD_source | 288 | 194 | 0.163922 | 0.135781 | 0.230337 | 0.231834 | 0.117920 |
+
+| experiment | comparison | mean | lower | upper | components | cases |
+| --- | --- | --- | --- | --- | --- | --- |
+| AM | full_minus_geometry | 0.028703 | -0.024526 | 0.082224 | 64 | 70 |
+| AlloBench | full_minus_geometry | 0.072312 | 0.048036 | 0.096868 | 190 | 258 |
+| AlloBench_to_AM | full_minus_geometry | 0.030025 | -0.026643 | 0.084934 | 64 | 70 |
+| AlloBench_to_ASBench | full_minus_geometry | 0.056956 | 0.029057 | 0.084552 | 92 | 126 |
+| AlloBench_to_ASD_AlloPPI | full_minus_geometry | 0.008488 | -0.050079 | 0.068462 | 15 | 15 |
+| AlloBench_to_CASBench | full_minus_geometry | 0.059594 | 0.016289 | 0.105678 | 43 | 49 |
+| AlloBench_to_PASSer_ASD_source | full_minus_geometry | 0.067912 | 0.042577 | 0.093351 | 145 | 194 |
+
+AlloBench、ASBench、PASSer和CASBench高分位置中，full相对geometry分别提升7.23、5.70、6.79和5.96个百分点，组件bootstrap区间均高于零。隐藏表示可以细分已经具有较高结合倾向的位置。AM与AlloPPI的完整分层结果同表保留；跨来源存在重叠，不将七组视为七个互相独立队列。分层比较未做跨全部新比较的多重校正。
+
 ## 5. SSM220：高binding score应用
 
 | endpoint | region | condition | aupr | aupr_mixed | auroc | mcc | f1 | precision | recall | accuracy | top10_hits | top10_precision | top10_recall | cases | mixed_cases |
@@ -245,27 +271,80 @@ datasets/allosteric包含504个完整输入、结构/compact、六任务标签�
 
 SSM220保留完整220输入、原始替换测量和标签构建。只使用binding score，不加入SSM hidden分类器。primary18保留质量/区间过滤及足够有效替换，未知不作为阴性。不能以此声称hidden超越埋藏度。
 
-## 6. KRAS/Src：实验功能后果与表面依赖
+## 6. KRAS/Src：全位置实验功能应用与表面依赖
 
-| dataset | parent_uniprot | region | target | condition | method | rho | top20_effect_mean |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| KRAS | P01116 | low_noncontact | functional_magnitude | S_retain00 | full_probe | 0.022283 | 0.399938 |
-| KRAS | P01116 | low_noncontact | functional_magnitude | S_retain50 | full_probe | 0.278274 | 0.483428 |
-| KRAS | P01116 | low_noncontact | functional_magnitude | baseline | full_probe | 0.449820 | 0.517414 |
-| KRAS | P01116 | low_noncontact | stability_magnitude | S_retain00 | full_probe | -0.252636 | 0.493152 |
-| KRAS | P01116 | low_noncontact | stability_magnitude | S_retain50 | full_probe | 0.013901 | 0.578569 |
-| KRAS | P01116 | low_noncontact | stability_magnitude | baseline | full_probe | 0.239708 | 0.845787 |
-| SRC | P12931 | low_noncontact | functional_magnitude | S_retain00 | full_probe | 0.119522 | 0.930539 |
-| SRC | P12931 | low_noncontact | functional_magnitude | S_retain50 | full_probe | 0.307700 | 1.176944 |
-| SRC | P12931 | low_noncontact | functional_magnitude | baseline | full_probe | 0.363416 | 1.232424 |
-| SRC | P12931 | low_noncontact | stability_magnitude | S_retain00 | full_probe | -0.201656 | 0.648960 |
-| SRC | P12931 | low_noncontact | stability_magnitude | S_retain50 | full_probe | -0.046627 | 0.729858 |
-| SRC | P12931 | low_noncontact | stability_magnitude | baseline | full_probe | 0.047444 | 0.816847 |
+主分析覆盖全部实验位置，不先按score或非接触条件筛选。KRAS为187个唯一位置、六partner共1118条记录；Src两个构建体各269个位置，共538条记录。主模型和读出均冻结，未使用目标功能标签拟合。
 
-两个体系、三个结构输入；按parent分别汇总，不把partner/构建体当作独立家族。保留原冻结功能读出及其训练来源，不替换为本轮Allo新探针；原始实验能量、功能/折叠测量和完整干预均保留。其数值是实验体系应用，不是新变构位点分类指标。
+| dataset | method | rho | top10_effect_mean | top10_fold_enrichment | top20_effect_mean | top20_fold_enrichment |
+| --- | --- | --- | --- | --- | --- | --- |
+| KRAS | basic_probe | 0.187373 | 0.407387 | 1.259126 | 0.323220 | 0.999271 |
+| SRC | basic_probe | 0.139094 | 0.991882 | 1.272640 | 0.981677 | 1.257646 |
+| KRAS | burial | 0.303495 | 0.544821 | 1.705356 | 0.388822 | 1.210604 |
+| SRC | burial | 0.370039 | 0.720105 | 0.923639 | 0.964372 | 1.237143 |
+| KRAS | current_full | 0.330615 | 0.539018 | 1.687240 | 0.514614 | 1.606335 |
+| SRC | current_full | 0.358122 | 1.419240 | 1.824978 | 1.284483 | 1.644403 |
+| KRAS | current_hidden | 0.364367 | 0.464302 | 1.446847 | 0.510348 | 1.589793 |
+| SRC | current_hidden | 0.362412 | 1.795674 | 2.302890 | 1.325425 | 1.696461 |
+| KRAS | full_probe | 0.427150 | 0.592040 | 1.848508 | 0.505707 | 1.576223 |
+| SRC | full_probe | 0.368311 | 1.943697 | 2.494177 | 1.375519 | 1.763081 |
+| KRAS | packing | 0.341765 | 0.509257 | 1.592543 | 0.426463 | 1.331151 |
+| SRC | packing | 0.323612 | 0.954753 | 1.224677 | 0.958481 | 1.228074 |
+| KRAS | raw_score | -0.128343 | 0.488159 | 1.483951 | 0.422750 | 1.308493 |
+| SRC | raw_score | -0.432925 | 0.406384 | 0.516859 | 0.427333 | 0.543164 |
+
+### 6.1 Gaussian-surface通路依赖
+
+| version | condition | region | target | method | dataset | rho | all_effect_mean | top10_budget | top10_effect_mean | top10_fold_enrichment | top10_target_top_hits | top10_target_top_precision | top20_budget | top20_effect_mean | top20_fold_enrichment | top20_target_top_hits | top20_target_top_precision |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| fresh_E11 | S_retain00 | all | functional_magnitude | full_probe | KRAS | 0.169168 | 0.321926 | 10.000000 | 0.493980 | 1.534232 | 1.166667 | 0.116667 | 37.666667 | 0.499044 | 1.550919 | 14.500000 | 0.385254 |
+| fresh_E11 | S_retain00 | all | functional_magnitude | full_probe | SRC | 0.171064 | 0.781744 | 10.000000 | 1.563997 | 2.002343 | 1.500000 | 0.150000 | 54.000000 | 1.131826 | 1.450827 | 21.000000 | 0.388889 |
+| fresh_E11 | S_retain00 | all | stability_magnitude | full_probe | KRAS | -0.192937 | 0.511001 | 10.000000 | 0.346566 | 0.678203 | 0.000000 | 0.000000 | 37.666667 | 0.444575 | 0.869994 | 3.500000 | 0.092935 |
+| fresh_E11 | S_retain00 | all | stability_magnitude | full_probe | SRC | -0.145014 | 0.693645 | 10.000000 | 0.680757 | 0.990050 | 0.000000 | 0.000000 | 54.000000 | 0.580223 | 0.844538 | 6.500000 | 0.120370 |
+| fresh_E11 | S_retain50 | all | functional_magnitude | full_probe | KRAS | 0.343745 | 0.321926 | 10.000000 | 0.575765 | 1.789220 | 1.500000 | 0.150000 | 37.666667 | 0.545129 | 1.695587 | 17.000000 | 0.451399 |
+| fresh_E11 | S_retain50 | all | functional_magnitude | full_probe | SRC | 0.322394 | 0.781744 | 10.000000 | 1.880180 | 2.410864 | 3.000000 | 0.300000 | 54.000000 | 1.297957 | 1.664564 | 26.000000 | 0.481481 |
+| fresh_E11 | S_retain50 | all | stability_magnitude | full_probe | KRAS | -0.000390 | 0.511001 | 10.000000 | 0.484000 | 0.947172 | 1.000000 | 0.100000 | 37.666667 | 0.495974 | 0.970586 | 6.000000 | 0.159317 |
+| fresh_E11 | S_retain50 | all | stability_magnitude | full_probe | SRC | -0.015990 | 0.693645 | 10.000000 | 0.772597 | 1.108806 | 0.500000 | 0.050000 | 54.000000 | 0.647819 | 0.943452 | 7.500000 | 0.138889 |
+| fresh_E11 | baseline | all | functional_magnitude | full_probe | KRAS | 0.427150 | 0.321926 | 10.000000 | 0.592040 | 1.848508 | 1.333333 | 0.133333 | 37.666667 | 0.505707 | 1.576223 | 17.166667 | 0.456022 |
+| fresh_E11 | baseline | all | functional_magnitude | full_probe | SRC | 0.368311 | 0.781744 | 10.000000 | 1.943697 | 2.494177 | 2.500000 | 0.250000 | 54.000000 | 1.375519 | 1.763081 | 28.500000 | 0.527778 |
+| fresh_E11 | baseline | all | stability_magnitude | full_probe | KRAS | 0.181468 | 0.511001 | 10.000000 | 0.839539 | 1.642954 | 2.000000 | 0.200000 | 37.666667 | 0.734679 | 1.437726 | 14.500000 | 0.384898 |
+| fresh_E11 | baseline | all | stability_magnitude | full_probe | SRC | 0.063918 | 0.693645 | 10.000000 | 0.611121 | 0.892695 | 0.000000 | 0.000000 | 54.000000 | 0.726782 | 1.058112 | 10.000000 | 0.185185 |
+
+原完整冻结读出的全位置功能rho：KRAS 0.4272、Src 0.3683；完全截断后为0.1692和0.1711，下降0.2580和0.1972。下降区间分别为[0.0758,0.4549]与[0.1288,0.2650]。所有条件使用统一GPU后端的新E11前向，固定native score/基础协变量，仅替换隐藏表示。
+
+### 6.2 控制结构与折叠后的实验功能关联
+
+| dataset | region | method | controls | estimate | lower | upper | bootstrap | block_length | refit_controls_each_draw |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| KRAS | all | full_probe | score_geometry_AA_plddt | 0.307566 | 0.125312 | 0.463511 | 10000 | 10 | True |
+| KRAS | all | full_probe | score_geometry_AA_plddt_folding | 0.259481 | 0.073794 | 0.418631 | 10000 | 10 | True |
+| SRC | all | full_probe | score_geometry_AA_plddt | 0.348077 | 0.213078 | 0.457189 | 10000 | 10 | True |
+| SRC | all | full_probe | score_geometry_AA_plddt_folding | 0.348670 | 0.213340 | 0.455322 | 10000 | 10 | True |
+
+控制score、几何、AA、pLDDT后关联仍为0.3076/0.3481；进一步控制折叠后为0.2595/0.3487。前10个候选的实验功能效应均值富集1.85×/2.49×。这两部分分别体现补充功能信息与实验优先排序价值。
+
+两个体系、三个结构输入；先assay、后case、再parent汇总，不把partner/构建体当作独立家族。full_probe为原冻结应用头；current_hidden/current_full补充列出当前正式Allo读出的迁移结果，不混称。全部高低分与接触分层、预算新增/丢失、读出来源和后端审计在results/functional及FUNCTIONAL_PROTOCOL_CN.md。
+
+### 6.3 相近结合分数内的功能信息分离
+
+每个具体实验按native binding score固定分为五个等频组，在组内评价功能排序，先组、后assay、case和parent平均。没有重训主模型或读出。该比较直接回答：在结合倾向相近的位置中，隐藏读出是否还能区分实验功能影响？
+
+| dataset | comparison | estimate | lower | upper | iterations |
+| --- | --- | --- | --- | --- | --- |
+| KRAS | rho | 0.307952 | 0.133884 | 0.448261 | 10000 |
+| KRAS | full_probe_minus_raw_score | 0.276273 | 0.083171 | 0.440402 | 10000 |
+| KRAS | full_probe_minus_burial | 0.116539 | -0.120903 | 0.317980 | 10000 |
+| KRAS | full_probe_minus_packing | 0.055912 | -0.123851 | 0.220794 | 10000 |
+| SRC | rho | 0.374870 | 0.287446 | 0.441446 | 10000 |
+| SRC | full_probe_minus_raw_score | 0.453701 | 0.343134 | 0.564486 | 10000 |
+| SRC | full_probe_minus_burial | 0.305819 | 0.119687 | 0.494064 | 10000 |
+| SRC | full_probe_minus_packing | 0.289805 | 0.087622 | 0.474167 | 10000 |
+
+原完整冻结读出组内rho为KRAS 0.3080和Src 0.3749；相对直接使用score分别增加0.2763 [0.0832,0.4404]和0.4537 [0.3431,0.5645]。Src相对burial/packing的增加也有正区间；KRAS相对这两个结构指标的区间跨零。此处与全协变量偏相关共同支持额外功能信息。
+
+另外计算观测折叠效应较低一半的功能排序、功能减折叠百分位秩差，全部结果保留于results/functional_separation。它们回答不同实验问题，不把较低折叠影响等同于完全无折叠影响，也不按哪个方法变正来选择阈值。详见FUNCTIONAL_SEPARATION_CN.md。
 
 ## 7. 图表、附录与复算
 
-正文性能表只放AUPR，MCC/F1/AUROC及阈值在附录。四图结构见FOUR_FIGURE_PLAN_CN.md；python main.py figures生成可复算基础图及source_data。python main.py evidence --task allosteric重算四对照、全部来源迁移、新full干预、预算及CI；不触发训练。python main.py fit-probes --cohort both --output runs/refit_probes只训练四种独立线性探针。
+正文性能表只放AUPR，MCC/F1/AUROC及阈值在附录。四图结构见FOUR_FIGURE_PLAN_CN.md；python main.py figures生成可复算基础图及source_data。python main.py summarize --task functional重算全位置功能读出；python main.py functional-statistics重算序列块配对区间；python main.py allosteric-strata重算全位置/高低分变构统计。python main.py evidence --task allosteric重放四方法与完整来源迁移；python main.py fit-probes --cohort both --output runs/refit_probes只训练独立探针。
 
 当前活动工程覆盖原112→171/旧HGB变构展示，不再同时维护旧论文口径；主任务、SSM220和KRAS/Src不同端点保留。代码与数据完整不代表各来源自动取得公开再分发许可。

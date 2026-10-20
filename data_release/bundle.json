@@ -6,7 +6,7 @@
   "status": "pending_public_url",
   "url": null,
   "extracted_directory": "GSbind",
-  "installation": "Overlay datasets/ from the extracted bundle into this checkout; retain current public code and docs.",
+  "installation": "Install only missing datasets with rsync --ignore-existing; retain current public files including updated functional caches. This archive predates the all-position application update.",
   "external_files": 61313,
   "external_bytes": 23820899373
 }

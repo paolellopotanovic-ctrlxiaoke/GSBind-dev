@@ -12,11 +12,15 @@ This is the current paper engineering for **Gaussian-direct128 E11 / GSbind**, n
 |---|---|---|
 | Binding-site prediction | 20,801 training records; official MMseqs holo 988 and APO/AF2 874 test cases | GSbind case-macro AUPR **0.7915 / 0.7281**; PeSTo **0.7380 / 0.6770** |
 | Gaussian-surface pathway | Surface-to-residue feedback/fusion; native, identity, retain50, retain00 | Full cutoff AUPR **0.5220 / 0.4765** on the two binding panels |
-| Allosteric representation | AlloBench383 and AM127 grouped nested fivefold; fixed-source transfers to four other sources and AM | Geometry / AA / hidden / full; component-macro AUPR **0.1697** AlloBench, **0.7216** AM for full |
+| Allosteric representation | Complete evaluable positions; AlloBench383 and AM127 grouped nested fivefold; fixed-source transfers to four other sources and AM | Full AUPR **0.1697 / 0.7216**; within high-binding-score positions, full–geometry gains **+0.0723 / +0.0570 / +0.0679 / +0.0596** on AlloBench / ASBench / PASSer / CASBench |
 | SSM220 | Native binding-score prioritization of experimental sensitivity | All 220 inputs retained; coverage differs by sensitivity endpoint; no hidden SSM classifier |
-| KRAS/Src | Frozen diagnostic readouts versus experimental functional/folding effects | Low-score non-contact functional rho **0.4498 / 0.3634**, full surface cutoff **0.0223 / 0.1195** |
+| KRAS/Src | All measured positions, frozen readouts versus experimental functional/folding effects | Functional rho **0.4272 / 0.3683**, full surface cutoff **0.1692 / 0.1711**; Top10 effect enrichment **1.85× / 2.49×** |
 
 Allosteric probes use supervised linear logistic readouts on a **frozen** binding model, not retraining of GSbind. KRAS/Src retain their separately frozen functional readout protocol. Gaussian-surface cutoff is a model intervention, not a biochemical knockout or proof of an allosteric signal-transmission pathway.
+
+The primary functional analysis includes **all measured positions**; low-score and non-contact regions are supplementary strata. All seven allosteric main evaluations already cover complete task positions. High-score analyses use native binding score ≥ 0.5. See [`BIOLOGICAL_APPLICATION_RESULTS_CN.md`](docs/BIOLOGICAL_APPLICATION_RESULTS_CN.md) for the complete application narrative, confidence intervals, tables and figure plan.
+
+Within native binding-score quintiles, frozen functional-readout rho is **0.3080 / 0.3749** for KRAS / Src, improving over direct binding-score ranking by **+0.2763 / +0.4537** with positive paired intervals. This directly tests functional differentiation among positions with similar binding propensity; see [`FUNCTIONAL_SEPARATION_CN.md`](docs/FUNCTIONAL_SEPARATION_CN.md).
 
 ## What is available now?
 
@@ -40,16 +44,21 @@ python main.py --config configs/smoke.json infer
 python main.py --config configs/smoke.json evaluate
 python tools/smoke_lightning.py
 python main.py summarize --task all --output runs/public_recompute
+python main.py allosteric-strata --output runs/public_allosteric_strata
 python main.py figures
 ```
 
 `summarize` recomputes metrics, paired contrasts and confidence intervals. Allosteric probabilities are read from the included saved prediction tables and checked against native reference predictions; this command does **not** replay hidden features or refit probes. Main/SSM use saved binding scores; KRAS/Src replay their frozen readouts from included small hidden arrays. Outputs go to `runs/` and do not overwrite the delivered paper tables.
 
+`allosteric-strata` recomputes complete-position coverage, all/low/high AUPR and paired component intervals from public predictions. To recompute the more expensive functional sequence-block intervals after `summarize`, run `python main.py functional-statistics --output /absolute/path/to/public_recompute/functional --bootstrap 10000`. The delivered complete intervals are already in `results/functional/`.
+
+`python main.py functional-separation --output runs/functional_separation --bootstrap 10000` recomputes the score-quintile, observed folding-effect and functional-selectivity analyses from the current position-level table, without fitting a new readout.
+
 `figures` creates basic evidence PDFs and refreshes source CSVs. These are not the final four-panel publication layout. [`FOUR_FIGURE_PLAN_CN.md`](docs/FOUR_FIGURE_PLAN_CN.md) specifies the final figure narrative.
 
 ## Full-data reproduction
 
-After the external bundle is available, overlay its **`datasets/` directory** into this repository, retaining current public code/docs/results. Its archive directory is named `GSbind`, regardless of the name of this checkout. See [data installation and checksums](data_release/README.md).
+After the external bundle is available, install **only missing external datasets**, retaining current public files, including the updated functional forward caches. Its archive directory is named `GSbind`, regardless of the name of this checkout. See [data installation and checksums](data_release/README.md).
 
 ```bash
 python main.py verify

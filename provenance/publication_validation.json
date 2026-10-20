@@ -1,8 +1,8 @@
 {
   "status": "passed",
   "date": "2026-10-20",
-  "unit_tests": "10 passed",
-  "recomputed_csv_tables": 81,
+  "unit_tests": "18 passed (separate pytest run)",
+  "recomputed_csv_tables": 92,
   "recomputed_csv_tolerance": 1e-10,
   "allosteric_full_hidden_replay_experiments": 7,
   "allosteric_full_hidden_replay_max_error": 0.0,
@@ -18,5 +18,8 @@
   "credential_pattern_scan": "passed",
   "full_main_training_reexecuted": false,
   "bulk_data_public_download": "pending",
-  "legacy_commit": "9cc53e25043065c616597962ef71b973bf247d79"
+  "legacy_commit": "9cc53e25043065c616597962ef71b973bf247d79",
+  "current_application_update": "application_update_validation.json",
+  "functional_scope": "all_measured_positions",
+  "full_interval_reproduction": true
 }

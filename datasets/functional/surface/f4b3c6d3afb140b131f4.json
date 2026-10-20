@@ -1,0 +1,163 @@
+{
+  "case_id": "src_fl_af2",
+  "audit": [
+    {
+      "condition": "baseline",
+      "sites": []
+    },
+    {
+      "condition": "identity",
+      "sites": []
+    },
+    {
+      "condition": "S_retain50",
+      "sites": [
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.3739069104194641
+        },
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.3739069104194641
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.2772785723209381
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.2772785723209381
+        },
+        {
+          "stage": 2,
+          "rows": 536,
+          "shift_rms": 0.27617546916007996
+        }
+      ]
+    },
+    {
+      "condition": "S_retain00",
+      "sites": [
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.7478138208389282
+        },
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.7478138208389282
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.5288161635398865
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.5288161635398865
+        },
+        {
+          "stage": 2,
+          "rows": 536,
+          "shift_rms": 0.5239481329917908
+        }
+      ]
+    },
+    {
+      "condition": "S_noise101",
+      "sites": [
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.7478138208389282
+        },
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.7478138208389282
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.5576559901237488
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.5576559901237488
+        },
+        {
+          "stage": 2,
+          "rows": 536,
+          "shift_rms": 0.5518540740013123
+        }
+      ]
+    },
+    {
+      "condition": "S_noise211",
+      "sites": [
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.7478138208389282
+        },
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.7478138208389282
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.5604287385940552
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.5604287385940552
+        },
+        {
+          "stage": 2,
+          "rows": 536,
+          "shift_rms": 0.5537012815475464
+        }
+      ]
+    },
+    {
+      "condition": "S_noise307",
+      "sites": [
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.7478138208389282
+        },
+        {
+          "stage": 0,
+          "rows": 536,
+          "shift_rms": 0.7478138208389282
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.5555093884468079
+        },
+        {
+          "stage": 1,
+          "rows": 536,
+          "shift_rms": 0.5555093884468079
+        },
+        {
+          "stage": 2,
+          "rows": 536,
+          "shift_rms": 0.5498067736625671
+        }
+      ]
+    }
+  ]
+}

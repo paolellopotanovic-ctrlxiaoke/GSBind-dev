@@ -66,3 +66,9 @@ AlloBench与AM分别进行同源组件分组nested外5内3折，候选C=0.1/1/10
 AlloBench383蛋白/282组件，AM127蛋白/112组件。训练侧内折选择正则并产生OOF概率以选MCC阈值；正文AUPR不依赖分类阈值。外部ASBench/PASSer_ASD_source/CASBench/ASD_AlloPPI及Allo→AM固定迁移，目标标签不拟合。相关组件用来源外层留出头，组件独立目标用来源全数据头。
 
 full的Gaussian-surface干预固定native score、几何、AA、pLDDT，只替换hidden并使用同一个冻结155维头；identity逐值等价。KRAS/Src使用其原有功能读出，不被这次变构读出替换，也不能称接受新变构标签训练。
+
+## 当前生物应用口径
+
+七组变构主结果均使用完整任务可评价位置。`allosteric-strata`逐残基核对任务标签并重算all/low/high比较；高分为native score≥0.5。输出在`results/allosteric_strata/`，既有任务内/迁移划分和四方法不变。
+
+KRAS/Src主分析已替换为全部实验位置；低分、非接触仅为补充分层。统一GPU的fresh_E11七条件缓存、全位置原冻结读出、当前Allo头补充迁移、预算和控制分析位于`functional.py`；序列块区间位于`functional_statistics.py`。原混合后端差量重放不再作为当前入口。详见`FUNCTIONAL_PROTOCOL_CN.md`。

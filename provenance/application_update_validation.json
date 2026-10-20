@@ -1,0 +1,517 @@
+{
+  "status": "passed",
+  "date": "2026-10-20",
+  "model": "Gaussian-direct128 E11",
+  "functional_scope": "all_measured_positions",
+  "target_functional_training": false,
+  "readout_replay": {
+    "status": "passed",
+    "max_absolute_error": 0.0,
+    "parents": 2,
+    "model_inputs": 3,
+    "scope": "all_measured_positions",
+    "forward_backend": "fresh_E11_gpu"
+  },
+  "recomputed_tables": [
+    {
+      "path": "results/allosteric/ALL_AUPR_CONTRASTS.csv",
+      "rows": 648,
+      "columns": 14
+    },
+    {
+      "path": "results/allosteric/ALL_METRICS.csv",
+      "rows": 240,
+      "columns": 18
+    },
+    {
+      "path": "results/allosteric/AM/case_metrics.csv",
+      "rows": 2500,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AM/component_metrics.csv",
+      "rows": 2200,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AM/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AM/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AM/top10_added_lost.csv",
+      "rows": 381,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench/case_metrics.csv",
+      "rows": 7660,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench/component_metrics.csv",
+      "rows": 5640,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench/top10_added_lost.csv",
+      "rows": 1149,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/case_metrics.csv",
+      "rows": 2500,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/component_metrics.csv",
+      "rows": 2200,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/source_component_disjoint/case_metrics.csv",
+      "rows": 510,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/source_component_disjoint/component_metrics.csv",
+      "rows": 490,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/source_component_disjoint/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/source_component_disjoint/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/source_component_disjoint/top10_added_lost.csv",
+      "rows": 78,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_AM/top10_added_lost.csv",
+      "rows": 381,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/case_metrics.csv",
+      "rows": 3360,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/component_metrics.csv",
+      "rows": 2400,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/source_component_disjoint/case_metrics.csv",
+      "rows": 280,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/source_component_disjoint/component_metrics.csv",
+      "rows": 200,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/source_component_disjoint/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/source_component_disjoint/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/source_component_disjoint/top10_added_lost.csv",
+      "rows": 42,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASBench/top10_added_lost.csv",
+      "rows": 504,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/case_metrics.csv",
+      "rows": 420,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/component_metrics.csv",
+      "rows": 400,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/source_component_disjoint/case_metrics.csv",
+      "rows": 180,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/source_component_disjoint/component_metrics.csv",
+      "rows": 180,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/source_component_disjoint/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/source_component_disjoint/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/source_component_disjoint/top10_added_lost.csv",
+      "rows": 27,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_ASD_AlloPPI/top10_added_lost.csv",
+      "rows": 63,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/case_metrics.csv",
+      "rows": 1400,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/component_metrics.csv",
+      "rows": 1200,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/source_component_disjoint/case_metrics.csv",
+      "rows": 40,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/source_component_disjoint/component_metrics.csv",
+      "rows": 40,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/source_component_disjoint/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/source_component_disjoint/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/source_component_disjoint/top10_added_lost.csv",
+      "rows": 6,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_CASBench/top10_added_lost.csv",
+      "rows": 210,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/case_metrics.csv",
+      "rows": 5760,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/component_metrics.csv",
+      "rows": 4220,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/source_component_disjoint/case_metrics.csv",
+      "rows": 580,
+      "columns": 30
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/source_component_disjoint/component_metrics.csv",
+      "rows": 480,
+      "columns": 13
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/source_component_disjoint/paired_aupr_statistics.csv",
+      "rows": 54,
+      "columns": 12
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/source_component_disjoint/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/source_component_disjoint/top10_added_lost.csv",
+      "rows": 87,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/summary.csv",
+      "rows": 20,
+      "columns": 16
+    },
+    {
+      "path": "results/allosteric/AlloBench_to_PASSer_ASD_source/top10_added_lost.csv",
+      "rows": 864,
+      "columns": 10
+    },
+    {
+      "path": "results/allosteric/MAIN_AUPR_TABLE.csv",
+      "rows": 12,
+      "columns": 7
+    },
+    {
+      "path": "results/allosteric/SUPPLEMENTARY_CLASSIFICATION_METRICS.csv",
+      "rows": 48,
+      "columns": 9
+    },
+    {
+      "path": "results/functional/MAIN_ALLPOSITION_RESULTS.csv",
+      "rows": 364,
+      "columns": 18
+    },
+    {
+      "path": "results/functional/PAPER_functional_all_positions.csv",
+      "rows": 7,
+      "columns": 3
+    },
+    {
+      "path": "results/functional/PAPER_functional_budget.csv",
+      "rows": 10,
+      "columns": 6
+    },
+    {
+      "path": "results/functional/PAPER_functional_surface.csv",
+      "rows": 2,
+      "columns": 4
+    },
+    {
+      "path": "results/functional/assay_metrics.csv",
+      "rows": 3996,
+      "columns": 22
+    },
+    {
+      "path": "results/functional/candidate_positions.csv",
+      "rows": 9867,
+      "columns": 18
+    },
+    {
+      "path": "results/functional/case_metrics.csv",
+      "rows": 1554,
+      "columns": 20
+    },
+    {
+      "path": "results/functional/coverage.csv",
+      "rows": 392,
+      "columns": 11
+    },
+    {
+      "path": "results/functional/current_source_homology_audit.csv",
+      "rows": 43,
+      "columns": 14
+    },
+    {
+      "path": "results/functional/experimental_coverage_summary.csv",
+      "rows": 8,
+      "columns": 7
+    },
+    {
+      "path": "results/functional/native_experimental_positions.csv",
+      "rows": 1656,
+      "columns": 31
+    },
+    {
+      "path": "results/functional/parent_metrics.csv",
+      "rows": 1036,
+      "columns": 18
+    },
+    {
+      "path": "results/functional/partial_rank_assay.csv",
+      "rows": 672,
+      "columns": 11
+    },
+    {
+      "path": "results/functional/partial_rank_parent.csv",
+      "rows": 168,
+      "columns": 6
+    },
+    {
+      "path": "results/functional/top10_added_lost.csv",
+      "rows": 270,
+      "columns": 15
+    },
+    {
+      "path": "results/main/case_macro_metrics.csv",
+      "rows": 8,
+      "columns": 15
+    },
+    {
+      "path": "results/main/case_metrics.csv",
+      "rows": 7448,
+      "columns": 24
+    },
+    {
+      "path": "results/main/four_model_paired_statistics.csv",
+      "rows": 30,
+      "columns": 13
+    },
+    {
+      "path": "results/main/pooled_metrics.csv",
+      "rows": 8,
+      "columns": 23
+    },
+    {
+      "path": "results/main/surface_case_macro_metrics.csv",
+      "rows": 8,
+      "columns": 15
+    },
+    {
+      "path": "results/main/surface_case_metrics.csv",
+      "rows": 7448,
+      "columns": 25
+    },
+    {
+      "path": "results/main/surface_paired_statistics.csv",
+      "rows": 30,
+      "columns": 13
+    },
+    {
+      "path": "results/main/surface_pooled_metrics.csv",
+      "rows": 8,
+      "columns": 23
+    },
+    {
+      "path": "results/ssm220/case_macro_metrics.csv",
+      "rows": 140,
+      "columns": 16
+    },
+    {
+      "path": "results/ssm220/case_metrics.csv",
+      "rows": 24752,
+      "columns": 27
+    },
+    {
+      "path": "results/ssm220/endpoint_coverage.csv",
+      "rows": 5,
+      "columns": 5
+    },
+    {
+      "path": "results/ssm220/pooled_metrics.csv",
+      "rows": 140,
+      "columns": 24
+    },
+    {
+      "path": "results/ssm220/surface_paired_statistics.csv",
+      "rows": 700,
+      "columns": 14
+    }
+  ],
+  "full_10000_iteration_intervals": [
+    {
+      "path": "results/functional/sequence_block_bootstrap.csv",
+      "rows": 256,
+      "columns": 11
+    },
+    {
+      "path": "results/functional/budget_block_bootstrap.csv",
+      "rows": 144,
+      "columns": 10
+    },
+    {
+      "path": "results/functional/partial_rank_bootstrap.csv",
+      "rows": 16,
+      "columns": 10
+    }
+  ],
+  "allosteric_complete_and_stratified_comparisons": [
+    {
+      "path": "results/allosteric_strata/complete_coverage_audit.csv",
+      "rows": 7,
+      "columns": 9
+    },
+    {
+      "path": "results/allosteric_strata/MAIN_AUPR_BY_SCORE_STRATUM.csv",
+      "rows": 21,
+      "columns": 9
+    },
+    {
+      "path": "results/allosteric_strata/paired_aupr_contrasts.csv",
+      "rows": 147,
+      "columns": 11
+    }
+  ],
+  "functional_separation": {
+    "analyses": 3,
+    "bootstrap": 10000,
+    "interval_rows": 96
+  },
+  "source_code": "src/gsbind/functional.py; functional_statistics.py; allosteric_strata.py; functional_separation.py"
+}

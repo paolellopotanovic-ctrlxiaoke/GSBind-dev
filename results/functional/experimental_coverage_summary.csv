@@ -1,0 +1,9 @@
+dataset,case_id,interaction,measured_positions,low,high,noncontact
+KRAS,kras4b_af2_full,DARPin K27,187,171,16,138
+KRAS,kras4b_af2_full,DARPin K55,187,171,16,140
+KRAS,kras4b_af2_full,PIK3CG,185,169,16,137
+KRAS,kras4b_af2_full,RAF1,187,171,16,153
+KRAS,kras4b_af2_full,RALGDS,185,169,16,139
+KRAS,kras4b_af2_full,SOS1,187,171,16,117
+SRC,src_fl_af2,SRC_FL,269,221,48,244
+SRC,src_kd_af2,SRC_KD,269,233,36,244

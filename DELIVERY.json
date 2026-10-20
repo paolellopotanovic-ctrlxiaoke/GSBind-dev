@@ -1,9 +1,9 @@
 {
-  "package": "GSbind public paper engineering",
+  "package": "GSbind current paper engineering",
   "date": "2026-10-20",
-  "files": 485,
-  "bytes": 392004359,
-  "inventory_sha256": "60b10cc9bbc9532cf7a4d211b7bcfdceee08b79cd8bdd7f3784efb69915a5e97",
+  "files": 575,
+  "bytes": 418439767,
+  "inventory_sha256": "b26de81a69bbfa1671d49444c9cdb13611cc22247653a3bfbba004fa23c1d659",
   "excludes": [
     ".git",
     ".pytest_cache",
@@ -11,8 +11,9 @@
     "runs"
   ],
   "inventory_self_excluded": true,
-  "hardlinks_are_archived_with_content": true,
-  "entrypoint": "python tools/check_publication.py; python main.py summarize --task all",
-  "bulk_data": "data_release/bundle.json; public URL pending",
-  "archive": null
+  "delivery_self_excluded": true,
+  "entrypoint": "python main.py summarize --task all; python main.py allosteric-strata; python main.py functional-separation; python main.py figures",
+  "functional_scope": "all_measured_positions",
+  "archive": null,
+  "archive_note": "Existing GSbind_paper_20261020.tar.zst predates this update; bulk datasets only, install missing files without overwriting public data."
 }

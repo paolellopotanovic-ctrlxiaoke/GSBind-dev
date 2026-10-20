@@ -30,6 +30,10 @@ datasets/ssm220包含220结构、原始替换和score预测。primary18按替换
 
 datasets/functional包含两个体系的三个结构输入、原始实验能量、残基功能/折叠效应、完整hidden、surface条件和原冻结功能预测。checkpoints/functional_probe是原功能读出专用权重，不能替换为新Allo分类头。functional指标按parent分别报告，不与位点AUPR混淆。
 
+当前主分析为全部实验位置。`results/functional/complete_predictions.parquet`包含七条件全蛋白读出，`experimental_predictions.parquet`为实验标签对齐结果，`native_experimental_positions.csv`为便于作图的原生位置表；`assay_metrics.csv`/`case_metrics.csv`/`parent_metrics.csv`对应三级汇总。`PAPER_*.csv`为主文表，其他高低分与接触分层供补充使用。实验源表不夹带旧预测列。
+
+`results/allosteric_strata/`保存七组变构完整位置核对、同一native score定义的高低分比较、逐蛋白指标和配对组件区间，不改变原正式任务及迁移协议。
+
 ## 数据许可
 
 保留原始来源、URL及身份审计；各来源数据保留其原许可。完整服务器数据目录使用普通硬链接，禁止原地修改只读输入；Git公开工作树使用独立副本，归档解压后也是独立内容。
