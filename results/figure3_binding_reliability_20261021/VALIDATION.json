@@ -1,0 +1,23 @@
+{
+  "starting_cases": 874,
+  "included_cases": 788,
+  "excluded_cases": 86,
+  "included_state_counts": {
+    "af2": 718,
+    "apo": 70
+  },
+  "systems": 377,
+  "paired_residues": 247490,
+  "maximum_replayed_ap_error": 1.1102230246251565e-16,
+  "replayed_case_model_metrics": 3152,
+  "unique_correspondence": true,
+  "fixed_reference_labels": true,
+  "recall_cost_replay": true,
+  "system_estimand_replay": true,
+  "no_new_model_training": true,
+  "all_four_models_same_cases": true,
+  "original_score_exact_replay": true,
+  "original_reference_label_exact_replay": true,
+  "fixed_budget_hits_replay": true,
+  "cross_state_correct_retention_replay": true
+}

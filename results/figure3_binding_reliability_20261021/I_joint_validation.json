@@ -1,0 +1,13 @@
+{
+  "systems_by_state": {
+    "af2": 371,
+    "apo": 38
+  },
+  "system_baseline_rows": 1227,
+  "shared_system_bootstrap": 10000,
+  "no_outcome_selected_systems": true,
+  "strict_positive_gains": true,
+  "joint_benefit_is_descriptive_not_independent_replication": true,
+  "endpoint": "fixed_holo_reference_binding_interface",
+  "no_new_training": true
+}

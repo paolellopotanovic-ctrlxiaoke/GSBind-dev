@@ -1,0 +1,34 @@
+{
+  "bootstrap": 10000,
+  "estimand": "equal systems; cases equal within each system",
+  "protocol_sha256": "fb0324c766ae22d209997211a2047bd795bb19d20b40d81d804c31d73e0fcb4f",
+  "models": [
+    "gaussian_direct128",
+    "pesto_official",
+    "gpsfun_gpsite_pdb",
+    "scannet_ppi_no_msa"
+  ],
+  "label": "fixed_holo_reference_interface_union_on_identity_matched_common_positions",
+  "example_case": "pindertest755::7yva__A1_Q9URB4--7yva__B1_Q9URB4::af2::R",
+  "new_training": false,
+  "changed_scores": false,
+  "score_fusion": false,
+  "main_panel_I": "all_system_joint_AP_and_recall80_cost_benefit",
+  "original_example": "supplement_only",
+  "joint_analysis": "descriptive_post_analysis_extension",
+  "joint_protocol_sha256": "8182ebf3114cb5e83f168165ae694697ecb79b839f09b3584b039b5720df824f",
+  "comment_response_sha256": "00cfb2f72c9377f7815fd5067b0c0d0e1e4c1b3b635e57d769c331fd607d5241",
+  "distribution_unit": "one system mean per state/model/condition",
+  "recall_curve_targets": [
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "budget_grid_brackets": "system interquartile range, not confidence interval"
+}
