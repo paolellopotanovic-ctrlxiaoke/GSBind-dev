@@ -1,0 +1,24 @@
+{
+  "intervention_cases": 1862,
+  "intervention_conditions": 12,
+  "replayed_ap": 22344,
+  "maximum_ap_replay_error": 1.1102230246251565e-16,
+  "input_cases": {
+    "holo": 988,
+    "af2": 790,
+    "apo": 84
+  },
+  "input_systems": {
+    "af2": 397,
+    "apo": 45,
+    "holo": 494
+  },
+  "random_seeds_averaged_within_case": true,
+  "identity_exact": true,
+  "estimand": "equal systems, equal directed cases within each system",
+  "bootstrap": 10000,
+  "native_labels_for_intervention": true,
+  "fixed_holo_reference_for_paired_transfer": true,
+  "no_new_training": true,
+  "no_new_forward_inference": true
+}

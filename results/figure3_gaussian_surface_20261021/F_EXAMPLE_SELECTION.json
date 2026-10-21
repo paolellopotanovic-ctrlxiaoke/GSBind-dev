@@ -1,0 +1,10 @@
+{
+  "case_id": "pindertest755::4ml9__A1_D1AMR0--4ml9__B1_D1AMR0::af2::R",
+  "system_id": "4ml9__A1_D1AMR0--4ml9__B1_D1AMR0",
+  "input_state": "af2",
+  "eligible_cases": 461,
+  "candidate_cases": 1862,
+  "rule": "Illustrative AF2 case with native AP>=0.7, surface AP loss>0, targeted loss>random mean; minimize sum of median percentile distances in native AP, surface AP loss, target-minus-random loss and length; break ties by case_id. Post-analysis illustrative selection, not independent validation.",
+  "selection_distance": 0.17136659436008672,
+  "packet_sha256": "9b7dfc9d6da30f3e1141ac2f8ac376dd4fd55c6eebbbe5ce98c12cb8de23d2a3"
+}

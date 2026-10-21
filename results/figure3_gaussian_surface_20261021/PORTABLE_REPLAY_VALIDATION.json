@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "source_repository_standalone_plot": true,
+  "png_bitwise_identical": true,
+  "portable_saved_data_rebuild": true,
+  "exact_table_replays": [
+    "intervention_case_metrics.csv",
+    "intervention_system_metrics.csv",
+    "intervention_summary.csv",
+    "target_minus_random_case_metrics.csv",
+    "target_minus_random_summary.csv",
+    "F_all_example_candidates.csv",
+    "F_example_metrics.csv",
+    "F_example_residues.csv"
+  ],
+  "new_training_or_gpu_required": false
+}

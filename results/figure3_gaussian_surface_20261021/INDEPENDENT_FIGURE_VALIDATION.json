@@ -1,0 +1,10 @@
+{
+  "summary_rows_replayed": 312,
+  "paired_cases": 788,
+  "paired_four_models_same_cases": true,
+  "paired_residue_metric_replays": 3152,
+  "correct_candidate_counts_replayed": true,
+  "example_priorities_replayed": true,
+  "geometry_cases_audited": 1862,
+  "status": "passed"
+}
