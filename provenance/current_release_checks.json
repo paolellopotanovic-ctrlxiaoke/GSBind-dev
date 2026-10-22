@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-22",
+  "status": "passed",
+  "tests": {
+    "passed": 33,
+    "failed": 0
+  },
+  "fixed_iteration_heads_refitted": 60,
+  "refit_prediction_reference": "all 3 tasks passed at rtol=1e-10, atol=1e-12",
+  "public_maintext_tables_compared": 19,
+  "figure3": {
+    "summary_rows_replayed": 312,
+    "paired_residue_metric_replays": 3152
+  },
+  "cpu_backbone_gradient_step": "passed, 1 optimizer step; not full retraining",
+  "cpu_backbone_isolated_copy": "passed, 2 examples; external third-party packages only",
+  "manuscript_status": "Separate LaTeX draft still contains legacy claims and TODO; not certified submission-ready",
+  "full_backbone_training_data": "Bulk public URL still pending"
+}

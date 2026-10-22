@@ -1,0 +1,33 @@
+{
+  "task": "Src",
+  "method": "pesto_score_probe",
+  "fold": 4,
+  "requested_iterations": 10,
+  "actual_iterations": 1,
+  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "training_only_hyperparameter_selection": {
+    "choices": [
+      {
+        "alpha": 1000.0,
+        "inner_macro_rho": 0.16595519864750635
+      },
+      {
+        "alpha": 100.0,
+        "inner_macro_rho": 0.17180896027049875
+      },
+      {
+        "alpha": 10.0,
+        "inner_macro_rho": 0.1712172442941674
+      },
+      {
+        "alpha": 1.0,
+        "inner_macro_rho": 0.17068395405499479
+      }
+    ],
+    "alpha": 100.0
+  },
+  "historical_budget_choice": "chosen after exploratory test inspection",
+  "independent_test": false,
+  "source_checkpoint_sha256": "5a806b97ccbd2ecb74243e90378462fa99ad0ab60548f1d3825a1f0f14233e9f",
+  "alpha": 100.0
+}

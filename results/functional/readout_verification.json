@@ -1,8 +1,0 @@
-{
-  "status": "passed",
-  "max_absolute_error": 0.0,
-  "parents": 2,
-  "model_inputs": 3,
-  "scope": "all_measured_positions",
-  "forward_backend": "fresh_E11_gpu"
-}

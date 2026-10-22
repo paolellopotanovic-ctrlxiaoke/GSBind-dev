@@ -1,0 +1,30 @@
+{
+  "tasks": [
+    "AlloBench",
+    "AM",
+    "Src"
+  ],
+  "methods": [
+    "gsbind_score_probe",
+    "structure_only",
+    "gsbind_hidden_probe",
+    "pesto_score_probe"
+  ],
+  "fixed_iterations": {
+    "AlloBench": 50,
+    "AM": 50,
+    "Src": 10
+  },
+  "early_convergence": "keep last available iterate; never substitute a historical final model",
+  "head_selection": "fixed endpoint, no per-fold test checkpoint choice",
+  "historical_budget_choice": "budgets chosen after exploratory test inspection; not independent test",
+  "original_backbone": "frozen E11 direct128; PeSTo scalar probability only",
+  "metric": "classification: trapezoidal AUPR; Src: full OOF Spearman, case/interaction macro",
+  "removed_from_active_maintext": [
+    "KRAS",
+    "ASBench",
+    "PASSer_ASD_source",
+    "CASBench",
+    "ASD_AlloPPI"
+  ]
+}

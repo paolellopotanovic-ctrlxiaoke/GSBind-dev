@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "checked_tables": [
+    {
+      "path": "results/main/case_macro_metrics.csv",
+      "rows": 8,
+      "status": "passed"
+    },
+    {
+      "path": "results/main/case_metrics.csv",
+      "rows": 7448,
+      "status": "passed"
+    },
+    {
+      "path": "results/main/four_model_paired_statistics.csv",
+      "rows": 30,
+      "status": "passed"
+    },
+    {
+      "path": "results/main/pooled_metrics.csv",
+      "rows": 8,
+      "status": "passed"
+    },
+    {
+      "path": "results/main/surface_case_macro_metrics.csv",
+      "rows": 8,
+      "status": "passed"
+    },
+    {
+      "path": "results/main/surface_case_metrics.csv",
+      "rows": 7448,
+      "status": "passed"
+    },
+    {
+      "path": "results/main/surface_paired_statistics.csv",
+      "rows": 30,
+      "status": "passed"
+    },
+    {
+      "path": "results/main/surface_pooled_metrics.csv",
+      "rows": 8,
+      "status": "passed"
+    },
+    {
+      "path": "results/ssm220/case_macro_metrics.csv",
+      "rows": 140,
+      "status": "passed"
+    },
+    {
+      "path": "results/ssm220/case_metrics.csv",
+      "rows": 24752,
+      "status": "passed"
+    },
+    {
+      "path": "results/ssm220/endpoint_coverage.csv",
+      "rows": 5,
+      "status": "passed"
+    },
+    {
+      "path": "results/ssm220/pooled_metrics.csv",
+      "rows": 140,
+      "status": "passed"
+    },
+    {
+      "path": "results/ssm220/surface_paired_statistics.csv",
+      "rows": 700,
+      "status": "passed"
+    },
+    {
+      "path": "results/downstream/DETAILED_METRICS.csv",
+      "rows": 3072,
+      "status": "passed"
+    },
+    {
+      "path": "results/downstream/FOLD_METRICS.csv",
+      "rows": 60,
+      "status": "passed"
+    },
+    {
+      "path": "results/downstream/METRICS.csv",
+      "rows": 18,
+      "status": "passed"
+    },
+    {
+      "path": "downstream/AlloBench/OOF_predictions.csv.gz",
+      "rows": 216556,
+      "status": "passed"
+    },
+    {
+      "path": "downstream/AM/OOF_predictions.csv.gz",
+      "rows": 1801,
+      "status": "passed"
+    },
+    {
+      "path": "downstream/Src/OOF_predictions.csv.gz",
+      "rows": 538,
+      "status": "passed"
+    }
+  ],
+  "classification_metric": "downstream trapezoidal AUPR; binding/SSM legacy aupr fields are AP",
+  "scope": "Public saved predictions and frozen readouts; not full backbone retraining or manuscript editorial approval"
+}

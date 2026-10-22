@@ -16,6 +16,7 @@ EXCLUDES = {'.git', '.pytest_cache', '__pycache__', 'runs'}
 def paths(root):
     return sorted(path for path in root.rglob('*') if path.is_file()
         and not EXCLUDES.intersection(path.relative_to(root).parts)
+        and path.suffix != '.log'
         and not any(part.endswith('.egg-info') for part in path.relative_to(root).parts))
 
 
@@ -59,12 +60,12 @@ def refresh(root):
         writer = csv.DictWriter(handle, fieldnames=['path', 'bytes', 'sha256'], lineterminator='\n')
         writer.writeheader()
         writer.writerows(inventory)
-    delivery = dict(package='GSbind current paper engineering', date='2026-10-20',
+    delivery = dict(package='GSbind current paper engineering', date='2026-10-22',
         files=len(inventory), bytes=sum(row['bytes'] for row in inventory),
         inventory_sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
         excludes=sorted(EXCLUDES), inventory_self_excluded=True, delivery_self_excluded=True,
-        entrypoint='python main.py summarize --task all; python main.py allosteric-strata; python main.py functional-separation; python main.py figures',
-        functional_scope='all_measured_positions', archive=None,
+        entrypoint='python main.py summarize --task all; python main.py downstream --action train; python main.py figures',
+        functional_scope='Src all measured positions; fixed 10 iterations', archive=None,
         archive_note='Existing GSbind_paper_20261020.tar.zst predates this update; bulk datasets only, install missing files without overwriting public data.')
     (root / 'DELIVERY.json').write_text(json.dumps(delivery, indent=2) + '\n')
     print(json.dumps(dict(root=str(root), files=len(inventory), tables=len(tables), inventory_sha256=delivery['inventory_sha256'])))

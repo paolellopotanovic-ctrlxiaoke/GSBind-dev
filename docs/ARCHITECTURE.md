@@ -10,7 +10,7 @@ Gaussian-direct128 maps protein atomic structure to residue-level binding probab
 4. Pair-Gaussian corrections integrate cooperative residue context.
 5. GVP graph encoders update surface states at multiple graph scales.
 6. Connected patch pooling and surface-to-residue attention exchange information.
-7. Three co-update rounds refine residue and surface states.
+7. Three surface passes are computed, with residue feedback only after the first two. The final surface context is concatenated with the residue state retained after the second feedback update; there is no third residue feedback update.
 8. A direct head emits protein, nucleic-acid, ion, ligand, and lipid channels.
 
 The released E11 checkpoint uses `architecture=vg`, `gaussian_dim=128`, and `direct_protein_head=true`.

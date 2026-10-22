@@ -1,0 +1,18 @@
+{
+  "task": "AM",
+  "method": "gsbind_hidden_probe",
+  "fold": 4,
+  "requested_iterations": 50,
+  "actual_iterations": 50,
+  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "training_only_hyperparameter_selection": {
+    "C": 0.1,
+    "source": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/checkpoints/allosteric/AM/4_hidden.joblib",
+    "sha256": "7962405aba76659bbef20f8e4b42ca3273f28e0157341acd2e2b309204e4c54a",
+    "selection": "original training-only inner-fold choice"
+  },
+  "historical_budget_choice": "chosen after exploratory test inspection",
+  "independent_test": false,
+  "source_checkpoint_sha256": "34dc5aa08a85305dc384c1709a8bc723428f67c6bcd29c7030570686fdad43fa",
+  "C": 0.1
+}

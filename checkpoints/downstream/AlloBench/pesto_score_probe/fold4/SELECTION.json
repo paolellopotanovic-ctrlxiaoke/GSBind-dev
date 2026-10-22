@@ -1,0 +1,18 @@
+{
+  "task": "AlloBench",
+  "method": "pesto_score_probe",
+  "fold": 4,
+  "requested_iterations": 50,
+  "actual_iterations": 7,
+  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "training_only_hyperparameter_selection": {
+    "C": 0.1,
+    "source": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/results/baseline_hidden_probe_20261021/allosteric/AlloBench/heads/pesto_score_probe_fold4.joblib",
+    "sha256": "6ba6aaa2d0e592e0490a086d8d9cfe71fecf83948bbc7537ebfdc6c4a59c4f0d",
+    "selection": "original training-only inner-fold choice"
+  },
+  "historical_budget_choice": "chosen after exploratory test inspection",
+  "independent_test": false,
+  "source_checkpoint_sha256": "60092b5b29cd70d797f720366bee6a076ac0aaf06ba36540345f7d3a289c1e4e",
+  "C": 0.1
+}

@@ -1,0 +1,26 @@
+{
+  "task": "AlloBench",
+  "rows": 216556,
+  "feature_rows": 216556,
+  "dimensions": {
+    "gsbind_score_probe": 1,
+    "structure_only": 26,
+    "gsbind_hidden_probe": 128,
+    "pesto_score_probe": 1
+  },
+  "feature_parts": [
+    "features_000.npz",
+    "features_001.npz",
+    "features_002.npz",
+    "features_003.npz",
+    "features_004.npz",
+    "features_005.npz",
+    "features_006.npz",
+    "features_007.npz",
+    "features_008.npz",
+    "features_009.npz",
+    "features_010.npz"
+  ],
+  "full_training_features_in_git": true,
+  "raw_or_rank_targets": "raw labels; ranks recomputed on training fold only"
+}

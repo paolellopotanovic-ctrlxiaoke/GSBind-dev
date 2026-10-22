@@ -1,4 +1,4 @@
-"""Final paper endpoints: binding, allostery, score-only SSM, and KRAS/Src."""
+"""Current paper endpoints: binding, score-only SSM, and fixed-budget readouts."""
 
 from pathlib import Path
 
@@ -66,11 +66,6 @@ def main_task(root, output):
     write_table(contrasts(cut, ['panel']), output, 'surface_paired_statistics')
 
 
-def allosteric(root, output):
-    from .allostery import run as run_allostery
-    return run_allostery(root, output)
-
-
 def ssm(root, output):
     frame = pd.read_parquet(root / 'datasets/ssm220/score_predictions.parquet').sort_values('residue_index_0')
     records = []
@@ -96,24 +91,20 @@ def ssm(root, output):
     write_table(coverage, output, 'endpoint_coverage')
 
 
-def functional(root, output):
-    from .functional import run as run_functional
-    return run_functional(root, output)
+def downstream(root, output):
+    from .downstream import replay
+    return replay(root, output)
 
 
-TASKS = dict(main=main_task, allosteric=allosteric, ssm220=ssm, functional=functional)
+TASKS = dict(main=main_task, ssm220=ssm, downstream=downstream)
 
 
-def run(root, task='all', output_root=None, saved_allosteric=False):
+def run(root, task='all', output_root=None):
     for name, function in TASKS.items():
         if task not in ['all', name]:
             continue
         output = (Path(output_root) if output_root is not None else root / 'results') / name
         output.mkdir(parents=True, exist_ok=True)
         print('Evaluating', name, flush=True)
-        if name == 'allosteric' and saved_allosteric:
-            from .allostery import run as run_allostery
-            run_allostery(root, output, saved_predictions=root / 'results/allosteric')
-        else:
-            function(root, output)
+        function(root, output)
         print('Saved', output, flush=True)

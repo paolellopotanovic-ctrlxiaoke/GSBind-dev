@@ -1,3 +1,4 @@
+import argparse
 import json
 import os
 from pathlib import Path
@@ -13,6 +14,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def main():
+    parser = argparse.ArgumentParser(description='Run backbone examples from an isolated application copy')
+    parser.add_argument('--dependency-path', type=Path, help='Optional installed third-party package directory, not application source')
+    arguments = parser.parse_args()
+    dependency = arguments.dependency_path.resolve() if arguments.dependency_path else None
+    if dependency and any((dependency / name).exists() for name in ['gsbind', 'gaussian_direct']):
+        raise ValueError('Dependency path must not contain application source')
     with tempfile.TemporaryDirectory(prefix='gsbind_portable_') as temporary:
         destination = Path(temporary) / 'GSbind'
         destination.mkdir()
@@ -27,7 +34,8 @@ def main():
                 target = destination / value
                 target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(ROOT / value, target)
-        environment = dict(os.environ, PYTHONPATH=str(destination / 'src'), OPENBLAS_NUM_THREADS='2', OMP_NUM_THREADS='2')
+        pythonpath = str(destination / 'src') + (os.pathsep + str(dependency) if dependency else '')
+        environment = dict(os.environ, PYTHONPATH=pythonpath, OPENBLAS_NUM_THREADS='2', OMP_NUM_THREADS='2')
         result = subprocess.run([sys.executable, str(destination / 'main.py'), '--config', str(destination / 'configs/smoke.json'), 'evaluate'],
                                 cwd=temporary, env=environment, capture_output=True, text=True)
         (ROOT / 'provenance/portable_smoke.log').write_text(result.stdout + result.stderr)

@@ -15,18 +15,14 @@ def main():
     for name in ['train', 'preprocess', 'infer', 'evaluate', 'show-config']:
         commands.add_parser(name)
     evidence = commands.add_parser('evidence')
-    evidence.add_argument('--task', choices=['all', 'main', 'allosteric', 'ssm220', 'functional'], default='all')
+    evidence.add_argument('--task', choices=['all', 'main', 'ssm220', 'downstream'], default='all')
     summary = commands.add_parser('summarize', help='Recompute paper metrics from public saved predictions; no model fitting')
-    summary.add_argument('--task', choices=['all', 'main', 'allosteric', 'ssm220', 'functional'], default='all')
+    summary.add_argument('--task', choices=['all', 'main', 'ssm220', 'downstream'], default='all')
     summary.add_argument('--output', type=Path, default=ROOT / 'runs/public_recompute')
-    strata = commands.add_parser('allosteric-strata', help='Audit complete coverage and compare all/low/high native-score positions')
-    strata.add_argument('--output', type=Path, default=ROOT / 'results/allosteric_strata')
-    statistics = commands.add_parser('functional-statistics', help='Recompute paired sequence-block functional confidence intervals')
-    statistics.add_argument('--output', type=Path, default=ROOT / 'results/functional')
-    statistics.add_argument('--bootstrap', type=int, default=10000)
-    separation = commands.add_parser('functional-separation', help='Functional ordering within similar binding-score environments')
-    separation.add_argument('--output', type=Path, default=ROOT / 'results/functional_separation')
-    separation.add_argument('--bootstrap', type=int, default=10000)
+    downstream = commands.add_parser('downstream', help='Fixed50 AlloBench/AM and fixed10 Src probes')
+    downstream.add_argument('--action', choices=['replay', 'train'], default='replay')
+    downstream.add_argument('--output', type=Path, default=ROOT / 'runs/downstream')
+    downstream.add_argument('--task', choices=['all', 'AlloBench', 'AM', 'Src'], default='all')
     verification = commands.add_parser('verify')
     verification.add_argument('--hashes', action='store_true')
     commands.add_parser('figures')
@@ -36,9 +32,6 @@ def main():
     covariates = commands.add_parser('covariates')
     covariates.add_argument('--manifest', type=Path, required=True)
     covariates.add_argument('--output', type=Path, required=True)
-    probes = commands.add_parser('fit-probes')
-    probes.add_argument('--output', type=Path, default=ROOT / 'runs/refit_probes')
-    probes.add_argument('--cohort', choices=['AlloBench', 'AM', 'both'], default='both')
     surface = commands.add_parser('surface-forward')
     surface.add_argument('--manifest', type=Path, required=True)
     surface.add_argument('--output', type=Path, required=True)
@@ -49,21 +42,17 @@ def main():
     if args.command in ['surface-forward', 'covariates']:
         args.manifest = args.manifest.resolve()
         args.output = args.output.resolve()
-    if args.command in ['fit-probes', 'summarize', 'allosteric-strata', 'functional-statistics', 'functional-separation']:
+    if args.command in ['downstream', 'summarize']:
         args.output = args.output.resolve()
     os.chdir(ROOT)
-    if args.command == 'functional-separation':
-        from .functional_separation import run
-        run(ROOT, args.output, args.bootstrap)
-    elif args.command == 'allosteric-strata':
-        from .allosteric_strata import run
-        run(ROOT, args.output)
-    elif args.command == 'functional-statistics':
-        from .functional_statistics import run
-        run(args.output, args.bootstrap)
+    if args.command == 'downstream':
+        from .downstream import replay, train
+        tasks = None if args.task == 'all' else [args.task]
+        function = train if args.action == 'train' else replay
+        print(function(ROOT, args.output, tasks).to_string(index=False))
     elif args.command == 'summarize':
         from .evidence import run
-        run(ROOT, args.task, output_root=args.output, saved_allosteric=True)
+        run(ROOT, args.task, output_root=args.output)
     elif args.command == 'evidence':
         from .evidence import run
         run(ROOT, args.task)
@@ -85,9 +74,6 @@ def main():
     elif args.command == 'covariates':
         from .covariates import rebuild
         rebuild(ROOT, args.manifest, args.output)
-    elif args.command == 'fit-probes':
-        from .probe_training import fit
-        fit(ROOT, args.output, args.cohort)
     elif args.command == 'surface-forward':
         from .forward import run
         run(ROOT, args.manifest, args.output, args.device, args.limit)

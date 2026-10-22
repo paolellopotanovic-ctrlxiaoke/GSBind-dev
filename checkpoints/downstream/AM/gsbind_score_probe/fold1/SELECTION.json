@@ -1,0 +1,18 @@
+{
+  "task": "AM",
+  "method": "gsbind_score_probe",
+  "fold": 1,
+  "requested_iterations": 50,
+  "actual_iterations": 3,
+  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "training_only_hyperparameter_selection": {
+    "C": 0.1,
+    "source": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/results/figure4_complementary_20261021/training/allosteric/AM/1_score_probe.joblib",
+    "sha256": "348687a9d91e1f8863cc04cf44bde4f4c5d7264375b8eb3152175076ce6cd65e",
+    "selection": "original training-only inner-fold choice"
+  },
+  "historical_budget_choice": "chosen after exploratory test inspection",
+  "independent_test": false,
+  "source_checkpoint_sha256": "f2dd86aba5d10a5f88e2ca755d24903f379fab53dad238d01bccb59bf7fd15da",
+  "C": 0.1
+}

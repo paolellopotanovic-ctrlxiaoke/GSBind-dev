@@ -1,9 +1,0 @@
-{
-  "folds": {
-    "kras4b_af2_full": 1,
-    "src_fl_af2": 2,
-    "src_kd_af2": 2
-  },
-  "rule": "parent full-length both80 source component held out",
-  "domain_caveat": "Src KD has either80 hits across all source folds; not globally domain-homology-disjoint"
-}

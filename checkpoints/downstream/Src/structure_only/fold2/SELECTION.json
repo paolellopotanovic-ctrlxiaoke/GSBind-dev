@@ -1,0 +1,23 @@
+{
+  "task": "Src",
+  "method": "structure_only",
+  "fold": 2,
+  "requested_iterations": 10,
+  "actual_iterations": 10,
+  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "training_only_hyperparameter_selection": {
+    "choices": [
+      {
+        "alpha": 1000.0,
+        "source": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/results/within_system_probe_20261021/heads/Src_fold2_structure_only.joblib",
+        "sha256": "a0e56fac61b4db3605a78403659a801c568bf631387908d7efc49afb1737eeaf",
+        "selection": "original nested training-only choice"
+      }
+    ],
+    "alpha": 1000.0
+  },
+  "historical_budget_choice": "chosen after exploratory test inspection",
+  "independent_test": false,
+  "source_checkpoint_sha256": "7496b84dc9e0bf4f8a46d1d59fa497b7031ae2dabbce0bb5bf7eec669b13df0c",
+  "alpha": 1000.0
+}

@@ -1,0 +1,18 @@
+{
+  "task": "AlloBench",
+  "method": "gsbind_hidden_probe",
+  "fold": 0,
+  "requested_iterations": 50,
+  "actual_iterations": 50,
+  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "training_only_hyperparameter_selection": {
+    "C": 0.1,
+    "source": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/checkpoints/allosteric/AlloBench/0_hidden.joblib",
+    "sha256": "47bf32eb864cb3b38c2a42062372ad5c2c53d4f3fff6d4057156499107e0794c",
+    "selection": "original training-only inner-fold choice"
+  },
+  "historical_budget_choice": "chosen after exploratory test inspection",
+  "independent_test": false,
+  "source_checkpoint_sha256": "09df890f0daf24b0cf9578c28bf81d66dab3eda337420fac3ca192ffff7e7e36",
+  "C": 0.1
+}

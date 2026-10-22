@@ -1,0 +1,18 @@
+{
+  "task": "AlloBench",
+  "method": "gsbind_score_probe",
+  "fold": 0,
+  "requested_iterations": 50,
+  "actual_iterations": 7,
+  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "training_only_hyperparameter_selection": {
+    "C": 0.1,
+    "source": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/results/figure4_complementary_20261021/training/allosteric/AlloBench/0_score_probe.joblib",
+    "sha256": "975abd729f49031483e41686b881d553cf58c94e8903e5bb544e22499ee4c48a",
+    "selection": "original training-only inner-fold choice"
+  },
+  "historical_budget_choice": "chosen after exploratory test inspection",
+  "independent_test": false,
+  "source_checkpoint_sha256": "b1276243c05f2e4654719d16a63bb0ae04a762c80914fe06c79019418d5ffeed",
+  "C": 0.1
+}

@@ -1,0 +1,16 @@
+{
+  "rows": 538,
+  "cases": [
+    "src_fl_af2",
+    "src_kd_af2"
+  ],
+  "interactions": [
+    "SRC_FL",
+    "SRC_KD"
+  ],
+  "pesto_score_hashes": {
+    "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/results/baseline_hidden_probe_20261021/features/pesto/src_fl_af2.npz": "2f9aa94582e5f83060aca0112157c64cb3fe38ae1ab0cdff4262c0a913dca15a",
+    "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/results/baseline_hidden_probe_20261021/features/pesto/src_kd_af2.npz": "83b37bc9ebab598c622672d7cde0c1da188a705be994cf0c1a8c2aa41c303e9f"
+  },
+  "original_matrix_sha256": "afda4074d639190430152dba32ed57069af27e3c847efb3c7da352359b697f0e"
+}

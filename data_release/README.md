@@ -1,5 +1,9 @@
 # Bulk data release
 
+## 2026-10-22 downstream replacement
+
+The current AlloBench/AM/Src fixed50/fixed50/fixed10 readouts are **fully self-contained in Git**, including all training features, labels, folds, selected regularization settings and 60 heads. Run `python main.py downstream --action train` or `--action replay` without this archive. The archive is a historical bulk-input source for full backbone regeneration, not the current readout release. Do not restore obsolete results or checkpoints from it.
+
 ## Current status: public download URL pending
 
 The server has a complete, checksum-verified bundle. This Git repository contains the code, E11 weights, readout weights, data manifests/labels, final CSV metrics, detailed saved predictions and CPU examples. It deliberately does not commit the bulk training structures/caches or large allosteric hidden tensors.
@@ -36,9 +40,9 @@ python main.py evidence --task all
 | Read all maintext metrics and detailed saved predictions | Yes | No |
 | Recompute metrics from saved predictions: `main.py summarize` | Yes | No |
 | CPU example inference, evaluation and Lightning gradient step | Yes | No |
-| KRAS/Src frozen readout and raw CSV label reconstruction | Yes | No |
+| Current AlloBench/AM/Src fixed-iteration replay and refit | Yes | No |
 | Main/SSM evidence from saved binding scores | Yes | No |
-| Full frozen Allo hidden replay and probe refit | No | Yes |
+| Regenerate all frozen features from original structures | No | Yes |
 | All-case surface forward and complete model training | No | Yes |
 | Rebuild SSM labels from original large assay tables | No | Yes |
 
