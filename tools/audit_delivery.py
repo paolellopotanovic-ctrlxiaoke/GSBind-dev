@@ -28,12 +28,13 @@ def main():
             pd.testing.assert_frame_equal(expected, observed, check_dtype=False, rtol=1e-10, atol=1e-12)
             checks.append(dict(path=str(source.relative_to(ROOT)), rows=len(expected), status='passed'))
     for task in ['AlloBench', 'AM', 'Src']:
-        path = Path('downstream') / task / 'OOF_predictions.csv.gz'
+        path = Path('downstream') / task / 'predictions.csv.gz'
         expected = pd.read_csv(ROOT / 'results' / path)
         actual = pd.read_csv(arguments.recomputed / path)
         pd.testing.assert_frame_equal(expected, actual, check_dtype=False, rtol=1e-10, atol=1e-12)
         checks.append(dict(path=str(path), rows=len(expected), status='passed'))
     result = dict(status='passed', checked_tables=checks,
+                  downstream_protocol='source_fold_test_best_full_history', AM_training=False,
                   classification_metric='downstream trapezoidal AUPR; binding/SSM legacy aupr fields are AP',
                   scope='Public saved predictions and frozen readouts; not full backbone retraining or manuscript editorial approval')
     write_json(ROOT / 'provenance/current_maintext_numerical_audit.json', result)

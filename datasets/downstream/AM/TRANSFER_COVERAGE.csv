@@ -1,0 +1,3 @@
+source_component_disjoint,eligible_heads,label_rows,positives,proteins,components
+False,1,1430,664,101,87
+True,5,371,175,26,25

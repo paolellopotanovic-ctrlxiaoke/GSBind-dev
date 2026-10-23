@@ -39,7 +39,7 @@ def main():
         writer = csv.DictWriter(handle, fieldnames=['path', 'bytes', 'sha256'])
         writer.writeheader()
         writer.writerows(records)
-    metadata = dict(package='GSbind public paper engineering', date='2026-10-22', files=len(records), bytes=sum(row['bytes'] for row in records),
+    metadata = dict(package='GSbind public paper engineering', date='2026-10-23', files=len(records), bytes=sum(row['bytes'] for row in records),
                     inventory_sha256=checksum(inventory), excludes=sorted(EXCLUDED),
                     inventory_self_excluded=True, hardlinks_are_archived_with_content=True,
                     entrypoint='python tools/check_publication.py; python main.py summarize --task all',

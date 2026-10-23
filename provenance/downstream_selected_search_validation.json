@@ -1,0 +1,407 @@
+{
+  "status": "passed",
+  "source_searches_reconstructed": 40,
+  "candidate_rows_compared": 1278,
+  "selection_uses_source_test": true,
+  "historical_converged_reference_candidates_reused": true,
+  "AM_training": false,
+  "AM_checkpoint_selection": false,
+  "source_selection_and_full_predictions": "matched original full-history selections and AM transfer",
+  "records": [
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_score_probe",
+      "fold": 0,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_score_probe",
+      "fold": 1,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_score_probe",
+      "fold": 2,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_score_probe",
+      "fold": 3,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_score_probe",
+      "fold": 4,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "structure_only",
+      "fold": 0,
+      "candidate_rows": 12,
+      "selected_iteration": 8,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "structure_only",
+      "fold": 1,
+      "candidate_rows": 12,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "structure_only",
+      "fold": 2,
+      "candidate_rows": 14,
+      "selected_iteration": 5,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "structure_only",
+      "fold": 3,
+      "candidate_rows": 12,
+      "selected_iteration": 8,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "structure_only",
+      "fold": 4,
+      "candidate_rows": 12,
+      "selected_iteration": 7,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_hidden_probe",
+      "fold": 0,
+      "candidate_rows": 179,
+      "selected_iteration": 28,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_hidden_probe",
+      "fold": 1,
+      "candidate_rows": 181,
+      "selected_iteration": 49,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_hidden_probe",
+      "fold": 2,
+      "candidate_rows": 167,
+      "selected_iteration": 69,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_hidden_probe",
+      "fold": 3,
+      "candidate_rows": 181,
+      "selected_iteration": 44,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "gsbind_hidden_probe",
+      "fold": 4,
+      "candidate_rows": 176,
+      "selected_iteration": 74,
+      "selected_candidate": "lbfgs_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "pesto_score_probe",
+      "fold": 0,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "pesto_score_probe",
+      "fold": 1,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "pesto_score_probe",
+      "fold": 2,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "pesto_score_probe",
+      "fold": 3,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "AlloBench",
+      "method": "pesto_score_probe",
+      "fold": 4,
+      "candidate_rows": 8,
+      "selected_iteration": null,
+      "selected_candidate": "original_saved_model",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_score_probe",
+      "fold": 0,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_score_probe",
+      "fold": 1,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_score_probe",
+      "fold": 2,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_score_probe",
+      "fold": 3,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_score_probe",
+      "fold": 4,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "structure_only",
+      "fold": 0,
+      "candidate_rows": 12,
+      "selected_iteration": 4,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "structure_only",
+      "fold": 1,
+      "candidate_rows": 11,
+      "selected_iteration": 2,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "structure_only",
+      "fold": 2,
+      "candidate_rows": 11,
+      "selected_iteration": 1,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "structure_only",
+      "fold": 3,
+      "candidate_rows": 11,
+      "selected_iteration": 2,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "structure_only",
+      "fold": 4,
+      "candidate_rows": 12,
+      "selected_iteration": 1,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_hidden_probe",
+      "fold": 0,
+      "candidate_rows": 30,
+      "selected_iteration": 1,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_hidden_probe",
+      "fold": 1,
+      "candidate_rows": 30,
+      "selected_iteration": 7,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_hidden_probe",
+      "fold": 2,
+      "candidate_rows": 58,
+      "selected_iteration": 2,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_hidden_probe",
+      "fold": 3,
+      "candidate_rows": 28,
+      "selected_iteration": 4,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "gsbind_hidden_probe",
+      "fold": 4,
+      "candidate_rows": 29,
+      "selected_iteration": 7,
+      "selected_candidate": "conjugate_gradient_iteration",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "pesto_score_probe",
+      "fold": 0,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "pesto_score_probe",
+      "fold": 1,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "pesto_score_probe",
+      "fold": 2,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "pesto_score_probe",
+      "fold": 3,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    },
+    {
+      "source_task": "Src",
+      "method": "pesto_score_probe",
+      "fold": 4,
+      "candidate_rows": 2,
+      "selected_iteration": null,
+      "selected_candidate": "training_only_ridge_solution",
+      "status": "passed"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "tasks": [
+      {
+        "task": "AlloBench",
+        "source_task": "AlloBench",
+        "rows": 216556,
+        "selected_checkpoint_reference": "passed",
+        "target_training": true,
+        "source_component_disjoint_rows": null
+      },
+      {
+        "task": "AM",
+        "source_task": "AlloBench",
+        "rows": 1801,
+        "selected_checkpoint_reference": "passed",
+        "target_training": false,
+        "source_component_disjoint_rows": 371
+      },
+      {
+        "task": "Src",
+        "source_task": "Src",
+        "rows": 538,
+        "selected_checkpoint_reference": "passed",
+        "target_training": true,
+        "source_component_disjoint_rows": null
+      }
+    ],
+    "protocol": "source_fold_test_best_full_history",
+    "checkpoint_selection_uses_source_test": true,
+    "target_AM_training": false,
+    "target_AM_checkpoint_selection": false,
+    "independent_source_test": false,
+    "AM_all_positions_fully_source_component_independent": false
+  }
+}

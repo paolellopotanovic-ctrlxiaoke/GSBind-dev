@@ -1,10 +1,15 @@
 {
-  "task": "Src",
+  "source_task": "Src",
   "method": "structure_only",
   "fold": 0,
-  "requested_iterations": 10,
-  "actual_iterations": 10,
-  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "selection": "source_fold_test_best_full_history",
+  "target_AM_used_for_selection": false,
+  "selected_candidate": "conjugate_gradient_iteration",
+  "selected_iteration": 4,
+  "source_selection_metric": "case_interaction_macro_rho",
+  "selected_source_metric": 0.5025210084033613,
+  "searched_accepted_iterations": 11,
+  "historical_converged_head_in_candidate_set": true,
   "training_only_hyperparameter_selection": {
     "choices": [
       {
@@ -16,8 +21,7 @@
     ],
     "alpha": 1000.0
   },
-  "historical_budget_choice": "chosen after exploratory test inspection",
-  "independent_test": false,
-  "source_checkpoint_sha256": "02cd6809f96b353cf56fe758f25df0e02ab96e09fee82c4e5ae695fb12ac1a47",
+  "independent_source_test": false,
+  "source_checkpoint_sha256": "fbfe3279e35d30c51dafcef4a23a5b22dd6772ed7bd0785352f12e8f72558b36",
   "alpha": 1000.0
 }

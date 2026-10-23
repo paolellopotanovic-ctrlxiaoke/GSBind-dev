@@ -12,5 +12,7 @@
     "features_000.npz"
   ],
   "full_training_features_in_git": true,
-  "raw_or_rank_targets": "raw labels; ranks recomputed on training fold only"
+  "raw_or_rank_targets": "raw labels; ranks recomputed on training fold only",
+  "role": "frozen_AlloBench_transfer_no_target_training",
+  "outer_fold_usage": "legacy AM split metadata only; never used for training or routing"
 }

@@ -1,0 +1,7 @@
+uniprot,component,AUPR,task,source_task,method,scope,case_id,interaction,rho,positions
+P00519,P00519,0.0143122363108813,AlloBench,AlloBench,gsbind_score_probe,all_positions,,,,
+P00519,P00519,0.0551256671559601,AlloBench,AlloBench,structure_only,all_positions,,,,
+P00519,P00519,0.3252776704012955,AlloBench,AlloBench,gsbind_hidden_probe,all_positions,,,,
+P00519,P00519,0.0133586519266573,AlloBench,AlloBench,pesto_score_probe,all_positions,,,,
+P00519,P00519,0.0143122363108813,AlloBench,AlloBench,gsbind_raw_score,all_positions,,,,
+P00519,P00519,0.0133586519266573,AlloBench,AlloBench,pesto_raw_score,all_positions,,,,

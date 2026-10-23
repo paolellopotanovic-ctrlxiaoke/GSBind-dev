@@ -1,19 +1,31 @@
 {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "status": "passed",
+  "protocol": "source_fold_test_best_full_history",
   "tests": {
-    "passed": 33,
+    "passed": 37,
     "failed": 0
   },
-  "fixed_iteration_heads_refitted": 60,
-  "refit_prediction_reference": "all 3 tasks passed at rtol=1e-10, atol=1e-12",
+  "selected_source_heads": 40,
+  "historical_training_reference_heads": 40,
+  "reconstructed_source_searches": 40,
+  "candidate_rows_compared": 1278,
+  "source_selection_uses_test": true,
+  "AM_training": false,
+  "AM_checkpoint_selection": false,
+  "AM_primary": "training-component-disjoint routed frozen AlloBench predictions, all 1801 positions",
+  "AM_supplementary": "source-component-disjoint subset, 371 positions / 26 proteins / 25 components",
+  "selected_source_and_transfer_predictions": "matched original selected OOF and frozen transfer references at rtol=1e-10, atol=1e-12",
   "public_maintext_tables_compared": 19,
   "figure3": {
     "summary_rows_replayed": 312,
-    "paired_residue_metric_replays": 3152
+    "paired_cases": 788,
+    "paired_four_models_same_cases": true,
+    "paired_residue_metric_replays": 3152,
+    "correct_candidate_counts_replayed": true,
+    "example_priorities_replayed": true
   },
-  "cpu_backbone_gradient_step": "passed, 1 optimizer step; not full retraining",
-  "cpu_backbone_isolated_copy": "passed, 2 examples; external third-party packages only",
-  "manuscript_status": "Separate LaTeX draft still contains legacy claims and TODO; not certified submission-ready",
+  "backbone": "Unchanged; previous CPU gradient and isolated-copy smoke reports retained",
+  "manuscript_status": "Separate LaTeX draft retains legacy claims and TODO; current replacement English Methods/Results provided in docs",
   "full_backbone_training_data": "Bulk public URL still pending"
 }

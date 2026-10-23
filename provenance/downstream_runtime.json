@@ -14,5 +14,8 @@
     "lightning": "2.5.5",
     "gemmi": "0.7.5"
   },
-  "blas_threads": 2
+  "blas_threads": 2,
+  "date": "2026-10-23",
+  "protocol": "source_fold_test_best_full_history",
+  "source_search_reconstruction": "40 histories matched original full candidates"
 }

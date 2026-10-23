@@ -1,0 +1,10 @@
+task,scope,comparator,components,mean_delta_AUPR,median_delta_AUPR,fraction_improved
+AM,all_positions,gsbind_score_probe,112,0.18436323812721953,0.213874007936508,0.7410714285714286
+AM,all_positions,pesto_score_probe,112,0.20852299120964007,0.23509230595208408,0.75
+AM,all_positions,structure_only,112,0.045311715362205136,0.05176419813890315,0.5446428571428571
+AM,source_component_disjoint,gsbind_score_probe,25,0.22524847355032943,0.2665502156573585,0.88
+AM,source_component_disjoint,pesto_score_probe,25,0.2982097321881624,0.28230469926898494,0.92
+AM,source_component_disjoint,structure_only,25,0.05033108028366252,0.0,0.48
+AlloBench,all_positions,gsbind_score_probe,282,0.08463722106018896,0.0348788747015145,0.7269503546099291
+AlloBench,all_positions,pesto_score_probe,282,0.0784431912540348,0.034648552298818344,0.7163120567375887
+AlloBench,all_positions,structure_only,282,0.08155563630111093,0.033655481969516204,0.7092198581560284

@@ -12,5 +12,7 @@
     "features_000.npz"
   ],
   "full_training_features_in_git": true,
-  "raw_or_rank_targets": "raw labels; ranks recomputed on training fold only"
+  "raw_or_rank_targets": "raw labels; ranks recomputed on training fold only",
+  "role": "source_test_selected_five_fold",
+  "outer_fold_usage": "active source fold"
 }

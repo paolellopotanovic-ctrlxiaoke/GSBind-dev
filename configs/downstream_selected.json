@@ -1,0 +1,35 @@
+{
+  "tasks": [
+    "AlloBench",
+    "AM",
+    "Src"
+  ],
+  "methods": [
+    "gsbind_score_probe",
+    "structure_only",
+    "gsbind_hidden_probe",
+    "pesto_score_probe"
+  ],
+  "training_sources": [
+    "AlloBench",
+    "Src"
+  ],
+  "checkpoint_selection": "source_fold_test_best_full_history",
+  "AM": {
+    "training": false,
+    "source": "AlloBench",
+    "target_checkpoint_selection": false,
+    "primary": "training_component_disjoint_routing",
+    "supplementary": "source_component_disjoint"
+  },
+  "Src": {
+    "evaluation": "within_system_five_fold_best_test_selected_OOF",
+    "independent_test": false
+  },
+  "metrics": {
+    "classification": "component_macro_trapezoidal_AUPR",
+    "functional": "complete_OOF_case_interaction_macro_rho"
+  },
+  "source_test_selected": true,
+  "fixed_iteration_budget": false
+}

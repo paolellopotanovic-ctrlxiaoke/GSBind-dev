@@ -1,0 +1,12 @@
+{
+  "version": "3.2.0a",
+  "renderer_distribution": "pymol-open-source",
+  "ray_traced": true,
+  "width": 1400,
+  "height": 1200,
+  "identical_view_within_comparisons": true,
+  "map_scale": "within-protein/construct percentile, 0 to 1",
+  "uncovered_residues": "neutral gray; not zero effect",
+  "src_activation_segment": "human P12931 DFG407-409 through APE433-435",
+  "src_input": "AF2 monomer; not evidence of active or inactive conformational state"
+}

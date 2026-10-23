@@ -1,0 +1,20 @@
+{
+  "display_construct": "src_kd_af2",
+  "positions": 269,
+  "no_retraining": true,
+  "agreement_metric": "Complete-OOF Spearman, all 269 evaluated KD positions",
+  "structure_rho": 0.5108768425530341,
+  "hidden_rho": 0.6669773807542213,
+  "absolute_delta_rho": 0.1561005382011872,
+  "common_crop": [
+    387,
+    303,
+    1025,
+    1065
+  ],
+  "display_scale": "Separate within-construct percentile ranks, same 0-1 color mapping",
+  "metric_computed_from": "Original experimental functional magnitudes and saved OOF predictions",
+  "no_site_selection_or_color_remapping": true,
+  "source_test_selected": true,
+  "full_length_results_retained_in": "SRC_CASE_AGREEMENT.csv and main complete-OOF figure"
+}

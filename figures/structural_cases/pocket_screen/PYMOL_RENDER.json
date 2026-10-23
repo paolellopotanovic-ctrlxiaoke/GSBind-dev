@@ -1,0 +1,8 @@
+{
+  "renderer": "pymol-open-source",
+  "version": "3.2.0a",
+  "same_camera_across_methods_and_thresholds": true,
+  "omitted_partner_chains": true,
+  "displayed_chain": "Only annotated target chain; selected mapped residues all retained; real ligands shown",
+  "no_holo_input_to_probe": true
+}

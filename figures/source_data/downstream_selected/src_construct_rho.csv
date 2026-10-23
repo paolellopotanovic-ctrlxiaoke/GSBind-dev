@@ -1,0 +1,9 @@
+case_id,interaction,method,rho,positions
+src_fl_af2,SRC_FL,gsbind_score_probe,0.2424821370224466,269.0
+src_kd_af2,SRC_KD,gsbind_score_probe,0.5341914960513418,269.0
+src_fl_af2,SRC_FL,structure_only,0.2900485182513701,269.0
+src_kd_af2,SRC_KD,structure_only,0.5108768425530341,269.0
+src_fl_af2,SRC_FL,gsbind_hidden_probe,0.3584043845210132,269.0
+src_kd_af2,SRC_KD,gsbind_hidden_probe,0.6669773807542213,269.0
+src_fl_af2,SRC_FL,pesto_score_probe,0.1382418761212524,269.0
+src_kd_af2,SRC_KD,pesto_score_probe,0.1539569808947825,269.0

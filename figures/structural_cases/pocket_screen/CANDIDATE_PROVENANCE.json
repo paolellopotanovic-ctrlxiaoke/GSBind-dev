@@ -1,0 +1,96 @@
+{
+  "screen_source_records": 1506,
+  "screen_proteins": 357,
+  "eligibility": "Mapped source pocket with >=5 positions, all in evaluated protein",
+  "case_selection": "Post-hoc illustrative source-test-selected cases; not independent evidence",
+  "metrics": "Source-pocket-specific labels, not the full AlloBench union metric",
+  "spatial_check": "Heavy-atom minimum distance to specified real source ligand(s); CA graph threshold 8 A",
+  "exclusions": "FKBP12/rapamycin example not prioritized: ternary recruitment may confuse the regulatory-pocket story",
+  "cases": [
+    {
+      "pdb": "2XPU",
+      "uniprot": "P0ACT4",
+      "chain": "A",
+      "record_id": 1443,
+      "observed_mapped_N": 202,
+      "mismatches": 1,
+      "ligands": [
+        {
+          "resn": "TDC",
+          "chain": "A",
+          "resi": "1209"
+        }
+      ],
+      "ligand_heavy_atoms": 31,
+      "annotation_N": 23,
+      "title": [
+        "TETR(D) IN COMPLEX WITH ANHYDROTETRACYCLINE."
+      ],
+      "doi": [
+        "10.1021/BI5012805"
+      ],
+      "sha256": "4b0ad447b2343f23ea73efcbd761efa99ac83ac1bdca7bddecff262ac3b2194a",
+      "source_annotation_mapping_matches": true,
+      "full_protein_predictions_not_refit": true
+    },
+    {
+      "pdb": "1ZA2",
+      "uniprot": "P0A7F3",
+      "chain": "B",
+      "record_id": 100,
+      "observed_mapped_N": 144,
+      "mismatches": 0,
+      "ligands": [
+        {
+          "resn": "CTP",
+          "chain": "B",
+          "resi": "155"
+        }
+      ],
+      "ligand_heavy_atoms": 29,
+      "annotation_N": 12,
+      "title": [
+        "STRUCTURE OF WILD-TYPE E. COLI ASPARTATE TRANSCARBAMOYLASE IN THE",
+        "PRESENCE OF CTP, CARBAMOYL PHOSPHATE AT 2.50 A RESOLUTION"
+      ],
+      "doi": [
+        "10.1073/PNAS.0503742102"
+      ],
+      "sha256": "6260dc3e11b757d774889c1fbc9c1c6d78860b987f649df7b83b240409200563",
+      "source_annotation_mapping_matches": true,
+      "full_protein_predictions_not_refit": true
+    },
+    {
+      "pdb": "1H9G",
+      "uniprot": "P0A8V6",
+      "chain": "A",
+      "record_id": 1888,
+      "observed_mapped_N": 223,
+      "mismatches": 0,
+      "ligands": [
+        {
+          "resn": "COA",
+          "chain": "A",
+          "resi": "1228"
+        },
+        {
+          "resn": "MYR",
+          "chain": "A",
+          "resi": "1229"
+        }
+      ],
+      "ligand_heavy_atoms": 63,
+      "annotation_N": 25,
+      "title": [
+        "FADR, FATTY ACID RESPONSIVE TRANSCRIPTION FACTOR FROM E. COLI, IN",
+        "COMPLEX WITH MYRISTOYL-COA"
+      ],
+      "doi": [
+        "10.1093/EMBOJ/20.8.2041"
+      ],
+      "sha256": "305711c47044a8280f3f28d6bb5111bec8c98aa2a4ce2873df19114e7abcc49f",
+      "source_annotation_mapping_matches": true,
+      "full_protein_predictions_not_refit": true
+    }
+  ]
+}

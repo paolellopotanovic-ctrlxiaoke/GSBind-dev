@@ -1,18 +1,22 @@
 {
-  "task": "AlloBench",
+  "source_task": "AlloBench",
   "method": "structure_only",
   "fold": 3,
-  "requested_iterations": 50,
-  "actual_iterations": 11,
-  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "selection": "source_fold_test_best_full_history",
+  "target_AM_used_for_selection": false,
+  "selected_candidate": "lbfgs_iteration",
+  "selected_iteration": 8,
+  "source_selection_metric": "component_macro_AUPR",
+  "selected_source_metric": 0.0741451420596145,
+  "searched_accepted_iterations": 11,
+  "historical_converged_head_in_candidate_set": true,
   "training_only_hyperparameter_selection": {
     "C": 10.0,
     "source": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind/results/figure4_complementary_20261021/training/allosteric/AlloBench/3_structure_only.joblib",
     "sha256": "1df70ea5184ea3996a13ceebba533fc58bf10b56a566844d280999070d3d6c6f",
     "selection": "original training-only inner-fold choice"
   },
-  "historical_budget_choice": "chosen after exploratory test inspection",
-  "independent_test": false,
-  "source_checkpoint_sha256": "76f02c2744bbae68a553bd1ba8f7cb551d314bc9410a4ea71584e815dfe84dc1",
+  "independent_source_test": false,
+  "source_checkpoint_sha256": "266d8362ecf4143fe676723e93490253c3b5fb7785559dbb0684862bdd8ee4da",
   "C": 10.0
 }

@@ -68,35 +68,37 @@
     },
     {
       "path": "results/downstream/DETAILED_METRICS.csv",
-      "rows": 3072,
+      "rows": 3228,
       "status": "passed"
     },
     {
       "path": "results/downstream/FOLD_METRICS.csv",
-      "rows": 60,
+      "rows": 40,
       "status": "passed"
     },
     {
       "path": "results/downstream/METRICS.csv",
-      "rows": 18,
+      "rows": 24,
       "status": "passed"
     },
     {
-      "path": "downstream/AlloBench/OOF_predictions.csv.gz",
+      "path": "downstream/AlloBench/predictions.csv.gz",
       "rows": 216556,
       "status": "passed"
     },
     {
-      "path": "downstream/AM/OOF_predictions.csv.gz",
+      "path": "downstream/AM/predictions.csv.gz",
       "rows": 1801,
       "status": "passed"
     },
     {
-      "path": "downstream/Src/OOF_predictions.csv.gz",
+      "path": "downstream/Src/predictions.csv.gz",
       "rows": 538,
       "status": "passed"
     }
   ],
+  "downstream_protocol": "source_fold_test_best_full_history",
+  "AM_training": false,
   "classification_metric": "downstream trapezoidal AUPR; binding/SSM legacy aupr fields are AP",
   "scope": "Public saved predictions and frozen readouts; not full backbone retraining or manuscript editorial approval"
 }

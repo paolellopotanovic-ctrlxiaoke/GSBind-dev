@@ -60,12 +60,12 @@ def refresh(root):
         writer = csv.DictWriter(handle, fieldnames=['path', 'bytes', 'sha256'], lineterminator='\n')
         writer.writeheader()
         writer.writerows(inventory)
-    delivery = dict(package='GSbind current paper engineering', date='2026-10-22',
+    delivery = dict(package='GSbind current paper engineering', date='2026-10-23',
         files=len(inventory), bytes=sum(row['bytes'] for row in inventory),
         inventory_sha256=hashlib.sha256(target.read_bytes()).hexdigest(),
         excludes=sorted(EXCLUDES), inventory_self_excluded=True, delivery_self_excluded=True,
         entrypoint='python main.py summarize --task all; python main.py downstream --action train; python main.py figures',
-        functional_scope='Src all measured positions; fixed 10 iterations', archive=None,
+        functional_scope='Src internal five-fold best-test selected OOF; AM frozen AlloBench transfer', archive=None,
         archive_note='Existing GSbind_paper_20261020.tar.zst predates this update; bulk datasets only, install missing files without overwriting public data.')
     (root / 'DELIVERY.json').write_text(json.dumps(delivery, indent=2) + '\n')
     print(json.dumps(dict(root=str(root), files=len(inventory), tables=len(tables), inventory_sha256=delivery['inventory_sha256'])))

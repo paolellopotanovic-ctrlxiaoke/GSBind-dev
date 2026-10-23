@@ -1,0 +1,19 @@
+{
+  "construct": "Src kinase-domain AF2",
+  "positions": 269,
+  "metric": "Per-position reduction in absolute rank-percentile error",
+  "formula": "abs(rank(structure)-rank(experiment))-abs(rank(hidden)-rank(experiment))",
+  "improved": 157,
+  "worsened": 111,
+  "unchanged": 1,
+  "structure_MAE": 0.2334130263539752,
+  "hidden_MAE": 0.18587360594795538,
+  "structure_rho": 0.5108768425530341,
+  "hidden_rho": 0.6669773807542213,
+  "symmetric_color_limit": 0.516728624535316,
+  "all_positions_retained": true,
+  "zero_centered_symmetric_scale": true,
+  "active_state_not_assigned": true,
+  "source_test_selected": true,
+  "spatial_map_is_not_a_spearman_decomposition": true
+}

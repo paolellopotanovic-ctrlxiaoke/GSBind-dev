@@ -1,0 +1,7 @@
+case_id,interaction,comparator,delta_rho
+src_fl_af2,SRC_FL,gsbind_score_probe,0.11592224749856661
+src_kd_af2,SRC_KD,gsbind_score_probe,0.13278588470287955
+src_fl_af2,SRC_FL,structure_only,0.06835586626964307
+src_kd_af2,SRC_KD,structure_only,0.1561005382011872
+src_fl_af2,SRC_FL,pesto_score_probe,0.2201625083997608
+src_kd_af2,SRC_KD,pesto_score_probe,0.5130203998594388

@@ -1,0 +1,5 @@
+case_id,method,positions,rho
+src_fl_af2,structure_only,269,0.2900485182513701
+src_fl_af2,gsbind_hidden_probe,269,0.35840438452101325
+src_kd_af2,structure_only,269,0.5108768425530341
+src_kd_af2,gsbind_hidden_probe,269,0.6669773807542213

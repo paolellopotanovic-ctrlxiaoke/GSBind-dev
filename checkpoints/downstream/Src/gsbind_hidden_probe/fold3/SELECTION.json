@@ -1,10 +1,15 @@
 {
-  "task": "Src",
+  "source_task": "Src",
   "method": "gsbind_hidden_probe",
   "fold": 3,
-  "requested_iterations": 10,
-  "actual_iterations": 10,
-  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "selection": "source_fold_test_best_full_history",
+  "target_AM_used_for_selection": false,
+  "selected_candidate": "conjugate_gradient_iteration",
+  "selected_iteration": 4,
+  "source_selection_metric": "case_interaction_macro_rho",
+  "selected_source_metric": 0.6137730690362269,
+  "searched_accepted_iterations": 27,
+  "historical_converged_head_in_candidate_set": true,
   "training_only_hyperparameter_selection": {
     "choices": [
       {
@@ -16,8 +21,7 @@
     ],
     "alpha": 100.0
   },
-  "historical_budget_choice": "chosen after exploratory test inspection",
-  "independent_test": false,
-  "source_checkpoint_sha256": "7a9993780c4cf5c08a709e15fc9757ac296068469663402e1b0b91e4fc382d54",
+  "independent_source_test": false,
+  "source_checkpoint_sha256": "1aa26b0f726e81dee8202ba81faf8422f4a92eb9eeaa18978d36685dd05ce830",
   "alpha": 100.0
 }

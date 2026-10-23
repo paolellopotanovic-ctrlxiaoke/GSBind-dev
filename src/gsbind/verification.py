@@ -28,9 +28,11 @@ def verify(root):
         records.append(dict(manifest=name, cases=len(frame)))
     for task in TASKS:
         frame, features, matrices = load_inputs(root, task)
-        for fold in range(5):
-            split_masks(frame, task, fold)
-        records.append(dict(task=task, labels=len(frame), feature_rows=len(features)))
+        if task != 'AM':
+            for fold in range(5):
+                split_masks(frame, task, fold)
+        records.append(dict(task=task, labels=len(frame), feature_rows=len(features),
+                            role='frozen_AlloBench_transfer' if task == 'AM' else 'source_selected_OOF'))
     replay(root, root / 'runs/verification/downstream')
     checkpoint = root / 'checkpoints/direct128_e11.pt'
     result = dict(status='passed', records=records,

@@ -1,8 +1,8 @@
 # Bulk data release
 
-## 2026-10-22 downstream replacement
+## 2026-10-23 downstream replacement
 
-The current AlloBench/AM/Src fixed50/fixed50/fixed10 readouts are **fully self-contained in Git**, including all training features, labels, folds, selected regularization settings and 60 heads. Run `python main.py downstream --action train` or `--action replay` without this archive. The archive is a historical bulk-input source for full backbone regeneration, not the current readout release. Do not restore obsolete results or checkpoints from it.
+The current **AlloBench source-test-selected heads → frozen AM transfer**, and **Src internal five-fold best-test-selected heads**, are fully self-contained in Git. Complete features, labels, source folds, AM component routing, 40 selected source heads, candidate histories and 40 historical reference heads are included. Replay needs no archive. `--action train` reconstructs the two source optimizer searches using historical reference candidates; it never fits AM and is not a from-scratch reconstruction of the historical baseline fits. The archive is a historical bulk-input source for full backbone regeneration, not the current readout release. Do not restore obsolete results or checkpoints from it.
 
 ## Current status: public download URL pending
 
@@ -40,7 +40,7 @@ python main.py evidence --task all
 | Read all maintext metrics and detailed saved predictions | Yes | No |
 | Recompute metrics from saved predictions: `main.py summarize` | Yes | No |
 | CPU example inference, evaluation and Lightning gradient step | Yes | No |
-| Current AlloBench/AM/Src fixed-iteration replay and refit | Yes | No |
+| Current selected-source replay, source search reconstruction and frozen AM transfer | Yes | No |
 | Main/SSM evidence from saved binding scores | Yes | No |
 | Regenerate all frozen features from original structures | No | Yes |
 | All-case surface forward and complete model training | No | Yes |

@@ -3,25 +3,33 @@
   "tasks": [
     {
       "task": "AlloBench",
+      "source_task": "AlloBench",
       "rows": 216556,
-      "checkpoint_replay": "passed",
-      "fixed_iteration_reference": "passed"
+      "selected_checkpoint_reference": "passed",
+      "target_training": true,
+      "source_component_disjoint_rows": null
     },
     {
       "task": "AM",
+      "source_task": "AlloBench",
       "rows": 1801,
-      "checkpoint_replay": "passed",
-      "fixed_iteration_reference": "passed"
+      "selected_checkpoint_reference": "passed",
+      "target_training": false,
+      "source_component_disjoint_rows": 371
     },
     {
       "task": "Src",
+      "source_task": "Src",
       "rows": 538,
-      "checkpoint_replay": "passed",
-      "fixed_iteration_reference": "passed"
+      "selected_checkpoint_reference": "passed",
+      "target_training": true,
+      "source_component_disjoint_rows": null
     }
   ],
-  "protocol": "fixed50_AlloBench_AM_fixed10_Src",
-  "no_test_checkpoint_selection": true,
-  "budgets_chosen_after_exploratory_test_inspection": true,
-  "independent_test": false
+  "protocol": "source_fold_test_best_full_history",
+  "checkpoint_selection_uses_source_test": true,
+  "target_AM_training": false,
+  "target_AM_checkpoint_selection": false,
+  "independent_source_test": false,
+  "AM_all_positions_fully_source_component_independent": false
 }

@@ -19,7 +19,7 @@ def main():
     summary = commands.add_parser('summarize', help='Recompute paper metrics from public saved predictions; no model fitting')
     summary.add_argument('--task', choices=['all', 'main', 'ssm220', 'downstream'], default='all')
     summary.add_argument('--output', type=Path, default=ROOT / 'runs/public_recompute')
-    downstream = commands.add_parser('downstream', help='Fixed50 AlloBench/AM and fixed10 Src probes')
+    downstream = commands.add_parser('downstream', help='AlloBench source-selected heads, frozen AM transfer and Src selected OOF')
     downstream.add_argument('--action', choices=['replay', 'train'], default='replay')
     downstream.add_argument('--output', type=Path, default=ROOT / 'runs/downstream')
     downstream.add_argument('--task', choices=['all', 'AlloBench', 'AM', 'Src'], default='all')
@@ -46,10 +46,13 @@ def main():
         args.output = args.output.resolve()
     os.chdir(ROOT)
     if args.command == 'downstream':
-        from .downstream import replay, train
+        from .downstream import replay
         tasks = None if args.task == 'all' else [args.task]
-        function = train if args.action == 'train' else replay
-        print(function(ROOT, args.output, tasks).to_string(index=False))
+        if args.action == 'train':
+            from .downstream_training import train
+            print(train(ROOT, args.output, tasks).to_string(index=False))
+        else:
+            print(replay(ROOT, args.output, tasks).to_string(index=False))
     elif args.command == 'summarize':
         from .evidence import run
         run(ROOT, args.task, output_root=args.output)

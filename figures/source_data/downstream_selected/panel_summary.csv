@@ -1,0 +1,13 @@
+task,scope,method,components,mean_AUPR,median_AUPR
+AM,all_positions,gsbind_hidden_probe,112,0.69369905166219,0.724148664334071
+AM,all_positions,gsbind_score_probe,112,0.5093358135349706,0.44578860669869436
+AM,all_positions,pesto_score_probe,112,0.48517606045255,0.4277777777777777
+AM,all_positions,structure_only,112,0.6483873362999849,0.654668486275629
+AM,source_component_disjoint,gsbind_hidden_probe,25,0.7262313438727783,0.7638888888888888
+AM,source_component_disjoint,gsbind_score_probe,25,0.5009828703224488,0.4087123742270801
+AM,source_component_disjoint,pesto_score_probe,25,0.4280216116846159,0.4093670218670219
+AM,source_component_disjoint,structure_only,25,0.6759002635891157,0.6558845915988771
+AlloBench,all_positions,gsbind_hidden_probe,282,0.15923611726770115,0.10353583696837675
+AlloBench,all_positions,gsbind_score_probe,282,0.07459889620751217,0.04107411842393845
+AlloBench,all_positions,pesto_score_probe,282,0.08079292601366632,0.04263048424265565
+AlloBench,all_positions,structure_only,282,0.0776804809665902,0.05417147544035748

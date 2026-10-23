@@ -1,10 +1,15 @@
 {
-  "task": "Src",
+  "source_task": "Src",
   "method": "pesto_score_probe",
   "fold": 3,
-  "requested_iterations": 10,
-  "actual_iterations": 1,
-  "selection": "fixed_iteration_no_test_checkpoint_selection",
+  "selection": "source_fold_test_best_full_history",
+  "target_AM_used_for_selection": false,
+  "selected_candidate": "training_only_ridge_solution",
+  "selected_iteration": null,
+  "source_selection_metric": "case_interaction_macro_rho",
+  "selected_source_metric": 0.3404306220095694,
+  "searched_accepted_iterations": 1,
+  "historical_converged_head_in_candidate_set": true,
   "training_only_hyperparameter_selection": {
     "choices": [
       {
@@ -26,8 +31,7 @@
     ],
     "alpha": 1000.0
   },
-  "historical_budget_choice": "chosen after exploratory test inspection",
-  "independent_test": false,
-  "source_checkpoint_sha256": "41982c8a33b103bf7e390c05ba310263d08106bcd15d11bece689bde8cef801e",
+  "independent_source_test": false,
+  "source_checkpoint_sha256": "cd974fa5eda535cca6a05030cf98e0fd12b6a28a62fb70c54cc7314edd537b96",
   "alpha": 1000.0
 }

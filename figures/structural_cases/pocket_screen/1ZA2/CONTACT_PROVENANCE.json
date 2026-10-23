@@ -1,0 +1,45 @@
+{
+  "structure": "1ZA2",
+  "target": "chain B, identity operator 1",
+  "assembly": "Deposited REMARK350 biomolecule1, author/PISA dodecamer, operators1-3 on chainsA-D",
+  "source_of_partners": "Only deposited biological assembly, not arbitrary crystal neighbors",
+  "definition": "Minimum non-hydrogen protein-atom distance; alternate locations blank/A",
+  "thresholds_A": [
+    4,
+    5
+  ],
+  "source_pocket_hits": 6,
+  "off_annotation_rows": [
+    {
+      "pdb_resi": 24,
+      "canonical_position": 24,
+      "amino": "Q",
+      "source_pocket": false,
+      "ligand_distance_A": 16.14754560297013,
+      "nearest_partner_distance_A": 3.3729212857699493,
+      "nearest_operation": 1,
+      "nearest_chain": "D",
+      "nearest_resi": "38",
+      "nearest_amino": "THR",
+      "contact_4A": true,
+      "contact_5A": true,
+      "contact_partner_residues_5A": "D@1:38THR;D@1:36THR;D@1:37GLU;D@1:39ASP"
+    },
+    {
+      "pdb_resi": 27,
+      "canonical_position": 27,
+      "amino": "F",
+      "source_pocket": false,
+      "ligand_distance_A": 15.627137165840708,
+      "nearest_partner_distance_A": 3.186138415072394,
+      "nearest_operation": 1,
+      "nearest_chain": "D",
+      "nearest_resi": "31",
+      "nearest_amino": "SER",
+      "contact_4A": true,
+      "contact_5A": true,
+      "contact_partner_residues_5A": "D@1:31SER;D@1:36THR;D@1:27PHE;D@1:30LEU"
+    }
+  ],
+  "no_claim_of_joint_training_or_causal_mechanism": true
+}

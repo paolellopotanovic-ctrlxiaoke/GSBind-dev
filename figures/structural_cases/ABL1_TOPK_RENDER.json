@@ -1,0 +1,9 @@
+{
+  "renderer": "pymol-open-source",
+  "version": "3.2.0a",
+  "same_view": true,
+  "selection": "Exact ceil(fraction * full_protein_N), descending score; ties by ascending position",
+  "gray": "background or sequence mismatch",
+  "blue": "selected outside supplied annotation, not an experimentally proven false positive",
+  "hidden_off_annotation_predictions_retained": true
+}

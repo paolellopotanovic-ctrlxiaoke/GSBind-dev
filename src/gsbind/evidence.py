@@ -1,4 +1,4 @@
-"""Current paper endpoints: binding, score-only SSM, and fixed-budget readouts."""
+"""Current endpoints: binding, score-only SSM, selected sources and frozen transfer."""
 
 from pathlib import Path
 

@@ -1,0 +1,12 @@
+candidate,iteration,rho
+training_only_ridge_solution,,0.2329535982217283
+conjugate_gradient_iteration,1.0,0.2639066407335371
+conjugate_gradient_iteration,2.0,0.2361489302584051
+conjugate_gradient_iteration,3.0,0.2329535982217283
+conjugate_gradient_iteration,4.0,0.2329535982217283
+conjugate_gradient_iteration,5.0,0.2329535982217283
+conjugate_gradient_iteration,6.0,0.2329535982217283
+conjugate_gradient_iteration,7.0,0.2329535982217283
+conjugate_gradient_iteration,8.0,0.2329535982217283
+conjugate_gradient_iteration,9.0,0.2329535982217283
+conjugate_gradient_iteration,10.0,0.2329535982217283

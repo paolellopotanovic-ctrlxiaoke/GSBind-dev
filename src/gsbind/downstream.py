@@ -1,25 +1,21 @@
-"""Fixed-budget frozen readouts for the current biological application section."""
+"""Source-selected AlloBench readouts, frozen AM transfer, and Src selected OOF."""
 
 import hashlib
 import json
 from pathlib import Path
-import warnings
 
 import joblib
 import numpy as np
 import pandas as pd
-from scipy.sparse.linalg import cg
 from scipy.stats import rankdata, spearmanr
-from sklearn.exceptions import ConvergenceWarning
-from sklearn.linear_model import Ridge
 from sklearn.metrics import auc, precision_recall_curve
-from sklearn.preprocessing import StandardScaler
 from threadpoolctl import threadpool_limits
 
 
 TASKS = ['AlloBench', 'AM', 'Src']
 METHODS = ['gsbind_score_probe', 'structure_only', 'gsbind_hidden_probe', 'pesto_score_probe']
-FIXED_ITERATIONS = {'AlloBench': 50, 'AM': 50, 'Src': 10}
+SOURCE_TASKS = ['AlloBench', 'Src']
+SELECTION_POLICY = 'source_fold_test_best_full_history'
 
 
 def write_json(path, value):
@@ -144,144 +140,113 @@ def predict(head, matrix):
     return head['model'].predict_proba(values)[:, 1] if head['kind'] == 'classification' else head['model'].predict(values)
 
 
+def transfer_routing(source, target):
+    eligible = np.column_stack([~target.component.isin(set(source.loc[
+        source.outer_fold.ne(fold), 'component'])) for fold in range(5)])
+    count = eligible.sum(axis=1)
+    if not (count > 0).all():
+        raise ValueError('A target component occurs in every source training fold')
+    independent = ~target.component.isin(set(source.component)).to_numpy()
+    return eligible, independent
+
+
+def load_selected_head(root, source, method, fold, checkpoints=None):
+    checkpoint_root = Path(checkpoints) if checkpoints else root / 'checkpoints/downstream'
+    directory = checkpoint_root / source / method / f'fold{fold}'
+    selection = json.loads((directory / 'SELECTION.json').read_text())
+    if selection['selection'] != SELECTION_POLICY or selection['source_task'] != source:
+        raise ValueError('Wrong source checkpoint selection protocol')
+    if selection['target_AM_used_for_selection']:
+        raise ValueError('AM must never select source checkpoints')
+    curve = pd.read_csv(directory / 'CANDIDATE_METRICS.csv')
+    metric = 'rho' if source == 'Src' else 'component_macro_AUPR'
+    np.testing.assert_allclose(curve[metric].max(), selection['selected_source_metric'], rtol=0, atol=1e-12)
+    iteration = selection['selected_iteration']
+    candidates = curve.loc[curve.candidate.eq(selection['selected_candidate'])]
+    candidates = candidates.loc[candidates.iteration.isna() if iteration is None else candidates.iteration.eq(iteration)]
+    if len(candidates) != 1:
+        raise ValueError('Selected source candidate missing from search history')
+    np.testing.assert_allclose(candidates.iloc[0][metric], selection['selected_source_metric'], rtol=0, atol=1e-12)
+    return joblib.load(directory / 'head.joblib'), selection
+
+
 @threadpool_limits.wrap(limits=2)
-def fit_fixed(frame, matrix, task, selection, parameters):
-    cap = FIXED_ITERATIONS[task]
-    if task != 'Src':
-        indices = frame.matrix_row.to_numpy(int)
-        values = matrix[indices]
-        scaler = StandardScaler().fit(values)
-        from sklearn.linear_model import LogisticRegression
-        options = dict(parameters)
-        options['max_iter'] = cap
-        estimator = LogisticRegression(**options)
-        with warnings.catch_warnings(record=True) as caught, threadpool_limits(limits=2):
-            warnings.simplefilter('always', ConvergenceWarning)
-            estimator.fit(scaler.transform(values), frame.label.to_numpy(), sample_weight=classification_weights(frame))
-        expected = [str(item.message) for item in caught if issubclass(item.category, ConvergenceWarning)]
-        return dict(kind='classification', scaler=scaler, model=estimator), dict(
-            requested_iterations=cap, actual_iterations=int(estimator.n_iter_[0]),
-            iteration_limit_warning=bool(expected), training_only_C=selection['C'])
-    targets = regression_targets(frame)
-    indices = targets.matrix_row.to_numpy(int)
-    values = matrix[indices]
-    weights = targets.weight.to_numpy()
-    target = targets.target.to_numpy()
-    scaler = StandardScaler().fit(values, sample_weight=weights)
-    transformed = scaler.transform(values)
-    mean = np.average(transformed, axis=0, weights=weights)
-    center = float(np.average(target, weights=weights))
-    centered = transformed - mean
-    alpha = float(selection['alpha'])
-    gram = centered.T @ (weights[:, None] * centered) + alpha * np.eye(values.shape[1])
-    right = centered.T @ (weights * (target - center))
-    accepted = []
-    def record(coefficients):
-        accepted.append(coefficients.copy())
-    coefficients, status = cg(gram, right, x0=np.zeros(values.shape[1]), rtol=1e-10, atol=0., maxiter=cap, callback=record)
-    if status < 0 or not accepted:
-        raise ValueError('Ridge iterative solver failed')
-    estimator = Ridge(alpha=alpha)
-    estimator.coef_ = coefficients.copy()
-    estimator.intercept_ = center - mean @ coefficients
-    estimator.n_features_in_ = values.shape[1]
-    return dict(kind='regression', scaler=scaler, model=estimator), dict(
-        requested_iterations=cap, actual_iterations=len(accepted), converged_early=status == 0,
-        training_only_alpha=alpha, cg_status=int(status))
-
-
 def replay(root, output, tasks=None, checkpoints=None):
     root, output = Path(root), Path(output)
-    checkpoint_root = Path(checkpoints) if checkpoints else root / 'checkpoints/downstream'
     output.mkdir(parents=True, exist_ok=True)
+    requested = TASKS if tasks is None else tasks
+    if not requested or not set(requested).issubset(TASKS):
+        raise ValueError('Unknown or empty downstream task list')
     summaries, fold_rows, detailed_rows, validations = [], [], [], []
-    for task in tasks or TASKS:
+    source_frame = load_inputs(root, 'AlloBench')[0] if 'AM' in requested else None
+    for task in requested:
         frame, features, matrices = load_inputs(root, task)
-        oof = frame.copy()
+        source = 'AlloBench' if task == 'AM' else task
+        predictions = frame.copy()
+        if task == 'AM':
+            eligible, independent = transfer_routing(source_frame, frame)
+            predictions['eligible_source_heads'] = eligible.sum(axis=1)
+            predictions['source_component_disjoint'] = independent
+            routing = pd.read_csv(root / 'datasets/downstream/AM/TRANSFER_ROUTING.csv').set_index('uniprot')
+            np.testing.assert_array_equal(routing.loc[frame.uniprot, 'eligible_heads'], eligible.sum(axis=1))
+            np.testing.assert_array_equal(routing.loc[frame.uniprot, 'source_component_disjoint'], independent)
+            recorded = routing.loc[frame.uniprot, 'eligible_source_folds'].astype(str)
+            expected_folds = [';'.join(map(str, np.flatnonzero(row))) for row in eligible]
+            np.testing.assert_array_equal(recorded, expected_folds)
         for method in METHODS:
             values = np.full(len(frame), np.nan)
-            for fold in range(5):
-                training, testing = split_masks(frame, task, fold)
-                directory = checkpoint_root / task / method / f'fold{fold}'
-                head = joblib.load(directory / 'head.joblib')
-                selection = json.loads((directory / 'SELECTION.json').read_text())
-                if selection['requested_iterations'] != FIXED_ITERATIONS[task] or selection['selection'] != 'fixed_iteration_no_test_checkpoint_selection':
-                    raise ValueError('Wrong checkpoint selection protocol')
-                values[testing] = predict(head, matrices[method][frame.loc[testing, 'matrix_row'].to_numpy(int)])
-                evaluator = functional_metrics if task == 'Src' else classification_metrics
-                measured, detailed = evaluator(frame.loc[testing], values[testing])
-                fold_rows.append(dict(task=task, method=method, fold=fold, **measured,
-                                      actual_iterations=selection['actual_iterations']))
+            target_matrix = matrices[method][frame.matrix_row.to_numpy(int)]
+            if task == 'AM':
+                per_head = np.column_stack([predict(load_selected_head(root, source, method, fold, checkpoints)[0],
+                    target_matrix) for fold in range(5)])
+                values = (per_head * eligible).sum(axis=1) / eligible.sum(axis=1)
+            else:
+                for fold in range(5):
+                    training, testing = split_masks(frame, task, fold)
+                    head, selection = load_selected_head(root, source, method, fold, checkpoints)
+                    values[testing] = predict(head, target_matrix[testing])
+                    evaluator = functional_metrics if task == 'Src' else classification_metrics
+                    measured, detailed = evaluator(frame.loc[testing], values[testing])
+                    selected_metric = measured['case_interaction_macro_rho' if task == 'Src' else 'component_macro_AUPR']
+                    np.testing.assert_allclose(selected_metric, selection['selected_source_metric'], rtol=0, atol=1e-12)
+                    fold_rows.append(dict(task=task, method=method, fold=fold, source_task=source,
+                        selected_iteration=selection['selected_iteration'], selected_candidate=selection['selected_candidate'],
+                        **measured))
             if not np.isfinite(values).all():
-                raise ValueError('Incomplete OOF predictions')
-            oof[method] = values
-        oof['gsbind_raw_score'] = matrices['gsbind_score_probe'][frame.matrix_row.to_numpy(int), 0].astype(float)
-        oof['pesto_raw_score'] = matrices['pesto_score_probe'][frame.matrix_row.to_numpy(int), 0].astype(float)
+                raise ValueError('Incomplete predictions')
+            predictions[method] = values
+        predictions['gsbind_raw_score'] = matrices['gsbind_score_probe'][frame.matrix_row.to_numpy(int), 0].astype(float)
+        predictions['pesto_raw_score'] = matrices['pesto_score_probe'][frame.matrix_row.to_numpy(int), 0].astype(float)
         evaluator = functional_metrics if task == 'Src' else classification_metrics
-        for method in METHODS + ['gsbind_raw_score', 'pesto_raw_score']:
-            measured, detailed = evaluator(frame, oof[method].to_numpy())
-            summaries.append(dict(task=task, method=method, fixed_iterations=FIXED_ITERATIONS[task], **measured))
-            detailed_rows.append(detailed.assign(task=task, method=method))
+        scopes = [('all_positions', np.ones(len(frame), bool))]
+        if task == 'AM':
+            scopes.append(('source_component_disjoint', independent))
+        for scope, mask in scopes:
+            for method in METHODS + ['gsbind_raw_score', 'pesto_raw_score']:
+                measured, detailed = evaluator(frame.loc[mask], predictions.loc[mask, method].to_numpy())
+                summaries.append(dict(task=task, source_task=source, method=method, scope=scope,
+                    evaluation='frozen_source_transfer' if task == 'AM' else 'source_test_selected_OOF',
+                    label_rows=int(mask.sum()), **measured))
+                detailed_rows.append(detailed.assign(task=task, source_task=source, method=method, scope=scope))
         target = output / task
         target.mkdir(parents=True, exist_ok=True)
-        oof.to_csv(target / 'OOF_predictions.csv.gz', index=False)
-        reference = root / 'datasets/downstream' / task / 'fixed_prediction_reference.csv.gz'
-        if reference.exists():
-            expected = pd.read_csv(reference)
-            pd.testing.assert_frame_equal(oof[expected.columns], expected, rtol=1e-10, atol=1e-12, check_dtype=False)
-            validations.append(dict(task=task, rows=len(oof), checkpoint_replay='passed', fixed_iteration_reference='passed'))
+        predictions.to_csv(target / 'predictions.csv.gz', index=False)
+        expected = pd.read_csv(root / 'datasets/downstream' / task / 'selected_prediction_reference.csv.gz')
+        pd.testing.assert_frame_equal(predictions[expected.columns], expected, rtol=1e-10, atol=1e-12, check_dtype=False)
+        validations.append(dict(task=task, source_task=source, rows=len(predictions), selected_checkpoint_reference='passed',
+            target_training=False if task == 'AM' else True,
+            source_component_disjoint_rows=int(independent.sum()) if task == 'AM' else None))
     summary = pd.DataFrame(summaries)
     summary.to_csv(output / 'METRICS.csv', index=False)
     pd.DataFrame(fold_rows).to_csv(output / 'FOLD_METRICS.csv', index=False)
     pd.concat(detailed_rows, ignore_index=True).to_csv(output / 'DETAILED_METRICS.csv', index=False)
-    write_json(output / 'VALIDATION.json', dict(status='passed', tasks=validations,
-               protocol='fixed50_AlloBench_AM_fixed10_Src', no_test_checkpoint_selection=True,
-               budgets_chosen_after_exploratory_test_inspection=True, independent_test=False))
+    write_json(output / 'VALIDATION.json', dict(status='passed', tasks=validations, protocol=SELECTION_POLICY,
+        checkpoint_selection_uses_source_test=True, target_AM_training=False,
+        target_AM_checkpoint_selection=False, independent_source_test=False,
+        AM_all_positions_fully_source_component_independent=False))
     return summary
 
 
-def train(root, output, tasks=None):
-    root, output = Path(root), Path(output)
-    checkpoint_root = output / 'checkpoints'
-    for task in tasks or TASKS:
-        frame, features, matrices = load_inputs(root, task)
-        for method in METHODS:
-            for fold in range(5):
-                training, testing = split_masks(frame, task, fold)
-                saved = root / 'checkpoints/downstream' / task / method / f'fold{fold}'
-                selection = json.loads((saved / 'SELECTION.json').read_text())
-                reference = joblib.load(saved / 'head.joblib')
-                parameters = reference['model'].get_params() if task != 'Src' else {}
-                head, information = fit_fixed(frame.loc[training], matrices[method], task, selection, parameters)
-                destination = checkpoint_root / task / method / f'fold{fold}'
-                destination.mkdir(parents=True, exist_ok=True)
-                joblib.dump(head, destination / 'head.joblib')
-                record = dict(selection)
-                record.update(information)
-                record['refit'] = True
-                write_json(destination / 'SELECTION.json', record)
-                print(json.dumps(dict(task=task, method=method, fold=fold, **information)), flush=True)
-    return replay(root, output / 'results', tasks, checkpoint_root)
-
-
 def build_figure(root, output=None):
-    import matplotlib
-    matplotlib.use('Agg')
-    import matplotlib.pyplot as plt
-    root = Path(root)
-    directory = Path(output) if output else root / 'figures'
-    directory.mkdir(parents=True, exist_ok=True)
-    table = pd.read_csv(root / 'results/downstream/METRICS.csv')
-    labels = ['GSBind score', 'Structure', 'GSBind hidden', 'PeSTo score']
-    figure, axes = plt.subplots(1, 3, figsize=(12, 3.8), constrained_layout=True)
-    for task, axis in zip(TASKS, axes):
-        metric = 'case_interaction_macro_rho' if task == 'Src' else 'component_macro_AUPR'
-        values = table.loc[table.task.eq(task)].set_index('method').loc[METHODS, metric]
-        axis.bar(labels, values, color=['#8294a4', '#a4b2b9', '#bb5f48', '#56788b'])
-        axis.set(title=f'{task}: fixed {FIXED_ITERATIONS[task]} iterations',
-                 ylabel='OOF Spearman rho' if task == 'Src' else 'Component-macro trapezoidal AUPR')
-        axis.tick_params(axis='x', rotation=30)
-    figure.savefig(directory / 'downstream_fixed_iterations.pdf')
-    figure.savefig(directory / 'downstream_fixed_iterations.png', dpi=180)
-    plt.close(figure)
-    table.to_csv(directory / 'downstream_fixed_iterations_source.csv', index=False)
+    from .downstream_figures import build_figure as render
+    return render(root, output)

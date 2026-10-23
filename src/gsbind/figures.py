@@ -19,3 +19,5 @@ def build(root):
     plt.close(figure)
     from .downstream import build_figure
     build_figure(root)
+    from .downstream_figures import build_pr_figure
+    build_pr_figure(root)

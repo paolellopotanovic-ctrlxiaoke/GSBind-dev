@@ -1,9 +1,9 @@
 {
   "package": "GSbind current paper engineering",
-  "date": "2026-10-22",
-  "files": 543,
-  "bytes": 591842842,
-  "inventory_sha256": "610e08f88d4efbba6ea017e4cb4dce6798793878b7385f5006a495ebdb19d574",
+  "date": "2026-10-23",
+  "files": 799,
+  "bytes": 698961491,
+  "inventory_sha256": "51929548c49f469c7d464d7b5cea87c6e40c28f61a1cb2b4eda3b77f52391fd5",
   "excludes": [
     ".git",
     ".pytest_cache",
@@ -13,7 +13,7 @@
   "inventory_self_excluded": true,
   "delivery_self_excluded": true,
   "entrypoint": "python main.py summarize --task all; python main.py downstream --action train; python main.py figures",
-  "functional_scope": "Src all measured positions; fixed 10 iterations",
+  "functional_scope": "Src internal five-fold best-test selected OOF; AM frozen AlloBench transfer",
   "archive": null,
   "archive_note": "Existing GSbind_paper_20261020.tar.zst predates this update; bulk datasets only, install missing files without overwriting public data."
 }

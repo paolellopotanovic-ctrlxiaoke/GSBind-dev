@@ -1,0 +1,63 @@
+{
+  "case_choice": "Illustrative curated ABL1 case with two bound pocket ligands and positive hidden-readout gain; not a random or unbiased sample",
+  "source_pdb": "5MO4",
+  "source_chain": "A",
+  "uniprot": "P00519",
+  "pdb_title": "ABL1 kinase (T334I_D382N) in complex with asciminib and nilotinib",
+  "experimental_construct_is_mutant": true,
+  "ligand_allosteric": {
+    "resn": "AY7",
+    "chain": "A",
+    "resi": "602",
+    "name": "asciminib"
+  },
+  "ligand_atp_pocket": {
+    "resn": "NIL",
+    "chain": "A",
+    "resi": "601",
+    "name": "nilotinib"
+  },
+  "publication": {
+    "doi": "10.1038/nature21702",
+    "pubmed": "28329763"
+  },
+  "mapped_residues": 429,
+  "mismatches": [
+    {
+      "pdb_resi": "334",
+      "canonical_position": 315,
+      "observed_amino": "I",
+      "canonical_amino": "T",
+      "identity_match": false,
+      "site_5mo4": false,
+      "allobench_union_label": 0,
+      "hidden_percentile": 0.9575221238938053,
+      "score_percentile": 0.11327433628318584,
+      "structure_percentile": 0.8424778761061947
+    },
+    {
+      "pdb_resi": "382",
+      "canonical_position": 363,
+      "observed_amino": "N",
+      "canonical_amino": "D",
+      "identity_match": false,
+      "site_5mo4": false,
+      "allobench_union_label": 0,
+      "hidden_percentile": 0.8176991150442477,
+      "score_percentile": 0.20442477876106194,
+      "structure_percentile": 0.7946902654867256
+    }
+  ],
+  "annotated_5mo4_sites": 27,
+  "holo_used_for_visualization_only": true,
+  "prediction_input": "Saved monomer features, not the ligand-bound display complex",
+  "display_rank_reference": "All evaluated residues of the corresponding protein/construct; ties use average rank",
+  "benchmark_labels": "AlloBench union across source records; displayed ground truth restricted to 5MO4 annotation",
+  "source_checkpoint_test_selected": true,
+  "no_training_or_checkpoint_reselection": true,
+  "files": {
+    "assets/src_fl_af2.pdb": "132c0ced580aa2db2f241261be8fb619841f33fdcdc290f201a2806fb118f2d9",
+    "assets/5mo4.pdb": "3caef07cc0a7b78a6abe36df591f4da45f34b44c6733731dc1daf459571cf23f",
+    "assets/src_kd_af2.pdb": "bcd1e6c341275b4c9627574a4a9545fd1a797021e0e41e84760dae503951444c"
+  }
+}

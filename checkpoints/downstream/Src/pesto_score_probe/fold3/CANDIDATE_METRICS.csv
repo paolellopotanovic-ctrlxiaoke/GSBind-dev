@@ -1,0 +1,3 @@
+candidate,iteration,rho
+training_only_ridge_solution,,0.3404306220095694
+conjugate_gradient_iteration,1.0,0.3404306220095694

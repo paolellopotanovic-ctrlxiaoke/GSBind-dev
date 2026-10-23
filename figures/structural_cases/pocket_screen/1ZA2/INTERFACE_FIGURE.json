@@ -1,0 +1,17 @@
+{
+  "interface_definition": "Deposited biological assembly; protein heavy-atom distance <=5 A",
+  "independent_of_prediction": true,
+  "allosteric_labels_unchanged": true,
+  "overlap_precedence": "Any annotated-pocket/interface overlap uses distinct overlap color",
+  "palette": {
+    "pocket_hit": "#c73b38",
+    "pocket_missed": "#efa33b",
+    "interface_hit": "#198477",
+    "interface_context": "#bedbd5",
+    "other_high": "#8664aa",
+    "overlap": "#cc6ca4",
+    "background": "#ccd4d9"
+  },
+  "source": "ALL_RESIDUE_BIOLOGICAL_CONTACTS.csv",
+  "interface_residues": 41
+}
