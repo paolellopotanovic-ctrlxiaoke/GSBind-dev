@@ -1,0 +1,30 @@
+{
+  "schema_version": "gpsfun_af2_full375_validation_contract_v1",
+  "validation_set": "GPSFun official protein test split represented by strict sequence-aligned AF2 structures",
+  "cases": 375,
+  "valid_residues": 77978,
+  "positive_residues": 11350,
+  "manifest": "gpsfun_PRO_test_af2_local_full375_manifest.csv",
+  "manifest_sha256": "e6c10cba5ec4a2b43b39d7509fc95400f924baeaacaa30afa046c3051a9273ce",
+  "construction": {
+    "original_strict_exact_domain_cases": 330,
+    "locally_predicted_exact_domain_extension_cases": 45,
+    "sequence_coverage": 1.0,
+    "sequence_identity": 1.0,
+    "aligner": "Biopython PairwiseAligner",
+    "alignment_mode": "official_canonical_v1",
+    "three_dimensional_holo_superposition": false,
+    "notes": "All 375 cases use the same strict-domain sequence mapping and write_crop logic; the 45-case extension has 8,175 structural residues and its v1 label mask leaves 8,160 valid residues and 1,202 positives."
+  },
+  "checkpoint_protocol": {
+    "candidate_epochs": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+    "mode": "post_training_full_epoch_sweep",
+    "primary_score": "family_balanced_z",
+    "formula": "mean(z(mean(pooled)), z(mean(case_mean)), z(mean(case_median)), z(macro_recall))",
+    "zscore_ddof": 0,
+    "loss_or_brier_in_primary_score": false,
+    "selected_epoch": 11,
+    "selected_family_balanced_z": 0.9788990205747575,
+    "selected_checkpoint_sha256": "45641b561ac3df690e58328dc5d6daa856ca53a20c13771f6956a387d8f501a4"
+  }
+}

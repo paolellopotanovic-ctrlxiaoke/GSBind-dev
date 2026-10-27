@@ -38,6 +38,7 @@ from .utils import (
     resolve_device,
     sha256_file,
 )
+from .validation import select_checkpoints
 
 
 CHANNEL_NAMES = ("protein", "nucleic", "ion", "ligand", "lipid")
@@ -134,7 +135,12 @@ class GaussianDirectApp:
         atomic_write_json(training.output_dir / "run_contract.json", contract)
         trainer.fit(module, datamodule=datamodule)
         if trainer.is_global_zero:
+            if training.checkpoint_selection.enabled:
+                select_checkpoints(self.config)
             (training.output_dir / "TRAINING_COMPLETE").touch()
+
+    def select_checkpoint(self) -> dict[str, Any]:
+        return select_checkpoints(self.config)
 
     def infer(self) -> Path:
         settings = self.config.inference

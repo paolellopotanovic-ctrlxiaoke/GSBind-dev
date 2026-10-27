@@ -35,8 +35,26 @@
       "min_lr_ratio": 0.1,
       "weight_decay": 0.0001,
       "pos_weight_factor": 0.5
-    }
-  },
+    },
+    "checkpoint_selection": {
+      "enabled": true,
+      "strategy": "gpsfun_af2_full375_family_balanced_z_v1",
+      "manifest": "../datasets/gpsfun_af2_full375/gpsfun_PRO_test_af2_local_full375_manifest.csv",
+      "compact_dir": "../datasets/gpsfun_af2_full375/semantic_npz",
+      "output_dir": "../runs/training/validation_selection",
+      "expected_cases": 375,
+      "expected_valid_residues": 77978,
+      "expected_positive_residues": 11350,
+      "epoch_min": 0,
+      "epoch_max": 19,
+      "device": "auto",
+      "batch_size": 1,
+      "num_workers": 0,
+      "threshold": 0.5,
+      "selection_metric": "family_balanced_z",
+      "validation_manifest_sha256": "e6c10cba5ec4a2b43b39d7509fc95400f924baeaacaa30afa046c3051a9273ce"
+     }
+   },
   "preprocessing": {
     "manifest": "../datasets/main/train.csv",
     "output_dir": "../runs/preprocessed",

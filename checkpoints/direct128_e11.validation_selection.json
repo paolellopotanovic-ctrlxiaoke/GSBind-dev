@@ -1,0 +1,17 @@
+{
+  "schema_version": "gsbind_epoch_validation_selection_v1",
+  "validation_set": "gpsfun_af2_full375",
+  "candidate_epochs": "0-19",
+  "selected_epoch": 11,
+  "selection_score": 0.9788990205747575,
+  "selection_metric": "family_balanced_z",
+  "loss_metrics_included": false,
+  "historical_checkpoint": {
+    "path": "M4-Gaussian-PPBS/work/pesto_hidden_gaussian_direct128_non_test_sideclean_scratch_e20_20260916/run/model_epoch_11.pt",
+    "sha256": "45641b561ac3df690e58328dc5d6daa856ca53a20c13771f6956a387d8f501a4"
+  },
+  "released_checkpoint": {
+    "path": "checkpoints/direct128_e11.pt",
+    "sha256": "9d920481b5bf7ddd3e4b6542b2b1951b5a4683ce50f5b2392d22e7eb7945f397"
+  }
+}

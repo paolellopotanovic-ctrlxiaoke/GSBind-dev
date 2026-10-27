@@ -82,6 +82,42 @@ class TrainingDataConfig:
 
 
 @dataclass(frozen=True)
+class CheckpointSelectionConfig:
+    enabled: bool = False
+    strategy: str = "gpsfun_af2_full375_family_balanced_z_v1"
+    manifest: Path = Path("${GPSFUN_AF2_FULL375_MANIFEST}")
+    compact_dir: Path = Path("${GPSFUN_AF2_FULL375_COMPACT_DIR}")
+    output_dir: Path = Path("validation_selection")
+    expected_cases: int = 375
+    expected_valid_residues: int = 77_978
+    expected_positive_residues: int = 11_350
+    epoch_min: int = 0
+    epoch_max: int = 19
+    device: str = "auto"
+    batch_size: int = 1
+    num_workers: int = 0
+    threshold: float = 0.5
+    selection_metric: str = "family_balanced_z"
+    validation_manifest_sha256: str = "e6c10cba5ec4a2b43b39d7509fc95400f924baeaacaa30afa046c3051a9273ce"
+
+    def __post_init__(self) -> None:
+        if self.strategy != "gpsfun_af2_full375_family_balanced_z_v1":
+            raise ValueError("unsupported checkpoint-selection strategy")
+        if self.selection_metric != "family_balanced_z":
+            raise ValueError("family-balanced z-score is the only supported selector")
+        if self.epoch_min < 0 or self.epoch_max < self.epoch_min:
+            raise ValueError("invalid checkpoint epoch range")
+        if not 0 <= self.threshold <= 1:
+            raise ValueError("threshold must be in [0, 1]")
+        if self.expected_cases <= 0 or self.expected_valid_residues <= 0:
+            raise ValueError("validation counts must be positive")
+        if self.expected_positive_residues <= 0:
+            raise ValueError("validation positive count must be positive")
+        if self.batch_size <= 0 or self.num_workers < 0:
+            raise ValueError("batch size must be positive and workers non-negative")
+
+
+@dataclass(frozen=True)
 class OptimizerConfig:
     epochs: int = 20
     schedule_epochs: int = 20
@@ -99,6 +135,9 @@ class TrainingConfig:
     output_dir: Path = Path("runs/gaussian_direct128")
     data: TrainingDataConfig = field(default_factory=TrainingDataConfig)
     optimizer: OptimizerConfig = field(default_factory=OptimizerConfig)
+    checkpoint_selection: CheckpointSelectionConfig = field(
+        default_factory=CheckpointSelectionConfig
+    )
 
 
 @dataclass(frozen=True)
@@ -161,9 +200,20 @@ class ExperimentConfig:
             base.training.optimizer,
             training_value.pop("optimizer", None),
         )
+        training_selection = _merge_dataclass(
+            CheckpointSelectionConfig,
+            base.training.checkpoint_selection,
+            training_value.pop("checkpoint_selection", None),
+            base_dir=base_dir,
+        )
         training = _merge_dataclass(
             TrainingConfig,
-            replace(base.training, data=training_data, optimizer=training_optimizer),
+            replace(
+                base.training,
+                data=training_data,
+                optimizer=training_optimizer,
+                checkpoint_selection=training_selection,
+            ),
             training_value,
             base_dir=base_dir,
         )
@@ -263,6 +313,8 @@ def _merge_dataclass(
             "output",
             "train_manifest",
             "train_compact_dir",
+            "compact_dir",
+            "validation_manifest",
         } else current
         if key in tuple_fields:
             parsed = tuple(Path(item) for item in parsed) if isinstance(parsed, (list, tuple)) else (Path(parsed),)

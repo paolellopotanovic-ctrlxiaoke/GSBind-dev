@@ -12,7 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description='GSbind E11 paper engineering and evidence')
     parser.add_argument('--config', type=Path, default=ROOT / 'configs/main.json')
     commands = parser.add_subparsers(dest='command', required=True)
-    for name in ['train', 'preprocess', 'infer', 'evaluate', 'show-config']:
+    for name in ['train', 'preprocess', 'infer', 'evaluate', 'select-checkpoint', 'show-config']:
         commands.add_parser(name)
     evidence = commands.add_parser('evidence')
     evidence.add_argument('--task', choices=['all', 'main', 'ssm220', 'downstream'], default='all')

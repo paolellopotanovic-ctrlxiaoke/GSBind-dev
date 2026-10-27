@@ -1,6 +1,6 @@
 # GSBind: Gaussian surface–residue protein binding prediction
 
-The current manuscript follows four figures: **overview → native binding prediction → Unbound localization → biological information increment**. Biological readouts use AlloBench source heads transferred to AM and separately supervised Src within-system probes. AM has no separately trained head or target-label fitting. Exact source-head selection and transfer routing are documented in `docs/DOWNSTREAM_SELECTED_PROTOCOL_CN.md` and checkpoint metadata.
+The current manuscript follows four figures: **overview → native binding prediction → Unbound localization → biological information increment**. The backbone E11 checkpoint is selected on the GPSFun AF2 full375 validation set after a complete E0–E19 sweep. Biological readouts use AlloBench source heads transferred to AM and separately supervised Src within-system probes. AM has no separately trained head or target-label fitting. Exact selection protocols are documented in `docs/GPSFUN_AF2_VALIDATION_CHECKPOINT_SELECTION_CN.md` and `docs/DOWNSTREAM_SELECTED_PROTOCOL_CN.md`.
 
 ## Current results
 
@@ -17,6 +17,8 @@ Src hidden iterations are **1/7/2/4/7**, chosen by each internal held-out fold's
 
 **Selection boundary:** AlloBench and Src checkpoints are explicitly selected using their source held-out/test folds. Their reported source OOF scores are exploratory test-selected scores, not independent test estimates. AM labels do not fit or select heads, but full AM is not completely source-independent because of shared source components. PeSTo uses only its scalar binding score, never hidden features. Classification AUPR is trapezoidal precision–recall area, protein → homology-component macro.
 
+**Backbone validation:** E11 was selected only on GPSFun AF2 full375 (375 proteins, 77,978 valid residues, 11,350 positives) after evaluating all E0–E19 checkpoints. The primary score equally weights population-z-scored pooled, case-mean, case-median and macro-recall families; validation loss and Brier are excluded. This validation set is distinct from the final Bound/Unbound and downstream tests.
+
 ## Public reproduction
 
 ```bash
@@ -25,6 +27,7 @@ pip install -r requirements-downstream.txt
 python main.py downstream --action replay --output runs/selected_replay
 python main.py downstream --action train --output runs/source_search_reconstruction
 python main.py summarize --task all --output runs/public_recompute
+python main.py --config configs/main.json select-checkpoint
 python main.py verify
 python main.py figures
 python -m pytest -q
@@ -38,6 +41,7 @@ All input features, raw position labels, original folds, AM routing, **40 select
 ## Engineering map
 
 - `src/gaussian_direct/`: frozen E11 model, atom encoder, Gaussian-surface forward, preprocessing and backbone training.
+- `src/gaussian_direct/validation.py`: post-training GPSFun AF2 full375 sweep and performance-only E0–E19 checkpoint selection.
 - `src/gsbind/downstream.py`: selected-source validation, AM source-component routing, frozen replay, metrics and plots.
 - `src/gsbind/downstream_training.py`: reconstruction of AlloBench/Src optimizer histories and source-test selection; no AM fitting.
 - `configs/downstream_selected.json`: sole active downstream protocol.

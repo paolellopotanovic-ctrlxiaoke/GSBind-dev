@@ -36,7 +36,9 @@ def main():
         records = list(pool.map(record, paths))
     inventory = ROOT / 'FILE_INVENTORY.csv'
     with inventory.open('w', newline='') as handle:
-        writer = csv.DictWriter(handle, fieldnames=['path', 'bytes', 'sha256'])
+        writer = csv.DictWriter(
+            handle, fieldnames=['path', 'bytes', 'sha256'], lineterminator='\n'
+        )
         writer.writeheader()
         writer.writerows(records)
     metadata = dict(package='GSbind public paper engineering', date='2026-10-23', files=len(records), bytes=sum(row['bytes'] for row in records),

@@ -8,6 +8,8 @@ The current **AlloBench source-test-selected heads → frozen AM transfer**, and
 
 The server has a complete, checksum-verified bundle. This Git repository contains the code, E11 weights, readout weights, data manifests/labels, final CSV metrics, detailed saved predictions and CPU examples. It deliberately does not commit the bulk training structures/caches or large allosteric hidden tensors.
 
+The GPSFun AF2 full375 checkpoint-selection contract is in `gpsfun_af2_full375_validation_contract.json`: 375 proteins, 77,978 valid residues, 11,350 positives, strict sequence-aligned AF2 inputs, and E0–E19 performance-only family-balanced z-score selection. The compact NPZ cache remains external bulk data; `python main.py select-checkpoint` requires the fixed manifest and cache installed at the paths in `configs/main.json`.
+
 | Artifact | Status |
 |---|---|
 | `GSbind_paper_20261020.tar.zst` | Exists on the project server; public URL **not yet assigned** |

@@ -30,7 +30,8 @@ The released E11 checkpoint uses `architecture=vg`, `gaussian_dim=128`, and `dir
 | `modules/global_context.py` | Residue and surface global-context feedback |
 | `modules/semantic_patch.py` | Optional semantic patch objective |
 | `lightning.py` | Deterministic distributed training loop |
-| `app.py` | Inference and evaluation use cases |
+| `validation.py` | Post-training GPSFun AF2 full375 checkpoint sweep and family-balanced z-score selection |
+| `app.py` | Inference, evaluation and checkpoint-selection use cases |
 
 ## Parameter budget
 
