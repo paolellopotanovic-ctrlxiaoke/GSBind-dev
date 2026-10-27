@@ -1,0 +1,71 @@
+{
+  "schema_version": "gsbind_pinder_anchor_full_reproduction_v1",
+  "built_at_utc": "2026-10-27T21:41:49.361197+00:00",
+  "source": {
+    "package": "pinder.core.get_index",
+    "pinder_version": "unknown",
+    "release": "2024-02",
+    "cache_dir": "/tmp/gsbind-pinder-cache"
+  },
+  "source_audit": {
+    "anchor_rows": 20801,
+    "anchor_holo_sides": 20801,
+    "mapped_directed_events": 59644,
+    "test_side_leaking_directed_events_excluded": 1634,
+    "official_source_systems": 53065,
+    "official_source_split_counts": {
+      "test": 0,
+      "val": 1098,
+      "train": 34930,
+      "invalid": 17037
+    },
+    "historical_mapping_source_systems": 428027,
+    "historical_mapping_strict_directed_events": 746233,
+    "historical_mapping_holos": 415984
+  },
+  "anchor_audit": {
+    "anchor_rows_not_in_candidate": 0,
+    "anchor_rows_preserved_by_contract": 20801
+  },
+  "rows_dropped_by_final_global_cap_enforcement": 0,
+  "directed_events_processed": 50252,
+  "receptor_unions": 20801,
+  "eligible_receptor_unions": 20801,
+  "comparison": {
+    "reference_rows": 20801,
+    "rebuilt_rows": 20801,
+    "reference_unique_holo_sides": 20801,
+    "rebuilt_unique_holo_sides": 20801,
+    "missing_from_rebuild": 0,
+    "extra_in_rebuild": 0,
+    "matched_rows": 20801,
+    "exact_label_rows": 20801,
+    "exact_label_mask_rows": 20801,
+    "exact_residue_id_rows": 20801,
+    "exact_residue_count_rows": 20801,
+    "exact_positive_count_rows": 20801,
+    "exact_cluster_rows": 20801,
+    "exact_uniprot_rows": 20801,
+    "reference_valid_residues": 5718397,
+    "rebuilt_valid_residues": 5718397,
+    "reference_positive_residues": 1161184,
+    "rebuilt_positive_residues": 1161184,
+    "label_mismatch_examples": []
+  },
+  "checks": {
+    "all_reference_targets_present": true,
+    "no_extra_targets": true,
+    "row_count_matches_reference": true,
+    "all_exact_labels": true,
+    "all_exact_label_masks": true,
+    "all_exact_residue_ids": true,
+    "all_exact_residue_counts": true,
+    "no_official_test_side_cluster": true,
+    "cluster_cap": true
+  },
+  "artifacts": {
+    "train": "/tmp/pinder-anchor-final3/train.csv",
+    "train_sha256": "eb2c91530a75dce6958f6bd155c912eba2d1efa729ef0697655cee7e2fefaefe",
+    "reference_manifest": "/inspire/ssd/tenant_predefaa-9a1b-4522-bb10-8850f313be13/global_user/3078-linziqian/projects/GSbind_github/datasets/main/train.csv"
+  }
+}

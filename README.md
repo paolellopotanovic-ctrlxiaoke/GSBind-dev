@@ -55,7 +55,7 @@ All input features, raw position labels, original folds, AM routing, **40 select
 - `figures/downstream_task_biology.*`, `figures/downstream_task_workflow.*`: editable conceptual task diagrams; definitions and caveats in `docs/DOWNSTREAM_TASK_EXPLANATION_CN.md`.
 - `figures/structural_cases/`: PyMOL-rendered ABL1 allosteric-pocket and Src activation-segment / functional-readout cases, residue maps and editable sessions; see `docs/STRUCTURAL_READOUT_CASES_CN.md`.
 - `docs/DOWNSTREAM_SELECTED_PROTOCOL_CN.md`: methods, data, manuscript-ready English text and figure overview.
-- `docs/PINDER_TRAINING_DATA_REBUILD_CN.md`: reproducible official-API training/test rebuild protocol; run it through `python main.py rebuild-pinder`.
+- `docs/PINDER_TRAINING_DATA_REBUILD_CN.md`: reproducible official-API E11 training/test rebuild protocol; run `python main.py rebuild-pinder` and `python main.py validate-pinder-splits`.
 - `docs/downstream_references.bib`, `docs/PAPER_EVIDENCE_ALIGNMENT_CN.md`: references and current manuscript/evidence mapping. The previous audit is archived under `history/pre_alignment_20261023/docs/`.
 
 ## Unchanged backbone evidence

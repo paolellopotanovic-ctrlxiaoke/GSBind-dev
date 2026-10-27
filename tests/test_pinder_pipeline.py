@@ -10,11 +10,13 @@ from gsbind.pinder_pipeline import (
     add_scores,
     anchor_selection,
     enforce_cluster_cap,
+    historical_mapping_pool,
     quality_mask,
     run_pipeline,
     select_candidate_and_test_systems,
     sequence_diverse_select,
     union_receptor_holos,
+    validate_published_pinder_splits,
 )
 
 
@@ -48,6 +50,18 @@ def test_split_selection_excludes_both_official_test_side_clusters():
     assert set(training["id"]) == {"train-clean", "val-clean"}
     assert set(test["id"]) == {"test-case"}
     assert audit["official_test_side_clusters"] == 2
+
+
+def test_historical_mapping_pool_uses_side_specific_strict_events():
+    metadata = pd.DataFrame([
+        {"system_id": "val-clean", "receptor_side": "R", "quality_strict_core_metadata": True},
+        {"system_id": "val-clean", "receptor_side": "L", "quality_strict_core_metadata": False},
+    ])
+    mappings, audit = historical_mapping_pool(_index(), metadata)
+    assert mappings == {"val-clean-R"}
+    assert audit["historical_mapping_source_systems"] == 1
+    assert audit["historical_mapping_strict_directed_events"] == 1
+    assert audit["historical_mapping_holos"] == 1
 
 
 def test_quality_contract_recomputes_positive_rate_and_ignores_stale_value():
@@ -145,7 +159,8 @@ class FakeAdapter:
     def native_path(self, system_id: str) -> Path:
         return self.cache_dir / "pdbs" / f"{system_id}.pdb"
 
-    def download_native(self, system_ids) -> None:
+    def download_native(self, system_ids, workers: int = 8) -> None:
+        del workers
         for system_id in system_ids:
             _write_native_pdb(self.native_path(system_id), system_id)
 
@@ -170,3 +185,24 @@ def test_end_to_end_rebuild_smoke(tmp_path, monkeypatch):
     assert report["checks"]["train_test_case_overlap"] == 0
     assert (tmp_path / "rebuild/split_contract.json").is_file()
     assert report["checks"]["max_train_cluster_size"] == 1
+
+
+def test_published_split_contract_validates_official_relationships():
+    train = pd.DataFrame([{
+        "system_id": "", "cluster_id": "cluster_clean", "receptor_side": "R",
+        "receptor_uniprot": "P01", "receptor_pdb_relpath": "pdbs/train-clean-R.pdb",
+        "input_state": "holo", "labels": "0;0;0", "label_mask": "1;1;1",
+        "input_residue_ids": "1;2;3", "sequence": "AAA", "num_residues": 3,
+    }])
+    holo = pd.DataFrame([
+        {"system_id": "test-case", "cluster_id": "cluster_test_R", "receptor_side": side,
+         "receptor_uniprot": uniprot, "receptor_pdb_relpath": f"pdbs/test-case-{side}.pdb",
+         "input_state": "holo", "labels": "0;0;0", "label_mask": "1;1;1",
+         "input_residue_ids": "1;2;3", "sequence": "AAA", "num_residues": 3}
+        for side, uniprot in (("R", "P07"), ("L", "P08"))
+    ])
+    apo = holo.iloc[[0]].copy()
+    apo["input_state"] = "af2"
+    report, passed = validate_published_pinder_splits(_index(), train, holo, apo)
+    assert passed
+    assert report["relationships"]["train_holo_side_overlap_with_holo_test_sources"] == 0

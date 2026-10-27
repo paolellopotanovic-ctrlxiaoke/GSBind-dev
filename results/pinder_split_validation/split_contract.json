@@ -1,0 +1,44 @@
+{
+  "schema_version": "gsbind_published_pinder_split_contract_v1",
+  "release": "2024-02",
+  "train": {
+    "rows": 20801,
+    "unique_holo_sides": 20801,
+    "all_holo_sides_in_official_index": true,
+    "no_official_test_side_cluster": true,
+    "no_official_test_system_id": true,
+    "label_mask_residue_array_lengths_match": true
+  },
+  "holo_test": {
+    "rows": 988,
+    "systems": 494,
+    "states": {
+      "holo": 988
+    },
+    "all_systems_official_test": true,
+    "all_states_allowed": true,
+    "all_receptor_sides_valid": true,
+    "all_receptor_uniprots_match_official_index": true,
+    "all_holo_sides_exist_in_official_index": true,
+    "label_mask_residue_array_lengths_match": true
+  },
+  "apo_af2_test": {
+    "rows": 874,
+    "systems": 402,
+    "states": {
+      "af2": 790,
+      "apo": 84
+    },
+    "all_systems_official_test": true,
+    "all_states_allowed": true,
+    "all_receptor_sides_valid": true,
+    "all_receptor_uniprots_match_official_index": true,
+    "all_holo_sides_exist_in_official_index": true,
+    "label_mask_residue_array_lengths_match": true
+  },
+  "relationships": {
+    "apo_af2_systems_subset_of_holo_test": true,
+    "train_holo_side_overlap_with_holo_test_sources": 0
+  },
+  "all_checks_passed": true
+}
