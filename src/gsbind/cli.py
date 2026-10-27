@@ -14,6 +14,20 @@ def main():
     commands = parser.add_subparsers(dest='command', required=True)
     for name in ['train', 'preprocess', 'infer', 'evaluate', 'select-checkpoint', 'show-config']:
         commands.add_parser(name)
+    rebuild_pinder = commands.add_parser(
+        'rebuild-pinder',
+        help='Rebuild the GSBind training/test split from the public PINDER API',
+    )
+    rebuild_pinder.add_argument('--output-dir', type=Path, required=True)
+    rebuild_pinder.add_argument('--release', default='2024-02')
+    rebuild_pinder.add_argument('--cache-dir', type=Path)
+    rebuild_pinder.add_argument('--workers', type=int, default=8)
+    rebuild_pinder.add_argument('--chunk-size', type=int, default=512)
+    rebuild_pinder.add_argument('--limit', type=int, default=0)
+    rebuild_pinder.add_argument('--cluster-cap', type=int, default=5)
+    rebuild_pinder.add_argument('--contact-cutoff', type=float, default=5.0)
+    rebuild_pinder.add_argument('--anchor-manifest', type=Path)
+    rebuild_pinder.add_argument('--update-index', action='store_true')
     evidence = commands.add_parser('evidence')
     evidence.add_argument('--task', choices=['all', 'main', 'ssm220', 'downstream'], default='all')
     summary = commands.add_parser('summarize', help='Recompute paper metrics from public saved predictions; no model fitting')
@@ -42,6 +56,10 @@ def main():
     if args.command in ['surface-forward', 'covariates']:
         args.manifest = args.manifest.resolve()
         args.output = args.output.resolve()
+    elif args.command == 'rebuild-pinder':
+        args.output_dir = args.output_dir.resolve()
+        args.cache_dir = args.cache_dir.resolve() if args.cache_dir else None
+        args.anchor_manifest = args.anchor_manifest.resolve() if args.anchor_manifest else None
     if args.command in ['downstream', 'summarize']:
         args.output = args.output.resolve()
     os.chdir(ROOT)
@@ -80,6 +98,21 @@ def main():
     elif args.command == 'surface-forward':
         from .forward import run
         run(ROOT, args.manifest, args.output, args.device, args.limit)
+    elif args.command == 'rebuild-pinder':
+        from .pinder_pipeline import main as rebuild_pinder
+        report = rebuild_pinder([
+            '--output-dir', str(args.output_dir),
+            '--release', args.release,
+            *([] if args.cache_dir is None else ['--cache-dir', str(args.cache_dir)]),
+            '--workers', str(args.workers),
+            '--chunk-size', str(args.chunk_size),
+            '--limit', str(args.limit),
+            '--cluster-cap', str(args.cluster_cap),
+            '--contact-cutoff', str(args.contact_cutoff),
+            *([] if args.anchor_manifest is None else ['--anchor-manifest', str(args.anchor_manifest)]),
+            *(['--update-index'] if args.update_index else []),
+        ])
+        print(json.dumps(report, indent=2, ensure_ascii=False, default=str))
     else:
         from gaussian_direct.app import GaussianDirectApp
         from gaussian_direct.config import ExperimentConfig

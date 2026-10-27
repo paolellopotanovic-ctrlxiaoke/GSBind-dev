@@ -1,0 +1,47 @@
+{
+  "schema_version": "gsbind_pinder_api_smoke_validation_v1",
+  "validated_at_utc": "2026-10-27",
+  "package": {
+    "name": "pinder",
+    "version": "0.6.0",
+    "api": "pinder.core.get_index",
+    "release": "2024-02"
+  },
+  "command_scope": {
+    "mode": "official public API smoke; not a full 20,801-row rebuild",
+    "limit": 2,
+    "workers": 2,
+    "chunk_size": 2,
+    "downloaded_index_rows": 2319564,
+    "official_test_side_clusters": 2124
+  },
+  "output_contract": {
+    "train_rows": 2,
+    "train_clusters": 2,
+    "train_residues": 490,
+    "train_positive_labels": 54,
+    "test_rows": 4,
+    "test_residues": 630,
+    "test_positive_labels": 68,
+    "max_train_cluster_size": 1,
+    "train_test_case_overlap": 0
+  },
+  "checks": {
+    "official_index_download": "passed",
+    "native_pdb_download": "passed",
+    "five_angstrom_coordinate_labels": "passed",
+    "single_chain_structure_output": "passed",
+    "train_and_test_manifest_output": "passed",
+    "split_contract_write": "passed",
+    "sha256_write": "passed"
+  },
+  "smoke_artifact_sha256": {
+    "train.csv": "3be93167bc2b2fbcc4e0cec5f8927b43ac29495e1709834b6a11d924da3a162e",
+    "test.csv": "50166bad594f5a84182f628a006b20f465f60718f34035a4854b38836b8"
+  },
+  "tests": {
+    "pinder_pipeline_tests": "6 passed",
+    "repository_suite_excluding_preexisting_biopython_figure_tests": "54 passed"
+  },
+  "limitation": "This smoke validates the official network/API path and end-to-end artifact construction on a deterministic prefix. Exact historical 20,801-row anchor recovery still requires the full public download and rebuild."
+}

@@ -48,4 +48,8 @@ python main.py evidence --task all
 | All-case surface forward and complete model training | No | Yes |
 | Rebuild SSM labels from original large assay tables | No | Yes |
 
+## 2026-10-27 PINDER API alternative
+
+The original PINDER index and native holo structures can now be rebuilt directly from the official `pinder` 2024-02 API. This avoids the older private bulk bundle for backbone data construction, although it is slower and downloads the public source files anew. The complete protocol is `docs/PINDER_TRAINING_DATA_REBUILD_CN.md` and the CLI is `python main.py rebuild-pinder`.
+
 Once a public hosting location is selected, update `bundle.json` and this page with the real URL. Large upstream archives and experimental source files remain subject to their original licensing and attribution.

@@ -42,6 +42,7 @@ All input features, raw position labels, original folds, AM routing, **40 select
 
 - `src/gaussian_direct/`: frozen E11 model, atom encoder, Gaussian-surface forward, preprocessing and backbone training.
 - `src/gaussian_direct/validation.py`: post-training GPSFun AF2 full375 sweep and performance-only E0–E19 checkpoint selection.
+- `src/gsbind/pinder_pipeline.py`: complete public-PINDER API rebuild of the E11 training pool, official held-out test manifest, coordinate labels, holo unions, side-cluster leakage cleaning and cap5 selection.
 - `src/gsbind/downstream.py`: selected-source validation, AM source-component routing, frozen replay, metrics and plots.
 - `src/gsbind/downstream_training.py`: reconstruction of AlloBench/Src optimizer histories and source-test selection; no AM fitting.
 - `configs/downstream_selected.json`: sole active downstream protocol.
@@ -54,12 +55,13 @@ All input features, raw position labels, original folds, AM routing, **40 select
 - `figures/downstream_task_biology.*`, `figures/downstream_task_workflow.*`: editable conceptual task diagrams; definitions and caveats in `docs/DOWNSTREAM_TASK_EXPLANATION_CN.md`.
 - `figures/structural_cases/`: PyMOL-rendered ABL1 allosteric-pocket and Src activation-segment / functional-readout cases, residue maps and editable sessions; see `docs/STRUCTURAL_READOUT_CASES_CN.md`.
 - `docs/DOWNSTREAM_SELECTED_PROTOCOL_CN.md`: methods, data, manuscript-ready English text and figure overview.
+- `docs/PINDER_TRAINING_DATA_REBUILD_CN.md`: reproducible official-API training/test rebuild protocol; run it through `python main.py rebuild-pinder`.
 - `docs/downstream_references.bib`, `docs/PAPER_EVIDENCE_ALIGNMENT_CN.md`: references and current manuscript/evidence mapping. The previous audit is archived under `history/pre_alignment_20261023/docs/`.
 
 ## Unchanged backbone evidence
 
 Binding manifests retain 20,801 training records, 988 Bound and 874 Unbound test cases. Unbound combines experimental unbound and AF2 structures. Legacy binding/SSM fields named `aupr` / `aupr_mixed` implement **average precision (AP)**, not trapezoidal AUPR; numbers remain unchanged. E11 case-macro AP is 0.791500 / 0.728115 on Bound / Unbound; these are not the manuscript's pooled AP values. Current Figure3 is the coordinate-valid conformational/localization analysis in the figure-data repository, not the older pathway-intervention Figure3. Historical intervention code and data remain available but do not supply current Figure3 claims.
 
-This engineering tree supports current readout inference/search reconstruction and saved-prediction recomputation. Full backbone training and regeneration of all structure/surface features require external bulk inputs whose public URL is still pending; see `data_release/README.md`. The companion manuscript uses the aligned four-figure story; `docs/PAPER_EVIDENCE_ALIGNMENT_CN.md` maps its figure sources and bundled hashes. Final author metadata and venue approval remain manuscript responsibilities.
+This engineering tree supports current readout inference/search reconstruction and saved-prediction recomputation. Full backbone training can reconstruct the PINDER pool from the official public API with `python main.py rebuild-pinder`; bundled historical bulk caches remain available through `data_release/README.md`. The companion manuscript uses the aligned four-figure story; `docs/PAPER_EVIDENCE_ALIGNMENT_CN.md` maps its figure sources and bundled hashes. Final author metadata and venue approval remain manuscript responsibilities.
 
 Original data retain source attribution and redistribution conditions. See `LICENSE`.
